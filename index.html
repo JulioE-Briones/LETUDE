@@ -506,7 +506,7 @@ footer .fline{color:var(--gold-light);font-size:.8rem;letter-spacing:.1em;margin
     if(detalle) lines.push("• Detalle: " + detalle);
     lines.push("");
     lines.push("¿Podrían confirmarme la disponibilidad del/la profesional? Gracias.");
-    openWa(lines.join("\n"));
+    window.open("https://wa.me/5493814681821?text=" + encodeURIComponent(lines.join("\n")), "_blank");
   });
 
   // header scroll state + progress bar
