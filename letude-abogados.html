@@ -7,6 +7,538 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
+    --ink:         #2b1418;
+    --france:      #6b1f2a;
+    --france-mid:  #8a2a38;
+    --france-pale: #f3e7e9;
+    --parchment:   #f7f1e6;
+    --cream:       #fcf9f2;
+    --gold:        #a8843e;
+    --gold-light:  #c9a865;
+    --muted:       #7a6a66;
+    --rule:        #e3d6c8;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--ink); font-weight: 300; overflow-x: hidden; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.25rem 5vw;
+    background: rgba(12,26,46,0.97); backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(184,150,62,0.25);
+  }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.05em; color: #fff; text-decoration: none; line-height: 1.2; }
+  .nav-logo span { color: var(--gold); }
+  .nav-logo small { display: block; font-size: 0.6rem; font-weight: 300; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-top: 1px; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.5); text-decoration: none; transition: color .2s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--gold); color: #fff; border: none; padding: 0.6rem 1.4rem; cursor: pointer; transition: background .2s; text-decoration: none; }
+  .nav-cta:hover { background: var(--gold-light); }
+
+  /* HERO */
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 0.9fr; padding-top: 64px; }
+  .hero-text { background: var(--france); display: flex; flex-direction: column; justify-content: center; padding: 8vw 6vw 8vw 10vw; position: relative; overflow: hidden; }
+  .hero-text::before { content: 'L'; font-family: 'Cormorant Garamond', serif; font-size: 32rem; font-weight: 600; color: rgba(255,255,255,0.04); position: absolute; top: -6rem; left: -3rem; line-height: 1; pointer-events: none; }
+  .hero-text::after { content: ''; position: absolute; left: 0; top: 15%; bottom: 15%; width: 4px; background: linear-gradient(to bottom, var(--gold), var(--gold-light), var(--gold)); }
+  .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 1.8rem; }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 4.5vw, 4.5rem); font-weight: 300; line-height: 1.08; color: #fff; margin-bottom: 2rem; }
+  .hero-title em { font-style: italic; color: var(--gold-light); }
+  .hero-sub { font-size: 0.88rem; line-height: 1.9; color: rgba(255,255,255,0.6); max-width: 40ch; margin-bottom: 3rem; }
+  .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--gold); color: #fff; padding: 0.85rem 2rem; text-decoration: none; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; transition: background .2s; }
+  .btn-primary:hover { background: var(--gold-light); }
+  .btn-ghost { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+  .btn-ghost:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  .hero-visual { background: var(--ink); position: relative; overflow: hidden; }
+  .hero-visual::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(184,150,62,0.07) 39px, rgba(184,150,62,0.07) 40px), repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(184,150,62,0.07) 39px, rgba(184,150,62,0.07) 40px); }
+  .hero-visual-inner { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 4rem; }
+  .hero-stat-row { display: flex; gap: 2.5rem; margin-bottom: 3.5rem; flex-wrap: wrap; }
+  .hero-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; color: var(--gold); line-height: 1; }
+  .hero-stat-label { font-size: 0.63rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: 0.3rem; }
+  .hero-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.3rem, 2vw, 1.9rem); font-style: italic; font-weight: 300; color: rgba(255,255,255,0.8); line-height: 1.35; margin-bottom: 1.2rem; }
+  .hero-quote-attr { font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); }
+
+  /* SECTION COMMONS */
+  section { padding: 7rem 10vw; }
+  .section-eyebrow { font-size: 0.65rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.2vw, 2.8rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.5rem; }
+  .section-title em { font-style: italic; color: var(--france-mid); }
+  .section-rule { width: 60px; height: 2px; background: var(--gold); margin-bottom: 2.5rem; }
+  .section-body { font-size: 0.9rem; line-height: 1.9; color: var(--muted); max-width: 64ch; }
+
+  /* DIFERENCIAL STRIP */
+  .diferencial { background: var(--france); padding: 3.5rem 10vw; display: flex; gap: 3rem; flex-wrap: wrap; align-items: center; border-top: 3px solid var(--gold); }
+  .dif-item { flex: 1; min-width: 160px; }
+  .dif-num { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--gold); line-height: 1; }
+  .dif-label { font-size: 0.63rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 0.3rem; }
+  .dif-divider { width: 1px; background: rgba(255,255,255,0.1); align-self: stretch; min-height: 40px; }
+
+  /* AREAS */
+  #areas { background: var(--parchment); }
+  .areas-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem; align-items: start; }
+  .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 2px; }
+  .area-card { background: var(--cream); padding: 2.6rem 2.3rem; border-top: 3px solid transparent; transition: border-color .25s, transform .25s; }
+  .area-card:hover { border-color: var(--france-mid); transform: translateY(-4px); }
+  .area-card.featured { border-color: var(--france); background: var(--france); }
+  .area-card.featured .area-title { color: var(--gold-light); }
+  .area-card.featured .area-desc { color: rgba(255,255,255,0.65); }
+  .area-card.featured .area-tag { color: var(--gold-light); border-color: rgba(212,174,106,0.4); }
+  .area-card.featured:hover { border-color: var(--gold); }
+  .area-card.penal-card { border-color: var(--gold); background: var(--ink); }
+  .area-card.penal-card .area-title { color: var(--gold-light); }
+  .area-card.penal-card .area-desc { color: rgba(255,255,255,0.65); }
+  .area-card.penal-card .area-tag { color: var(--gold-light); border-color: rgba(212,174,106,0.4); }
+  .area-icon { font-size: 1.7rem; margin-bottom: 1.3rem; }
+  .area-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 0.8rem; color: var(--ink); }
+  .area-desc { font-size: 0.81rem; line-height: 1.8; color: var(--muted); }
+  .area-tag { display: inline-block; margin-top: 1.2rem; font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--france-mid); border-bottom: 1px solid var(--france-mid); padding-bottom: 1px; }
+
+  /* ESTUDIO */
+  #estudio { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 8vw; align-items: center; background: var(--cream); }
+  .estudio-visual { position: relative; }
+  .estudio-bg { width: 100%; aspect-ratio: 4/5; background: var(--france); position: relative; overflow: hidden; }
+  .estudio-bg::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(135deg, transparent, transparent 20px, rgba(184,150,62,0.06) 20px, rgba(184,150,62,0.06) 21px); }
+  .estudio-badge { position: absolute; bottom: -2rem; right: -2rem; background: var(--gold); padding: 2rem; text-align: center; min-width: 120px; }
+  .estudio-badge-num { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: #fff; line-height: 1; font-weight: 300; }
+  .estudio-badge-text { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.8); margin-top: 0.3rem; }
+  .valor-row { margin-top: 3rem; display: flex; flex-direction: column; gap: 1.3rem; }
+  .valor-item { display: flex; gap: 1.2rem; align-items: flex-start; padding-bottom: 1.3rem; border-bottom: 1px solid var(--rule); }
+  .valor-item:last-child { border-bottom: none; }
+  .valor-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold); line-height: 1; flex-shrink: 0; width: 2rem; }
+  .valor-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--ink); }
+  .valor-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.7; }
+
+  /* LOGÍSTICA */
+  #logistica { background: var(--ink); padding: 7rem 10vw; }
+  #logistica .section-eyebrow { color: var(--gold-light); }
+  #logistica .section-title { color: rgba(255,255,255,0.9); }
+  #logistica .section-title em { color: var(--gold-light); }
+  #logistica .section-rule { background: var(--gold); }
+  #logistica .section-body { color: rgba(255,255,255,0.5); }
+  .logistica-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 4rem; }
+  .logistica-card { border: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 2rem; transition: border-color .3s, background .3s; }
+  .logistica-card:hover { border-color: rgba(184,150,62,0.4); background: rgba(255,255,255,0.03); }
+  .logistica-icon { font-size: 2rem; margin-bottom: 1.2rem; }
+  .logistica-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--gold-light); margin-bottom: 0.8rem; }
+  .logistica-desc { font-size: 0.8rem; line-height: 1.8; color: rgba(255,255,255,0.45); }
+
+  /* EQUIPO */
+  #equipo { background: var(--france-pale); }
+  .equipo-intro { margin-bottom: 1.5rem; }
+  .equipo-nota { font-size: 0.8rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
+  .equipo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3.5rem; }
+  .miembro-card { background: #fff; padding: 3rem; border-left: 4px solid var(--france); transition: transform .2s, border-color .2s; }
+  .miembro-card:hover { transform: translateX(6px); border-color: var(--gold); }
+  .miembro-foto-placeholder { width: 80px; height: 80px; border-radius: 50%; background: var(--france-pale); border: 2px solid var(--rule); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; overflow: hidden; }
+  .miembro-foto-placeholder span { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--france-mid); }
+  .miembro-role { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .miembro-name { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 400; color: var(--france); line-height: 1.15; }
+  .miembro-titulo { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; margin-top: 0.2rem; }
+  .miembro-bio { font-size: 0.83rem; line-height: 1.85; color: var(--muted); }
+  .miembro-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+  .tag { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; background: var(--france-pale); color: var(--france-mid); padding: 0.3rem 0.7rem; }
+
+  /* PRO BONO */
+  .probono-strip {
+    background: var(--parchment); padding: 3rem 10vw;
+    border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold);
+    display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;
+  }
+  .probono-icon { font-size: 2.5rem; flex-shrink: 0; }
+  .probono-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; color: var(--france); margin-bottom: 0.5rem; }
+  .probono-text { font-size: 0.82rem; line-height: 1.8; color: var(--muted); max-width: 70ch; }
+
+  /* SEDES */
+  #sedes { background: var(--france); }
+  #sedes .section-eyebrow { color: var(--gold-light); }
+  #sedes .section-title { color: rgba(255,255,255,0.9); }
+  #sedes .section-title em { color: var(--gold-light); }
+  #sedes .section-body { color: rgba(255,255,255,0.5); }
+  #sedes .section-rule { background: var(--gold); }
+  .sedes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px; margin-top: 4rem; background: rgba(255,255,255,0.08); }
+  .sede-card { background: var(--france); padding: 2.8rem 2rem; position: relative; overflow: hidden; border-bottom: 3px solid transparent; transition: border-color .3s, background .3s; }
+  .sede-card:hover { border-color: var(--gold); background: #0d3880; }
+  .sede-num { font-family: 'Cormorant Garamond', serif; font-size: 4rem; font-weight: 300; color: rgba(255,255,255,0.06); position: absolute; top: 0.5rem; right: 1rem; line-height: 1; }
+  .sede-ciudad { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; color: #fff; margin-bottom: 0.3rem; }
+  .sede-prov { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 1.3rem; }
+  .sede-dir { font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.7; }
+  .sede-ws { display: inline-block; margin-top: 1.2rem; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); border-bottom: 1px solid rgba(212,174,106,0.3); text-decoration: none; padding-bottom: 2px; transition: border-color .2s, color .2s; }
+  .sede-ws:hover { color: #fff; border-color: #fff; }
+
+  /* CONTACTO */
+  #contacto { background: var(--ink); text-align: center; padding: 8rem 10vw; position: relative; overflow: hidden; }
+  #contacto::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255,255,255,0.015) 30px, rgba(255,255,255,0.015) 31px); }
+  #contacto > * { position: relative; }
+  #contacto .section-eyebrow { color: var(--gold-light); }
+  #contacto .section-title { color: rgba(255,255,255,0.95); }
+  #contacto .section-title em { color: var(--gold-light); font-style: italic; }
+  #contacto .section-body { color: rgba(255,255,255,0.5); margin: 0 auto 3rem; }
+  #contacto .section-rule { margin: 0 auto 2.5rem; }
+  .whatsapp-btn { display: inline-flex; align-items: center; gap: 0.8rem; background: #25D366; color: #fff; padding: 1.1rem 2.8rem; text-decoration: none; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; transition: background .2s, transform .2s; margin-bottom: 2rem; }
+  .whatsapp-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+  .contact-areas { display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin-top: 2.5rem; margin-bottom: 2rem; }
+  .contact-area-tag { font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.35); border: 1px solid rgba(255,255,255,0.1); padding: 0.35rem 0.8rem; }
+  .contact-note { font-size: 0.7rem; color: rgba(255,255,255,0.25); letter-spacing: 0.08em; }
+
+  /* FOOTER */
+  footer { background: #040a14; color: rgba(255,255,255,0.22); padding: 2.5rem 10vw; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: rgba(255,255,255,0.5); }
+  .footer-logo span { color: var(--gold); }
+  footer p { font-size: 0.66rem; letter-spacing: 0.06em; }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-text > * { opacity: 0; animation: fadeUp 0.7s ease forwards; }
+  .hero-eyebrow { animation-delay: 0.1s; }
+  .hero-title   { animation-delay: 0.25s; }
+  .hero-sub     { animation-delay: 0.4s; }
+  .hero-actions { animation-delay: 0.55s; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-visual { min-height: 55vw; }
+    .hero-text { padding: 7rem 8vw 4rem; }
+    #estudio { grid-template-columns: 1fr; padding: 5rem 8vw; }
+    .estudio-visual { display: none; }
+    .equipo-grid { grid-template-columns: 1fr; }
+    .areas-intro { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+    .diferencial { gap: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">L<span>'</span>etude
+    <small>Flores-Avila &amp; Asoc. · Abogados</small>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#areas">Áreas</a></li>
+    <li><a href="#estudio">El Estudio</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+    <li><a href="#sedes">Sedes</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#contacto" class="nav-cta">Consultar ahora</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Noroeste Argentino · Tucumán · Salta · Santiago del Estero</p>
+    <h1 class="hero-title">Presencia real.<br>Compromiso <em>verdadero.</em></h1>
+    <p class="hero-sub">Estudio jurídico regional con más de veinte años de trayectoria. Cuatro sedes con infraestructura propia en el NOA, capacidad de movilidad en toda la región y lealtad absoluta con cada cliente desde el primer contacto hasta la resolución final.</p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Consultar por WhatsApp</a>
+      <a href="#areas" class="btn-ghost">Ver áreas de práctica</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-visual-inner">
+      <div class="hero-stat-row">
+        <div><div class="hero-stat-num">20+</div><div class="hero-stat-label">Años de ejercicio</div></div>
+        <div><div class="hero-stat-num">4</div><div class="hero-stat-label">Sedes propias</div></div>
+        <div><div class="hero-stat-num">3</div><div class="hero-stat-label">Provincias</div></div>
+      </div>
+      <p class="hero-quote">"Miles de causas tramitadas construyen una experiencia que ninguna tecnología puede sustituir."</p>
+      <p class="hero-quote-attr">L'etude (Flores-Avila & Asoc.)</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAL STRIP -->
+<div class="diferencial">
+  <div class="dif-item"><div class="dif-num">NOA sin límites</div><div class="dif-label">Movilidad y presencia en toda la región</div></div>
+  <div class="dif-divider"></div>
+  <div class="dif-item"><div class="dif-num">Civil · Penal</div><div class="dif-label">Estrategia mixta coordinada</div></div>
+  <div class="dif-divider"></div>
+  <div class="dif-item"><div class="dif-num">Corporativo</div><div class="dif-label">Asesoramiento a empresas e inversores</div></div>
+  <div class="dif-divider"></div>
+  <div class="dif-item"><div class="dif-num">Lealtad</div><div class="dif-label">Compromiso real con cada cliente</div></div>
+</div>
+
+<!-- AREAS -->
+<section id="areas">
+  <div class="areas-intro">
+    <div>
+      <p class="section-eyebrow">Especialidades</p>
+      <h2 class="section-title">Áreas de <em>práctica</em></h2>
+      <div class="section-rule"></div>
+    </div>
+    <p class="section-body" style="padding-top:1rem;">Nuestra fortaleza es la experiencia acumulada en miles de causas reales en los fueros del NOA, la capacidad de articular estrategias simultáneas en el ámbito civil y penal, y la cobertura efectiva en todas las jurisdicciones donde operamos.</p>
+  </div>
+  <div class="areas-grid">
+
+    <div class="area-card featured">
+      <div class="area-icon">⚖️</div>
+      <h3 class="area-title">Daños y Perjuicios</h3>
+      <p class="area-desc">Accidentes de tránsito, mala praxis médica, responsabilidad civil. Formación especializada y actualización permanente. Conocimiento profundo de la jurisprudencia regional y enfoque en resultados concretos.</p>
+      <span class="area-tag">Alta especialización</span>
+    </div>
+
+    <div class="area-card penal-card">
+      <div class="area-icon">🔍</div>
+      <h3 class="area-title">Penal Económico · Estafas y Defraudaciones</h3>
+      <p class="area-desc">Defensa y acusación en estafas vinculadas a sucesiones, herencias y derechos de familia. Conflictos societarios entre socios con arista penal. Rendiciones de cuentas, administración fraudulenta. Estrategia civil–penal coordinada en una sola mano.</p>
+      <span class="area-tag">Especialidad diferenciadora</span>
+    </div>
+
+    <div class="area-card featured">
+      <div class="area-icon">🏠</div>
+      <h3 class="area-title">Derecho Inmobiliario</h3>
+      <p class="area-desc">Compraventas, usucapiones, prescripción adquisitiva, mensuras y conflictos de posesión. Dos décadas resolviendo operaciones complejas en la región, con conocimiento directo de los registros y juzgados de cada provincia.</p>
+      <span class="area-tag">Alta especialización</span>
+    </div>
+
+    <div class="area-card featured">
+      <div class="area-icon">⛏️</div>
+      <h3 class="area-title">Minería y Contratos Comerciales</h3>
+      <p class="area-desc">Asesoramiento a empresas mineras, contratistas y proveedores en Salta y el NOA. Contratos de obra, conflictos laborales, cuestiones ambientales y societarias vinculadas al sector extractivo en expansión en la región.</p>
+      <span class="area-tag">Área estratégica — Campo Quijano</span>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">👥</div>
+      <h3 class="area-title">Derecho Laboral</h3>
+      <p class="area-desc">Asesoramiento integral a empleadores y trabajadores. Despidos, liquidaciones, accidentes de trabajo. Experiencia extensa en litigios laborales en las tres provincias, con pleno conocimiento de la jurisprudencia local de cada fuero.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">📜</div>
+      <h3 class="area-title">Sucesiones y Derecho de Familia</h3>
+      <p class="area-desc">Tramitación de sucesiones, declaratorias de herederos, testamentos y partición de herencias. Divorcios, alimentos y guarda. Experiencia en juicios complejos con bienes en múltiples provincias del NOA.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🛒</div>
+      <h3 class="area-title">Derecho del Consumidor</h3>
+      <p class="area-desc">Defensa frente a empresas, aseguradoras y entidades bancarias. Reclamos individuales y colectivos. Conocimiento actualizado de la legislación y de los organismos de aplicación en cada jurisdicción.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🏛️</div>
+      <h3 class="area-title">Derecho Administrativo</h3>
+      <p class="area-desc">Recursos administrativos, contrataciones públicas, licitaciones, concesiones y permisos. Responsabilidad del Estado. Asesoramiento a empresas y particulares en sus relaciones con organismos públicos provinciales y municipales del NOA.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🏢</div>
+      <h3 class="area-title">Derecho Societario y Comercial</h3>
+      <p class="area-desc">Constitución y reestructuración de sociedades, contratos comerciales, conflictos entre socios, fusiones y adquisiciones. Asesoramiento integral a empresas que operan en el NOA con necesidades jurídicas estructurales o en expansión.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🌐</div>
+      <h3 class="area-title">Derecho Internacional</h3>
+      <p class="area-desc">Asesoramiento en contratos con partes extranjeras, inversiones internacionales en el NOA, derecho internacional privado y asistencia a empresas foráneas que buscan establecerse o litigar en la región.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ESTUDIO -->
+<section id="estudio">
+  <div class="estudio-visual">
+    <div class="estudio-bg"></div>
+    <div class="estudio-badge">
+      <div class="estudio-badge-num">2003</div>
+      <div class="estudio-badge-text">Fundado</div>
+    </div>
+  </div>
+  <div class="estudio-text">
+    <p class="section-eyebrow">El Estudio</p>
+    <h2 class="section-title">Trayectoria que se <em>mide en causas,</em><br>no en títulos</h2>
+    <div class="section-rule"></div>
+    <p class="section-body">L'etude (Flores-Avila & Asoc.) es el resultado de más de dos décadas de trabajo ininterrumpido en los tribunales del NOA. Construimos el estudio sede por sede, causa por causa, sin atajos. La experiencia acumulada en miles de litigios reales en Tucumán, Salta y Santiago del Estero es el activo que nos diferencia — un capital que ninguna inteligencia artificial ni ningún manual de procedimiento puede replicar.</p>
+    <p class="section-body" style="margin-top:1.2rem;">Conocemos a los jueces, los tiempos reales de cada juzgado, la idiosincrasia de cada plaza y los criterios que prevalecen en cada jurisdicción. Eso es lo que le ofrecemos a cada cliente: no solo conocimiento jurídico, sino inteligencia práctica forjada en el ejercicio real del derecho.</p>
+    <div class="valor-row">
+      <div class="valor-item">
+        <div class="valor-num">I</div>
+        <div><div class="valor-title">Lealtad y compromiso con cada cliente</div><p class="valor-desc">Cada causa es tratada con el mismo nivel de dedicación. El cliente siempre habla directamente con el abogado a cargo. No hay derivaciones internas ni intermediarios.</p></div>
+      </div>
+      <div class="valor-item">
+        <div class="valor-num">II</div>
+        <div><div class="valor-title">Estrategia civil y penal en una sola mano</div><p class="valor-desc">Cuando un conflicto tiene aristas en ambos fueros, trazamos una estrategia unificada desde el inicio. No fragmentamos el caso.</p></div>
+      </div>
+      <div class="valor-item">
+        <div class="valor-num">III</div>
+        <div><div class="valor-title">Formación notarial como base del análisis</div><p class="valor-desc">Ambos socios fundadores son además escribanos — una formación que aporta rigor documental y una mirada integral sobre los actos jurídicos que asesoramos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGÍSTICA -->
+<section id="logistica">
+  <p class="section-eyebrow">Movilidad y Presencia</p>
+  <h2 class="section-title">Llegamos donde <em>el caso nos necesita</em></h2>
+  <div class="section-rule"></div>
+  <p class="section-body">Tener cuatro sedes no nos hace sedentarios — nos hace más capaces de movernos. Contamos con vehículos preparados para desplazarnos por toda la geografía del NOA, incluyendo zonas de difícil acceso. Cuando el caso lo requiere, vamos. Conocemos personalmente los caminos, las comunidades y las realidades locales de cada región donde operamos.</p>
+  <div class="logistica-grid">
+    <div class="logistica-card">
+      <div class="logistica-icon">🚙</div>
+      <div class="logistica-title">Movilidad en todo el NOA</div>
+      <p class="logistica-desc">Vehículos aptos para cualquier tipo de camino — desde la ciudad hasta zonas rurales, mineras o de difícil acceso. No dependemos de terceros para llegar a donde el cliente nos necesita.</p>
+    </div>
+    <div class="logistica-card">
+      <div class="logistica-icon">🏠</div>
+      <div class="logistica-title">Infraestructura de alojamiento propio</div>
+      <p class="logistica-desc">Contamos con alojamiento propio en cada ciudad sede. No estamos de paso: cuando nos desplazamos, permanecemos el tiempo que el caso requiera. Nos sentimos locales en cada lugar donde trabajamos.</p>
+    </div>
+    <div class="logistica-card">
+      <div class="logistica-icon">📍</div>
+      <div class="logistica-title">Presencia en campo cuando es necesario</div>
+      <p class="logistica-desc">Valoramos el contacto directo con la gente en cada lugar. Inspeccionamos predios, relevamos situaciones en terreno y acompañamos al cliente en el lugar de los hechos cuando la causa lo amerita.</p>
+    </div>
+    <div class="logistica-card">
+      <div class="logistica-icon">💻</div>
+      <div class="logistica-title">Gestión virtual para clientes remotos</div>
+      <p class="logistica-desc">Para clientes que no requieren presencia física, operamos con plena capacidad de gestión remota. Expedientes digitales, comunicación directa y seguimiento en tiempo real desde cualquier punto del país.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo">
+  <div class="equipo-intro">
+    <p class="section-eyebrow">Equipo Fundador</p>
+    <h2 class="section-title">La experiencia detrás <em>del estudio</em></h2>
+    <div class="section-rule"></div>
+    <p class="section-body">Miles de causas tramitadas a lo largo de más de veinte años de ejercicio activo en los fueros del NOA. Una trayectoria que no se improvisa y que ninguna herramienta tecnológica puede sustituir.</p>
+    <p class="equipo-nota">* Las fotos de los profesionales estarán disponibles próximamente.</p>
+  </div>
+  <div class="equipo-grid">
+    <div class="miembro-card">
+      <div class="miembro-foto-placeholder"><span>FF</span></div>
+      <p class="miembro-role">Socio Fundador · Director</p>
+      <h3 class="miembro-name">Federico F. Flores</h3>
+      <p class="miembro-titulo">Abogado · Escribano</p>
+      <p class="miembro-bio">Más de veinticinco años de ejercicio ininterrumpido en los fueros civil, laboral y penal del NOA. Formación continua en resolución alternativa de conflictos, mediación y negociación. Amplia experiencia en litigios laborales complejos, estrategias civiles-penales coordinadas y asesoramiento a empresas e inversores en la región. Escribano de formación, lo que aporta un enfoque integral sobre los actos jurídicos documentados. Director ejecutivo del estudio y responsable de clientes institucionales y corporativos.</p>
+      <div class="miembro-tags">
+        <span class="tag">Derecho Laboral</span>
+        <span class="tag">Penal Económico</span>
+        <span class="tag">Resolución de Conflictos</span>
+        <span class="tag">Derecho Civil</span>
+        <span class="tag">Escribano</span>
+        <span class="tag">Corporativo</span>
+      </div>
+    </div>
+    <div class="miembro-card">
+      <div class="miembro-foto-placeholder"><span>EA</span></div>
+      <p class="miembro-role">Socia Fundadora · Especialista en Daños</p>
+      <h3 class="miembro-name">Elizabeth Avila</h3>
+      <p class="miembro-titulo">Abogada · Escribana</p>
+      <p class="miembro-bio">Especialista en Derecho de Daños, Derecho Inmobiliario y Sucesiones, con formación de posgrado y múltiples especializaciones en responsabilidad civil, valuación del daño y derecho de familia. Más de veinte años de litigio activo en Tucumán y Salta. Escribana de formación, lo que aporta solidez en el análisis documental de los casos complejos. Directora de las sedes de Salta y referente del estudio en daños y perjuicios de alta complejidad.</p>
+      <div class="miembro-tags">
+        <span class="tag">Daños y Perjuicios</span>
+        <span class="tag">Derecho Inmobiliario</span>
+        <span class="tag">Sucesiones</span>
+        <span class="tag">Derecho de Familia</span>
+        <span class="tag">Escribana</span>
+        <span class="tag">Responsabilidad Civil</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRO BONO -->
+<div class="probono-strip">
+  <div class="probono-icon">🤝</div>
+  <div>
+    <div class="probono-title">Programa Pro Bono</div>
+    <p class="probono-text">L'etude (Flores-Avila & Asoc.) mantiene un programa de asistencia jurídica pro bono para personas y familias que, encontrándose ante situaciones de litigación necesaria, carecen de los recursos para afrontar los gastos del proceso. Los casos son evaluados individualmente. Quienes crean reunir las condiciones pueden consultarnos directamente.</p>
+  </div>
+</div>
+
+<!-- SEDES -->
+<section id="sedes">
+  <p class="section-eyebrow">Cobertura Regional</p>
+  <h2 class="section-title">Cuatro sedes.<br><em>Una sola estrategia.</em></h2>
+  <div class="section-rule"></div>
+  <p class="section-body">Infraestructura propia en las ciudades clave del NOA. Operamos en todas las sedes con la misma capacidad y dedicación — no hay jerarquía entre plazas. Nos movemos donde el caso nos lleva.</p>
+  <div class="sedes-grid">
+    <div class="sede-card">
+      <div class="sede-num">01</div>
+      <h3 class="sede-ciudad">Tucumán</h3>
+      <p class="sede-prov">San Miguel de Tucumán</p>
+      <p class="sede-dir">General Paz 682, PB "A"<br>San Miguel de Tucumán</p>
+      <a href="https://wa.me/5493814681821" class="sede-ws" target="_blank">Consultar →</a>
+    </div>
+    <div class="sede-card">
+      <div class="sede-num">02</div>
+      <h3 class="sede-ciudad">Santiago del Estero</h3>
+      <p class="sede-prov">Santiago del Estero Capital</p>
+      <p class="sede-dir">Pje. Lascano 197<br>Santiago del Estero Capital</p>
+      <a href="https://wa.me/5493855883533" class="sede-ws" target="_blank">Consultar →</a>
+    </div>
+    <div class="sede-card">
+      <div class="sede-num">03</div>
+      <h3 class="sede-ciudad">Rosario de la Frontera</h3>
+      <p class="sede-prov">Salta</p>
+      <p class="sede-dir">Pedro Esnaola 75<br>Rosario de la Frontera, Salta</p>
+      <a href="https://wa.me/5493874480444" class="sede-ws" target="_blank">Consultar →</a>
+    </div>
+    <div class="sede-card">
+      <div class="sede-num">04</div>
+      <h3 class="sede-ciudad">Campo Quijano</h3>
+      <p class="sede-prov">Salta · Zona Minera NOA</p>
+      <p class="sede-dir">Mariano Moreno 620<br>Campo Quijano, Salta</p>
+      <a href="https://wa.me/5493874480444" class="sede-ws" target="_blank">Consultar →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <p class="section-eyebrow">Contacto</p>
+  <h2 class="section-title">Hablemos de<br><em>su caso</em></h2>
+  <div class="section-rule"></div>
+  <p class="section-body">Escríbanos por WhatsApp — un profesional del estudio le responderá personalmente a la brevedad. Atendemos casos en Tucumán, Salta y Santiago del Estero, y gestionamos consultas de todo el país en forma virtual.</p>
+  <div class="contact-areas">
+    <span class="contact-area-tag">Daños y Perjuicios</span>
+    <span class="contact-area-tag">Penal Económico</span>
+    <span class="contact-area-tag">Inmobiliario</span>
+    <span class="contact-area-tag">Minería</span>
+    <span class="contact-area-tag">Sucesiones</span>
+    <span class="contact-area-tag">Laboral</span>
+    <span class="contact-area-tag">Administrativo</span>
+    <span class="contact-area-tag">Societario</span>
+    <span class="contact-area-tag">Internacional</span>
+  </div>
+  <br>
+  <a href="https://wa.me/5493874480444?text=Hola%2C%20quisiera%20consultar%20a%20L%27etude%20Flores-Avila%20%26%20Asoc." class="whatsapp-btn" target="_blank">
+    <span>💬</span> Escribir por WhatsApp
+  </a>
+  <br><br>
+  <p class="contact-note">letude-abogados.com.ar</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">L<span>'</span>etude <span style="color:rgba(255,255,255,0.22)">(Flores-Avila &amp; Asoc.) · Abogados</span></div>
+  <p>© 2025 · Todos los derechos reservados · NOA, Argentina</p>
+  <p>Tucumán · Salta · Santiago del Estero</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'etude (Flores-Avila & Asoc.) | Abogados NOA</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
     --ink:         #0c1a2e;
     --france:      #0a2f6b;
     --france-mid:  #1a4a9a;
