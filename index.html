@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>L'etude (Flores-Avila & Asoc.) | Abogados NOA — Tucumán · Salta · Santiago del Estero</title>
 <meta name="description" content="Estudio jurídico regional con más de 20 años de trayectoria en el Noroeste Argentino. Cuatro sedes propias en Tucumán, Salta y Santiago del Estero. Agende su consulta por WhatsApp con el abogado a cargo.">
-<meta name="theme-color" content="#6b1f2a">
+<meta name="theme-color" content="#0057b8">
 <meta property="og:title" content="L'etude (Flores-Avila & Asoc.) · Abogados NOA">
 <meta property="og:description" content="Presencia real. Compromiso verdadero. 20+ años de ejercicio en el NOA. Agende su consulta por WhatsApp.">
 <meta property="og:type" content="website">
@@ -16,10 +16,11 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --ink:#2b1418;--france:#6b1f2a;--france-mid:#8a2a38;--france-pale:#f3e7e9;
-  --parchment:#f7f1e6;--cream:#fcf9f2;--gold:#a8843e;--gold-light:#c9a865;
-  --muted:#7a6a66;--rule:#e3d6c8;--wa:#25d366;--wa-dark:#1da851;
-  --shadow:0 10px 40px -12px rgba(12,26,46,.25);
+  --ink:#061832;--classic:#0b2559;--classic-soft:#173b78;
+  --france:#0057b8;--france-mid:#116ed0;--france-pale:#eaf3ff;
+  --parchment:#f3f7fc;--cream:#ffffff;--gold:#b88a2e;--gold-light:#f0cf78;
+  --muted:#526173;--rule:#d8e2ef;--wa:var(--france);--wa-dark:var(--classic);
+  --shadow:0 10px 40px -12px rgba(6,24,50,.25);
 }
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -29,8 +30,8 @@ img{max-width:100%}
 .wrap{width:min(1180px,92%);margin:0 auto}
 .eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem}
 .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.95rem;padding:.95rem 1.7rem;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:.25s;font-family:'Inter',sans-serif}
-.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 22px -6px rgba(37,211,102,.55)}
-.btn-wa:hover{background:var(--wa-dark);transform:translateY(-2px)}
+.btn-wa{background:linear-gradient(135deg,var(--france) 0%,var(--classic) 62%,var(--gold) 100%);color:#fff;border-color:rgba(184,138,46,.7);box-shadow:0 12px 28px -12px rgba(0,87,184,.85),inset 0 0 0 1px rgba(255,255,255,.18)}
+.btn-wa:hover{background:linear-gradient(135deg,var(--classic) 0%,var(--france) 58%,var(--gold-light) 100%);transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(6,24,50,.45)}
 .btn-ghost{background:transparent;color:var(--france);border-color:var(--rule)}
 .btn-ghost:hover{background:var(--france-pale);border-color:var(--france)}
 .btn-gold{background:var(--gold);color:#fff}
@@ -170,8 +171,8 @@ section{padding:5.5rem 0}
 <style>
 /* float wa + back to top + footer */
 .fab{position:fixed;right:1.4rem;bottom:1.4rem;z-index:800;display:flex;flex-direction:column;gap:.8rem;align-items:flex-end}
-.fab-wa{display:inline-flex;align-items:center;gap:.6rem;background:var(--wa);color:#fff;font-weight:600;padding:.85rem 1.3rem;border-radius:999px;box-shadow:0 10px 30px -6px rgba(37,211,102,.6);transition:.25s;font-size:.92rem}
-.fab-wa:hover{background:var(--wa-dark);transform:scale(1.04)}
+.fab-wa{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,var(--france),var(--classic) 68%,var(--gold));color:#fff;font-weight:600;padding:.85rem 1.3rem;border:1px solid rgba(240,207,120,.65);border-radius:999px;box-shadow:0 14px 32px -12px rgba(6,24,50,.55);transition:.25s;font-size:.92rem}
+.fab-wa:hover{background:linear-gradient(135deg,var(--classic),var(--france) 62%,var(--gold-light));transform:scale(1.04)}
 .fab-wa .pulse{width:11px;height:11px;background:#fff;border-radius:50%;animation:pulse 1.6s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.6)}70%{box-shadow:0 0 0 9px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
 .top{width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--rule);color:var(--france);font-size:1.2rem;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s}
@@ -185,7 +186,7 @@ footer .fline{color:var(--gold-light);font-size:.8rem;letter-spacing:.1em;margin
 /* reveal anim */
 .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
-.banner{background:var(--gold);color:#fff;text-align:center;font-size:.82rem;letter-spacing:.04em;padding:.55rem;font-weight:500}
+.banner{background:linear-gradient(90deg,var(--classic),var(--france),var(--gold));color:#fff;text-align:center;font-size:.82rem;letter-spacing:.04em;padding:.55rem;font-weight:500}
 </style>
 </head>
 <body>
