@@ -7,16 +7,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink:         #2b1418;
-    --france:      #6b1f2a;
-    --france-mid:  #8a2a38;
-    --france-pale: #f3e7e9;
-    --parchment:   #f7f1e6;
-    --cream:       #fcf9f2;
-    --gold:        #a8843e;
-    --gold-light:  #c9a865;
-    --muted:       #7a6a66;
-    --rule:        #e3d6c8;
+    --ink:         #1B2B4B;
+    --france:      #002395;
+    --france-mid:  #1a4aaa;
+    --france-pale: #e6ecf8;
+    --parchment:   #f5f0e8;
+    --cream:       #faf7f0;
+    --gold:        #C5A028;
+    --gold-light:  #D4B455;
+    --muted:       #5a6880;
+    --rule:        #d4cfc4;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -36,8 +36,8 @@
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.5); text-decoration: none; transition: color .2s; }
   .nav-links a:hover { color: var(--gold); }
-  .nav-cta { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--gold); color: #fff; border: none; padding: 0.6rem 1.4rem; cursor: pointer; transition: background .2s; text-decoration: none; }
-  .nav-cta:hover { background: var(--gold-light); }
+  .nav-cta { font-family: 'Cormorant Garamond', serif; font-size: 0.75rem; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; background: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 0.55rem 1.3rem; cursor: pointer; transition: background .3s, color .3s; text-decoration: none; }
+  .nav-cta:hover { background: var(--gold); color: var(--cream); }
 
   /* HERO */
   .hero { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 0.9fr; padding-top: 64px; }
@@ -49,8 +49,8 @@
   .hero-title em { font-style: italic; color: var(--gold-light); }
   .hero-sub { font-size: 0.88rem; line-height: 1.9; color: rgba(255,255,255,0.6); max-width: 40ch; margin-bottom: 3rem; }
   .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
-  .btn-primary { background: var(--gold); color: #fff; padding: 0.85rem 2rem; text-decoration: none; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; transition: background .2s; }
-  .btn-primary:hover { background: var(--gold-light); }
+  .btn-primary { background: transparent; color: var(--gold); padding: 0.85rem 2rem; text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 0.8rem; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; border: 1px solid var(--gold); transition: background .3s, color .3s; }
+  .btn-primary:hover { background: var(--gold); color: var(--cream); }
   .btn-ghost { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; transition: color .2s, border-color .2s; }
   .btn-ghost:hover { color: var(--gold-light); border-color: var(--gold-light); }
 
@@ -113,7 +113,7 @@
   .valor-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--ink); }
   .valor-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.7; }
 
-  /* LOGÍSTICA */
+  /* LOGÃSTICA */
   #logistica { background: var(--ink); padding: 7rem 10vw; }
   #logistica .section-eyebrow { color: var(--gold-light); }
   #logistica .section-title { color: rgba(255,255,255,0.9); }
@@ -218,10 +218,10 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">L<span>'</span>etude
-    <small>Flores-Avila &amp; Asoc. · Abogados</small>
+    <small>Flores-Avila &amp; Asoc. Â· Abogados</small>
   </a>
   <ul class="nav-links">
-    <li><a href="#areas">Áreas</a></li>
+    <li><a href="#areas">Ãreas</a></li>
     <li><a href="#estudio">El Estudio</a></li>
     <li><a href="#equipo">Equipo</a></li>
     <li><a href="#sedes">Sedes</a></li>
@@ -233,22 +233,22 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
-    <p class="hero-eyebrow">Noroeste Argentino · Tucumán · Salta · Santiago del Estero</p>
+    <p class="hero-eyebrow">Noroeste Argentino Â· TucumÃ¡n Â· Salta Â· Santiago del Estero</p>
     <h1 class="hero-title">Presencia real.<br>Compromiso <em>verdadero.</em></h1>
-    <p class="hero-sub">Estudio jurídico regional con más de veinte años de trayectoria. Cuatro sedes con infraestructura propia en el NOA, capacidad de movilidad en toda la región y lealtad absoluta con cada cliente desde el primer contacto hasta la resolución final.</p>
+    <p class="hero-sub">Estudio jurÃ­dico regional con mÃ¡s de veinte aÃ±os de trayectoria. Cuatro sedes con infraestructura propia en el NOA, capacidad de movilidad en toda la regiÃ³n y lealtad absoluta con cada cliente desde el primer contacto hasta la resoluciÃ³n final.</p>
     <div class="hero-actions">
       <a href="#contacto" class="btn-primary">Consultar por WhatsApp</a>
-      <a href="#areas" class="btn-ghost">Ver áreas de práctica</a>
+      <a href="#areas" class="btn-ghost">Ver Ã¡reas de prÃ¡ctica</a>
     </div>
   </div>
   <div class="hero-visual">
     <div class="hero-visual-inner">
       <div class="hero-stat-row">
-        <div><div class="hero-stat-num">20+</div><div class="hero-stat-label">Años de ejercicio</div></div>
+        <div><div class="hero-stat-num">20+</div><div class="hero-stat-label">AÃ±os de ejercicio</div></div>
         <div><div class="hero-stat-num">4</div><div class="hero-stat-label">Sedes propias</div></div>
         <div><div class="hero-stat-num">3</div><div class="hero-stat-label">Provincias</div></div>
       </div>
-      <p class="hero-quote">"Miles de causas tramitadas construyen una experiencia que ninguna tecnología puede sustituir."</p>
+      <p class="hero-quote">"Miles de causas tramitadas construyen una experiencia que ninguna tecnologÃ­a puede sustituir."</p>
       <p class="hero-quote-attr">L'etude (Flores-Avila & Asoc.)</p>
     </div>
   </div>
@@ -256,9 +256,9 @@
 
 <!-- DIFERENCIAL STRIP -->
 <div class="diferencial">
-  <div class="dif-item"><div class="dif-num">NOA sin límites</div><div class="dif-label">Movilidad y presencia en toda la región</div></div>
+  <div class="dif-item"><div class="dif-num">NOA sin lÃ­mites</div><div class="dif-label">Movilidad y presencia en toda la regiÃ³n</div></div>
   <div class="dif-divider"></div>
-  <div class="dif-item"><div class="dif-num">Civil · Penal</div><div class="dif-label">Estrategia mixta coordinada</div></div>
+  <div class="dif-item"><div class="dif-num">Civil Â· Penal</div><div class="dif-label">Estrategia mixta coordinada</div></div>
   <div class="dif-divider"></div>
   <div class="dif-item"><div class="dif-num">Corporativo</div><div class="dif-label">Asesoramiento a empresas e inversores</div></div>
   <div class="dif-divider"></div>
@@ -270,75 +270,75 @@
   <div class="areas-intro">
     <div>
       <p class="section-eyebrow">Especialidades</p>
-      <h2 class="section-title">Áreas de <em>práctica</em></h2>
+      <h2 class="section-title">Ãreas de <em>prÃ¡ctica</em></h2>
       <div class="section-rule"></div>
     </div>
-    <p class="section-body" style="padding-top:1rem;">Nuestra fortaleza es la experiencia acumulada en miles de causas reales en los fueros del NOA, la capacidad de articular estrategias simultáneas en el ámbito civil y penal, y la cobertura efectiva en todas las jurisdicciones donde operamos.</p>
+    <p class="section-body" style="padding-top:1rem;">Nuestra fortaleza es la experiencia acumulada en miles de causas reales en los fueros del NOA, la capacidad de articular estrategias simultÃ¡neas en el Ã¡mbito civil y penal, y la cobertura efectiva en todas las jurisdicciones donde operamos.</p>
   </div>
   <div class="areas-grid">
 
     <div class="area-card featured">
-      <div class="area-icon">⚖️</div>
-      <h3 class="area-title">Daños y Perjuicios</h3>
-      <p class="area-desc">Accidentes de tránsito, mala praxis médica, responsabilidad civil. Formación especializada y actualización permanente. Conocimiento profundo de la jurisprudencia regional y enfoque en resultados concretos.</p>
-      <span class="area-tag">Alta especialización</span>
+      <div class="area-icon">âï¸</div>
+      <h3 class="area-title">DaÃ±os y Perjuicios</h3>
+      <p class="area-desc">Accidentes de trÃ¡nsito, mala praxis mÃ©dica, responsabilidad civil. FormaciÃ³n especializada y actualizaciÃ³n permanente. Conocimiento profundo de la jurisprudencia regional y enfoque en resultados concretos.</p>
+      <span class="area-tag">Alta especializaciÃ³n</span>
     </div>
 
     <div class="area-card penal-card">
-      <div class="area-icon">🔍</div>
-      <h3 class="area-title">Penal Económico · Estafas y Defraudaciones</h3>
-      <p class="area-desc">Defensa y acusación en estafas vinculadas a sucesiones, herencias y derechos de familia. Conflictos societarios entre socios con arista penal. Rendiciones de cuentas, administración fraudulenta. Estrategia civil–penal coordinada en una sola mano.</p>
+      <div class="area-icon">ð</div>
+      <h3 class="area-title">Penal EconÃ³mico Â· Estafas y Defraudaciones</h3>
+      <p class="area-desc">Defensa y acusaciÃ³n en estafas vinculadas a sucesiones, herencias y derechos de familia. Conflictos societarios entre socios con arista penal. Rendiciones de cuentas, administraciÃ³n fraudulenta. Estrategia civilâpenal coordinada en una sola mano.</p>
       <span class="area-tag">Especialidad diferenciadora</span>
     </div>
 
     <div class="area-card featured">
-      <div class="area-icon">🏠</div>
+      <div class="area-icon">ð </div>
       <h3 class="area-title">Derecho Inmobiliario</h3>
-      <p class="area-desc">Compraventas, usucapiones, prescripción adquisitiva, mensuras y conflictos de posesión. Dos décadas resolviendo operaciones complejas en la región, con conocimiento directo de los registros y juzgados de cada provincia.</p>
-      <span class="area-tag">Alta especialización</span>
+      <p class="area-desc">Compraventas, usucapiones, prescripciÃ³n adquisitiva, mensuras y conflictos de posesiÃ³n. Dos dÃ©cadas resolviendo operaciones complejas en la regiÃ³n, con conocimiento directo de los registros y juzgados de cada provincia.</p>
+      <span class="area-tag">Alta especializaciÃ³n</span>
     </div>
 
     <div class="area-card featured">
-      <div class="area-icon">⛏️</div>
-      <h3 class="area-title">Minería y Contratos Comerciales</h3>
-      <p class="area-desc">Asesoramiento a empresas mineras, contratistas y proveedores en Salta y el NOA. Contratos de obra, conflictos laborales, cuestiones ambientales y societarias vinculadas al sector extractivo en expansión en la región.</p>
-      <span class="area-tag">Área estratégica — Campo Quijano</span>
+      <div class="area-icon">âï¸</div>
+      <h3 class="area-title">MinerÃ­a y Contratos Comerciales</h3>
+      <p class="area-desc">Asesoramiento a empresas mineras, contratistas y proveedores en Salta y el NOA. Contratos de obra, conflictos laborales, cuestiones ambientales y societarias vinculadas al sector extractivo en expansiÃ³n en la regiÃ³n.</p>
+      <span class="area-tag">Ãrea estratÃ©gica â Campo Quijano</span>
     </div>
 
     <div class="area-card">
-      <div class="area-icon">👥</div>
+      <div class="area-icon">ð¥</div>
       <h3 class="area-title">Derecho Laboral</h3>
       <p class="area-desc">Asesoramiento integral a empleadores y trabajadores. Despidos, liquidaciones, accidentes de trabajo. Experiencia extensa en litigios laborales en las tres provincias, con pleno conocimiento de la jurisprudencia local de cada fuero.</p>
     </div>
 
     <div class="area-card">
-      <div class="area-icon">📜</div>
+      <div class="area-icon">ð</div>
       <h3 class="area-title">Sucesiones y Derecho de Familia</h3>
-      <p class="area-desc">Tramitación de sucesiones, declaratorias de herederos, testamentos y partición de herencias. Divorcios, alimentos y guarda. Experiencia en juicios complejos con bienes en múltiples provincias del NOA.</p>
+      <p class="area-desc">TramitaciÃ³n de sucesiones, declaratorias de herederos, testamentos y particiÃ³n de herencias. Divorcios, alimentos y guarda. Experiencia en juicios complejos con bienes en mÃºltiples provincias del NOA.</p>
     </div>
 
     <div class="area-card">
-      <div class="area-icon">🛒</div>
+      <div class="area-icon">ð</div>
       <h3 class="area-title">Derecho del Consumidor</h3>
-      <p class="area-desc">Defensa frente a empresas, aseguradoras y entidades bancarias. Reclamos individuales y colectivos. Conocimiento actualizado de la legislación y de los organismos de aplicación en cada jurisdicción.</p>
+      <p class="area-desc">Defensa frente a empresas, aseguradoras y entidades bancarias. Reclamos individuales y colectivos. Conocimiento actualizado de la legislaciÃ³n y de los organismos de aplicaciÃ³n en cada jurisdicciÃ³n.</p>
     </div>
 
     <div class="area-card">
-      <div class="area-icon">🏛️</div>
+      <div class="area-icon">ðï¸</div>
       <h3 class="area-title">Derecho Administrativo</h3>
-      <p class="area-desc">Recursos administrativos, contrataciones públicas, licitaciones, concesiones y permisos. Responsabilidad del Estado. Asesoramiento a empresas y particulares en sus relaciones con organismos públicos provinciales y municipales del NOA.</p>
+      <p class="area-desc">Recursos administrativos, contrataciones pÃºblicas, licitaciones, concesiones y permisos. Responsabilidad del Estado. Asesoramiento a empresas y particulares en sus relaciones con organismos pÃºblicos provinciales y municipales del NOA.</p>
     </div>
 
     <div class="area-card">
-      <div class="area-icon">🏢</div>
+      <div class="area-icon">ð¢</div>
       <h3 class="area-title">Derecho Societario y Comercial</h3>
-      <p class="area-desc">Constitución y reestructuración de sociedades, contratos comerciales, conflictos entre socios, fusiones y adquisiciones. Asesoramiento integral a empresas que operan en el NOA con necesidades jurídicas estructurales o en expansión.</p>
+      <p class="area-desc">ConstituciÃ³n y reestructuraciÃ³n de sociedades, contratos comerciales, conflictos entre socios, fusiones y adquisiciones. Asesoramiento integral a empresas que operan en el NOA con necesidades jurÃ­dicas estructurales o en expansiÃ³n.</p>
     </div>
 
     <div class="area-card">
-      <div class="area-icon">🌐</div>
+      <div class="area-icon">ð</div>
       <h3 class="area-title">Derecho Internacional</h3>
-      <p class="area-desc">Asesoramiento en contratos con partes extranjeras, inversiones internacionales en el NOA, derecho internacional privado y asistencia a empresas foráneas que buscan establecerse o litigar en la región.</p>
+      <p class="area-desc">Asesoramiento en contratos con partes extranjeras, inversiones internacionales en el NOA, derecho internacional privado y asistencia a empresas forÃ¡neas que buscan establecerse o litigar en la regiÃ³n.</p>
     </div>
 
   </div>
@@ -355,14 +355,14 @@
   </div>
   <div class="estudio-text">
     <p class="section-eyebrow">El Estudio</p>
-    <h2 class="section-title">Trayectoria que se <em>mide en causas,</em><br>no en títulos</h2>
+    <h2 class="section-title">Trayectoria que se <em>mide en causas,</em><br>no en tÃ­tulos</h2>
     <div class="section-rule"></div>
-    <p class="section-body">L'etude (Flores-Avila & Asoc.) es el resultado de más de dos décadas de trabajo ininterrumpido en los tribunales del NOA. Construimos el estudio sede por sede, causa por causa, sin atajos. La experiencia acumulada en miles de litigios reales en Tucumán, Salta y Santiago del Estero es el activo que nos diferencia — un capital que ninguna inteligencia artificial ni ningún manual de procedimiento puede replicar.</p>
-    <p class="section-body" style="margin-top:1.2rem;">Conocemos a los jueces, los tiempos reales de cada juzgado, la idiosincrasia de cada plaza y los criterios que prevalecen en cada jurisdicción. Eso es lo que le ofrecemos a cada cliente: no solo conocimiento jurídico, sino inteligencia práctica forjada en el ejercicio real del derecho.</p>
+    <p class="section-body">L'etude (Flores-Avila & Asoc.) es el resultado de mÃ¡s de dos dÃ©cadas de trabajo ininterrumpido en los tribunales del NOA. Construimos el estudio sede por sede, causa por causa, sin atajos. La experiencia acumulada en miles de litigios reales en TucumÃ¡n, Salta y Santiago del Estero es el activo que nos diferencia â un capital que ninguna inteligencia artificial ni ningÃºn manual de procedimiento puede replicar.</p>
+    <p class="section-body" style="margin-top:1.2rem;">Conocemos a los jueces, los tiempos reales de cada juzgado, la idiosincrasia de cada plaza y los criterios que prevalecen en cada jurisdicciÃ³n. Eso es lo que le ofrecemos a cada cliente: no solo conocimiento jurÃ­dico, sino inteligencia prÃ¡ctica forjada en el ejercicio real del derecho.</p>
     <div class="valor-row">
       <div class="valor-item">
         <div class="valor-num">I</div>
-        <div><div class="valor-title">Lealtad y compromiso con cada cliente</div><p class="valor-desc">Cada causa es tratada con el mismo nivel de dedicación. El cliente siempre habla directamente con el abogado a cargo. No hay derivaciones internas ni intermediarios.</p></div>
+        <div><div class="valor-title">Lealtad y compromiso con cada cliente</div><p class="valor-desc">Cada causa es tratada con el mismo nivel de dedicaciÃ³n. El cliente siempre habla directamente con el abogado a cargo. No hay derivaciones internas ni intermediarios.</p></div>
       </div>
       <div class="valor-item">
         <div class="valor-num">II</div>
@@ -370,38 +370,38 @@
       </div>
       <div class="valor-item">
         <div class="valor-num">III</div>
-        <div><div class="valor-title">Formación notarial como base del análisis</div><p class="valor-desc">Ambos socios fundadores son además escribanos — una formación que aporta rigor documental y una mirada integral sobre los actos jurídicos que asesoramos.</p></div>
+        <div><div class="valor-title">FormaciÃ³n notarial como base del anÃ¡lisis</div><p class="valor-desc">Ambos socios fundadores son ademÃ¡s escribanos â una formaciÃ³n que aporta rigor documental y una mirada integral sobre los actos jurÃ­dicos que asesoramos.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LOGÍSTICA -->
+<!-- LOGÃSTICA -->
 <section id="logistica">
   <p class="section-eyebrow">Movilidad y Presencia</p>
   <h2 class="section-title">Llegamos donde <em>el caso nos necesita</em></h2>
   <div class="section-rule"></div>
-  <p class="section-body">Tener cuatro sedes no nos hace sedentarios — nos hace más capaces de movernos. Contamos con vehículos preparados para desplazarnos por toda la geografía del NOA, incluyendo zonas de difícil acceso. Cuando el caso lo requiere, vamos. Conocemos personalmente los caminos, las comunidades y las realidades locales de cada región donde operamos.</p>
+  <p class="section-body">Tener cuatro sedes no nos hace sedentarios â nos hace mÃ¡s capaces de movernos. Contamos con vehÃ­culos preparados para desplazarnos por toda la geografÃ­a del NOA, incluyendo zonas de difÃ­cil acceso. Cuando el caso lo requiere, vamos. Conocemos personalmente los caminos, las comunidades y las realidades locales de cada regiÃ³n donde operamos.</p>
   <div class="logistica-grid">
     <div class="logistica-card">
-      <div class="logistica-icon">🚙</div>
+      <div class="logistica-icon">ð</div>
       <div class="logistica-title">Movilidad en todo el NOA</div>
-      <p class="logistica-desc">Vehículos aptos para cualquier tipo de camino — desde la ciudad hasta zonas rurales, mineras o de difícil acceso. No dependemos de terceros para llegar a donde el cliente nos necesita.</p>
+      <p class="logistica-desc">VehÃ­culos aptos para cualquier tipo de camino â desde la ciudad hasta zonas rurales, mineras o de difÃ­cil acceso. No dependemos de terceros para llegar a donde el cliente nos necesita.</p>
     </div>
     <div class="logistica-card">
-      <div class="logistica-icon">🏠</div>
+      <div class="logistica-icon">ð </div>
       <div class="logistica-title">Infraestructura de alojamiento propio</div>
       <p class="logistica-desc">Contamos con alojamiento propio en cada ciudad sede. No estamos de paso: cuando nos desplazamos, permanecemos el tiempo que el caso requiera. Nos sentimos locales en cada lugar donde trabajamos.</p>
     </div>
     <div class="logistica-card">
-      <div class="logistica-icon">📍</div>
+      <div class="logistica-icon">ð</div>
       <div class="logistica-title">Presencia en campo cuando es necesario</div>
-      <p class="logistica-desc">Valoramos el contacto directo con la gente en cada lugar. Inspeccionamos predios, relevamos situaciones en terreno y acompañamos al cliente en el lugar de los hechos cuando la causa lo amerita.</p>
+      <p class="logistica-desc">Valoramos el contacto directo con la gente en cada lugar. Inspeccionamos predios, relevamos situaciones en terreno y acompaÃ±amos al cliente en el lugar de los hechos cuando la causa lo amerita.</p>
     </div>
     <div class="logistica-card">
-      <div class="logistica-icon">💻</div>
-      <div class="logistica-title">Gestión virtual para clientes remotos</div>
-      <p class="logistica-desc">Para clientes que no requieren presencia física, operamos con plena capacidad de gestión remota. Expedientes digitales, comunicación directa y seguimiento en tiempo real desde cualquier punto del país.</p>
+      <div class="logistica-icon">ð»</div>
+      <div class="logistica-title">GestiÃ³n virtual para clientes remotos</div>
+      <p class="logistica-desc">Para clientes que no requieren presencia fÃ­sica, operamos con plena capacidad de gestiÃ³n remota. Expedientes digitales, comunicaciÃ³n directa y seguimiento en tiempo real desde cualquier punto del paÃ­s.</p>
     </div>
   </div>
 </section>
@@ -410,22 +410,22 @@
 <section id="equipo">
   <div class="equipo-intro">
     <p class="section-eyebrow">Equipo Fundador</p>
-    <h2 class="section-title">La experiencia detrás <em>del estudio</em></h2>
+    <h2 class="section-title">La experiencia detrÃ¡s <em>del estudio</em></h2>
     <div class="section-rule"></div>
-    <p class="section-body">Miles de causas tramitadas a lo largo de más de veinte años de ejercicio activo en los fueros del NOA. Una trayectoria que no se improvisa y que ninguna herramienta tecnológica puede sustituir.</p>
-    <p class="equipo-nota">* Las fotos de los profesionales estarán disponibles próximamente.</p>
+    <p class="section-body">Miles de causas tramitadas a lo largo de mÃ¡s de veinte aÃ±os de ejercicio activo en los fueros del NOA. Una trayectoria que no se improvisa y que ninguna herramienta tecnolÃ³gica puede sustituir.</p>
+    <p class="equipo-nota">* Las fotos de los profesionales estarÃ¡n disponibles prÃ³ximamente.</p>
   </div>
   <div class="equipo-grid">
     <div class="miembro-card">
       <div class="miembro-foto-placeholder"><span>FF</span></div>
-      <p class="miembro-role">Socio Fundador · Director</p>
+      <p class="miembro-role">Socio Fundador Â· Director</p>
       <h3 class="miembro-name">Federico F. Flores</h3>
-      <p class="miembro-titulo">Abogado · Escribano</p>
-      <p class="miembro-bio">Más de veinticinco años de ejercicio ininterrumpido en los fueros civil, laboral y penal del NOA. Formación continua en resolución alternativa de conflictos, mediación y negociación. Amplia experiencia en litigios laborales complejos, estrategias civiles-penales coordinadas y asesoramiento a empresas e inversores en la región. Escribano de formación, lo que aporta un enfoque integral sobre los actos jurídicos documentados. Director ejecutivo del estudio y responsable de clientes institucionales y corporativos.</p>
+      <p class="miembro-titulo">Abogado Â· Escribano</p>
+      <p class="miembro-bio">MÃ¡s de veinticinco aÃ±os de ejercicio ininterrumpido en los fueros civil, laboral y penal del NOA. FormaciÃ³n continua en resoluciÃ³n alternativa de conflictos, mediaciÃ³n y negociaciÃ³n. Amplia experiencia en litigios laborales complejos, estrategias civiles-penales coordinadas y asesoramiento a empresas e inversores en la regiÃ³n. Escribano de formaciÃ³n, lo que aporta un enfoque integral sobre los actos jurÃ­dicos documentados. Director ejecutivo del estudio y responsable de clientes institucionales y corporativos.</p>
       <div class="miembro-tags">
         <span class="tag">Derecho Laboral</span>
-        <span class="tag">Penal Económico</span>
-        <span class="tag">Resolución de Conflictos</span>
+        <span class="tag">Penal EconÃ³mico</span>
+        <span class="tag">ResoluciÃ³n de Conflictos</span>
         <span class="tag">Derecho Civil</span>
         <span class="tag">Escribano</span>
         <span class="tag">Corporativo</span>
@@ -433,12 +433,12 @@
     </div>
     <div class="miembro-card">
       <div class="miembro-foto-placeholder"><span>EA</span></div>
-      <p class="miembro-role">Socia Fundadora · Especialista en Daños</p>
+      <p class="miembro-role">Socia Fundadora Â· Especialista en DaÃ±os</p>
       <h3 class="miembro-name">Elizabeth Avila</h3>
-      <p class="miembro-titulo">Abogada · Escribana</p>
-      <p class="miembro-bio">Especialista en Derecho de Daños, Derecho Inmobiliario y Sucesiones, con formación de posgrado y múltiples especializaciones en responsabilidad civil, valuación del daño y derecho de familia. Más de veinte años de litigio activo en Tucumán y Salta. Escribana de formación, lo que aporta solidez en el análisis documental de los casos complejos. Directora de las sedes de Salta y referente del estudio en daños y perjuicios de alta complejidad.</p>
+      <p class="miembro-titulo">Abogada Â· Escribana</p>
+      <p class="miembro-bio">Especialista en Derecho de DaÃ±os, Derecho Inmobiliario y Sucesiones, con formaciÃ³n de posgrado y mÃºltiples especializaciones en responsabilidad civil, valuaciÃ³n del daÃ±o y derecho de familia. MÃ¡s de veinte aÃ±os de litigio activo en TucumÃ¡n y Salta. Escribana de formaciÃ³n, lo que aporta solidez en el anÃ¡lisis documental de los casos complejos. Directora de las sedes de Salta y referente del estudio en daÃ±os y perjuicios de alta complejidad.</p>
       <div class="miembro-tags">
-        <span class="tag">Daños y Perjuicios</span>
+        <span class="tag">DaÃ±os y Perjuicios</span>
         <span class="tag">Derecho Inmobiliario</span>
         <span class="tag">Sucesiones</span>
         <span class="tag">Derecho de Familia</span>
@@ -451,10 +451,10 @@
 
 <!-- PRO BONO -->
 <div class="probono-strip">
-  <div class="probono-icon">🤝</div>
+  <div class="probono-icon">ð¤</div>
   <div>
     <div class="probono-title">Programa Pro Bono</div>
-    <p class="probono-text">L'etude (Flores-Avila & Asoc.) mantiene un programa de asistencia jurídica pro bono para personas y familias que, encontrándose ante situaciones de litigación necesaria, carecen de los recursos para afrontar los gastos del proceso. Los casos son evaluados individualmente. Quienes crean reunir las condiciones pueden consultarnos directamente.</p>
+    <p class="probono-text">L'etude (Flores-Avila & Asoc.) mantiene un programa de asistencia jurÃ­dica pro bono para personas y familias que, encontrÃ¡ndose ante situaciones de litigaciÃ³n necesaria, carecen de los recursos para afrontar los gastos del proceso. Los casos son evaluados individualmente. Quienes crean reunir las condiciones pueden consultarnos directamente.</p>
   </div>
 </div>
 
@@ -463,35 +463,35 @@
   <p class="section-eyebrow">Cobertura Regional</p>
   <h2 class="section-title">Cuatro sedes.<br><em>Una sola estrategia.</em></h2>
   <div class="section-rule"></div>
-  <p class="section-body">Infraestructura propia en las ciudades clave del NOA. Operamos en todas las sedes con la misma capacidad y dedicación — no hay jerarquía entre plazas. Nos movemos donde el caso nos lleva.</p>
+  <p class="section-body">Infraestructura propia en las ciudades clave del NOA. Operamos en todas las sedes con la misma capacidad y dedicaciÃ³n â no hay jerarquÃ­a entre plazas. Nos movemos donde el caso nos lleva.</p>
   <div class="sedes-grid">
     <div class="sede-card">
       <div class="sede-num">01</div>
-      <h3 class="sede-ciudad">Tucumán</h3>
-      <p class="sede-prov">San Miguel de Tucumán</p>
-      <p class="sede-dir">General Paz 682, PB "A"<br>San Miguel de Tucumán</p>
-      <a href="https://wa.me/5493814681821" class="sede-ws" target="_blank">Consultar →</a>
+      <h3 class="sede-ciudad">TucumÃ¡n</h3>
+      <p class="sede-prov">San Miguel de TucumÃ¡n</p>
+      <p class="sede-dir">General Paz 682, PB "A"<br>San Miguel de TucumÃ¡n</p>
+      <a href="https://wa.me/5493814681821" class="sede-ws" target="_blank">Consultar â</a>
     </div>
     <div class="sede-card">
       <div class="sede-num">02</div>
       <h3 class="sede-ciudad">Santiago del Estero</h3>
       <p class="sede-prov">Santiago del Estero Capital</p>
       <p class="sede-dir">Pje. Lascano 197<br>Santiago del Estero Capital</p>
-      <a href="https://wa.me/5493855883533" class="sede-ws" target="_blank">Consultar →</a>
+      <a href="https://wa.me/5493855883533" class="sede-ws" target="_blank">Consultar â</a>
     </div>
     <div class="sede-card">
       <div class="sede-num">03</div>
       <h3 class="sede-ciudad">Rosario de la Frontera</h3>
       <p class="sede-prov">Salta</p>
       <p class="sede-dir">Pedro Esnaola 75<br>Rosario de la Frontera, Salta</p>
-      <a href="https://wa.me/5493874480444" class="sede-ws" target="_blank">Consultar →</a>
+      <a href="https://wa.me/5493874480444" class="sede-ws" target="_blank">Consultar â</a>
     </div>
     <div class="sede-card">
       <div class="sede-num">04</div>
       <h3 class="sede-ciudad">Campo Quijano</h3>
-      <p class="sede-prov">Salta · Zona Minera NOA</p>
+      <p class="sede-prov">Salta Â· Zona Minera NOA</p>
       <p class="sede-dir">Mariano Moreno 620<br>Campo Quijano, Salta</p>
-      <a href="https://wa.me/5493874480444" class="sede-ws" target="_blank">Consultar →</a>
+      <a href="https://wa.me/5493874480444" class="sede-ws" target="_blank">Consultar â</a>
     </div>
   </div>
 </section>
@@ -501,12 +501,12 @@
   <p class="section-eyebrow">Contacto</p>
   <h2 class="section-title">Hablemos de<br><em>su caso</em></h2>
   <div class="section-rule"></div>
-  <p class="section-body">Escríbanos por WhatsApp — un profesional del estudio le responderá personalmente a la brevedad. Atendemos casos en Tucumán, Salta y Santiago del Estero, y gestionamos consultas de todo el país en forma virtual.</p>
+  <p class="section-body">EscrÃ­banos por WhatsApp â un profesional del estudio le responderÃ¡ personalmente a la brevedad. Atendemos casos en TucumÃ¡n, Salta y Santiago del Estero, y gestionamos consultas de todo el paÃ­s en forma virtual.</p>
   <div class="contact-areas">
-    <span class="contact-area-tag">Daños y Perjuicios</span>
-    <span class="contact-area-tag">Penal Económico</span>
+    <span class="contact-area-tag">DaÃ±os y Perjuicios</span>
+    <span class="contact-area-tag">Penal EconÃ³mico</span>
     <span class="contact-area-tag">Inmobiliario</span>
-    <span class="contact-area-tag">Minería</span>
+    <span class="contact-area-tag">MinerÃ­a</span>
     <span class="contact-area-tag">Sucesiones</span>
     <span class="contact-area-tag">Laboral</span>
     <span class="contact-area-tag">Administrativo</span>
@@ -515,7 +515,7 @@
   </div>
   <br>
   <a href="https://wa.me/5493874480444?text=Hola%2C%20quisiera%20consultar%20a%20L%27etude%20Flores-Avila%20%26%20Asoc." class="whatsapp-btn" target="_blank">
-    <span>💬</span> Escribir por WhatsApp
+    <span>ð¬</span> Escribir por WhatsApp
   </a>
   <br><br>
   <p class="contact-note">letude-abogados.com.ar</p>
@@ -523,9 +523,9 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">L<span>'</span>etude <span style="color:rgba(255,255,255,0.22)">(Flores-Avila &amp; Asoc.) · Abogados</span></div>
-  <p>© 2025 · Todos los derechos reservados · NOA, Argentina</p>
-  <p>Tucumán · Salta · Santiago del Estero</p>
+  <div class="footer-logo">L<span>'</span>etude <span style="color:rgba(255,255,255,0.22)">(Flores-Avila &amp; Asoc.) Â· Abogados</span></div>
+  <p>Â© 2025 Â· Todos los derechos reservados Â· NOA, Argentina</p>
+  <p>TucumÃ¡n Â· Salta Â· Santiago del Estero</p>
 </footer>
 
 </body>
