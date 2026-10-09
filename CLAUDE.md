@@ -123,4 +123,16 @@ Arma 8 stories (intro, dolor, solución, prueba social, beneficio, CTA suave, ap
 
 Las tres skills de DMs (`carrusel-cta-palabra-clave`, `secuencia-stories` y `objection-destroyer` para responder dudas en el chat) forman un mismo embudo: contenido → palabra clave → DM → llamada.
 
+## Skills de calendario y planificación de contenido
+
+| Si el usuario pide… | Usa |
+|---|---|
+| calendario de contenido, plan del mes, parrilla, "qué publico este mes" | `calendario-contenido` (por defecto; 30 días en Autoridad / Testimonio / Conversión, desde la oferta y el avatar) |
+| plan semanal de Instagram con mezcla de formatos, horarios y meta de guardados y envíos | `ig-content-planner` |
+| ideas sueltas, "no sé qué publicar", pilares de contenido | `viral-short-form-ideas` |
+
+Para todo lo de planificación de contenido usa estas skills del repo antes que las genéricas de estrategia de contenido o redes sociales.
+
+Cada fila del calendario se desarrolla con la skill de su formato: Reel → `reels-en-mi-voz`, carrusel → `carrusel-cta-palabra-clave` o `ig-carousel-planner`, stories → `secuencia-stories`, caption → `ig-caption-writer`. Para el mapa de objeciones del calendario, `objection-destroyer`. Índice original en `.claude/skills/INDICE-calendario.md`.
+
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
