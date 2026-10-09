@@ -113,4 +113,14 @@ Notas sobre las `ig-*`:
 
 Fuente de las `ig-*` (licencia MIT): github.com/sergebulaev/instagram-skills. Índice original en `.claude/skills/INDICE-carruseles.md`.
 
+## Skill de Stories
+
+| Si el usuario pide… | Usa |
+|---|---|
+| stories, historias, secuencia de stories, stories para vender o generar DMs, o dice el objetivo de sus historias de hoy | `secuencia-stories` |
+
+Arma 8 stories (intro, dolor, solución, prueba social, beneficio, CTA suave, aporte de valor, CTA final "Respondé INFO") más 2 DMs de seguimiento. Aprende de `.claude/skills/secuencia-stories/references/mi-historial.md`. Cuando el usuario cuente cuántos DMs, llamadas o ventas generó una secuencia, guárdalo ahí. Índice original en `.claude/skills/INDICE-stories.md`.
+
+Las tres skills de DMs (`carrusel-cta-palabra-clave`, `secuencia-stories` y `objection-destroyer` para responder dudas en el chat) forman un mismo embudo: contenido → palabra clave → DM → llamada.
+
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
