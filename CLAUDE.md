@@ -65,4 +65,14 @@ Para todo lo de publicidad pagada (Meta, Google, LinkedIn, TikTok) usa estas ski
 
 Orden sugerido para una campaña nueva: `ads-quick` → `ads-audience` → `ads-competitors` → `ads-funnel` → `ads-copy` / `ads-hooks` / `ads-video` → `ads-creative` → `ads-landing` → `ads-budget` → `ads-testing`.
 
-Fuente (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
+## Skills de VSL (cartas de ventas en video)
+
+| Si el usuario pide… | Usa |
+|---|---|
+| guion de VSL, video de ventas para cualquier producto, servicio o curso; reescribir o auditar un guion | `vsl-scriptwriter` |
+| VSL de software o producto digital donde la demo convence; videos de upsell (OTO); storyboard, narración y animación | `video-sales-letter` |
+| guion corto para un anuncio en video (15, 30 o 60 s) | `ads-video` |
+
+Antes de escribir un VSL conviene tener la oferta clara (`hormozi-offer` o `founder-offer`) y las objeciones (`objection-destroyer`). Fuentes (MIT): github.com/ai-saas-wizard/vsl-scriptwriter y github.com/bertrand-do/video-sales-letter. Índice original en `.claude/skills/INDICE-vsl.md`.
+
+Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
