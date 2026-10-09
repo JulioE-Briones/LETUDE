@@ -160,4 +160,23 @@ Reglas para ambas: contacto uno a uno y manual. Nada de scraping de LinkedIn, Go
 
 `prospecting` y `lead-magnets` buscan el contexto de producto en `.claude/product-marketing.md`. Si el usuario quiere fijar su oferta, avatar e ICP una sola vez para todas las skills, ofrécele crearlo. Índice original en `.claude/skills/INDICE-prospeccion.md`. Fuente de `prospecting` (MIT): github.com/coreyhaines31/marketingskills.
 
+## Skills de DMs y setting
+
+| Si el usuario pide… | Usa |
+|---|---|
+| pega una conversación o captura de DMs: "qué le respondo", "cómo sigo", "calificá este lead", guion de setting | `dm-closer` (por defecto) |
+| objeción dentro de un DM ("es caro", "lo tengo que pensar", "pasame info") | `dm-closer` (usa su `references/objeciones.md`); para trabajar a fondo las objeciones de la oferta, `objection-destroyer` |
+| crear, probar o mejorar un bot setter de Instagram que responda solo | `dm-setter` |
+
+`dm-closer` se configura en `.claude/skills/dm-closer/references/mi-setting.md` con la oferta, quién califica, el link para agendar y 3 a 5 DMs reales. Si está vacío y el usuario da esos datos, guárdalos ahí.
+
+Sobre `dm-setter`:
+- Los pasos 1 a 3 (entrevista, `setter.md`, pruebas) funcionan en el chat.
+- Los pasos 4 a 6 hacen que el usuario despliegue un bot de terceros (github.com/Dallionking/dm-setter-skill) en Vercel, con Zernio y una API key de Anthropic de pago. Ese código no se revisó en este repo. Antes del paso 4, avísale y ofrécele revisarlo.
+- Nunca pidas ni aceptes claves en el chat.
+- Empieza siempre en modo de prueba (`ONLY_USERNAME`) y recuérdale el interruptor de apagado (`PAUSED=1`).
+- El bot nunca debe hacerse pasar por humano si alguien lo pregunta en serio.
+
+Embudo completo: `calendario-contenido` → contenido con palabra clave (`carrusel-cta-palabra-clave`, `reels-en-mi-voz`, `secuencia-stories`) → `creador-recursos` → `comments-hunter` para abrir conversaciones → `dm-closer` para calificar y agendar → `objection-destroyer` para la llamada. Índice original en `.claude/skills/INDICE-dms.md`. Fuente de `dm-setter` (MIT): github.com/Dallionking/dm-setter-skill.
+
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
