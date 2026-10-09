@@ -96,4 +96,21 @@ Flujo típico: `viral-short-form-ideas` → `reels-en-mi-voz` (con `viral-hooks`
 
 Fuente de las skills `viral-*` (licencia MIT): github.com/vyralcontent/content-skills. Índice original en `.claude/skills/INDICE-reels.md`.
 
+## Skills de carruseles e Instagram
+
+| Si el usuario pide… | Usa |
+|---|---|
+| un carrusel para vender, generar leads o llamadas, "Comentá PALABRA", DMs automáticos | `carrusel-cta-palabra-clave` (por defecto para carruseles, también LinkedIn) |
+| un carrusel de valor para guardados, compartidos o seguidores (lista, antes/después, mito, framework) | `ig-carousel-planner` |
+| caption para una imagen o un Reel de Instagram | `ig-caption-writer` (para captions de video en TikTok o Shorts, `viral-captions-and-ctas`) |
+| analizar un post ajeno que funcionó y sacar la fórmula del hook | `ig-hook-extractor` |
+| convertir un artículo, video, post de LinkedIn o hilo en contenido de Instagram | `ig-repurposer` |
+
+Notas sobre las `ig-*`:
+- Mencionan `ig-humanizer` e `ig-hashtag-strategist`, que **no están instaladas**. En su lugar, aplica `references/voice-rules.md` (limpieza de tics de IA) y `references/hashtag-strategy.md` de la propia skill.
+- Pueden publicar vía Publora, pero eso **no está configurado** (no hay `PUBLORA_API_KEY` ni `lib/publora_client.py`). Entrega siempre el texto listo para copiar y recuerda adjuntar las imágenes en Instagram. Nunca publiques sin que el usuario lo pida.
+- Leen `references/voice-profile.md` (hay una copia en cada skill `ig-*`). Si el usuario comparte su voz, completa los cuatro archivos igual y pon `filled: yes`. Los guiones de `reels-en-mi-voz/references/mis-guiones.md` sirven como fuente.
+
+Fuente de las `ig-*` (licencia MIT): github.com/sergebulaev/instagram-skills. Índice original en `.claude/skills/INDICE-carruseles.md`.
+
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
