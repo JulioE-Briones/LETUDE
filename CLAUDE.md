@@ -146,4 +146,18 @@ Cada fila del calendario se desarrolla con la skill de su formato: Reel → `ree
 
 Cuando el usuario acepte producir el recurso como archivo, entrégalo como documento (PDF o doc) o diseñado en Canva, según lo que pida. Índice original en `.claude/skills/INDICE-recursos.md`. Fuente de `lead-magnets` (MIT): github.com/coreyhaines31/marketingskills.
 
+## Skills de prospección
+
+| Si el usuario pide… | Usa |
+|---|---|
+| pega comentarios o capturas de redes y pide puntuar leads, "a quién le escribo", abrir conversaciones, prospección en comentarios | `comments-hunter` (por defecto en redes sociales) |
+| armar una lista de prospectos B2B o de negocios locales, encontrar los primeros clientes, señales de compra, enriquecer y verificar contactos | `prospecting` |
+| escribir los mensajes en frío para esa lista | `cold-email` |
+
+Reglas para ambas: contacto uno a uno y manual. Nada de scraping de LinkedIn, Google Maps ni Instagram, ni DMs automatizados o masivos. `comments-hunter` no navega redes: trabaja solo con lo que el usuario pega.
+
+`prospecting` menciona skills de su repo original que no están instaladas. Usa estas en su lugar: cold-email → `cold-email`; customer-research → `market-research`; competitor-profiling → `founder-competitors`; product-marketing / ICP → `marketing-context`; sales-enablement → `competitive-intel`. Las integraciones de pago que cita (Apollo, Clay, Firecrawl, etc.) no están conectadas; trabaja con fuentes manuales y públicas.
+
+`prospecting` y `lead-magnets` buscan el contexto de producto en `.claude/product-marketing.md`. Si el usuario quiere fijar su oferta, avatar e ICP una sola vez para todas las skills, ofrécele crearlo. Índice original en `.claude/skills/INDICE-prospeccion.md`. Fuente de `prospecting` (MIT): github.com/coreyhaines31/marketingskills.
+
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
