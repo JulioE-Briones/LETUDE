@@ -42,3 +42,27 @@ Se pueden invocar a mano con `/nombre-de-la-skill`, o usarse solas cuando el ped
 Orden sugerido del founder pack: `founder-board` → `founder-competitors` → `founder-consumer` → `founder-pricing` → `founder-offer` → `founder-cfo` → `founder-marketing` → `founder-brand` → `founder-ops` → `founder-launch` → `founder-plan`.
 
 Fuentes (licencia MIT): github.com/alexsmedile/hormozi-skills y github.com/Jakeschincariol/founder-skill. Índice original en `.claude/skills/INDICE.md`.
+
+## Skills de anuncios pagados (media buyer)
+
+Para todo lo de publicidad pagada (Meta, Google, LinkedIn, TikTok) usa estas skills del repo antes que las skills genéricas de anuncios.
+
+| Si el usuario pide… | Usa |
+|---|---|
+| revisión rápida, "¿estoy listo para anunciar?" | `ads-quick` |
+| auditar campañas existentes, "mis anuncios no rinden" | `ads-audit` |
+| a quién dirigir los anuncios, personas, segmentación | `ads-audience` |
+| embudo de anuncios, retargeting, estrategia completa | `ads-funnel` |
+| textos de anuncios, variaciones de copy | `ads-copy` |
+| ganchos para anuncios pagados | `ads-hooks` (para contenido orgánico, `hormozi-hooks`) |
+| guion de video para anuncio, Reels, TikTok | `ads-video` |
+| brief para diseñador o editor | `ads-creative` |
+| revisar una landing que recibe tráfico de anuncios | `ads-landing` (para escribir una página de ventas desde una oferta, `landing-page-copy`) |
+| cuánto invertir y cómo repartir el presupuesto | `ads-budget` |
+| plan de pruebas A/B | `ads-testing` |
+| anuncios de la competencia | `ads-competitors` (para mapear competidores del negocio, `founder-competitors`) |
+| palabras clave de Google Ads | `ads-keywords` |
+
+Orden sugerido para una campaña nueva: `ads-quick` → `ads-audience` → `ads-competitors` → `ads-funnel` → `ads-copy` / `ads-hooks` / `ads-video` → `ads-creative` → `ads-landing` → `ads-budget` → `ads-testing`.
+
+Fuente (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
