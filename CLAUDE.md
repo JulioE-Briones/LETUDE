@@ -75,4 +75,25 @@ Orden sugerido para una campaña nueva: `ads-quick` → `ads-audience` → `ads-
 
 Antes de escribir un VSL conviene tener la oferta clara (`hormozi-offer` o `founder-offer`) y las objeciones (`objection-destroyer`). Fuentes (MIT): github.com/ai-saas-wizard/vsl-scriptwriter y github.com/bertrand-do/video-sales-letter. Índice original en `.claude/skills/INDICE-vsl.md`.
 
+## Skills de Reels y video corto orgánico (Reels, TikTok, Shorts)
+
+Para contenido orgánico de video corto usa estas skills del repo antes que las skills genéricas de redes sociales o video.
+
+| Si el usuario pide… | Usa |
+|---|---|
+| un guion, un reel, un tiktok, "guion en mi voz", un tema para grabar | `reels-en-mi-voz` (por defecto) |
+| guion con estructura de retención o un carrusel, sin necesidad de su voz | `viral-short-form` |
+| ganchos / hooks para video orgánico, criticar un hook | `viral-hooks` (para anuncios pagados, `ads-hooks`; para posts y emails con estilo Hormozi, `hormozi-hooks`) |
+| ideas de contenido, "no sé qué publicar", pilares, calendario de ideas | `viral-short-form-ideas` |
+| algo específico de Instagram: Trial Reels, envíos, por qué falló un reel | `viral-instagram-reels` |
+| algo específico de TikTok: FYP, sonidos, TikTok Shop | `viral-tiktok-content` |
+| algo específico de YouTube Shorts o llevar de Shorts a videos largos | `viral-youtube-shorts` |
+| caption, texto en pantalla, hashtags, CTA, comentario fijado | `viral-captions-and-ctas` |
+
+Flujo típico: `viral-short-form-ideas` → `reels-en-mi-voz` (con `viral-hooks` si se quieren más hooks) → la skill de la plataforma para ajustar → `viral-captions-and-ctas`.
+
+`reels-en-mi-voz` aprende la voz del usuario de `.claude/skills/reels-en-mi-voz/references/mis-guiones.md`. Si ese archivo sigue con el texto de ejemplo, pide al usuario de 3 a 10 de sus mejores guiones y guárdalos ahí, separados por `---`.
+
+Fuente de las skills `viral-*` (licencia MIT): github.com/vyralcontent/content-skills. Índice original en `.claude/skills/INDICE-reels.md`.
+
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
