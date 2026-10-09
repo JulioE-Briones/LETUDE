@@ -135,4 +135,15 @@ Para todo lo de planificación de contenido usa estas skills del repo antes que 
 
 Cada fila del calendario se desarrolla con la skill de su formato: Reel → `reels-en-mi-voz`, carrusel → `carrusel-cta-palabra-clave` o `ig-carousel-planner`, stories → `secuencia-stories`, caption → `ig-caption-writer`. Para el mapa de objeciones del calendario, `objection-destroyer`. Índice original en `.claude/skills/INDICE-calendario.md`.
 
+## Skills de recursos gratuitos (lead magnets)
+
+| Si el usuario pide… | Usa |
+|---|---|
+| un lead magnet, un recurso gratis, una guía, checklist, playbook o plantilla para regalar, "algo para que me comenten" | `creador-recursos` (por defecto; escribe el recurso completo + post "Comentá RECURSO" + DMs de entrega) |
+| qué lead magnet conviene, cómo capturar leads, dónde ponerlo, cómo medirlo, benchmarks | `lead-magnets` |
+
+`lead-magnets` menciona skills de su repo original que no están instaladas. Usa estas en su lugar: copywriting → `copywriting` o `creador-recursos`; emails → `email-sequence`; cro / landing → `ads-landing` o `page-cro`; popups → `popup-cro` si está disponible; content-strategy → `calendario-contenido`; ads → skills `ads-*`; social → `carrusel-cta-palabra-clave` / `secuencia-stories`; free-tools y analytics → `analytics-tracking`. Busca contexto en `.claude/product-marketing.md`; si no existe, sigue sin él.
+
+Cuando el usuario acepte producir el recurso como archivo, entrégalo como documento (PDF o doc) o diseñado en Canva, según lo que pida. Índice original en `.claude/skills/INDICE-recursos.md`. Fuente de `lead-magnets` (MIT): github.com/coreyhaines31/marketingskills.
+
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
