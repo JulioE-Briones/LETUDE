@@ -177,6 +177,16 @@ Sobre `dm-setter`:
 - Empieza siempre en modo de prueba (`ONLY_USERNAME`) y recuérdale el interruptor de apagado (`PAUSED=1`).
 - El bot nunca debe hacerse pasar por humano si alguien lo pregunta en serio.
 
-Embudo completo: `calendario-contenido` → contenido con palabra clave (`carrusel-cta-palabra-clave`, `reels-en-mi-voz`, `secuencia-stories`) → `creador-recursos` → `comments-hunter` para abrir conversaciones → `dm-closer` para calificar y agendar → `objection-destroyer` para la llamada. Índice original en `.claude/skills/INDICE-dms.md`. Fuente de `dm-setter` (MIT): github.com/Dallionking/dm-setter-skill.
+## Skill de automatización con ManyChat
+
+| Si el usuario pide… | Usa |
+|---|---|
+| automatizar la palabra clave, flujo de ManyChat, "comment to DM", respuesta automática a comentarios, agendar llamadas por DM automáticamente | `manychat-flows` |
+
+Diferencia con las otras skills de DMs: `manychat-flows` es un flujo con botones, armado en ManyChat (herramienta oficial con Meta). `dm-setter` es un bot con IA que conversa libremente. `dm-closer` es para responder a mano. Para la mayoría de los casos de palabra clave → recurso → calificación → agenda, recomienda primero `manychat-flows`.
+
+Claude no tiene acceso a ManyChat: entrega el plano y la guía, y el usuario lo arma. Nunca digas que un flujo quedó creado o activado. Reutiliza los mismos datos que `dm-closer` (`references/mi-setting.md`) y las palabras clave de `calendario-contenido` y `creador-recursos`. Índice original en `.claude/skills/INDICE-manychat.md`.
+
+Embudo completo: `calendario-contenido` → contenido con palabra clave (`carrusel-cta-palabra-clave`, `reels-en-mi-voz`, `secuencia-stories`) → `creador-recursos` → `manychat-flows` para automatizar la entrega y la calificación, o `comments-hunter` + `dm-closer` a mano → `objection-destroyer` para la llamada. Índice original en `.claude/skills/INDICE-dms.md`. Fuente de `dm-setter` (MIT): github.com/Dallionking/dm-setter-skill.
 
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
