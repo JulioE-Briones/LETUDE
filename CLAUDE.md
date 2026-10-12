@@ -8,7 +8,11 @@ Responde siempre en español. Los documentos que generen las skills (OFFER.md, P
 
 ## Skills de negocio (Hormozi + founder pack)
 
-Se pueden invocar a mano con `/nombre-de-la-skill`, o usarse solas cuando el pedido encaje. Guía para pedidos en español:
+Se pueden invocar a mano con `/nombre-de-la-skill`, o usarse solas cuando el pedido encaje.
+
+`hormozi` es la skill general: reúne ofertas, captación, modelos de dinero, cierre y números en una sola, y es la que se sube a Claude.ai para la extensión de Chrome. Úsala para consultas amplias o cuando el usuario mencione a Hormozi sin un entregable específico. Para un entregable concreto, usa la skill especializada de la tabla.
+
+Guía para pedidos en español:
 
 | Si el usuario pide… | Usa |
 |---|---|
