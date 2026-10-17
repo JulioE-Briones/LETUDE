@@ -1,5 +1,5 @@
 # Plan de trabajo · Club de Campo Quijano
-**Preparado por TWO&HUMAN · Octubre 2026 · Versión 2 (borrador para revisar)**
+**Preparado por TWO&HUMAN · Octubre 2026 · Versión 3 (borrador para revisar)**
 
 ---
 
@@ -120,11 +120,28 @@ Proponemos pasar de dos planes a seis, con reglas escritas. **Los montos nuevos 
 
 ## 6. Cobranza y administración
 
-1. **Planilla de socios y pagos** (ya armada). Administración solo carga socios y pagos. La planilla calcula sola la antigüedad, el nivel, el próximo vencimiento, los días de mora y qué aviso corresponde mandar. La adaptamos a los planes nuevos y le sumamos una columna de origen ("¿Cómo conociste el club?").
-2. **Mensajes de WhatsApp listos para usar:** recordatorio 3 días antes, aviso el día del vencimiento, a los 5 y a los 15 días, y agradecimiento al recibir el pago. A los 30 días de mora lo maneja una persona de administración.
-3. **Campaña de débito automático** con Banco Macro para quienes pagan a mano.
+1. **Planilla de socios y pagos** (ya armada). Administración solo carga socios y pagos. La planilla calcula sola la antigüedad, el nivel, el próximo vencimiento, los días de mora y qué aviso corresponde mandar. La adaptamos a los planes nuevos, le sumamos una columna de origen ("¿Cómo conociste el club?") y la pasamos a Google Sheets para que la automatización pueda leerla.
+2. **Avisos automáticos por WhatsApp.** Todos los días el sistema revisa la planilla y manda solo el aviso que corresponde a cada socio:
 
-Al principio los mensajes se mandan a mano desde el WhatsApp del club, guiados por la planilla. Que salgan solos es la automatización, que se cotiza aparte.
+| Momento | Aviso | Botones para responder |
+|---|---|---|
+| 3 días antes del vencimiento | Recordatorio amable | Ya pagué · Adherirme al débito · Formas de pago |
+| Día del vencimiento | Aviso con el link o los datos de pago | Pagar ahora · Ver opciones |
+| 5 días después | Cuota pendiente, en tono cordial | Pagar ahora · Plan de pagos · Hablar con alguien |
+| 15 días después | Ofrecimiento de regularizar o pausar | Plan de pagos · Pausar membresía · Hablar con alguien |
+| 30 días después | Se deriva a una persona de administración y se cortan los avisos | — |
+| Al registrarse el pago | Agradecimiento | Ver beneficios |
+
+   Cuando el socio toca un botón, recibe la información de planes de pago, débito o pausa sin que nadie tenga que escribirle.
+3. **Beneficios por WhatsApp,** solo para socios que aceptaron recibir novedades: aniversario como socio y nuevo nivel, agenda de eventos, "socio trae socio" y campaña de pago anual.
+4. **Campaña de débito automático** con Banco Macro para quienes pagan a mano.
+
+**Cuidados:**
+
+- Avisos siempre cordiales, nunca de noche ni los fines de semana.
+- Las deudas son datos personales: solo acceden administración y TWO&HUMAN, y nunca se mencionan en el grupo del club.
+- Los mensajes de aviso y los de beneficios van separados, como exige WhatsApp.
+- Antes de activarlo para todos, se prueba con 10 socios de confianza.
 
 ## 7. Redes y WhatsApp
 
@@ -139,8 +156,8 @@ Al principio los mensajes se mandan a mano desde el WhatsApp del club, guiados p
 |---|---|
 | **Hasta el 29/10** | El club toma las decisiones del punto 10. Preparamos guiones y lista de tomas. |
 | **30/10 y 1/11** | Grabación en el club. |
-| **Noviembre** | WhatsApp del club, planilla adaptada y redes ordenadas. Se presentan los planes nuevos y el Día de Campo. Anuncios desde mitad de mes. Aviso a los socios de "socio trae socio" y del débito. |
-| **Diciembre** | Arranca la temporada y el Pase de Temporada. Campaña "Regalá el verano" para Navidad y egresados. Primer torneo abierto. Día del Invitado. |
+| **Noviembre** | WhatsApp del club, planilla adaptada y redes ordenadas. Armado de la automatización y aprobación de los mensajes por WhatsApp. Se presentan los planes nuevos y el Día de Campo. Anuncios desde mitad de mes. Aviso a los socios de "socio trae socio" y del débito. |
+| **Diciembre** | Prueba de la automatización con 10 socios y activación para todos. Arranca la temporada y el Pase de Temporada. Campaña "Regalá el verano" para Navidad y egresados. Primer torneo abierto. Día del Invitado. |
 | **Enero** | Temporada en pleno. Presentación de las obras. Revisamos los resultados de los 3 meses y proponemos cómo seguir. |
 | **Marzo** | Fin del Pase de Temporada: ofrecemos el paso a socio anual con el ingreso descontado y medimos cuántos se quedan. |
 
@@ -153,7 +170,8 @@ Al principio los mensajes se mandan a mano desde el WhatsApp del club, guiados p
 | Publicación en Instagram y Facebook | Carga socios y pagos en la planilla |
 | Armado del WhatsApp Business y respuestas rápidas | Responde los WhatsApp (o designa a alguien) |
 | Gestión de los anuncios | Paga el presupuesto de anuncios |
-| Planilla y mensajes de cobranza | Recibe a las familias en el Día de Campo |
+| Planilla y automatización de avisos | Recibe a las familias en el Día de Campo |
+| Aprobación de los mensajes ante WhatsApp | Da el link de pago (Mercado Pago) y el formulario de débito |
 | Organización de la comunicación de torneos y eventos | Organiza los torneos y eventos en el club |
 | Reporte mensual | Aprueba las publicaciones a tiempo |
 
@@ -168,12 +186,16 @@ Al principio los mensajes se mandan a mano desde el WhatsApp del club, guiados p
 7. Fechas de los torneos abiertos.
 8. Quién responde el WhatsApp del club y en qué horario.
 9. Presupuesto mensual para anuncios.
+10. Una tarjeta para pagar los mensajes de WhatsApp directamente a Meta.
 
 ## 11. Inversión
 
 | Concepto | Precio |
 |---|---|
-| **Plan mensual** (todo lo de este documento) | **$500.000 por mes**, fijo durante los primeros 3 meses |
+| **Plan mensual de marketing** | **$500.000 por mes**, fijo durante los primeros 3 meses |
+| **Automatización de WhatsApp** (armado) | **$900.000**, en 3 cuotas de **$300.000** junto con los primeros 3 meses |
+| **Total de los primeros 3 meses** | **$800.000 por mes** |
+| **Mantenimiento de la automatización** (desde el mes 4) | **$80.000 por mes**: incluye la herramienta que la hace funcionar, ajustes de mensajes y soporte |
 | **Bono por socio nuevo** | **10 % del ingreso de lista**, una sola vez por socio: **$50.400** por grupo familiar y **$24.000** por socio individual |
 
 **Cómo funciona el bono:**
@@ -187,9 +209,15 @@ Al principio los mensajes se mandan a mano desde el WhatsApp del club, guiados p
 **No incluye:**
 
 - Presupuesto de anuncios (lo paga el club directamente a Meta).
-- Automatización de los avisos de cuota (se cotiza aparte cuando sepamos la cantidad de socios).
+- Costo de los mensajes de WhatsApp: Meta cobra por cada aviso que manda el club. Es un monto bajo por mensaje y lo paga el club directamente con su tarjeta.
 - Cartel de acero inoxidable para la entrada (se cotiza aparte).
 - Costos de los bonos de bienvenida y las tarjetas de regalo impresas, si las hay.
+
+**Sobre la automatización:**
+
+- El armado se paga una sola vez, repartido en los primeros 3 meses. El sistema queda a nombre del club.
+- El precio cubre hasta 1.000 socios. Si son más, lo revisamos.
+- Si después de los 3 meses el club no sigue con el marketing, puede quedarse solo con el mantenimiento de la automatización.
 
 **Forma de pago:** mes por adelantado. Al terminar los 3 meses revisamos juntos los resultados y el precio.
 
@@ -203,7 +231,7 @@ Cada mes entregamos un reporte simple con:
 - Pases de Temporada y planes Joven vendidos.
 - Participantes de los torneos abiertos.
 - Socios adheridos al débito automático.
-- Socios con cuotas atrasadas.
+- Socios con cuotas atrasadas y cuántos regularizaron después de un aviso.
 
 En marzo sumamos el dato más importante: **cuántos Pases de Temporada y planes Joven pasaron a socio anual.**
 
@@ -212,6 +240,6 @@ En marzo sumamos el dato más importante: **cuántos Pases de Temporada y planes
 1. Confirmar el plan.
 2. Pasarnos los datos del punto 1 (cantidad de socios y personas por familia).
 3. Tomar las decisiones del punto 10.
-4. Darnos acceso a las redes y el número para WhatsApp.
+4. Darnos acceso a las redes, el número para WhatsApp y la cuenta de Meta Business del club.
 5. Pasarnos el listado de socios para cargar la planilla.
 6. Grabar el 30 de octubre y el 1 de noviembre.
