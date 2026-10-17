@@ -56,7 +56,7 @@ Esto, además, hace al club **más deseado:** lo que cuesta conseguir se valora 
 
 ### El camino
 
-> **Presentación de un socio** o **solicitud de visita** → **Visita al club** con un miembro de la comisión → **Solicitud de ingreso** → **Aprobación del club** → **Bienvenida**
+> **Presentación de un socio** o **encuesta de solicitud** → **Revisión previa** → **Visita al club** con un miembro de la comisión → **Solicitud de ingreso** → **Aprobación del club** → **Bienvenida**
 
 ### Paso a paso
 
