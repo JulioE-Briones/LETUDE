@@ -1,194 +1,29 @@
 # Plan de presentación · Club de Campo Quijano
-**TWO&HUMAN · Octubre 2026 · Versión 1**
+**TWO&HUMAN · Octubre 2026 · Versión 8 (basada en `plan-club-de-campo-quijano.md` v8)**
 
-Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con frases cortas y sin tono de venta.
+Estilo: azul y blanco (colores del club), fotos reales del club, una idea por lámina, tono sobrio.
 
-**Estilo:** blanco y azul (colores del club), fotos reales del club, letra grande, pocas palabras por lámina.
-
----
-
-### Lámina 1 · Portada
-**Título:** Plan de trabajo 2026–27
-**Subtítulo:** Club de Campo Quijano
-**Pie:** Preparado por TWO&HUMAN · Octubre 2026
-**Imagen:** foto panorámica del club.
-
----
-
-### Lámina 2 · Dónde estamos hoy
-**Título:** Dónde estamos hoy
-- Cuota familiar $42.000 · individual $20.000
-- Ingreso: un año de cuota
-- Débito automático con Banco Macro
-- Redes con poca actividad
-- Sin WhatsApp propio para consultas
-- Socios y pagos en Excel
-
-**Nota para quien presenta:** no lo planteamos como crítica, sino como la foto de partida para medir el avance.
-
----
-
-### Lámina 3 · Qué falta saber
-**Título:** Lo que vamos a medir al empezar
-- Cuántos socios activos hay
-- Cuántos están al día y cuántos deben
-- Cuántas personas tiene en promedio cada plan familiar
-- Cuántos entran y cuántos se van por temporada
-
-**Dato clave:** hoy no está escrito qué cuenta como "grupo familiar".
-
-**Frase de cierre:** Las metas en números las fijamos juntos con estos datos.
-
----
-
-### Lámina 4 · Objetivos
-**Título:** Qué queremos lograr en 3 meses
-**Subtítulo:** Noviembre a enero
-1. **Sumar** socios nuevos para el verano
-2. **Que se queden** los socios actuales
-3. **Ordenar** la cobranza
-
-**Imagen:** tres íconos simples o tres fotos (familia llegando, torneo, planilla).
-
----
-
-### Lámina 5 · Socios nuevos: el problema
-**Título:** Por qué hoy cuesta sumar socios
-- Quien no conoce el club no paga $504.000 de ingreso sin verlo
-- No hay una forma simple de conocerlo
-- No hay forma de pagar el ingreso de a poco
-
----
-
-### Lámina 6 · Socios nuevos: la propuesta
-**Título:** Cómo vamos a sumar socios
-1. **Día de Campo:** visita guiada gratis un sábado o domingo
-2. **Ingreso más accesible:** en cuotas, bonificado por permanencia o con descuento anual
-3. **Condición de temporada:** asociarse dentro de los 7 días de la visita
-4. **Bienvenida:** 2 pases de invitado y su primer torneo gratis
-5. **Socio trae socio:** un mes bonificado para los dos
-6. **Anuncios** en Campo Quijano, Rosario de Lerma y Salta capital
-
-**Imagen:** familia recorriendo el club.
-
----
-
-### Lámina 7 · Un plan para cada grupo
-**Título:** Un plan para cada grupo
-
-| Plan | Quiénes entran | Cuota |
-|---|---|---|
-| Individual | Una persona | $20.000 |
-| Familiar | Dos adultos y sus hijos hasta 25 años que viven con ellos | $42.000 |
-| Familiar Plus | El familiar más abuelos, tíos, primos o hijos mayores | $42.000 + adicional por persona |
-| Social | De 3 a 6 amigos que se asocian juntos | Cuota con descuento por persona |
-
-**Frase de cierre:** Una familia de 5 paga $8.400 por persona.
-
-**Nota para quien presenta:** los montos del adicional (sugerimos $10.000) y del plan Social (sugerimos $16.000 por persona) los define el club. El plan Social apunta a los jóvenes que se suman con amigos.
-
----
-
-### Lámina 8 · Socios actuales
-**Título:** Que quedarse tenga sentido
-- **Niveles por antigüedad:** Socio, Socio Plata (3 años) y Socio de Honor (10 años)
-- **Agenda de verano:** torneos, aquagym, bingo, Día del Invitado y obras
-- **Comercios aliados** con descuentos para socios
-- **Planes para un mes difícil:** deuda en cuotas o pausa de invierno sin perder antigüedad
-
----
-
-### Lámina 9 · Cobranza
-**Título:** Una cobranza ordenada
-- **Planilla de socios y pagos** (ya armada): administración carga socios y pagos, el resto se calcula solo
-- **Avisos por WhatsApp:** 3 días antes, el día del vencimiento, a los 5 y a los 15 días
-- **A los 30 días** lo maneja una persona de administración
-- **Campaña de débito automático** con Banco Macro
-
-**Imagen:** captura de la planilla (sin datos reales de socios).
-
----
-
-### Lámina 10 · Redes y WhatsApp
-**Título:** Redes y WhatsApp
-- **WhatsApp Business del club** con respuestas rápidas y registro de interesados
-- **Instagram y Facebook** ordenados
-- **Cada mes:** 4 reels, 8 publicaciones e historias 3 veces por semana
-- **Grabación:** 30 de octubre y 1 de noviembre
-
----
-
-### Lámina 11 · Calendario
-**Título:** Cómo avanzamos
-
-| Cuándo | Qué |
-|---|---|
-| Hasta el 29/10 | Decisiones del club, guiones y lista de tomas |
-| 30/10 y 1/11 | Grabación |
-| Noviembre | WhatsApp, planilla, redes y lanzamiento del Día de Campo |
-| Diciembre | Arranca la temporada: torneos, Día del Invitado y plan anual |
-| Enero | Temporada en pleno, obras y revisión de resultados |
-
----
-
-### Lámina 12 · Quién hace qué
-**Título:** Quién hace qué
-
-| TWO&HUMAN | El club |
-|---|---|
-| Estrategia y contenido | Decide ingreso y beneficios |
-| Grabación, edición y diseño | Da acceso a redes y número de WhatsApp |
-| Publicación y anuncios | Carga socios y pagos |
-| WhatsApp Business y planilla | Responde los WhatsApp |
-| Reporte mensual | Recibe a las familias en el Día de Campo |
-
----
-
-### Lámina 13 · Decisiones del club
-**Título:** Lo que necesitamos que decidan
-1. Opción de ingreso y sus números
-2. Qué es grupo familiar y montos del Familiar Plus y del Social
-3. Descuento semestral y anual
-4. Beneficio de "socio trae socio"
-5. Días del Día de Campo y quién recibe
-6. Quién responde el WhatsApp y en qué horario
-7. Presupuesto mensual de anuncios
-
----
-
-### Lámina 14 · Inversión
-**Título:** Inversión
-- **Plan mensual:** $500.000 por mes, fijo los primeros 3 meses
-- **Bono por socio nuevo:** 10 % del ingreso de lista, una sola vez
-  - $50.400 por grupo familiar
-  - $24.000 por socio individual
-- El bono se cobra solo por socios que llegan por nuestro trabajo y cuando confirman el alta
-- **Si no llegan socios nuevos, no se paga nada extra**
-- En los planes Social y Familiar Plus, el bono es el 10 % del ingreso que fije el club para cada persona nueva
-
-**No incluye:** presupuesto de anuncios, automatización de avisos (se cotiza aparte), cartel de acero inoxidable (se cotiza aparte) y costos de los bonos de bienvenida.
-
-**Forma de pago:** mes por adelantado. A los 3 meses revisamos juntos resultados y precio.
-
----
-
-### Lámina 15 · Cómo medimos
-**Título:** Qué vas a ver cada mes
-- Consultas por WhatsApp
-- Familias que vinieron al Día de Campo
-- Socios nuevos y de dónde llegaron
-- Socios con débito automático
-- Socios con cuotas atrasadas
-- Participación en actividades
-
----
-
-### Lámina 16 · Próximos pasos
-**Título:** Próximos pasos
-1. Confirmar el plan
-2. Tomar las decisiones y pasarnos los datos de socios
-3. Acceso a redes y número de WhatsApp
-4. Listado de socios para la planilla
-5. Grabar el 30 de octubre y el 1 de noviembre
-
-**Pie:** TWO&HUMAN · Donde la tecnología se vuelve humana
+1. **Plan de trabajo 2026–27** · Portada. Club de Campo Quijano. Preparado por TWO&HUMAN, octubre 2026.
+2. **Dónde estamos hoy** · Club selecto en Campo Quijano · cuotas $42.000 / $20.000 · ingreso de un año · débito Macro · redes con poca actividad, sin WhatsApp propio · socios en Excel.
+3. **Tres frenos** · Ingreso de golpe · sin camino claro para pedir el ingreso · grupo familiar sin definir.
+4. **Qué queremos lograr en 3 meses** · Sumar socios que encajen · que los actuales se queden · ordenar la cobranza. Metas con datos reales.
+5. **Admisión, no captación masiva** · Solicitud, no compra · los socios como puerta principal · cupos por temporada · sin descuentos ni "gratis".
+6. **Cómo se incorpora un socio nuevo** · Presentación o encuesta → revisión previa (48 h) → visita → solicitud con referencias → aprobación → bienvenida → mensaje a los 30 días.
+7. **Cómo nos aseguramos de que encajen** · Cinco filtros: lo que mostramos, información clara, encuesta, visita, referencias y aprobación. Criterios escritos e iguales para todos.
+8. **Campañas por intereses** · Anuncio → WhatsApp → encuesta → calificación → visita. Cuatro públicos: familias, deportistas, vida social, naturaleza. Zona: Campo Quijano, Rosario de Lerma, Cerrillos, La Silleta, Salta capital.
+9. **Calificación de interesados** · A: visita en 48 h · B: novedades mensuales · C: agradecimiento. Presupuesto a los anuncios que traen más A.
+10. **Socios que presentan, ex socios y visitas** · Socio presenta socio · "Volvé al club" · guía de visita y seguimiento a las 24 h y 7 días · testimonios de socios.
+11. **Un plan para cada grupo** · Individual $20.000 · Familiar $42.000 ($8.400 por persona si son 5) · Familiar Plus con adicional · Joven 18 a 30 · Temporada por invitación (dic–mar, sin ingreso, cupo limitado).
+12. **El ingreso** · Mantiene su valor · 6 o 12 cuotas · beneficio por pago anual · si hay baja, se debe el saldo.
+13. **Socios actuales** · Beneficios exclusivos · niveles por antigüedad · agenda de verano y comercios aliados · planes para un mes difícil · motivo de cada baja.
+14. **Cobranza ordenada** · Etapa 1 incluida y gratuita: planilla, botón "Enviar aviso", calendario de avisos, registro de solicitudes, débito. Etapa 2 opcional: avisos automáticos.
+15. **Redes y WhatsApp** · WhatsApp Business con encuesta · redes ordenadas · 4 reels, 8 publicaciones, historias 3 por semana · grabación 30/10 y 1/11 con testimonios.
+16. **Cómo avanzamos** · Calendario de octubre a marzo.
+17. **Primeros 15 días** · Semana 1 planilla · semana 2 WhatsApp, encuesta, redes y ex socios · semana 3 videos y guía de visita.
+18. **Quién hace qué** · TWO&HUMAN y el club, lado a lado.
+19. **Lo que necesitamos que decidan** · Admisión y normas · cupos · grupo familiar y montos · ingreso · reconocimientos y reingreso · visitas y WhatsApp · prueba de anuncios.
+20. **Inversión** · $500.000 por mes, 3 meses · bono 10 % del ingreso por socio aprobado ($50.400 / $24.000) · sin socios nuevos, nada extra · qué no incluye.
+21. **Cuentas claras** · Una familia deja $1.008.000 el primer año · el plan cuesta $1.500.000 · con 2 familias está pagado.
+22. **Garantía y condiciones** · Garantía de cumplimiento del primer mes · pago adelantado, aviso de 15 días · bono hasta 60 días después · todo a nombre del club.
+23. **Qué vas a ver cada mes** · Indicadores del reporte.
+24. **Próximos pasos** · Confirmar, datos, decisiones, accesos, listados, grabación. Cierre: TWO&HUMAN · Donde la tecnología se vuelve humana.
