@@ -1,5 +1,5 @@
 # Plan de trabajo · Club de Campo Quijano
-**Preparado por TWO&HUMAN · Octubre 2026 · Versión 4 (borrador para revisar)**
+**Preparado por TWO&HUMAN · Octubre 2026 · Versión 5 (borrador para revisar)**
 
 ---
 
@@ -60,16 +60,34 @@ Esto, además, hace al club **más deseado:** lo que cuesta conseguir se valora 
 
 ### Paso a paso
 
-1. **Presentación o solicitud de visita.**
+1. **Presentación o solicitud de visita.** Hay dos puertas, y las dos están abiertas:
    - **Presentado por un socio:** el socio completa una presentación breve de la familia o persona que recomienda.
-   - **Sin presentación:** la persona completa una solicitud de visita por WhatsApp (nombre, grupo familiar, de dónde es, cómo conoció el club y si conoce a algún socio).
-2. **Visita al club.** Con turno, un sábado o domingo, acompañada por un miembro de la comisión o de administración. Es el momento de conocerse de los dos lados.
-3. **Solicitud de ingreso.** Si después de la visita quieren sumarse, completan la solicitud formal.
-4. **Aprobación.** La comisión o quien el club designe revisa la solicitud y responde en un plazo definido (por ejemplo, 7 días).
-5. **Bienvenida.** Una vez aprobado y pago el ingreso (o su primera cuota):
+   - **Solicitud externa:** cualquier persona que no conoce a nadie en el club puede pedir una visita completando un formulario (ver "Cómo nos aseguramos de que encajen").
+2. **Revisión previa.** Administración lee cada solicitud y responde en 48 horas: agenda la visita o agradece el interés.
+3. **Visita al club.** Con turno, un sábado o domingo, acompañada por un miembro de la comisión o de administración. Es el momento de conocerse de los dos lados.
+4. **Solicitud de ingreso.** Si después de la visita quieren sumarse, completan la solicitud formal. Quien viene sin presentación suma dos referencias personales o laborales.
+5. **Aprobación.** La comisión o quien el club designe revisa la solicitud y responde en un plazo definido (por ejemplo, 7 días).
+6. **Bienvenida.** Una vez aprobado y pago el ingreso (o su primera cuota):
    - Presentación del nuevo socio en el grupo de WhatsApp del club.
    - 2 pases de invitado para el verano.
    - Inscripción a su primer torneo o evento.
+
+### Cómo nos aseguramos de que encajen
+
+Que la puerta esté abierta no significa que entre cualquiera. Para que quien solicita sea compatible con los socios, usamos cinco filtros, uno detrás del otro:
+
+1. **Lo que mostramos.** Las redes y los anuncios muestran el club como es: familias, ambiente, valores y forma de convivir. Eso atrae a quien se identifica y aleja a quien busca otra cosa.
+2. **Información clara desde el principio.** Antes de pedir la visita, la persona ve el valor de la cuota y del ingreso, cómo es el proceso de admisión y las normas de convivencia. Quien no está dispuesto a eso no avanza.
+3. **Un formulario que nos cuenta quién es.** Pide:
+   - Nombre y grupo familiar (quiénes serían socios).
+   - Localidad y actividad o profesión.
+   - Qué busca en el club y qué actividades le interesan.
+   - Cómo conoció el club y si conoce a algún socio.
+   - Que acepta las normas de convivencia y el proceso de admisión.
+4. **La visita.** Es una charla tranquila con alguien de la comisión: el club conoce a la familia y la familia conoce el club. Se nota enseguida si hay afinidad.
+5. **Referencias y aprobación.** Quien viene sin presentación suma dos referencias, y la decisión final siempre es del club.
+
+**Qué evaluamos:** convivencia, respeto por las normas y los espacios, interés real en participar de la vida del club y compromiso con la cuota. Son criterios escritos e iguales para todos.
 
 ### Socio presenta socio
 
@@ -80,7 +98,7 @@ Esto, además, hace al club **más deseado:** lo que cuesta conseguir se valora 
 ### Qué hacemos en redes y anuncios
 
 - **Contenido que muestre la vida del club:** el ambiente, las familias, los eventos y la naturaleza. Cuidado y aspiracional, nunca de oferta.
-- **Anuncios pocos y bien dirigidos,** a familias de Campo Quijano, Rosario de Lerma, Cerrillos, La Silleta y Salta capital, con el llamado **"Solicitá tu visita"**.
+- **Anuncios pocos y bien dirigidos,** a familias de Campo Quijano, Rosario de Lerma, Cerrillos, La Silleta y Salta capital, con el llamado **"Solicitá tu visita"**. El anuncio lleva al formulario, no a una promoción.
 - **Mensaje central:** un club de campo es pertenecer a una comunidad, no ir a una pileta.
 
 ## 5. Planes de membresía
@@ -131,7 +149,7 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 ## 7. Cobranza y administración
 
 1. **Planilla de socios y pagos** (ya armada). Administración solo carga socios y pagos. La planilla calcula sola la antigüedad, el nivel, el próximo vencimiento, los días de mora y qué aviso corresponde mandar. La adaptamos a los planes nuevos, le sumamos las columnas de origen y de socio presentante, y la pasamos a Google Sheets para que la automatización pueda leerla.
-2. **Registro de solicitudes:** cada solicitud de visita e ingreso queda anotada con su estado (visita agendada, en revisión, aprobada, no aprobada).
+2. **Registro de solicitudes:** el formulario de solicitud (Google Forms) carga cada pedido en la planilla, con su estado: nueva, visita agendada, en revisión, aprobada o no aprobada. Administración ve todas en un solo lugar.
 3. **Avisos automáticos por WhatsApp.** Todos los días el sistema revisa la planilla y manda solo el aviso que corresponde a cada socio:
 
 | Momento | Aviso | Botones para responder |
@@ -156,7 +174,7 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 
 ## 8. Redes y WhatsApp
 
-1. **WhatsApp Business del club:** número propio con respuestas rápidas (planes, horarios, cómo solicitar una visita) y registro de cada solicitud en la planilla.
+1. **WhatsApp Business del club:** número propio con respuestas rápidas (planes, horarios, cómo ser socio) que envían el formulario de solicitud a quien pregunta.
 2. **Instagram y Facebook ordenados:** biografía, historias destacadas (El club, Actividades, Obras, Cómo ser socio) y publicaciones constantes.
 3. **Contenido mensual:** 4 reels, 8 publicaciones e historias 3 veces por semana. Estética cuidada y vida real del club: familias, eventos, naturaleza e instalaciones.
 4. **Grabación:** 30 de octubre y 1 de noviembre. Llevamos el guion y la lista de tomas.
@@ -181,14 +199,14 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 | Publicación en Instagram y Facebook | Carga socios y pagos en la planilla |
 | Armado del WhatsApp Business y respuestas rápidas | Responde los WhatsApp (o designa a alguien) |
 | Gestión de los anuncios | Paga el presupuesto de anuncios |
-| Planilla, registro de solicitudes y automatización de avisos | Recibe las visitas y aprueba las solicitudes |
+| Formulario, planilla, registro de solicitudes y automatización de avisos | Revisa las solicitudes, recibe las visitas y aprueba |
 | Aprobación de los mensajes ante WhatsApp | Da el link de pago (Mercado Pago) y el formulario de débito |
 | Comunicación de torneos y eventos | Organiza los torneos y eventos en el club |
 | Reporte mensual | Aprueba las publicaciones a tiempo |
 
 ## 11. Decisiones que necesitamos del club
 
-1. Criterios de admisión y quién aprueba las solicitudes.
+1. Criterios de admisión, normas de convivencia y quién aprueba las solicitudes.
 2. Cupos de socios nuevos y de Temporada por invitación para este verano.
 3. Qué cuenta como grupo familiar.
 4. Montos del Familiar Plus, Joven y Temporada por invitación.
@@ -237,7 +255,7 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 
 Cada mes entregamos un reporte simple con:
 
-- Solicitudes de visita y de qué zona llegan.
+- Solicitudes de visita: cuántas llegaron, de qué zona y cuántas pasaron la revisión previa.
 - Visitas realizadas.
 - Solicitudes de ingreso, aprobadas y no aprobadas.
 - Socios nuevos por plan y cómo llegaron (presentados por un socio, redes o anuncios).
