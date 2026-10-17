@@ -1,5 +1,5 @@
 # Plan de trabajo · Club de Campo Quijano
-**Preparado por TWO&HUMAN · Octubre 2026 · Versión 3 (borrador para revisar)**
+**Preparado por TWO&HUMAN · Octubre 2026 · Versión 4 (borrador para revisar)**
 
 ---
 
@@ -8,6 +8,7 @@
 **Lo que sabemos del club:**
 
 - **Ubicación:** Campo Quijano, Salta.
+- **Perfil:** club de campo selecto. No busca sumar a cualquiera, sino a familias y personas que encajen con su comunidad.
 - **Cuotas:** grupo familiar $42.000 por mes, socio individual $20.000 por mes.
 - **Ingreso:** equivale a un año de cuota ($504.000 familiar, $240.000 individual).
 - **Cobro:** débito automático con Banco Macro (no todos los socios están adheridos).
@@ -22,106 +23,116 @@
 - Cuántas personas tiene en promedio cada plan familiar.
 - Cuántos están al día y cuántos deben cuotas.
 - Cuántos socios entran y cuántos se van por temporada.
+- Cómo se aprueba hoy a un socio nuevo y quién lo decide.
 
 **Tres frenos que detectamos:**
 
-1. **El ingreso de un año completo.** Quien no conoce el club no paga $504.000 de entrada.
-2. **No hay una puerta de entrada** para la gente de los alrededores ni para los jóvenes.
+1. **El ingreso de un año completo** se paga de golpe, aun para familias que encajan perfecto con el club.
+2. **No hay un camino claro para incorporarse:** quien se interesa no sabe cómo pedir el ingreso ni a quién.
 3. **No está definido qué es un "grupo familiar".** Hoy una sola cuota puede incluir a primos, abuelos o amigos.
 
 ## 2. Qué queremos lograr en 3 meses (noviembre a enero)
 
-1. **Sumar socios nuevos** para la temporada de verano, también de los alrededores y jóvenes.
-2. **Que los socios actuales se queden** y participen más.
+1. **Sumar socios nuevos que encajen con el club,** cuidando quién entra.
+2. **Que los socios actuales se queden,** participen más y sientan orgullo de pertenecer.
 3. **Ordenar la cobranza** para que el club sepa cada mes cuánto va a cobrar.
 
 Las metas en números las fijamos juntos cuando tengamos los datos del punto 1.
 
-## 3. Planes de membresía
+## 3. El enfoque: admisión, no captación masiva
 
-Proponemos pasar de dos planes a seis, con reglas escritas. **Los montos nuevos son sugerencias para empezar la charla: los define el club.**
+El club no necesita que entre mucha gente: necesita que entre **la gente correcta**. Por eso el plan no busca volumen, sino **solicitudes de calidad**.
 
-### Planes anuales (socios)
+- **Se entra por solicitud, no por compra.** Cada persona interesada pide su ingreso, el club la conoce y decide.
+- **Los socios actuales son la principal puerta de entrada.** Quien es presentado por un socio llega con una referencia.
+- **Los cupos son limitados por temporada.** Es una decisión real del club para cuidar las instalaciones y la comunidad.
+- **No se comunica con descuentos ni "gratis".** El club se muestra como lo que es: un lugar al que se quiere pertenecer.
+
+Esto, además, hace al club **más deseado:** lo que cuesta conseguir se valora más.
+
+> **Un cuidado legal:** los criterios de admisión tienen que ser claros, estar escritos (en el estatuto o un reglamento) y basarse en referencias y conducta. Nunca en origen, religión, ideas u otros motivos que la ley considera discriminatorios.
+
+## 4. Cómo se incorpora un socio nuevo
+
+### El camino
+
+> **Presentación de un socio** o **solicitud de visita** → **Visita al club** con un miembro de la comisión → **Solicitud de ingreso** → **Aprobación del club** → **Bienvenida**
+
+### Paso a paso
+
+1. **Presentación o solicitud de visita.**
+   - **Presentado por un socio:** el socio completa una presentación breve de la familia o persona que recomienda.
+   - **Sin presentación:** la persona completa una solicitud de visita por WhatsApp (nombre, grupo familiar, de dónde es, cómo conoció el club y si conoce a algún socio).
+2. **Visita al club.** Con turno, un sábado o domingo, acompañada por un miembro de la comisión o de administración. Es el momento de conocerse de los dos lados.
+3. **Solicitud de ingreso.** Si después de la visita quieren sumarse, completan la solicitud formal.
+4. **Aprobación.** La comisión o quien el club designe revisa la solicitud y responde en un plazo definido (por ejemplo, 7 días).
+5. **Bienvenida.** Una vez aprobado y pago el ingreso (o su primera cuota):
+   - Presentación del nuevo socio en el grupo de WhatsApp del club.
+   - 2 pases de invitado para el verano.
+   - Inscripción a su primer torneo o evento.
+
+### Socio presenta socio
+
+- Cuando un socio presenta a alguien que es aprobado y se asocia, **el socio que lo presentó recibe un reconocimiento** (sugerido: un mes de cuota bonificado).
+- El socio que presenta **es la referencia** de la persona nueva durante su primer año.
+- Es el canal más valioso: trae gente que ya conoce y comparte los valores del club.
+
+### Qué hacemos en redes y anuncios
+
+- **Contenido que muestre la vida del club:** el ambiente, las familias, los eventos y la naturaleza. Cuidado y aspiracional, nunca de oferta.
+- **Anuncios pocos y bien dirigidos,** a familias de Campo Quijano, Rosario de Lerma, Cerrillos, La Silleta y Salta capital, con el llamado **"Solicitá tu visita"**.
+- **Mensaje central:** un club de campo es pertenecer a una comunidad, no ir a una pileta.
+
+## 5. Planes de membresía
+
+Proponemos pasar de dos planes a cinco, con reglas escritas. **Los montos nuevos son sugerencias para empezar la charla: los define el club.** Todos los planes pasan por el mismo proceso de admisión.
 
 | Plan | Quiénes entran | Cuota mensual |
 |---|---|---|
 | **Individual** | Una persona | $20.000 (como hoy) |
 | **Familiar** | Dos adultos y sus hijos hasta 25 años que vivan con ellos, sin límite de hijos | $42.000 (como hoy) |
 | **Familiar Plus** | El Familiar más abuelos, tíos, primos, hijos mayores de 25 o parejas de los hijos | $42.000 + adicional por persona (sugerido: $10.000) |
-| **Social** | Grupo de 3 a 6 amigos que se asocian juntos | Por persona, con descuento (sugerido: $16.000) |
+| **Joven** | De 18 a 25 años, **presentado por un socio** o hijo o nieto de socios que ya no entra en el plan familiar | Cuota reducida (sugerido: $15.000) |
+| **Temporada por invitación** | Familias **presentadas por un socio** que quieren vivir un verano antes de asociarse. De diciembre a marzo, sin ingreso y con cupo muy limitado | Más alta que la de socio (sugerido: $55.000 familiar, $26.000 individual) |
 
-### Planes de entrada (para quien todavía no conoce el club)
+### El ingreso
 
-| Plan | Para quién | Cuota mensual |
-|---|---|---|
-| **Pase de Temporada** | Familias y personas de los alrededores que quieren probar el verano. De diciembre a marzo, sin ingreso | Más alta que la de socio (sugerido: $55.000 familiar, $26.000 individual) |
-| **Joven** | De 18 a 25 años, sin familia socia | Cuota baja, sin ingreso o con ingreso mínimo (sugerido: $15.000) |
+El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al club. Lo que cambia es la forma de pagarlo:
+
+- **En cuotas:** 6 o 12 cuotas junto con la cuota mensual, por débito.
+- **Pago anual adelantado:** quien paga el año entero tiene un beneficio en el ingreso (lo define el club).
 
 ### Reglas
 
-- **Ingreso de los planes anuales:** el club elige una o combina:
-  - **En cuotas:** 6 o 12 cuotas junto con la cuota mensual, por débito.
-  - **Bonificado por permanencia:** se descuenta una parte si el socio se queda 12 meses; si se va antes, paga el saldo.
-  - **Pago anual adelantado:** descuento en el ingreso por pagar el año entero.
-- **Pase de Temporada:**
-  - Si al terminar el verano la persona se hace socia anual, **lo que pagó de más en el pase se le descuenta del ingreso**.
-  - Cupo limitado por temporada, para no saturar el club.
-  - No incluye los beneficios exclusivos de socios (ver punto 5).
-- **Plan Social:** hay un responsable del grupo. Si quedan menos de 3, los que siguen pasan a cuota individual.
-- **Familiar Plus:** el adicional paga un ingreso reducido, para que sea fácil sumarlo (lo define el club).
-- **Plan Joven:** se puede pagar con Mercado Pago. Al cumplir 26, pasa a Individual.
+- **Temporada por invitación:** si al terminar el verano la familia se asocia, lo que pagó de más se le descuenta del ingreso. Solo con presentación de un socio y aprobación del club.
+- **Familiar Plus:** el adicional paga un ingreso reducido (lo define el club).
+- **Joven:** se puede pagar con Mercado Pago. Al cumplir 26, pasa a Individual. También puede regalarlo un familiar ("Regalá el verano" en Navidad o egresados).
+
+**Sobre el plan Social (grupos de amigos):** lo sacamos de la propuesta. Hacer entrar a varios amigos juntos con descuento va en contra de la selectividad. Si un grupo de amigos quiere sumarse, cada uno pasa por la admisión con su plan Individual o Joven.
 
 **Por qué sirve:**
 
 - **El Familiar sigue siendo el mejor argumento:** si son 5, sale $8.400 por persona.
 - **El club cobra por cada persona extra** sin espantar a nadie.
-- **La gente de los alrededores y los jóvenes tienen por dónde entrar** sin pagar un año por adelantado.
-- **El Pase de Temporada y el Joven se prueban este verano con cupo.** En marzo medimos cuántos pasaron a socio anual y, si funciona, se repite.
+- **Los jóvenes y las familias de los alrededores tienen por dónde entrar,** siempre con una referencia de un socio.
 
-## 4. Cómo llega la gente nueva
+## 6. Socios actuales
 
-### El camino
-
-> Anuncio, recomendación o torneo → **Día de Campo** gratis → **Pase de Temporada, Joven o plan anual** → en marzo, **socio anual** con el ingreso descontado
-
-### Qué hacemos para cada público
-
-**Familias de Campo Quijano y los alrededores** (Rosario de Lerma, Cerrillos, La Silleta y Salta capital):
-
-- **Anuncios en Instagram y Facebook** por zona. Mensaje central: la diferencia entre ir a una pileta y ser parte de un club.
-- **Día de Campo:** las familias se anotan por WhatsApp y visitan el club un sábado o domingo con un recorrido guiado.
-- **Condición de temporada:** quien se asocia o saca el pase dentro de los 7 días posteriores a la visita accede a las condiciones de lanzamiento.
-
-**Jóvenes:**
-
-- **Torneos abiertos** de vóley y fútbol para no socios, con inscripción. Juegan, conocen el club y al cierre se les ofrece el plan Joven o el Social.
-- **Pases de invitado de los hijos de socios:** sus amigos son los mejores candidatos al Joven o al Social.
-- **"Regalá el verano":** el Pase de Temporada o el plan Joven como regalo de Navidad, fin de curso o egresados, con una tarjeta a nombre del joven. El mensaje va dirigido a los padres.
-
-**Socios nuevos, en su primer mes:**
-
-- 2 pases de invitado para el verano.
-- Inscripción gratis a su primer torneo.
-- Invitación al grupo de WhatsApp del club.
-
-**Socio trae socio:** cuando un socio trae a alguien que se asocia, los dos reciben un mes de cuota bonificado.
-
-## 5. Socios actuales
-
-**El problema:** si quedarse no tiene ninguna ventaja, un mes difícil termina en baja. Además, los planes nuevos no pueden hacer sentir a los socios que pagaron más que los que llegan.
+**El problema:** si quedarse no tiene ninguna ventaja, un mes difícil termina en baja.
 
 **Lo que proponemos:**
 
-1. **Beneficios exclusivos de socios,** que el Pase de Temporada no tiene: torneos internos, prioridad en eventos y pases de invitado.
+1. **Beneficios exclusivos de socios:** torneos internos, prioridad en eventos, pases de invitado y el derecho a presentar socios nuevos.
 2. **Niveles por antigüedad:** Socio, Socio Plata (3 años) y Socio de Honor (10 años), con beneficios simples para cada uno.
 3. **Agenda de verano:** torneos, aquagym, bingo, Día del Invitado y presentación del avance de las obras, comunicada con tiempo.
-4. **Comercios aliados de la zona** con descuentos para socios, sin costo para el club.
+4. **Comercios aliados de la zona** con beneficios para socios, sin costo para el club.
 5. **Planes para un mes difícil:** regularizar la deuda en cuotas o pausar la membresía en invierno sin perder la antigüedad.
 
-## 6. Cobranza y administración
+## 7. Cobranza y administración
 
-1. **Planilla de socios y pagos** (ya armada). Administración solo carga socios y pagos. La planilla calcula sola la antigüedad, el nivel, el próximo vencimiento, los días de mora y qué aviso corresponde mandar. La adaptamos a los planes nuevos, le sumamos una columna de origen ("¿Cómo conociste el club?") y la pasamos a Google Sheets para que la automatización pueda leerla.
-2. **Avisos automáticos por WhatsApp.** Todos los días el sistema revisa la planilla y manda solo el aviso que corresponde a cada socio:
+1. **Planilla de socios y pagos** (ya armada). Administración solo carga socios y pagos. La planilla calcula sola la antigüedad, el nivel, el próximo vencimiento, los días de mora y qué aviso corresponde mandar. La adaptamos a los planes nuevos, le sumamos las columnas de origen y de socio presentante, y la pasamos a Google Sheets para que la automatización pueda leerla.
+2. **Registro de solicitudes:** cada solicitud de visita e ingreso queda anotada con su estado (visita agendada, en revisión, aprobada, no aprobada).
+3. **Avisos automáticos por WhatsApp.** Todos los días el sistema revisa la planilla y manda solo el aviso que corresponde a cada socio:
 
 | Momento | Aviso | Botones para responder |
 |---|---|---|
@@ -133,62 +144,62 @@ Proponemos pasar de dos planes a seis, con reglas escritas. **Los montos nuevos 
 | Al registrarse el pago | Agradecimiento | Ver beneficios |
 
    Cuando el socio toca un botón, recibe la información de planes de pago, débito o pausa sin que nadie tenga que escribirle.
-3. **Beneficios por WhatsApp,** solo para socios que aceptaron recibir novedades: aniversario como socio y nuevo nivel, agenda de eventos, "socio trae socio" y campaña de pago anual.
-4. **Campaña de débito automático** con Banco Macro para quienes pagan a mano.
+4. **Beneficios por WhatsApp,** solo para socios que aceptaron recibir novedades: aniversario como socio y nuevo nivel, agenda de eventos, presentación de socios y campaña de pago anual.
+5. **Campaña de débito automático** con Banco Macro para quienes pagan a mano.
 
 **Cuidados:**
 
 - Avisos siempre cordiales, nunca de noche ni los fines de semana.
-- Las deudas son datos personales: solo acceden administración y TWO&HUMAN, y nunca se mencionan en el grupo del club.
+- Las deudas y las solicitudes son datos personales: solo acceden administración y TWO&HUMAN, y nunca se mencionan en el grupo del club.
 - Los mensajes de aviso y los de beneficios van separados, como exige WhatsApp.
 - Antes de activarlo para todos, se prueba con 10 socios de confianza.
 
-## 7. Redes y WhatsApp
+## 8. Redes y WhatsApp
 
-1. **WhatsApp Business del club:** número propio con respuestas rápidas (planes, precios, horarios, Día de Campo) y registro de cada interesado en la planilla.
-2. **Instagram y Facebook ordenados:** biografía, historias destacadas (Planes, Actividades, Obras) y publicaciones constantes.
-3. **Contenido mensual:** 4 reels, 8 publicaciones e historias 3 veces por semana, mostrando la vida real del club.
+1. **WhatsApp Business del club:** número propio con respuestas rápidas (planes, horarios, cómo solicitar una visita) y registro de cada solicitud en la planilla.
+2. **Instagram y Facebook ordenados:** biografía, historias destacadas (El club, Actividades, Obras, Cómo ser socio) y publicaciones constantes.
+3. **Contenido mensual:** 4 reels, 8 publicaciones e historias 3 veces por semana. Estética cuidada y vida real del club: familias, eventos, naturaleza e instalaciones.
 4. **Grabación:** 30 de octubre y 1 de noviembre. Llevamos el guion y la lista de tomas.
 
-## 8. Calendario
+## 9. Calendario
 
 | Cuándo | Qué hacemos |
 |---|---|
-| **Hasta el 29/10** | El club toma las decisiones del punto 10. Preparamos guiones y lista de tomas. |
+| **Hasta el 29/10** | El club toma las decisiones del punto 11. Preparamos guiones y lista de tomas. |
 | **30/10 y 1/11** | Grabación en el club. |
-| **Noviembre** | WhatsApp del club, planilla adaptada y redes ordenadas. Armado de la automatización y aprobación de los mensajes por WhatsApp. Se presentan los planes nuevos y el Día de Campo. Anuncios desde mitad de mes. Aviso a los socios de "socio trae socio" y del débito. |
-| **Diciembre** | Prueba de la automatización con 10 socios y activación para todos. Arranca la temporada y el Pase de Temporada. Campaña "Regalá el verano" para Navidad y egresados. Primer torneo abierto. Día del Invitado. |
+| **Noviembre** | WhatsApp del club, planilla adaptada y redes ordenadas. Armado de la automatización. Se comunica a los socios el programa "Socio presenta socio" y los planes nuevos. Se abren las solicitudes de visita. Anuncios desde mitad de mes. |
+| **Diciembre** | Activación de la automatización (primero con 10 socios). Arranca la temporada y la Temporada por invitación. "Regalá el verano" para Navidad y egresados. Día del Invitado. |
 | **Enero** | Temporada en pleno. Presentación de las obras. Revisamos los resultados de los 3 meses y proponemos cómo seguir. |
-| **Marzo** | Fin del Pase de Temporada: ofrecemos el paso a socio anual con el ingreso descontado y medimos cuántos se quedan. |
+| **Marzo** | Fin de la Temporada por invitación: ofrecemos asociarse con el ingreso descontado y medimos cuántos se quedan. |
 
-## 9. Quién hace qué
+## 10. Quién hace qué
 
 | TWO&HUMAN | El club |
 |---|---|
-| Estrategia, planes y calendario de contenido | Decide planes, montos y condiciones de ingreso |
+| Estrategia, planes y calendario de contenido | Decide planes, montos, criterios y cupos de admisión |
 | Guiones, grabación, edición y diseño | Da acceso a las redes y un número para WhatsApp |
 | Publicación en Instagram y Facebook | Carga socios y pagos en la planilla |
 | Armado del WhatsApp Business y respuestas rápidas | Responde los WhatsApp (o designa a alguien) |
 | Gestión de los anuncios | Paga el presupuesto de anuncios |
-| Planilla y automatización de avisos | Recibe a las familias en el Día de Campo |
+| Planilla, registro de solicitudes y automatización de avisos | Recibe las visitas y aprueba las solicitudes |
 | Aprobación de los mensajes ante WhatsApp | Da el link de pago (Mercado Pago) y el formulario de débito |
-| Organización de la comunicación de torneos y eventos | Organiza los torneos y eventos en el club |
+| Comunicación de torneos y eventos | Organiza los torneos y eventos en el club |
 | Reporte mensual | Aprueba las publicaciones a tiempo |
 
-## 10. Decisiones que necesitamos del club
+## 11. Decisiones que necesitamos del club
 
-1. Qué cuenta como grupo familiar.
-2. Montos del Familiar Plus, Social, Joven y Pase de Temporada.
-3. Cupo de Pases de Temporada para este verano.
-4. Opción de ingreso para los planes anuales (cuotas, bonificado o anual) y sus números.
-5. Beneficio de "socio trae socio" (proponemos un mes bonificado para los dos).
-6. Días del Día de Campo y quién recibe a las familias.
-7. Fechas de los torneos abiertos.
+1. Criterios de admisión y quién aprueba las solicitudes.
+2. Cupos de socios nuevos y de Temporada por invitación para este verano.
+3. Qué cuenta como grupo familiar.
+4. Montos del Familiar Plus, Joven y Temporada por invitación.
+5. Cómo se paga el ingreso (cuotas o anual adelantado) y sus números.
+6. Reconocimiento para el socio que presenta (proponemos un mes bonificado).
+7. Días de visita y quién recibe a las familias.
 8. Quién responde el WhatsApp del club y en qué horario.
 9. Presupuesto mensual para anuncios.
 10. Una tarjeta para pagar los mensajes de WhatsApp directamente a Meta.
 
-## 11. Inversión
+## 12. Inversión
 
 | Concepto | Precio |
 |---|---|
@@ -200,18 +211,19 @@ Proponemos pasar de dos planes a seis, con reglas escritas. **Los montos nuevos 
 
 **Cómo funciona el bono:**
 
-- Solo se cobra por socios que llegaron por nuestras redes, anuncios, torneos o el Día de Campo. Queda anotado en la planilla con la pregunta "¿Cómo conociste el club?".
-- Se cobra cuando el socio confirma el alta y paga, sin importar si el ingreso es en cuotas o al contado.
-- **Social y Familiar Plus:** el 10 % del ingreso que fije el club para cada persona nueva. Si un adicional no paga ingreso, no hay bono por él.
-- **Pase de Temporada y Joven:** el bono se cobra recién cuando la persona pasa a socio anual y paga el ingreso, no al sacar el pase.
-- **Si no llegan socios nuevos, el club no paga nada extra.**
+- Solo se cobra por socios **aprobados por el club** que llegaron por nuestras redes, anuncios o solicitudes de visita. Queda anotado en la planilla con la pregunta "¿Cómo conociste el club?".
+- **No se cobra por socios presentados por otro socio sin intervención nuestra.** Si llegaron por "Socio presenta socio" a partir de nuestra campaña, lo acordamos caso por caso.
+- Se cobra cuando el socio es aprobado y paga, sin importar si el ingreso es en cuotas o al contado.
+- **Familiar Plus y Joven:** el 10 % del ingreso que fije el club para cada persona nueva. Si un adicional no paga ingreso, no hay bono por él.
+- **Temporada por invitación:** el bono se cobra recién cuando la familia se asocia y paga el ingreso.
+- **Si no se suman socios nuevos, el club no paga nada extra.**
 
 **No incluye:**
 
 - Presupuesto de anuncios (lo paga el club directamente a Meta).
 - Costo de los mensajes de WhatsApp: Meta cobra por cada aviso que manda el club. Es un monto bajo por mensaje y lo paga el club directamente con su tarjeta.
 - Cartel de acero inoxidable para la entrada (se cotiza aparte).
-- Costos de los bonos de bienvenida y las tarjetas de regalo impresas, si las hay.
+- Costos de los obsequios de bienvenida y las tarjetas de regalo impresas, si las hay.
 
 **Sobre la automatización:**
 
@@ -221,25 +233,24 @@ Proponemos pasar de dos planes a seis, con reglas escritas. **Los montos nuevos 
 
 **Forma de pago:** mes por adelantado. Al terminar los 3 meses revisamos juntos los resultados y el precio.
 
-## 12. Cómo vamos a medir
+## 13. Cómo vamos a medir
 
 Cada mes entregamos un reporte simple con:
 
-- Consultas por WhatsApp y de qué zona llegan.
-- Familias que vinieron al Día de Campo.
-- Socios nuevos por plan y de dónde llegaron.
-- Pases de Temporada y planes Joven vendidos.
-- Participantes de los torneos abiertos.
+- Solicitudes de visita y de qué zona llegan.
+- Visitas realizadas.
+- Solicitudes de ingreso, aprobadas y no aprobadas.
+- Socios nuevos por plan y cómo llegaron (presentados por un socio, redes o anuncios).
 - Socios adheridos al débito automático.
 - Socios con cuotas atrasadas y cuántos regularizaron después de un aviso.
 
-En marzo sumamos el dato más importante: **cuántos Pases de Temporada y planes Joven pasaron a socio anual.**
+En marzo sumamos: **cuántas familias de la Temporada por invitación se asociaron.**
 
-## 13. Próximos pasos
+## 14. Próximos pasos
 
 1. Confirmar el plan.
-2. Pasarnos los datos del punto 1 (cantidad de socios y personas por familia).
-3. Tomar las decisiones del punto 10.
+2. Pasarnos los datos del punto 1 (cantidad de socios, personas por familia y cómo se aprueba hoy a un socio).
+3. Tomar las decisiones del punto 11.
 4. Darnos acceso a las redes, el número para WhatsApp y la cuenta de Meta Business del club.
 5. Pasarnos el listado de socios para cargar la planilla.
 6. Grabar el 30 de octubre y el 1 de noviembre.
