@@ -1,5 +1,5 @@
 # Plan de trabajo · Club de Campo Quijano
-**Preparado por TWO&HUMAN · Octubre 2026 · Versión 7 (borrador para revisar)**
+**Preparado por TWO&HUMAN · Octubre 2026 · Versión 8 (borrador para revisar)**
 
 ---
 
@@ -64,13 +64,14 @@ Esto, además, hace al club **más deseado:** lo que cuesta conseguir se valora 
    - **Presentado por un socio:** el socio completa una presentación breve de la familia o persona que recomienda.
    - **Solicitud externa:** cualquier persona que no conoce a nadie en el club puede pedir una visita completando un formulario (ver "Cómo nos aseguramos de que encajen").
 2. **Revisión previa.** Administración lee cada solicitud y responde en 48 horas: agenda la visita o agradece el interés.
-3. **Visita al club.** Con turno, un sábado o domingo, acompañada por un miembro de la comisión o de administración. Es el momento de conocerse de los dos lados.
+3. **Visita al club.** Con turno, un sábado o domingo, acompañada por un miembro de la comisión o de administración. Es el momento de conocerse de los dos lados. Sigue una guía simple (ver "Guía de visita y seguimiento").
 4. **Solicitud de ingreso.** Si después de la visita quieren sumarse, completan la solicitud formal. Quien viene sin presentación suma dos referencias personales o laborales.
 5. **Aprobación.** La comisión o quien el club designe revisa la solicitud y responde en un plazo definido (por ejemplo, 7 días).
 6. **Bienvenida.** Una vez aprobado y pago el ingreso (o su primera cuota):
    - Presentación del nuevo socio en el grupo de WhatsApp del club.
    - 2 pases de invitado para el verano.
    - Inscripción a su primer torneo o evento.
+7. **Primer mes.** A los 30 días, el club le escribe para saber cómo se está sintiendo y si necesita algo. El primer mes es cuando más se arrepiente la gente; un mensaje a tiempo lo evita.
 
 ### Cómo nos aseguramos de que encajen
 
@@ -89,6 +90,31 @@ Que la puerta esté abierta no significa que entre cualquiera. Para que quien so
 - Cuando un socio presenta a alguien que es aprobado y se asocia, **el socio que lo presentó recibe un reconocimiento** (sugerido: un mes de cuota bonificado).
 - El socio que presenta **es la referencia** de la persona nueva durante su primer año.
 - Es el canal más valioso: trae gente que ya conoce y comparte los valores del club.
+
+### Guía de visita y seguimiento
+
+La visita es el momento en que se decide todo, así que no puede depender de quién la haga ese día. Le preparamos al club una guía de una página:
+
+1. **Recibir y conocer:** quiénes son, de dónde vienen, qué buscan en un club.
+2. **Recorrido armado:** pileta, canchas, quincho y espacios verdes, contando cómo se vive cada lugar (torneos, eventos, fines de semana).
+3. **Planes e ingreso:** explicar el plan que les corresponde y las formas de pagar el ingreso, sin apuro.
+4. **Cierre:** "¿Les gustaría que les dejemos la solicitud de ingreso?"
+
+**Seguimiento por WhatsApp** a quien visitó y no completó la solicitud:
+
+- **A las 24 horas:** agradecimiento por la visita y el link a la solicitud.
+- **A los 7 días:** un mensaje breve para saber si les quedó alguna duda.
+
+Sin seguimiento se pierden familias que ya estaban decididas.
+
+### Ex socios: "Volvé al club"
+
+Los ex socios son los interesados más fáciles de recuperar: ya conocen el club y ya pasaron la admisión.
+
+- El club nos pasa la lista de ex socios con su último teléfono.
+- Les escribimos desde el WhatsApp del club con un mensaje personal, no una publicidad.
+- Les ofrecemos una **condición especial de reingreso** que define el club (por ejemplo, sin ingreso o con ingreso reducido) si vuelven esta temporada.
+- Es lo primero que hacemos en noviembre, antes de invertir en anuncios.
 
 ### Campañas por intereses
 
@@ -113,14 +139,14 @@ Todos se muestran solo en Campo Quijano, Rosario de Lerma, Cerrillos, La Silleta
 
 **3. La encuesta (6 preguntas, menos de un minuto):**
 
-1. ¿Quiénes se sumarían al club? (familia con hijos · pareja · una persona · joven de 18 a 25)
+1. ¿Quiénes se sumarían al club? (familia con hijos · pareja · una persona · joven de 18 a 30)
 2. ¿En qué localidad viven?
 3. ¿Qué es lo que más les interesa? (pileta · deportes · vida social · naturaleza · eventos)
 4. ¿Conocen a algún socio del club? (sí, ¿quién? · no)
 5. ¿Cuándo les gustaría sumarse? (esta temporada · más adelante · solo estoy averiguando)
 6. El ingreso equivale a un año de cuota (se puede pagar en cuotas) y la admisión la aprueba el club. ¿Quieren avanzar con una visita? (sí · tengo dudas · no por ahora)
 
-Al final, una casilla para aceptar las normas de convivencia.
+Al final, una casilla para aceptar las normas de convivencia y otra para autorizar al club a usar sus datos solo para la admisión (Ley 25.326 de datos personales).
 
 **4. Calificación automática.** La planilla le da un puntaje a cada respuesta y clasifica al interesado:
 
@@ -136,6 +162,7 @@ Al final, una casilla para aceptar las normas de convivencia.
 
 - **La vida del club:** el ambiente, las familias, los eventos y la naturaleza. Cuidado y aspiracional, nunca de oferta.
 - **Mensaje central:** un club de campo es pertenecer a una comunidad, no ir a una pileta.
+- **Testimonios de socios:** 3 o 4 familias socias contando por qué eligieron el club, con su autorización por escrito. Nada convence más a una familia que otra familia.
 
 ## 5. Planes de membresía
 
@@ -146,8 +173,8 @@ Proponemos pasar de dos planes a cinco, con reglas escritas. **Los montos nuevos
 | **Individual** | Una persona | $20.000 (como hoy) |
 | **Familiar** | Dos adultos y sus hijos hasta 25 años que vivan con ellos, sin límite de hijos | $42.000 (como hoy) |
 | **Familiar Plus** | El Familiar más abuelos, tíos, primos, hijos mayores de 25 o parejas de los hijos | $42.000 + adicional por persona (sugerido: $10.000) |
-| **Joven** | De 18 a 25 años, **presentado por un socio** o hijo o nieto de socios que ya no entra en el plan familiar | Cuota reducida (sugerido: $15.000) |
-| **Temporada por invitación** | Familias **presentadas por un socio** que quieren vivir un verano antes de asociarse. De diciembre a marzo, sin ingreso y con cupo muy limitado | Más alta que la de socio (sugerido: $55.000 familiar, $26.000 individual) |
+| **Joven** | De 18 a 30 años. Para hijos de socios que salen del Familiar a los 26, nietos de socios y jóvenes que pasan la admisión | Cuota reducida (sugerido: $15.000) |
+| **Temporada por invitación** | Familias que el club invita a vivir un verano antes de asociarse: presentadas por un socio, o que llegaron por solicitud y pasaron la visita. De diciembre a marzo, sin ingreso y con cupo muy limitado | Más alta que la de socio (sugerido: $55.000 familiar, $26.000 individual) |
 
 ### El ingreso
 
@@ -156,11 +183,13 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 - **En cuotas:** 6 o 12 cuotas junto con la cuota mensual, por débito.
 - **Pago anual adelantado:** quien paga el año entero tiene un beneficio en el ingreso (lo define el club).
 
+Si un socio se da de baja antes de terminar de pagar el ingreso en cuotas, debe el saldo.
+
 ### Reglas
 
-- **Temporada por invitación:** si al terminar el verano la familia se asocia, lo que pagó de más se le descuenta del ingreso. Solo con presentación de un socio y aprobación del club.
+- **Temporada por invitación:** si al terminar el verano la familia se asocia, lo que pagó de más se le descuenta del ingreso. Siempre con invitación y aprobación del club.
 - **Familiar Plus:** el adicional paga un ingreso reducido (lo define el club).
-- **Joven:** se puede pagar con Mercado Pago. Al cumplir 26, pasa a Individual. También puede regalarlo un familiar ("Regalá el verano" en Navidad o egresados).
+- **Joven:** se puede pagar con Mercado Pago. Al cumplir 31, pasa a Individual. También puede regalarlo un familiar ("Regalá el verano" en Navidad o egresados).
 
 **Sobre el plan Social (grupos de amigos):** lo sacamos de la propuesta. Hacer entrar a varios amigos juntos con descuento va en contra de la selectividad. Si un grupo de amigos quiere sumarse, cada uno pasa por la admisión con su plan Individual o Joven.
 
@@ -168,7 +197,8 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 
 - **El Familiar sigue siendo el mejor argumento:** si son 5, sale $8.400 por persona.
 - **El club cobra por cada persona extra** sin espantar a nadie.
-- **Los jóvenes y las familias de los alrededores tienen por dónde entrar,** siempre con una referencia de un socio.
+- **Los jóvenes y las familias de los alrededores tienen por dónde entrar,** siempre pasando por la visita y la aprobación del club.
+- **Los hijos de socios no se pierden a los 26:** pasan al plan Joven en lugar de irse.
 
 ## 6. Socios actuales
 
@@ -181,6 +211,7 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 3. **Agenda de verano:** torneos, aquagym, bingo, Día del Invitado y presentación del avance de las obras, comunicada con tiempo.
 4. **Comercios aliados de la zona** con beneficios para socios, sin costo para el club.
 5. **Planes para un mes difícil:** regularizar la deuda en cuotas o pausar la membresía en invierno sin perder la antigüedad.
+6. **Entender cada baja:** cuando un socio se va, el club le pregunta el motivo con un mensaje breve. Lo sumamos al reporte para corregir lo que se pueda.
 
 ## 7. Cobranza y administración
 
@@ -220,7 +251,7 @@ Si el club crece y mandar los avisos a mano empieza a llevar mucho tiempo, se pu
 1. **WhatsApp Business del club:** número propio con mensaje de bienvenida automático que le envía la encuesta a quien escribe desde un anuncio o las redes. Más respuestas rápidas para las preguntas comunes (planes, horarios, cómo ser socio).
 2. **Instagram y Facebook ordenados:** biografía, historias destacadas (El club, Actividades, Obras, Cómo ser socio) y publicaciones constantes.
 3. **Contenido mensual:** 4 reels, 8 publicaciones e historias 3 veces por semana. Estética cuidada y vida real del club: familias, eventos, naturaleza e instalaciones.
-4. **Grabación:** 30 de octubre y 1 de noviembre. Llevamos el guion y la lista de tomas.
+4. **Grabación:** 30 de octubre y 1 de noviembre. Llevamos el guion y la lista de tomas, e incluimos los testimonios de socios.
 
 ## 9. Calendario
 
@@ -228,10 +259,20 @@ Si el club crece y mandar los avisos a mano empieza a llevar mucho tiempo, se pu
 |---|---|
 | **Hasta el 29/10** | El club toma las decisiones del punto 11. Preparamos guiones y lista de tomas. |
 | **30/10 y 1/11** | Grabación en el club. |
-| **Noviembre** | WhatsApp del club, planilla adaptada con el botón de avisos y redes ordenadas. Se comunica a los socios el programa "Socio presenta socio" y los planes nuevos. Se abren las solicitudes de visita. Anuncios desde mitad de mes. |
+| **Noviembre** | WhatsApp del club, planilla adaptada con el botón de avisos y redes ordenadas. Campaña "Volvé al club" a ex socios. Se comunica a los socios el programa "Socio presenta socio" y los planes nuevos. Se abren las solicitudes de visita. Anuncios desde mitad de mes. |
 | **Diciembre** | Arranca la temporada y la Temporada por invitación. "Regalá el verano" para Navidad y egresados. Día del Invitado. |
 | **Enero** | Temporada en pleno. Presentación de las obras. Revisamos los resultados de los 3 meses y proponemos cómo seguir. |
 | **Marzo** | Fin de la Temporada por invitación: ofrecemos asociarse con el ingreso descontado y medimos cuántos se quedan. |
+
+### Primeros 15 días
+
+Para que el club vea avances desde el principio:
+
+| Semana | Qué queda funcionando |
+|---|---|
+| **Semana 1** | Planilla cargada con los socios y el botón de avisos |
+| **Semana 2** | WhatsApp del club y encuesta activos, redes ordenadas, mensajes a ex socios enviados |
+| **Semana 3** | Primeros videos publicados y guía de visita entregada |
 
 ## 10. Quién hace qué
 
@@ -245,6 +286,8 @@ Si el club crece y mandar los avisos a mano empieza a llevar mucho tiempo, se pu
 | Encuesta, planilla, registro de solicitudes y mensajes de aviso | Revisa las solicitudes, recibe las visitas y aprueba |
 | Capacitación a administración para usar la planilla | Envía los avisos desde la planilla y da el link de pago |
 | Comunicación de torneos y eventos | Organiza los torneos y eventos en el club |
+| Guía de visita, mensajes de seguimiento y campaña a ex socios | Pasa la lista de ex socios y hace las visitas con la guía |
+| Borrador de normas de convivencia, si el club no las tiene | Revisa y aprueba las normas |
 | Reporte mensual | Aprueba las publicaciones a tiempo |
 
 ## 11. Decisiones que necesitamos del club
@@ -255,9 +298,10 @@ Si el club crece y mandar los avisos a mano empieza a llevar mucho tiempo, se pu
 4. Montos del Familiar Plus, Joven y Temporada por invitación.
 5. Cómo se paga el ingreso (cuotas o anual adelantado) y sus números.
 6. Reconocimiento para el socio que presenta (proponemos un mes bonificado).
-7. Días de visita y quién recibe a las familias.
-8. Quién responde el WhatsApp del club y en qué horario.
-9. Presupuesto mensual para anuncios.
+7. Condición especial de reingreso para ex socios.
+8. Días de visita y quién recibe a las familias.
+9. Quién responde el WhatsApp del club y en qué horario.
+10. Un monto de prueba para anuncios en las primeras dos semanas. Se sube solo si los anuncios traen interesados A.
 
 ## 12. Inversión
 
@@ -266,10 +310,25 @@ Si el club crece y mandar los avisos a mano empieza a llevar mucho tiempo, se pu
 | **Plan mensual** (marketing, WhatsApp, encuesta, planilla y avisos de la etapa 1) | **$500.000 por mes**, fijo durante los primeros 3 meses |
 | **Bono por socio nuevo** | **10 % del ingreso de lista**, una sola vez por socio: **$50.400** por grupo familiar y **$24.000** por socio individual |
 
-**Cómo funciona el bono:**
+### Cuentas claras
+
+Con los valores actuales del club:
+
+| | Grupo familiar | Socio individual |
+|---|---|---|
+| Ingreso | $504.000 | $240.000 |
+| Cuotas del primer año | $504.000 | $240.000 |
+| **Lo que deja en el primer año** | **$1.008.000** | **$480.000** |
+
+Los 3 meses del plan cuestan $1.500.000, más el presupuesto de anuncios. **Con 2 familias nuevas, el plan está pagado.** Desde la tercera, todo es ganancia para el club, y cada familia sigue pagando su cuota los años siguientes.
+
+Si el ingreso se paga en cuotas, esa plata entra a lo largo del año en lugar de toda junta.
+
+### Cómo funciona el bono
 
 - Solo se cobra por socios **aprobados por el club** que llegaron por nuestras redes, anuncios o solicitudes de visita. Queda anotado en la planilla con la pregunta "¿Cómo conociste el club?".
-- **No se cobra por socios presentados por otro socio sin intervención nuestra.** Si llegaron por "Socio presenta socio" a partir de nuestra campaña, lo acordamos caso por caso.
+- **Regla para los presentados por un socio:** si la persona pasó por el WhatsApp del club o la encuesta, cuenta. Si llegó directo de la mano de un socio, sin pasar por ahí, no cuenta.
+- **Ex socios que vuelven:** cuentan si vuelven por la campaña "Volvé al club", con el 10 % del ingreso que efectivamente paguen. Si el club les bonifica el ingreso, no hay bono.
 - Se cobra cuando el socio es aprobado y paga, sin importar si el ingreso es en cuotas o al contado.
 - **Familiar Plus y Joven:** el 10 % del ingreso que fije el club para cada persona nueva. Si un adicional no paga ingreso, no hay bono por él.
 - **Temporada por invitación:** el bono se cobra recién cuando la familia se asocia y paga el ingreso.
@@ -282,9 +341,18 @@ Si el club crece y mandar los avisos a mano empieza a llevar mucho tiempo, se pu
 - Cartel de acero inoxidable para la entrada (se cotiza aparte).
 - Costos de los obsequios de bienvenida y las tarjetas de regalo impresas, si las hay.
 
-La planilla, la encuesta y el WhatsApp quedan a nombre del club, aunque después no siga con nosotros.
+### Garantía de cumplimiento
 
-**Forma de pago:** mes por adelantado. Al terminar los 3 meses revisamos juntos los resultados y el precio.
+Si al terminar el primer mes la planilla, el WhatsApp del club, la encuesta y las redes no están funcionando, **el segundo mes no se cobra hasta completarlo.**
+
+No prometemos una cantidad de socios, porque la decisión de admitir es del club. Sí garantizamos que todo lo que depende de nosotros esté hecho.
+
+### Condiciones
+
+- **Forma de pago:** mes por adelantado.
+- **Plazo:** 3 meses. Al terminar, revisamos juntos los resultados y el precio. Para seguir o terminar, cualquiera de las dos partes avisa con 15 días de anticipación.
+- **Bono después del plan:** vale para las solicitudes que entraron durante los 3 meses y se aprueban hasta 60 días después de terminado.
+- **Todo queda a nombre del club:** la planilla, la encuesta, el WhatsApp y el material grabado, aunque después no siga con nosotros.
 
 ## 13. Cómo vamos a medir
 
@@ -297,6 +365,9 @@ Cada mes entregamos un reporte simple con:
 - Socios nuevos por plan y cómo llegaron (presentados por un socio, redes o anuncios).
 - Socios adheridos al débito automático.
 - Socios con cuotas atrasadas y cuántos regularizaron después de un aviso.
+- Ex socios contactados y cuántos volvieron.
+- Visitas sin solicitud y cuántas se recuperaron con el seguimiento.
+- Bajas del mes y sus motivos.
 
 En marzo sumamos: **cuántas familias de la Temporada por invitación se asociaron.**
 
@@ -306,5 +377,5 @@ En marzo sumamos: **cuántas familias de la Temporada por invitación se asociar
 2. Pasarnos los datos del punto 1 (cantidad de socios, personas por familia y cómo se aprueba hoy a un socio).
 3. Tomar las decisiones del punto 11.
 4. Darnos acceso a las redes y el número para WhatsApp.
-5. Pasarnos el listado de socios para cargar la planilla.
+5. Pasarnos el listado de socios para cargar la planilla y la lista de ex socios.
 6. Grabar el 30 de octubre y el 1 de noviembre.
