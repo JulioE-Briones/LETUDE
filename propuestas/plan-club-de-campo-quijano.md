@@ -19,8 +19,11 @@ Lo que sabemos hoy del club:
 Lo que nos falta saber y vamos a medir al empezar:
 
 - Cuántos socios activos hay (familiares e individuales).
+- Cuántas personas tiene en promedio cada plan familiar.
 - Cuántos están al día y cuántos deben cuotas.
 - Cuántos socios nuevos entran por temporada y cuántos se dan de baja.
+
+Además, hoy no está definido qué cuenta como "grupo familiar". Un plan familiar sin límite puede incluir a primos, abuelos o amigos por una sola cuota.
 
 ## 2. Qué queremos lograr en 3 meses (noviembre a enero)
 
@@ -47,6 +50,28 @@ Las metas en números las fijamos juntos la primera semana, cuando tengamos los 
 4. **Bienvenida al socio nuevo:** 2 pases de invitado para el verano, inscripción gratis a su primer torneo y la invitación al grupo de WhatsApp del club.
 5. **Socio trae socio.** Cuando un socio actual trae a una familia que se asocia, los dos reciben un mes de cuota bonificado.
 6. **Anuncios en Instagram y Facebook** para Campo Quijano, Rosario de Lerma y Salta capital, invitando al Día de Campo. Mensaje central: la diferencia entre ir a una pileta y ser parte de un club.
+
+**Planes claros para cada tipo de grupo**
+
+Hoy hay dos planes: individual y familiar. Proponemos cuatro, con reglas escritas. Los montos nuevos son una sugerencia y los define el club.
+
+| Plan | Quiénes entran | Cuota |
+|---|---|---|
+| **Individual** | Una persona | $20.000 (como hoy) |
+| **Familiar** | Dos adultos y sus hijos hasta 25 años que vivan con ellos, sin límite de hijos | $42.000 (como hoy) |
+| **Familiar Plus** | El plan familiar más abuelos, tíos, primos, hijos mayores de 25 o parejas de los hijos | $42.000 + un adicional por persona (sugerimos $10.000, la mitad de una cuota individual) |
+| **Social** | Grupo de 3 a 6 amigos que se asocian juntos | Cuota individual con descuento por persona (sugerimos $16.000, 20 % menos) |
+
+Por qué sirve:
+
+- **El familiar sigue siendo el mejor argumento de venta.** Si son 5, sale $8.400 por persona, y eso se dice en los anuncios.
+- **El club cobra por cada persona extra** sin espantar a nadie: el adicional cuesta mucho menos que una cuota individual.
+- **El plan Social atrae a los jóvenes**, que era uno de los objetivos del club: entran con amigos y pagan menos que solos.
+
+Reglas a definir:
+
+- En el plan Social hay un responsable del grupo. Si el grupo queda con menos de 3 personas, los que siguen pasan a cuota individual.
+- Si los adicionales y el plan Social pagan ingreso, cuánto. Sugerimos un ingreso reducido para los adicionales del Familiar Plus, así es fácil sumarlos.
 
 ### B. Socios actuales
 
@@ -103,11 +128,12 @@ Al principio los mensajes se mandan a mano desde el WhatsApp del club, guiados p
 ## 6. Decisiones que necesitamos del club
 
 1. Qué opción de ingreso usar (cuotas, bonificado o anual) y con qué números.
-2. Descuento para planes semestral y anual, si lo hay.
-3. Beneficio de "socio trae socio" (proponemos un mes bonificado para los dos).
-4. Qué días se hace el Día de Campo y quién recibe a las familias.
-5. Quién responde el WhatsApp del club y en qué horario.
-6. Presupuesto mensual para anuncios.
+2. Qué cuenta como grupo familiar, y los montos del Familiar Plus y del plan Social.
+3. Descuento para planes semestral y anual, si lo hay.
+4. Beneficio de "socio trae socio" (proponemos un mes bonificado para los dos).
+5. Qué días se hace el Día de Campo y quién recibe a las familias.
+6. Quién responde el WhatsApp del club y en qué horario.
+7. Presupuesto mensual para anuncios.
 
 ## 7. Inversión
 
@@ -120,6 +146,7 @@ Al principio los mensajes se mandan a mano desde el WhatsApp del club, guiados p
 - Solo se cobra por socios que llegaron por nuestras redes, anuncios o el Día de Campo. En la ficha de alta se pregunta "¿Cómo conociste el club?" y queda anotado en la planilla.
 - Se cobra cuando el socio confirma el alta y paga, sin importar si paga el ingreso en cuotas o al contado.
 - Si no llegan socios nuevos, el club no paga nada extra.
+- En los planes Social y Familiar Plus, el bono es el 10 % del ingreso de lista que defina el club para cada persona nueva. Si un adicional no paga ingreso, no hay bono por él.
 
 **Lo que no incluye:**
 - Presupuesto de anuncios (lo paga el club directamente a Meta).
@@ -143,7 +170,7 @@ Cada mes entregamos un reporte simple con:
 ## 9. Próximos pasos
 
 1. Confirmar el plan.
-2. Tomar las decisiones del punto 6.
+2. Tomar las decisiones del punto 6 y pasarnos los datos del punto 1 (cantidad de socios y personas por familia).
 3. Darnos acceso a las redes y el número para WhatsApp.
 4. Pasarnos el listado de socios para cargar la planilla.
 5. Grabar el 30 de octubre y el 1 de noviembre.

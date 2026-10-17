@@ -32,7 +32,10 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 **Título:** Lo que vamos a medir al empezar
 - Cuántos socios activos hay
 - Cuántos están al día y cuántos deben
+- Cuántas personas tiene en promedio cada plan familiar
 - Cuántos entran y cuántos se van por temporada
+
+**Dato clave:** hoy no está escrito qué cuenta como "grupo familiar".
 
 **Frase de cierre:** Las metas en números las fijamos juntos con estos datos.
 
@@ -70,7 +73,23 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 7 · Socios actuales
+### Lámina 7 · Un plan para cada grupo
+**Título:** Un plan para cada grupo
+
+| Plan | Quiénes entran | Cuota |
+|---|---|---|
+| Individual | Una persona | $20.000 |
+| Familiar | Dos adultos y sus hijos hasta 25 años que viven con ellos | $42.000 |
+| Familiar Plus | El familiar más abuelos, tíos, primos o hijos mayores | $42.000 + adicional por persona |
+| Social | De 3 a 6 amigos que se asocian juntos | Cuota con descuento por persona |
+
+**Frase de cierre:** Una familia de 5 paga $8.400 por persona.
+
+**Nota para quien presenta:** los montos del adicional (sugerimos $10.000) y del plan Social (sugerimos $16.000 por persona) los define el club. El plan Social apunta a los jóvenes que se suman con amigos.
+
+---
+
+### Lámina 8 · Socios actuales
 **Título:** Que quedarse tenga sentido
 - **Niveles por antigüedad:** Socio, Socio Plata (3 años) y Socio de Honor (10 años)
 - **Agenda de verano:** torneos, aquagym, bingo, Día del Invitado y obras
@@ -79,7 +98,7 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 8 · Cobranza
+### Lámina 9 · Cobranza
 **Título:** Una cobranza ordenada
 - **Planilla de socios y pagos** (ya armada): administración carga socios y pagos, el resto se calcula solo
 - **Avisos por WhatsApp:** 3 días antes, el día del vencimiento, a los 5 y a los 15 días
@@ -90,7 +109,7 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 9 · Redes y WhatsApp
+### Lámina 10 · Redes y WhatsApp
 **Título:** Redes y WhatsApp
 - **WhatsApp Business del club** con respuestas rápidas y registro de interesados
 - **Instagram y Facebook** ordenados
@@ -99,7 +118,7 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 10 · Calendario
+### Lámina 11 · Calendario
 **Título:** Cómo avanzamos
 
 | Cuándo | Qué |
@@ -112,7 +131,7 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 11 · Quién hace qué
+### Lámina 12 · Quién hace qué
 **Título:** Quién hace qué
 
 | TWO&HUMAN | El club |
@@ -125,18 +144,19 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 12 · Decisiones del club
+### Lámina 13 · Decisiones del club
 **Título:** Lo que necesitamos que decidan
 1. Opción de ingreso y sus números
-2. Descuento semestral y anual
-3. Beneficio de "socio trae socio"
-4. Días del Día de Campo y quién recibe
-5. Quién responde el WhatsApp y en qué horario
-6. Presupuesto mensual de anuncios
+2. Qué es grupo familiar y montos del Familiar Plus y del Social
+3. Descuento semestral y anual
+4. Beneficio de "socio trae socio"
+5. Días del Día de Campo y quién recibe
+6. Quién responde el WhatsApp y en qué horario
+7. Presupuesto mensual de anuncios
 
 ---
 
-### Lámina 13 · Inversión
+### Lámina 14 · Inversión
 **Título:** Inversión
 - **Plan mensual:** $500.000 por mes, fijo los primeros 3 meses
 - **Bono por socio nuevo:** 10 % del ingreso de lista, una sola vez
@@ -144,6 +164,7 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
   - $24.000 por socio individual
 - El bono se cobra solo por socios que llegan por nuestro trabajo y cuando confirman el alta
 - **Si no llegan socios nuevos, no se paga nada extra**
+- En los planes Social y Familiar Plus, el bono es el 10 % del ingreso que fije el club para cada persona nueva
 
 **No incluye:** presupuesto de anuncios, automatización de avisos (se cotiza aparte), cartel de acero inoxidable (se cotiza aparte) y costos de los bonos de bienvenida.
 
@@ -151,7 +172,7 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 14 · Cómo medimos
+### Lámina 15 · Cómo medimos
 **Título:** Qué vas a ver cada mes
 - Consultas por WhatsApp
 - Familias que vinieron al Día de Campo
@@ -162,10 +183,10 @@ Basado en `plan-club-de-campo-quijano.md`. Cada lámina dice una sola idea, con 
 
 ---
 
-### Lámina 15 · Próximos pasos
+### Lámina 16 · Próximos pasos
 **Título:** Próximos pasos
 1. Confirmar el plan
-2. Tomar las decisiones
+2. Tomar las decisiones y pasarnos los datos de socios
 3. Acceso a redes y número de WhatsApp
 4. Listado de socios para la planilla
 5. Grabar el 30 de octubre y el 1 de noviembre
