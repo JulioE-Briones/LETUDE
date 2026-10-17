@@ -1,5 +1,5 @@
 # Plan de trabajo · Club de Campo Quijano
-**Preparado por TWO&HUMAN · Octubre 2026 · Versión 5 (borrador para revisar)**
+**Preparado por TWO&HUMAN · Octubre 2026 · Versión 6 (borrador para revisar)**
 
 ---
 
@@ -78,12 +78,7 @@ Que la puerta esté abierta no significa que entre cualquiera. Para que quien so
 
 1. **Lo que mostramos.** Las redes y los anuncios muestran el club como es: familias, ambiente, valores y forma de convivir. Eso atrae a quien se identifica y aleja a quien busca otra cosa.
 2. **Información clara desde el principio.** Antes de pedir la visita, la persona ve el valor de la cuota y del ingreso, cómo es el proceso de admisión y las normas de convivencia. Quien no está dispuesto a eso no avanza.
-3. **Un formulario que nos cuenta quién es.** Pide:
-   - Nombre y grupo familiar (quiénes serían socios).
-   - Localidad y actividad o profesión.
-   - Qué busca en el club y qué actividades le interesan.
-   - Cómo conoció el club y si conoce a algún socio.
-   - Que acepta las normas de convivencia y el proceso de admisión.
+3. **Una encuesta breve que califica a cada interesado.** Seis preguntas, en menos de un minuto (detalle en "Campañas por intereses").
 4. **La visita.** Es una charla tranquila con alguien de la comisión: el club conoce a la familia y la familia conoce el club. Se nota enseguida si hay afinidad.
 5. **Referencias y aprobación.** Quien viene sin presentación suma dos referencias, y la decisión final siempre es del club.
 
@@ -95,10 +90,51 @@ Que la puerta esté abierta no significa que entre cualquiera. Para que quien so
 - El socio que presenta **es la referencia** de la persona nueva durante su primer año.
 - Es el canal más valioso: trae gente que ya conoce y comparte los valores del club.
 
-### Qué hacemos en redes y anuncios
+### Campañas por intereses
 
-- **Contenido que muestre la vida del club:** el ambiente, las familias, los eventos y la naturaleza. Cuidado y aspiracional, nunca de oferta.
-- **Anuncios pocos y bien dirigidos,** a familias de Campo Quijano, Rosario de Lerma, Cerrillos, La Silleta y Salta capital, con el llamado **"Solicitá tu visita"**. El anuncio lleva al formulario, no a una promoción.
+**El recorrido:**
+
+> **Anuncio por interés** → **WhatsApp del club** → **Encuesta breve** (Google Forms) → **Calificación automática** → **Visita** para los que encajan
+
+**1. Anuncios separados por público.** En lugar de un anuncio para todos, armamos un grupo de anuncios por interés, cada uno con su video y su mensaje:
+
+| Público | Intereses y perfil | Qué le mostramos |
+|---|---|---|
+| **Familias con hijos** | Padres con hijos en edad escolar, vida al aire libre, colegios | Pileta, espacio verde, chicos jugando seguros |
+| **Deportistas** | Vóley, fútbol, tenis, running, actividades al aire libre | Canchas, torneos, grupo de pertenencia |
+| **Vida social y eventos** | Gastronomía, asados, vinos, eventos | Quincho, reuniones, Día del Invitado |
+| **Naturaleza y descanso** | Campo, montaña, escapadas cerca de Salta | Paisaje, tranquilidad, fines de semana en el club |
+
+Todos se muestran solo en Campo Quijano, Rosario de Lerma, Cerrillos, La Silleta y Salta capital. El llamado es **"Solicitá tu visita"**, sin precios ni promociones en el anuncio.
+
+> Meta a veces amplía el público más allá de los intereses elegidos. Por eso el filtro de verdad es la encuesta: el anuncio atrae, la encuesta selecciona.
+
+**2. WhatsApp responde y envía la encuesta.** Cuando la persona escribe desde el anuncio, recibe un saludo del club, una breve explicación de cómo es ser socio y el link a la encuesta. Cada anuncio usa un link distinto, así sabemos de qué público vino cada interesado.
+
+**3. La encuesta (6 preguntas, menos de un minuto):**
+
+1. ¿Quiénes se sumarían al club? (familia con hijos · pareja · una persona · joven de 18 a 25)
+2. ¿En qué localidad viven?
+3. ¿Qué es lo que más les interesa? (pileta · deportes · vida social · naturaleza · eventos)
+4. ¿Conocen a algún socio del club? (sí, ¿quién? · no)
+5. ¿Cuándo les gustaría sumarse? (esta temporada · más adelante · solo estoy averiguando)
+6. El ingreso equivale a un año de cuota (se puede pagar en cuotas) y la admisión la aprueba el club. ¿Quieren avanzar con una visita? (sí · tengo dudas · no por ahora)
+
+Al final, una casilla para aceptar las normas de convivencia.
+
+**4. Calificación automática.** La planilla le da un puntaje a cada respuesta y clasifica al interesado:
+
+| Nivel | Cuándo | Qué hacemos |
+|---|---|---|
+| **A · Listo para visitar** | Vive cerca, quiere sumarse esta temporada y acepta las condiciones. Suma si conoce a un socio | Administración le escribe en 48 horas para agendar la visita |
+| **B · Interesado más adelante** | Le interesa, pero no ahora o tiene dudas | Recibe novedades del club una vez por mes y se lo invita a la próxima temporada |
+| **C · No encaja por ahora** | Solo averigua o no acepta las condiciones | Se le agradece el interés con un mensaje cordial |
+
+**5. Medimos qué público trae mejores interesados** y pasamos el presupuesto a los anuncios que más A generan.
+
+### Contenido en redes
+
+- **La vida del club:** el ambiente, las familias, los eventos y la naturaleza. Cuidado y aspiracional, nunca de oferta.
 - **Mensaje central:** un club de campo es pertenecer a una comunidad, no ir a una pileta.
 
 ## 5. Planes de membresía
@@ -149,7 +185,7 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 ## 7. Cobranza y administración
 
 1. **Planilla de socios y pagos** (ya armada). Administración solo carga socios y pagos. La planilla calcula sola la antigüedad, el nivel, el próximo vencimiento, los días de mora y qué aviso corresponde mandar. La adaptamos a los planes nuevos, le sumamos las columnas de origen y de socio presentante, y la pasamos a Google Sheets para que la automatización pueda leerla.
-2. **Registro de solicitudes:** el formulario de solicitud (Google Forms) carga cada pedido en la planilla, con su estado: nueva, visita agendada, en revisión, aprobada o no aprobada. Administración ve todas en un solo lugar.
+2. **Registro de solicitudes:** la encuesta (Google Forms) carga cada respuesta en la planilla con su público de origen, su puntaje, su nivel (A, B o C) y su estado: nueva, visita agendada, en revisión, aprobada o no aprobada. Administración ve todas en un solo lugar, ordenadas por nivel.
 3. **Avisos automáticos por WhatsApp.** Todos los días el sistema revisa la planilla y manda solo el aviso que corresponde a cada socio:
 
 | Momento | Aviso | Botones para responder |
@@ -174,7 +210,7 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 
 ## 8. Redes y WhatsApp
 
-1. **WhatsApp Business del club:** número propio con respuestas rápidas (planes, horarios, cómo ser socio) que envían el formulario de solicitud a quien pregunta.
+1. **WhatsApp Business del club:** número propio que responde solo a quien escribe desde un anuncio o las redes y le envía la encuesta. Más respuestas rápidas para las preguntas comunes (planes, horarios, cómo ser socio).
 2. **Instagram y Facebook ordenados:** biografía, historias destacadas (El club, Actividades, Obras, Cómo ser socio) y publicaciones constantes.
 3. **Contenido mensual:** 4 reels, 8 publicaciones e historias 3 veces por semana. Estética cuidada y vida real del club: familias, eventos, naturaleza e instalaciones.
 4. **Grabación:** 30 de octubre y 1 de noviembre. Llevamos el guion y la lista de tomas.
@@ -255,7 +291,8 @@ El valor del ingreso **se mantiene**, porque es parte de lo que hace selecto al 
 
 Cada mes entregamos un reporte simple con:
 
-- Solicitudes de visita: cuántas llegaron, de qué zona y cuántas pasaron la revisión previa.
+- Interesados por público de anuncio y cuántos fueron A, B o C.
+- Costo por interesado A (lo que costó en anuncios cada interesado listo para visitar).
 - Visitas realizadas.
 - Solicitudes de ingreso, aprobadas y no aprobadas.
 - Socios nuevos por plan y cómo llegaron (presentados por un socio, redes o anuncios).
