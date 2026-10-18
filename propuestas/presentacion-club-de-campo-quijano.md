@@ -24,6 +24,6 @@ Estilo: azul y blanco (colores del club), fotos reales del club, una idea por l�
 19. **Lo que necesitamos que decidan** · Admisión y normas · cupos · montos de planes nuevos · ingreso · reconocimientos y reingreso · visitas y WhatsApp · prueba de anuncios.
 20. **Inversión** · $500.000 por mes, fijo de noviembre a marzo (5 meses) · bono 10 % del ingreso por socio aprobado ($50.400 / $24.000) · sin socios nuevos, nada extra · qué no incluye.
 21. **Cuentas claras** · Una familia deja $1.008.000 el primer año · la temporada cuesta $2.500.000 · con 3 familias se paga.
-22. **Garantía y condiciones** · Garantía de cumplimiento del primer mes · pago adelantado, plazo de toda la temporada · bono hasta 60 días después · todo a nombre del club.
+22. **Garantía y condiciones** · Garantía de cumplimiento al mes 2 · sin socios nuevos, nada extra · pago adelantado, plazo de toda la temporada · todo a nombre del club.
 23. **Qué vas a ver cada mes** · Indicadores del reporte.
 24. **Próximos pasos** · Confirmar, datos, decisiones, accesos, listados, grabación. Cierre: TWO&HUMAN · Donde la tecnología se vuelve humana.

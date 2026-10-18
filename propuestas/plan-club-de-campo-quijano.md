@@ -1,5 +1,5 @@
 # Plan de trabajo · Club de Campo Quijano
-**Preparado por TWO&HUMAN · Octubre 2026 · Versión 10 (borrador para revisar)**
+**Preparado por TWO&HUMAN · Octubre 2026 · Versión 11 (borrador para revisar)**
 
 ---
 
@@ -367,7 +367,7 @@ Si el ingreso se paga en cuotas, esa plata entra a lo largo del año en lugar de
 
 ### Garantía de cumplimiento
 
-Si al terminar el primer mes la planilla, el WhatsApp del club, la encuesta y las redes no están funcionando, **el segundo mes no se cobra hasta completarlo.**
+Si al terminar el segundo mes la planilla, el WhatsApp del club, la encuesta y las redes no están funcionando, **el tercer mes no se cobra hasta completarlo.**
 
 No prometemos una cantidad de socios, porque la decisión de admitir es del club. Sí garantizamos que todo lo que depende de nosotros esté hecho.
 
@@ -375,7 +375,6 @@ No prometemos una cantidad de socios, porque la decisión de admitir es del club
 
 - **Forma de pago:** mes por adelantado.
 - **Plazo:** la temporada completa, de noviembre a marzo. En marzo revisamos juntos los resultados y la propuesta para el año siguiente.
-- **Bono después del plan:** vale para las solicitudes que entraron durante la temporada y se aprueban hasta 60 días después de terminado.
 - **Todo queda a nombre del club:** la planilla, la encuesta, el WhatsApp y el material grabado, aunque después no siga con nosotros.
 
 ## 13. Cómo vamos a medir
