@@ -1,5 +1,5 @@
 # Plan de trabajo · Club de Campo Quijano
-**Preparado por TWO&HUMAN · Octubre 2026 · Versión 8 (borrador para revisar)**
+**Preparado por TWO&HUMAN · Octubre 2026 · Versión 10 (borrador para revisar)**
 
 ---
 
@@ -10,6 +10,7 @@
 - **Ubicación:** Campo Quijano, Salta.
 - **Perfil:** club de campo selecto. No busca sumar a cualquiera, sino a familias y personas que encajen con su comunidad.
 - **Cuotas:** grupo familiar $42.000 por mes, socio individual $20.000 por mes.
+- **Grupo familiar:** madre, padre e hijos que viven en la casa.
 - **Ingreso:** equivale a un año de cuota ($504.000 familiar, $240.000 individual).
 - **Cobro:** débito automático con Banco Macro (no todos los socios están adheridos).
 - **Redes:** Instagram y Facebook, con poca actividad.
@@ -29,13 +30,16 @@
 
 1. **El ingreso de un año completo** se paga de golpe, aun para familias que encajan perfecto con el club.
 2. **No hay un camino claro para incorporarse:** quien se interesa no sabe cómo pedir el ingreso ni a quién.
-3. **No está definido qué es un "grupo familiar".** Hoy una sola cuota puede incluir a primos, abuelos o amigos.
+3. **La cobranza no tiene seguimiento:** los pagos se controlan a mano en Excel y nadie avisa a tiempo cuando una cuota vence.
 
-## 2. Qué queremos lograr en 3 meses (noviembre a enero)
+## 2. Qué queremos lograr en la temporada (noviembre a marzo)
+
+Trabajamos la temporada de verano completa, de noviembre a marzo. Así acompañamos todo el recorrido: desde que una familia conoce el club hasta que se queda como socia permanente.
 
 1. **Sumar socios nuevos que encajen con el club,** cuidando quién entra.
-2. **Que los socios actuales se queden,** participen más y sientan orgullo de pertenecer.
-3. **Ordenar la cobranza** para que el club sepa cada mes cuánto va a cobrar.
+2. **Que los que vienen por la temporada se queden como socios permanentes.**
+3. **Que los socios actuales se queden,** participen más y sientan orgullo de pertenecer.
+4. **Ordenar la cobranza** para que el club sepa cada mes cuánto va a cobrar.
 
 Las metas en números las fijamos juntos cuando tengamos los datos del punto 1.
 
@@ -171,9 +175,9 @@ Proponemos pasar de dos planes a cinco, con reglas escritas. **Los montos nuevos
 | Plan | Quiénes entran | Cuota mensual |
 |---|---|---|
 | **Individual** | Una persona | $20.000 (como hoy) |
-| **Familiar** | Dos adultos y sus hijos hasta 25 años que vivan con ellos, sin límite de hijos | $42.000 (como hoy) |
-| **Familiar Plus** | El Familiar más abuelos, tíos, primos, hijos mayores de 25 o parejas de los hijos | $42.000 + adicional por persona (sugerido: $10.000) |
-| **Joven** | De 18 a 30 años. Para hijos de socios que salen del Familiar a los 26, nietos de socios y jóvenes que pasan la admisión | Cuota reducida (sugerido: $15.000) |
+| **Familiar** | Madre, padre e hijos que viven en la casa (como hoy) | $42.000 (como hoy) |
+| **Familiar Plus** | El Familiar más abuelos, tíos, primos, hijos que ya no viven en la casa o parejas de los hijos | $42.000 + adicional por persona (sugerido: $10.000) |
+| **Joven** | De 18 a 30 años. Para hijos de socios que ya no viven en la casa, nietos de socios y jóvenes que pasan la admisión | Cuota reducida (sugerido: $15.000) |
 | **Temporada por invitación** | Familias que el club invita a vivir un verano antes de asociarse: presentadas por un socio, o que llegaron por solicitud y pasaron la visita. De diciembre a marzo, sin ingreso y con cupo muy limitado | Más alta que la de socio (sugerido: $55.000 familiar, $26.000 individual) |
 
 ### El ingreso
@@ -198,7 +202,7 @@ Si un socio se da de baja antes de terminar de pagar el ingreso en cuotas, debe 
 - **El Familiar sigue siendo el mejor argumento:** si son 5, sale $8.400 por persona.
 - **El club cobra por cada persona extra** sin espantar a nadie.
 - **Los jóvenes y las familias de los alrededores tienen por dónde entrar,** siempre pasando por la visita y la aprobación del club.
-- **Los hijos de socios no se pierden a los 26:** pasan al plan Joven en lugar de irse.
+- **Los hijos de socios no se pierden cuando se van de la casa:** pasan al plan Joven en lugar de dejar el club.
 
 ## 6. Socios actuales
 
@@ -253,16 +257,35 @@ Si el club crece y mandar los avisos a mano empieza a llevar mucho tiempo, se pu
 3. **Contenido mensual:** 4 reels, 8 publicaciones e historias 3 veces por semana. Estética cuidada y vida real del club: familias, eventos, naturaleza e instalaciones.
 4. **Grabación:** 30 de octubre y 1 de noviembre. Llevamos el guion y la lista de tomas, e incluimos los testimonios de socios.
 
-## 9. Calendario
+## 9. Campañas de la temporada
+
+La temporada se organiza en cinco campañas. Cada una tiene un objetivo, un público y un número para medir.
+
+| # | Campaña | Cuándo | Para quién | Qué hacemos | Cómo la medimos |
+|---|---|---|---|---|---|
+| **1** | **Volvé al club** | Noviembre (semana 2) | Ex socios | Mensaje personal por WhatsApp con una condición especial de reingreso | Ex socios que vuelven |
+| **2** | **Socios nuevos** | Noviembre y diciembre | Familias y personas de la zona, y presentados por socios | Campañas por intereses, encuesta, visitas y "Socio presenta socio" | Interesados A, visitas y socios aprobados |
+| **3** | **Temporada por invitación** | Diciembre | Familias que todavía no quieren asociarse por un año, y jóvenes ("Regalá el verano") | Invitación a vivir el verano en el club, con cupo limitado | Pases de temporada otorgados |
+| **4** | **Fidelización** | Enero y febrero | Los que vinieron por la temporada y los socios nuevos | Bienvenida, invitación personal a torneos y eventos, mensaje a los 30 días, testimonios y beneficio por asociarse antes del 28/2 | Participación en actividades y asociaciones anticipadas |
+| **5** | **Paso a socio permanente** | Marzo | Los que vinieron por la temporada | Conversación personal, ingreso con lo pagado de más descontado y último plazo al 31/3 | Familias de temporada que se asocian |
+
+**Por qué la fidelización empieza en enero y no en marzo:** quien vive el club durante el verano decide si se queda mucho antes de que termine la temporada. Si esperamos a marzo, ya se fue de vacaciones o perdió la costumbre. Empezar en enero hace que, cuando llegue la propuesta, la familia ya se sienta parte del club.
+
+**Beneficio por anticiparse:** quien se asocia antes del 28 de febrero, además de descontar lo pagado de más, elige la forma de pago del ingreso que le quede más cómoda (por ejemplo, 12 cuotas). El club define el beneficio final. Es un plazo real, porque el cupo de la temporada siguiente se arma en marzo.
+
+**En paralelo, para los socios actuales:** en marzo se ofrece la pausa de invierno antes de que piensen en darse de baja.
+
+### Calendario
 
 | Cuándo | Qué hacemos |
 |---|---|
 | **Hasta el 29/10** | El club toma las decisiones del punto 11. Preparamos guiones y lista de tomas. |
-| **30/10 y 1/11** | Grabación en el club. |
-| **Noviembre** | WhatsApp del club, planilla adaptada con el botón de avisos y redes ordenadas. Campaña "Volvé al club" a ex socios. Se comunica a los socios el programa "Socio presenta socio" y los planes nuevos. Se abren las solicitudes de visita. Anuncios desde mitad de mes. |
-| **Diciembre** | Arranca la temporada y la Temporada por invitación. "Regalá el verano" para Navidad y egresados. Día del Invitado. |
-| **Enero** | Temporada en pleno. Presentación de las obras. Revisamos los resultados de los 3 meses y proponemos cómo seguir. |
-| **Marzo** | Fin de la Temporada por invitación: ofrecemos asociarse con el ingreso descontado y medimos cuántos se quedan. |
+| **30/10 y 1/11** | Grabación en el club, con testimonios de socios. |
+| **Noviembre** | WhatsApp, planilla y redes listos. Campañas 1 (ex socios) y 2 (socios nuevos). Se comunica a los socios "Socio presenta socio" y los planes nuevos. |
+| **Diciembre** | Arranca la temporada. Campaña 3 (Temporada por invitación y "Regalá el verano"). La campaña 2 sigue activa. Día del Invitado. |
+| **Enero** | Campaña 4 (fidelización): bienvenida, torneos, eventos y mensaje a los 30 días. Presentación de las obras. |
+| **Febrero** | Campaña 4 sigue: testimonios de familias de temporada y beneficio por asociarse antes del 28/2. |
+| **Marzo** | Campaña 5 (paso a socio permanente). Pausa de invierno para socios actuales. Cierre de la temporada con el reporte final y la propuesta para el año siguiente. |
 
 ### Primeros 15 días
 
@@ -294,20 +317,19 @@ Para que el club vea avances desde el principio:
 
 1. Criterios de admisión, normas de convivencia y quién aprueba las solicitudes.
 2. Cupos de socios nuevos y de Temporada por invitación para este verano.
-3. Qué cuenta como grupo familiar.
-4. Montos del Familiar Plus, Joven y Temporada por invitación.
-5. Cómo se paga el ingreso (cuotas o anual adelantado) y sus números.
-6. Reconocimiento para el socio que presenta (proponemos un mes bonificado).
-7. Condición especial de reingreso para ex socios.
-8. Días de visita y quién recibe a las familias.
-9. Quién responde el WhatsApp del club y en qué horario.
-10. Un monto de prueba para anuncios en las primeras dos semanas. Se sube solo si los anuncios traen interesados A.
+3. Montos del Familiar Plus, Joven y Temporada por invitación.
+4. Cómo se paga el ingreso (cuotas o anual adelantado) y sus números.
+5. Reconocimiento para el socio que presenta (proponemos un mes bonificado).
+6. Condición especial de reingreso para ex socios.
+7. Días de visita y quién recibe a las familias.
+8. Quién responde el WhatsApp del club y en qué horario.
+9. Un monto de prueba para anuncios en las primeras dos semanas. Se sube solo si los anuncios traen interesados A.
 
 ## 12. Inversión
 
 | Concepto | Precio |
 |---|---|
-| **Plan mensual** (marketing, WhatsApp, encuesta, planilla y avisos de la etapa 1) | **$500.000 por mes**, fijo durante los primeros 3 meses |
+| **Plan mensual** (marketing, WhatsApp, encuesta, planilla, avisos de la etapa 1 y las 5 campañas) | **$500.000 por mes**, fijo de noviembre a marzo (5 meses) |
 | **Bono por socio nuevo** | **10 % del ingreso de lista**, una sola vez por socio: **$50.400** por grupo familiar y **$24.000** por socio individual |
 
 ### Cuentas claras
@@ -320,7 +342,9 @@ Con los valores actuales del club:
 | Cuotas del primer año | $504.000 | $240.000 |
 | **Lo que deja en el primer año** | **$1.008.000** | **$480.000** |
 
-Los 3 meses del plan cuestan $1.500.000, más el presupuesto de anuncios. **Con 2 familias nuevas, el plan está pagado.** Desde la tercera, todo es ganancia para el club, y cada familia sigue pagando su cuota los años siguientes.
+La temporada completa cuesta $2.500.000, más el presupuesto de anuncios. **Con 3 familias nuevas, la temporada está pagada.** Desde la cuarta, todo es ganancia para el club, y cada familia sigue pagando su cuota los años siguientes.
+
+Además, el precio queda fijo los 5 meses: el club sabe desde el principio cuánto va a invertir en toda la temporada.
 
 Si el ingreso se paga en cuotas, esa plata entra a lo largo del año en lugar de toda junta.
 
@@ -350,8 +374,8 @@ No prometemos una cantidad de socios, porque la decisión de admitir es del club
 ### Condiciones
 
 - **Forma de pago:** mes por adelantado.
-- **Plazo:** 3 meses. Al terminar, revisamos juntos los resultados y el precio. Para seguir o terminar, cualquiera de las dos partes avisa con 15 días de anticipación.
-- **Bono después del plan:** vale para las solicitudes que entraron durante los 3 meses y se aprueban hasta 60 días después de terminado.
+- **Plazo:** la temporada completa, de noviembre a marzo. En marzo revisamos juntos los resultados y la propuesta para el año siguiente.
+- **Bono después del plan:** vale para las solicitudes que entraron durante la temporada y se aprueban hasta 60 días después de terminado.
 - **Todo queda a nombre del club:** la planilla, la encuesta, el WhatsApp y el material grabado, aunque después no siga con nosotros.
 
 ## 13. Cómo vamos a medir
@@ -369,7 +393,7 @@ Cada mes entregamos un reporte simple con:
 - Visitas sin solicitud y cuántas se recuperaron con el seguimiento.
 - Bajas del mes y sus motivos.
 
-En marzo sumamos: **cuántas familias de la Temporada por invitación se asociaron.**
+Además, cada campaña tiene su propio número (ver punto 9). En marzo sumamos el más importante: **cuántas familias de la Temporada por invitación se quedaron como socias permanentes.**
 
 ## 14. Próximos pasos
 
