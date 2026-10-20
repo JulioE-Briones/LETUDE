@@ -51,6 +51,8 @@ Fuentes (licencia MIT): github.com/alexsmedile/hormozi-skills y github.com/Jakes
 
 Para todo lo de publicidad pagada (Meta, Google, LinkedIn, TikTok) usa estas skills del repo antes que las skills genéricas de anuncios.
 
+`meta-ads` es la skill general de Meta Ads (Facebook, Instagram y WhatsApp): parte del contexto del negocio y reúne diagnóstico, estructura, públicos, anuncio → WhatsApp → calificación A/B/C, creatividades, presupuesto, pruebas, reporte y rubros regulados. Úsala para cualquier campaña de Meta; también se sube a Claude.ai como la de `hormozi`. Para un entregable largo de una sola etapa, usa la skill especializada de la tabla.
+
 | Si el usuario pide… | Usa |
 |---|---|
 | revisión rápida, "¿estoy listo para anunciar?" | `ads-quick` |
