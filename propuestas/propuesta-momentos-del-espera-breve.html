@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Propuesta Momentos del Espera · Two&amp;Human</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --verde: #1d3d33; --oro: #b5874a; --gris: #555; --claro: #e9efec; --beige: #f5efe6; --borde: #d9d3c7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "DejaVu Sans", Arial, sans-serif; color: #222; font-size: 9pt; line-height: 1.38; }
+  .pagina { width: 210mm; height: 297mm; overflow: hidden; position: relative; padding: 14mm 16mm 16mm; page-break-after: always; }
+  .pagina:last-child { page-break-after: auto; }
+  .barra { position: absolute; top: 0; left: 0; right: 0; height: 7mm; background: var(--oro); }
+  .cabecera { display: flex; justify-content: space-between; font-size: 8pt; margin-top: 2mm; margin-bottom: 6mm; }
+  .cabecera b { color: var(--verde); letter-spacing: .5px; }
+  .cabecera span { color: var(--gris); letter-spacing: .4px; }
+  .ceja { color: var(--oro); font-weight: bold; font-size: 8.5pt; letter-spacing: .6px; text-transform: uppercase; margin: 0 0 2mm; }
+  h1 { color: var(--verde); font-size: 21pt; line-height: 1.12; margin: 0 0 2mm; }
+  .sub { color: var(--gris); font-size: 9.4pt; margin: 0 0 3mm; padding-bottom: 3mm; border-bottom: 1.5px solid var(--oro); }
+  h2 { color: var(--verde); font-size: 11.5pt; margin: 4mm 0 1.5mm; }
+  p { margin: 0 0 2mm; }
+  .compromiso { display: flex; background: var(--claro); border: 1px solid var(--verde); border-left: 5px solid var(--oro); margin: 3mm 0; }
+  .compromiso .et { width: 34mm; padding: 4mm; color: var(--oro); font-weight: bold; font-size: 8.5pt; text-transform: uppercase; display: flex; align-items: center; }
+  .compromiso .tx { padding: 3mm 4mm; color: var(--verde); font-weight: bold; font-size: 10.5pt; line-height: 1.35; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; }
+  th { background: var(--verde); color: #fff; text-align: left; font-size: 8.2pt; padding: 2.2mm 2.5mm; letter-spacing: .3px; }
+  td { border: 1px solid var(--borde); padding: 1.8mm 2.2mm; vertical-align: top; font-size: 8pt; line-height: 1.32; }
+  tr:nth-child(even) td { background: #faf8f4; }
+  td b { color: var(--verde); }
+  .bloque { display: flex; background: var(--beige); border: 1px solid var(--borde); margin-bottom: 2mm; }
+  .bloque .n { width: 40mm; padding: 2.6mm 3mm; font-weight: bold; color: var(--verde); font-size: 8.8pt; text-transform: uppercase; }
+  .bloque .d { padding: 2.6mm 3mm; flex: 1; font-size: 8.5pt; }
+  .bloque .d em { color: var(--oro); font-style: normal; font-weight: bold; }
+  .nota { background: var(--beige); border: 1px solid var(--oro); padding: 2.5mm 3.5mm; margin: 2.5mm 0; font-size: 8.5pt; }
+  .fuente { color: #777; font-size: 7.4pt; margin-top: 1mm; }
+  ul { margin: 0 0 2mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  .pie { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; border-top: 1px solid var(--borde); padding-top: 2mm; display: flex; justify-content: space-between; color: #777; font-size: 7.6pt; }
+  .inv td { font-size: 8.8pt; }
+  .inv .total td { background: var(--claro); font-weight: bold; color: var(--verde); }
+  .pasos { margin: 1mm 0 2mm; padding-left: 5mm; }
+  .pasos li { margin-bottom: .8mm; font-size: 8.6pt; }
+  .detalle p { font-size: 8.6pt; margin-bottom: 1.6mm; }
+  .aliados td { font-size: 7.9pt; }
+  .contacto { color: #666; font-size: 8pt; margin-top: 3mm; }
+</style>
+<style>
+  .cifras { display: flex; gap: 3mm; margin: 2mm 0 2mm; }
+  .cifra { flex: 1; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.5mm 3.5mm; }
+  .cifra b { display: block; font-size: 14pt; color: var(--verde); margin-bottom: .8mm; }
+  .cifra span { font-size: 7.8pt; color: var(--gris); line-height: 1.3; display: block; }
+  .antesdespues { display: flex; gap: 5mm; align-items: stretch; margin: 1mm 0 2mm; }
+  .lado { flex: 1; position: relative; border: 1px solid var(--borde); padding: 6mm 3mm 3mm; background: #fff; display: flex; flex-direction: column; justify-content: center; }
+  .lado img { width: 100%; display: block; }
+  .etq { position: absolute; top: 1.5mm; left: 3mm; font-size: 7.5pt; font-weight: bold; letter-spacing: .6px; text-transform: uppercase; color: #999; }
+  .etq.oro { color: var(--oro); }
+  .pieza { border-radius: 3mm; overflow: hidden; border: 1px solid var(--borde); }
+  .pieza .foto { height: 20mm; background: linear-gradient(135deg, #2f5d50, #8fb3a3); color: #fff; font-size: 7.5pt; font-style: italic; display: flex; align-items: flex-end; padding: 2mm 3mm; }
+  .pieza .cuerpo { padding: 2.5mm 3.5mm 3mm; background: #fbf9f5; }
+  .pieza .lema { font-size: 13pt; font-weight: bold; color: var(--verde); margin: 0 0 .5mm; }
+  .pieza .estrellas { font-size: 7.5pt; color: var(--oro); font-weight: bold; margin: 0 0 1.8mm; }
+  .pieza .fila { display: flex; justify-content: space-between; font-size: 8pt; padding: 1mm 0; border-bottom: 1px solid var(--borde); }
+  .pieza .fila b { color: var(--verde); }
+  .pieza .fila.suave span { color: var(--gris); font-size: 7.4pt; }
+  .pieza .incluye { font-size: 7.2pt; color: var(--gris); margin: 1.8mm 0 2mm; }
+  .pieza .boton { background: var(--verde); color: #fff; text-align: center; font-size: 7.8pt; font-weight: bold; padding: 1.8mm; border-radius: 2mm; }
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · MOMENTOS DEL ESPERA</span></div>
+
+  <p class="ceja">Propuesta para Luis · Momentos del Espera</p>
+  <h1>Más reservas de parejas, sin bajar el precio</h1>
+  <p class="sub">Instagram, Facebook y TikTok · plan de 3 meses para atraer y filtrar interesados.</p>
+
+  <p>Tenés dos cabañas de 32 m² en el Delta, con jacuzzi doble con vista al río, cama king y ropa blanca. Una publicación trae entre 200 y 500 mensajes, pero con suerte 1 o 2 reservas, y la mayoría solo pregunta el precio. <b>No hace falta bajarlo: hace falta que se vea lo que vale.</b></p>
+
+  <div class="cifras">
+    <div class="cifra"><b>5,0 ★</b><span>en Google, con 225 reseñas</span></div>
+    <div class="cifra"><b>9,4</b><span>"Fantástico" en Booking</span></div>
+    <div class="cifra"><b>13,7 mil</b><span>seguidores en Instagram</span></div>
+    <div class="cifra"><b>7 de 10</b><span>reservas llegan por Instagram y TikTok</span></div>
+  </div>
+
+  <h2>Lo que hoy frena la reserva</h2>
+  <ul>
+    <li><b>Para saber fecha y precio hay que dar 8 pasos:</b> el link de la bio, 16 botones, tres álbumes de Google Fotos con el cartel "Es mejor en la app" encima, y recién ahí WhatsApp.</li>
+    <li><b>Precios, servicios y disponibilidad son imágenes de texto,</b> sin fotos, y el título del álbum tapa parte de la información.</li>
+    <li><b>Lo mejor no se ve:</b> el jacuzzi, los kayaks, la clase de remo y las 225 reseñas no aparecen donde la pareja decide.</li>
+    <li><b>Instagram no publica desde marzo,</b> y algunos datos no coinciden entre canales: check-in, check-out y wifi.</li>
+  </ul>
+
+  <h2>Un ejemplo: tus precios, hoy y como podrían verse</h2>
+  <div class="antesdespues">
+    <div class="lado">
+      <span class="etq">Hoy</span>
+      <img src="assets/momentos/antes-precios.png" alt="Imagen de valores actual">
+    </div>
+    <div class="lado">
+      <span class="etq oro">Boceto</span>
+      <div class="pieza">
+        <div class="foto">Foto real del jacuzzi con el río</div>
+        <div class="cuerpo">
+          <p class="lema">Solo faltan ustedes</p>
+          <p class="estrellas">★ 5,0 · 225 reseñas en Google</p>
+          <div class="fila"><span>Fin de semana · sábado y domingo</span><b>$400.000</b></div>
+          <div class="fila"><span>Escapada de lunes a jueves</span><b>desde $380.000</b></div>
+          <div class="fila suave"><span>Quedate más: 3 días $540.000 · 4 días $720.000</span></div>
+          <p class="incluye">Jacuzzi · cama king · aire · Starlink · parrilla con carbón · kayaks y clase de remo</p>
+          <div class="boton">¿Qué fecha buscás? Escribinos por WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nota"><b>La oportunidad:</b> según tu planilla del 22/10, entre el 31/10 y el 19/12 siguen libres <b>11 de los 16 fines de semana</b> de las dos cabañas y casi todos los días de semana.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>1 / 2</span></div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · MOMENTOS DEL ESPERA</span></div>
+
+  <p class="ceja">El trabajo</p>
+  <h1>Qué hacemos</h1>
+  <p class="sub">Cuatro frentes, con un reporte cada mes y la decisión de seguir tomada con números.</p>
+
+  <div class="bloque"><div class="n">1 · Filtrar desde el primer mensaje</div><div class="d">Precio y fotos a la vista en los anuncios, la bio y el mensaje automático, para que quien escribe ya sepa lo que vale. Cinco piezas visuales en lugar de las imágenes de texto: portada, qué incluye, precios, cómo llegar y reservá. Respuestas rápidas y catálogo de WhatsApp, y los mismos datos en todos los canales.</div></div>
+
+  <div class="bloque"><div class="n">2 · Instagram y TikTok activos</div><div class="d">Calendario mensual con videos que terminan con el precio en pantalla: el viaje en lancha, el jacuzzi al atardecer, kayak y remo, el recorrido de la cabaña y lo que dicen las reseñas. Vos grabás con el celular siguiendo nuestra guía; nosotros hacemos guion, edición, textos y publicación.</div></div>
+
+  <div class="bloque"><div class="n">3 · Campañas en Meta y TikTok</div><div class="d">Anuncios que llevan al WhatsApp, segmentados con tus datos de edades y zonas: Capital, Gran Buenos Aires, Rosario y La Plata. Una campaña para los fines de semana libres, otra para la escapada de lunes a jueves y otras para fechas especiales.</div></div>
+
+  <div class="bloque"><div class="n">4 · Página propia (opcional)</div><div class="d">Reemplaza el link de botones y los álbumes: fotos, precios, reseñas, calendario de cada cabaña y un botón de WhatsApp con el número oficial. No es un sistema de gestión: la reserva la seguís coordinando vos.</div></div>
+
+  <h2>Inversión</h2>
+  <table class="inv">
+    <tr><th style="width:30%">Concepto</th><th style="width:48%">Qué incluye</th><th>Monto</th></tr>
+    <tr><td><b>Plan mensual</b></td><td>Frentes 1, 2 y 3, más Google y el pedido de reseñas después de cada estadía.</td><td>[MONTO] por mes</td></tr>
+    <tr><td><b>Página propia</b></td><td>Diseño y armado, pago único. Dominio y hosting a tu nombre.</td><td>[MONTO] una vez</td></tr>
+    <tr><td><b>Anuncios</b></td><td>Los pagás directo a Meta y TikTok. Empezamos con un monto de prueba y solo sube si trae reservas.</td><td>Desde [MONTO] por mes</td></tr>
+  </table>
+  <p><b>Cuentas claras:</b> cada fin de semana reservado vale $400.000. Con [N] reservas más por mes, el plan se paga solo.</p>
+
+  <h2>Condiciones</h2>
+  <ul>
+    <li><b>Plazo:</b> 3 meses, con pago mes por adelantado.</li>
+    <li><b>Garantía de cumplimiento:</b> si al terminar el primer mes las piezas, el mensaje automático y las campañas no están funcionando, el segundo mes no se cobra hasta completarlo.</li>
+    <li><b>Todo queda a tu nombre:</b> cuentas, perfiles, página y videos.</li>
+  </ul>
+
+  <div class="nota"><b>Para empezar:</b> elegir el plan, pasarnos las edades y zonas de tus huéspedes y darnos acceso a Instagram, Facebook y TikTok. Con eso arrancamos en la semana.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · +54 381 509 8972 · mariam@twoandhuman.com · julio@twoandhuman.com</span><span>2 / 2</span></div>
+</section>
+
+</body>
+</html>
