@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Anuncios Two&amp;Human</title>
+<style>
+  @font-face { font-family: "Montserrat"; font-weight: 500; src: url("../propuestas/assets/fonts/montserrat-500.woff") format("woff"); }
+  @font-face { font-family: "Montserrat"; font-weight: 600; src: url("../propuestas/assets/fonts/montserrat-600.woff") format("woff"); }
+  @font-face { font-family: "Montserrat"; font-weight: 700; src: url("../propuestas/assets/fonts/montserrat-700.woff") format("woff"); }
+  @font-face { font-family: "Montserrat"; font-weight: 800; src: url("../propuestas/assets/fonts/montserrat-800.woff") format("woff"); }
+  :root { --navy: #34495e; --navy2: #2a3b4c; --naranja: #f7941d; --claro: #f2f4f6; --gris: #5b6672; --linea: #dfe6ed; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #888; font-family: "Montserrat", sans-serif; }
+  .art { width: 1080px; height: 1350px; position: relative; overflow: hidden; padding: 70px 76px; display: flex; flex-direction: column; }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 46px; }
+  .marca { font-weight: 800; font-size: 30px; letter-spacing: 4px; }
+  .pill { font-weight: 800; font-size: 22px; letter-spacing: 3px; padding: 12px 26px; border-radius: 40px; }
+  h1 { font-weight: 800; font-size: 74px; line-height: 1.07; letter-spacing: -1px; margin-bottom: 26px; }
+  h1 span { color: var(--naranja); }
+  .sub { font-weight: 500; font-size: 33px; line-height: 1.3; margin-bottom: 44px; }
+  .cta { border-radius: 28px; padding: 36px 40px; margin-top: auto; }
+  .cta .t { font-weight: 800; font-size: 36px; margin-bottom: 10px; }
+  .cta .d { font-weight: 500; font-size: 28px; line-height: 1.35; margin-bottom: 24px; }
+  .cta .btn { display: inline-block; font-weight: 700; font-size: 26px; padding: 16px 30px; border-radius: 40px; }
+  .pie { font-weight: 600; font-size: 21px; letter-spacing: 1px; margin-top: 26px; text-align: center; }
+
+  /* MARKETING */
+  .mkt { background: var(--navy); color: #fff; }
+  .mkt .pill { background: var(--naranja); color: var(--navy); }
+  .mkt .sub { color: #dfe6ed; }
+  .comp { background: #fff; border-radius: 28px; display: flex; overflow: hidden; }
+  .col { flex: 1; padding: 34px 36px; }
+  .col.otros { background: #eef1f4; }
+  .col h3 { font-weight: 700; font-size: 23px; line-height: 1.3; margin-bottom: 22px; }
+  .col.otros h3 { color: var(--gris); }
+  .col.nos h3 { color: var(--navy); }
+  .item { display: flex; align-items: center; font-size: 38px; font-weight: 700; margin-bottom: 14px; }
+  .item i { font-style: normal; width: 52px; height: 52px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 28px; margin-right: 18px; flex: none; }
+  .otros .item { color: #9aa4ae; text-decoration: line-through; text-decoration-thickness: 3px; }
+  .otros .item i { background: #dde2e7; color: #9aa4ae; }
+  .nos .item { color: var(--navy); }
+  .nos .item i { background: var(--naranja); color: #fff; }
+  .mkt .cta { background: var(--naranja); color: var(--navy); }
+  .mkt .cta .btn { background: var(--navy); color: #fff; }
+  .mkt .pie { color: rgba(255,255,255,.6); }
+
+  /* SOFTWARE */
+  .sw { background: var(--claro); color: var(--navy); }
+  .sw .pill { background: var(--navy); color: #fff; }
+  .sw .sub { color: var(--gris); font-size: 28px; margin-bottom: 40px; letter-spacing: -0.2px; }
+  .sw h1 { font-size: 68px; margin-bottom: 16px; }
+  .sw .cta { padding: 28px 36px; }
+  .sw.art { padding-top: 62px; padding-bottom: 60px; }
+  .sw .chip { padding: 12px 20px; }
+  .sw .burb { padding: 12px 20px; }
+  .sw .top { margin-bottom: 36px; }
+  .sw .pie { margin-top: 20px; }
+  .chat { background: #ece5dd; border-radius: 28px; padding: 32px 30px 16px; position: relative; }
+  .chat .tag { position: absolute; top: -18px; left: 32px; background: var(--naranja); color: #fff; font-weight: 700; font-size: 19px; letter-spacing: 1px; padding: 8px 18px; border-radius: 30px; }
+  .burb { font-weight: 500; font-size: 24px; line-height: 1.35; padding: 13px 20px; border-radius: 18px; margin-bottom: 12px; max-width: 80%; width: fit-content; box-shadow: 0 1px 0 rgba(0,0,0,.08); }
+  .burb.ella { background: #dcf8c6; margin-left: auto; }
+  .burb.neg { background: #fff; }
+  .burb b { font-weight: 700; }
+  .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; margin-bottom: 24px; }
+  .chip { background: #fff; border: 2px solid var(--linea); border-radius: 18px; padding: 14px 20px; font-weight: 700; font-size: 24px; display: flex; align-items: center; }
+  .chip i { font-style: normal; color: var(--naranja); font-size: 30px; margin-right: 12px; }
+  .sw .cta { background: var(--navy); color: #fff; }
+  .sw .cta .btn { background: var(--naranja); color: var(--navy); }
+  .sw .pie { color: rgba(52,73,94,.6); }
+</style>
+</head>
+<body>
+
+<section class="art mkt" id="marketing">
+  <div class="top"><div class="marca">TWO&amp;HUMAN</div><div class="pill">MARKETING</div></div>
+  <h1>¿Pagaste publicidad y solo te llegaron <span>consultas</span>?</h1>
+  <p class="sub">Nosotros medimos lo que de verdad importa: cuántos te compran.</p>
+  <div class="comp">
+    <div class="col otros">
+      <h3>Lo que te muestran otras agencias</h3>
+      <div class="item"><i>✕</i>Likes</div>
+      <div class="item"><i>✕</i>Seguidores</div>
+      <div class="item"><i>✕</i>Alcance</div>
+    </div>
+    <div class="col nos">
+      <h3>Lo que te mostramos nosotros</h3>
+      <div class="item"><i>✓</i>Consultas</div>
+      <div class="item"><i>✓</i>Visitas</div>
+      <div class="item"><i>✓</i>Ventas</div>
+    </div>
+  </div>
+  <div class="cta">
+    <div class="t">Llamada sin compromiso de 15 minutos</div>
+    <div class="d">Nos contás de tu negocio y te armamos una propuesta de marketing a medida.</div>
+    <div class="btn">Escribinos por WhatsApp →</div>
+  </div>
+  <div class="pie">Donde la tecnología se vuelve humana</div>
+</section>
+
+<section class="art sw" id="software" style="--h1:68px">
+  <div class="top"><div class="marca">TWO&amp;HUMAN</div><div class="pill">SOFTWARE</div></div>
+  <h1>¿Perdés clientes por no <span>responder a tiempo</span>?</h1>
+  <p class="sub">Tu negocio responde, agenda y cobra aunque estés ocupado.</p>
+  <div class="chat">
+    <div class="tag">RESPUESTA AUTOMÁTICA</div>
+    <div class="burb ella">Hola, quiero sacar un turno 🙂</div>
+    <div class="burb neg">¡Hola! ¿Qué día te queda mejor?<br><b>1</b> · Martes 10 h&nbsp;&nbsp;&nbsp;<b>2</b> · Jueves 16 h</div>
+    <div class="burb ella">2</div>
+    <div class="burb neg">¡Listo! Te esperamos el jueves a las 16 h. Te recordamos el día antes 👋</div>
+  </div>
+  <div class="chips">
+    <div class="chip"><i>●</i>Páginas web que venden</div>
+    <div class="chip"><i>●</i>Turnos y pagos online</div>
+    <div class="chip"><i>●</i>WhatsApp automático</div>
+    <div class="chip"><i>●</i>Sistemas a medida</div>
+  </div>
+  <div class="cta">
+    <div class="t">Llamada sin compromiso de 15 minutos</div>
+    <div class="d">Nos contás cómo trabajás y te armamos una propuesta de software a medida.</div>
+    <div class="btn">Escribinos por WhatsApp →</div>
+  </div>
+  <div class="pie">Donde la tecnología se vuelve humana</div>
+</section>
+
+</body>
+</html>
