@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Propuesta Verdulería Josué · Two&amp;Human</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --verde: #1d3d33; --oro: #b5874a; --gris: #555; --claro: #e9efec; --beige: #f5efe6; --borde: #d9d3c7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "DejaVu Sans", Arial, sans-serif; color: #222; font-size: 9pt; line-height: 1.38; }
+  .pagina { width: 210mm; height: 297mm; overflow: hidden; position: relative; padding: 14mm 16mm 16mm; page-break-after: always; }
+  .pagina:last-child { page-break-after: auto; }
+  .barra { position: absolute; top: 0; left: 0; right: 0; height: 7mm; background: var(--oro); }
+  .cabecera { display: flex; justify-content: space-between; font-size: 8pt; margin-top: 2mm; margin-bottom: 6mm; }
+  .cabecera b { color: var(--verde); letter-spacing: .5px; }
+  .cabecera span { color: var(--gris); letter-spacing: .4px; }
+  .ceja { color: var(--oro); font-weight: bold; font-size: 8.5pt; letter-spacing: .6px; text-transform: uppercase; margin: 0 0 2mm; }
+  h1 { color: var(--verde); font-size: 21pt; line-height: 1.12; margin: 0 0 2mm; }
+  .sub { color: var(--gris); font-size: 9.4pt; margin: 0 0 3mm; padding-bottom: 3mm; border-bottom: 1.5px solid var(--oro); }
+  h2 { color: var(--verde); font-size: 11.5pt; margin: 4mm 0 1.5mm; }
+  p { margin: 0 0 2mm; }
+  .compromiso { display: flex; background: var(--claro); border: 1px solid var(--verde); border-left: 5px solid var(--oro); margin: 3mm 0; }
+  .compromiso .et { width: 34mm; padding: 4mm; color: var(--oro); font-weight: bold; font-size: 8.5pt; text-transform: uppercase; display: flex; align-items: center; }
+  .compromiso .tx { padding: 3mm 4mm; color: var(--verde); font-weight: bold; font-size: 10.5pt; line-height: 1.35; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; }
+  th { background: var(--verde); color: #fff; text-align: left; font-size: 8.2pt; padding: 2.2mm 2.5mm; letter-spacing: .3px; }
+  td { border: 1px solid var(--borde); padding: 1.8mm 2.2mm; vertical-align: top; font-size: 8pt; line-height: 1.32; }
+  tr:nth-child(even) td { background: #faf8f4; }
+  td b { color: var(--verde); }
+  .bloque { display: flex; background: var(--beige); border: 1px solid var(--borde); margin-bottom: 2mm; }
+  .bloque .n { width: 40mm; padding: 2.6mm 3mm; font-weight: bold; color: var(--verde); font-size: 8.8pt; text-transform: uppercase; }
+  .bloque .d { padding: 2.6mm 3mm; flex: 1; font-size: 8.5pt; }
+  .bloque .d em { color: var(--oro); font-style: normal; font-weight: bold; }
+  .nota { background: var(--beige); border: 1px solid var(--oro); padding: 2.5mm 3.5mm; margin: 2.5mm 0; font-size: 8.5pt; }
+  .fuente { color: #777; font-size: 7.4pt; margin-top: 1mm; }
+  ul { margin: 0 0 2mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  .pie { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; border-top: 1px solid var(--borde); padding-top: 2mm; display: flex; justify-content: space-between; color: #777; font-size: 7.6pt; }
+  .inv td { font-size: 8.8pt; }
+  .inv .total td { background: var(--claro); font-weight: bold; color: var(--verde); }
+  .pasos { margin: 1mm 0 2mm; padding-left: 5mm; }
+  .pasos li { margin-bottom: .8mm; font-size: 8.6pt; }
+  .detalle p { font-size: 8.6pt; margin-bottom: 1.6mm; }
+  .aliados td { font-size: 7.9pt; }
+  .contacto { color: #666; font-size: 8pt; margin-top: 3mm; }
+</style><style>
+  .cifras { display: flex; gap: 3mm; margin: 2mm 0 2mm; }
+  .cifra { flex: 1; min-width: 0; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.5mm 3.5mm; }
+  .cifra b { display: block; font-size: 13pt; white-space: nowrap; color: var(--verde); margin-bottom: .8mm; }
+  .cifra span { font-size: 7.8pt; color: var(--gris); line-height: 1.3; display: block; }
+  .dos { display: flex; gap: 5mm; align-items: flex-start; }
+  .dos .txt { flex: 1.15; }
+  .dos .txt p, .dos .txt li { font-size: 8.8pt; }
+  .dos .boceto { flex: 1; position: relative; border: 1px solid var(--borde); padding: 6mm 3mm 3mm; background: #fff; }
+  .etq { position: absolute; top: 1.5mm; left: 3mm; font-size: 7.5pt; font-weight: bold; letter-spacing: .6px; text-transform: uppercase; color: var(--oro); }
+  .pieza { border-radius: 3mm; overflow: hidden; border: 1px solid var(--borde); }
+  .pieza .foto { height: 14mm; background: linear-gradient(135deg, #2f5d50, #8fb3a3); color: #fff; font-size: 7.5pt; font-style: italic; display: flex; align-items: flex-end; padding: 2mm 3mm; }
+  .pieza .cuerpo { padding: 2.5mm 3.5mm 3mm; background: #fbf9f5; }
+  .pieza .lema { font-size: 12.5pt; font-weight: bold; color: var(--verde); margin: 0 0 .6mm; line-height: 1.15; }
+  .pieza .aval { font-size: 7.4pt; color: var(--oro); font-weight: bold; margin: 0 0 1.8mm; }
+  .pieza .fila { display: flex; justify-content: space-between; font-size: 7.9pt; padding: 1mm 0; border-bottom: 1px solid var(--borde); }
+  .pieza .fila b { color: var(--verde); }
+  .pieza .incluye { font-size: 7.2pt; color: var(--gris); margin: 1.8mm 0 2mm; }
+  .pieza .boton { background: var(--verde); color: #fff; text-align: center; font-size: 7.8pt; font-weight: bold; padding: 1.8mm; border-radius: 2mm; }
+  .embudo { display: flex; gap: 2.5mm; margin: 1.5mm 0 2mm; }
+  .paso { flex: 1; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.2mm 2.5mm; }
+  .paso i { display: block; font-style: normal; font-size: 7pt; color: var(--oro); font-weight: bold; letter-spacing: .5px; text-transform: uppercase; }
+  .paso b { display: block; color: var(--verde); font-size: 9.2pt; margin: .5mm 0 .8mm; }
+  .paso span { display: block; font-size: 7.5pt; color: var(--gris); line-height: 1.3; }
+  .opciones { display: flex; gap: 4mm; margin: 2mm 0 2.5mm; }
+  .opcion { flex: 1; border: 1px solid var(--borde); background: #fbf9f5; display: flex; flex-direction: column; }
+  .opcion .tit { background: var(--verde); color: #fff; padding: 2.4mm 3mm; font-weight: bold; font-size: 9.6pt; }
+  .opcion .tit small { display: block; color: #e3cfa9; font-weight: normal; font-size: 7.6pt; margin-top: .4mm; }
+  .opcion ul { padding: 2.4mm 3mm 0 7mm; margin: 0; flex: 1; }
+  .opcion li { font-size: 8.1pt; margin-bottom: 1.1mm; }
+  .opcion .precio { border-top: 1px solid var(--borde); padding: 2.2mm 3mm; background: var(--beige); }
+  .opcion .precio b { font-size: 14pt; color: var(--verde); }
+  .opcion .precio span { display: block; font-size: 7.6pt; color: var(--gris); }
+  .crono td { font-size: 8pt; }
+</style>
+<style>
+  .canales .bloque .n { width: 34mm; }
+  .chat { background: #ece5dd; border-radius: 3mm; padding: 3mm 2.5mm; }
+  .burbuja { background: #fff; border-radius: 2mm; padding: 2.2mm 2.6mm; font-size: 7.9pt; line-height: 1.4; margin-bottom: 2mm; }
+  .burbuja.yo { background: #dcf8c6; margin-left: auto; max-width: 70%; }
+  .burbuja small { display: block; text-align: right; color: #999; font-size: 6.5pt; margin-top: .6mm; }
+  .burbuja b { color: var(--verde); }
+  .crono td { font-size: 8pt; }
+  .opcion li { font-size: 8.1pt; }
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · VERDULERÍA</span></div>
+
+  <p class="ceja">Propuesta para Josué · Verdulería en Barranqueras</p>
+  <h1>Que el barrio conozca tu verdulería desde el primer día</h1>
+  <p class="sub">Un lanzamiento para abrir en noviembre con todo listo, y un plan mensual opcional para que los vecinos vuelvan cada semana.</p>
+
+  <p>Vas a abrir tu verdulería en noviembre, y más adelante la casa de comida, con hamburguesas y pizza, y quizás pollos y huevos. Ya tenés el Instagram y el Facebook creados, pero todavía sin publicaciones ni logo. Querés anuncios y hacer vivos. <b>Una verdulería vive de que el vecino vuelva todas las semanas.</b> Por eso la propuesta tiene dos partes: que te conozcan cuando abrís y que vuelvan cada semana.</p>
+
+  <h2>Lo que necesitás para abrir</h2>
+  <div class="canales">
+    <div class="bloque"><div class="n">1 · Marca</div><div class="d">Un logo simple y los colores del local, para el cartel, las redes y las bolsas.</div></div>
+    <div class="bloque"><div class="n">2 · Redes</div><div class="d">Instagram y Facebook armados: foto de perfil, descripción, dirección, horarios y las primeras 9 publicaciones, para que no se vean vacíos el día que abrís.</div></div>
+    <div class="bloque"><div class="n">3 · Google Maps</div><div class="d">Tu verdulería en el mapa, para aparecer cuando alguien del barrio busca "verdulería cerca".</div></div>
+    <div class="bloque"><div class="n">4 · WhatsApp</div><div class="d">WhatsApp Business con catálogo y precios, mensaje de bienvenida y horarios, para tomar pedidos sin perder tiempo.</div></div>
+  </div>
+
+  <h2>Lo que hace que vuelvan</h2>
+  <div class="dos">
+    <div class="txt">
+      <ul>
+        <li><b>Las ofertas de la semana</b> por lista de difusión de WhatsApp, cada lunes, a los clientes que se anotan.</li>
+        <li><b>El bolsón de la semana:</b> frutas y verduras de estación a un precio cerrado. Es más fácil de decidir y cada compra es más grande.</li>
+        <li><b>Un vivo semanal, "llegó la mercadería":</b> mostrás lo que entró y a qué precio. Vos ya sabés hacer vivos y programas.</li>
+        <li><b>Traé a un vecino:</b> un beneficio para el cliente que recomienda.</li>
+        <li><b>Anuncios en el barrio,</b> solo para la gente que vive cerca del local.</li>
+      </ul>
+    </div>
+    <div class="boceto">
+      <span class="etq">Boceto · lista de difusión</span>
+      <div class="chat">
+        <div class="burbuja">🍅 <b>Ofertas de esta semana</b><br>Tomate · $___ el kilo<br>Papa · $___ el kilo<br>Banana · $___ el kilo<br><br>🧺 <b>Bolsón de la semana:</b> $___<br>Respondé "BOLSÓN" y te lo dejamos listo para retirar.<small>Lunes 8:30</small></div>
+        <div class="burbuja yo">BOLSÓN 🙌<small>8:41</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>1 / 2</span></div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · VERDULERÍA</span></div>
+
+  <p class="ceja">El trabajo</p>
+  <h1>Qué hacemos y cuánto sale</h1>
+  <p class="sub">Dos partes que se contratan por separado. Podés hacer solo el lanzamiento y sumar el plan mensual cuando abras.</p>
+
+  <div class="opciones">
+    <div class="opcion">
+      <div class="tit">1 · Lanzamiento<small>Pago único, antes de abrir</small></div>
+      <ul>
+        <li>Logo simple y colores del local.</li>
+        <li>Instagram y Facebook armados, con las primeras 9 publicaciones.</li>
+        <li>Perfil en Google Maps.</li>
+        <li>WhatsApp Business con catálogo, precios y mensajes automáticos.</li>
+        <li>Campaña de inauguración en el barrio.</li>
+        <li>Guía para sacar fotos y videos con el celular: no hace falta una cámara.</li>
+      </ul>
+      <div class="precio"><b>$300.000</b><span>Mitad al empezar, mitad al entregar</span></div>
+    </div>
+    <div class="opcion">
+      <div class="tit">2 · Plan mensual<small>Desde la apertura · mes a mes</small></div>
+      <ul>
+        <li>Publicaciones cada semana: ofertas, bolsón y lo que llegó.</li>
+        <li>Mensaje semanal para la lista de difusión de WhatsApp.</li>
+        <li>Guion y difusión del vivo semanal.</li>
+        <li>Anuncios en el barrio, revisados cada semana.</li>
+        <li>Sistema de recomendación "traé a un vecino".</li>
+        <li>Un resumen cada mes: consultas, pedidos por WhatsApp y clientes nuevos.</li>
+      </ul>
+      <div class="precio"><b>$300.000 por mes</b><span>Pago mes por adelantado</span></div>
+    </div>
+  </div>
+
+  <p><b>Publicidad, aparte:</b> la pagás directo a Meta con tu tarjeta. Sugerimos empezar con $3.000 por día, unos $90.000 por mes, solo para el barrio, y subir si trae clientes.</p>
+  <div class="nota"><b>¿Y la web?</b> Para arrancar una verdulería no hace falta: Google Maps, WhatsApp y las redes hacen ese trabajo. Donde sí sirve es en la casa de comida, para el menú y los pedidos. La vemos cuando la abras.</div>
+
+  <h2>Cómo arrancamos</h2>
+  <table class="crono">
+    <tr><th style="width:33%">Antes de abrir · 2 semanas</th><th style="width:33%">La semana de apertura</th><th>Cada semana, después</th></tr>
+    <tr><td>Logo, redes, Google Maps y WhatsApp listos. Primeras publicaciones y la guía para sacar fotos.</td><td>Campaña de inauguración en el barrio y primer vivo desde el local.</td><td>Ofertas y bolsón de la semana, lista de difusión, vivo y anuncios. Lo que trae clientes se sigue; lo que no, se cambia.</td></tr>
+  </table>
+
+  <h2>Condiciones</h2>
+  <ul>
+    <li><b>Mes a mes:</b> el plan mensual se paga por adelantado y seguís solo si te sirve.</li>
+    <li><b>Garantía de cumplimiento:</b> si al terminar el primer mes lo acordado no está funcionando, el mes siguiente no se cobra hasta lograrlo.</li>
+    <li><b>Todo queda a tu nombre:</b> logo, cuentas, perfiles, fotos y videos.</li>
+    <li><b>No incluye:</b> la publicidad, la impresión del cartel y las bolsas.</li>
+  </ul>
+
+  <div class="nota"><b>Para empezar:</b> pasarnos los links de Instagram y Facebook, el nombre y la dirección del local y la fecha en que pensás abrir. Cuando decidas abrir la casa de comida, armamos una propuesta aparte, como hablamos.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · +54 381 509 8972 · mariam@twoandhuman.com · julio@twoandhuman.com</span><span>2 / 2</span></div>
+</section>
+
+</body>
+</html>
