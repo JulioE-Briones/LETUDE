@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Presentación Hytter · Two&amp;Human</title>
+<style>
+  @font-face { font-family: "Montserrat"; font-weight: 400; src: url("assets/fonts/montserrat-400.woff") format("woff"); }
+  @font-face { font-family: "Montserrat"; font-weight: 500; src: url("assets/fonts/montserrat-500.woff") format("woff"); }
+  @font-face { font-family: "Montserrat"; font-weight: 600; src: url("assets/fonts/montserrat-600.woff") format("woff"); }
+  @font-face { font-family: "Montserrat"; font-weight: 700; src: url("assets/fonts/montserrat-700.woff") format("woff"); }
+  @font-face { font-family: "Montserrat"; font-weight: 800; src: url("assets/fonts/montserrat-800.woff") format("woff"); }
+  @page { size: 1280px 720px; margin: 0; }
+  :root { --azul: #34495e; --tinta: #22303f; --naranja: #f7941d; --gris: #5b6672; --claro: #f2f4f6; --linea: #d9dee3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Montserrat", "DejaVu Sans", sans-serif; color: var(--tinta); }
+  .lamina { width: 1280px; height: 720px; position: relative; overflow: hidden; page-break-after: always; background: #fff; padding: 46px 64px 40px; }
+  .lamina:last-child { page-break-after: auto; }
+  .top { position: absolute; top: 24px; left: 64px; right: 64px; display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; letter-spacing: .8px; color: var(--azul); }
+  .ceja { font-size: 13px; font-weight: 700; letter-spacing: 1px; color: var(--naranja); text-transform: uppercase; margin: 18px 0 6px; }
+  h1 { font-size: 40px; font-weight: 800; color: var(--azul); margin: 0 0 8px; line-height: 1.12; }
+  .sub { font-size: 17px; color: var(--gris); margin: 0 0 22px; line-height: 1.45; max-width: 1050px; }
+  p { margin: 0; }
+
+  /* Portada */
+  .portada { padding: 0; display: flex; }
+  .portada .izq { width: 56%; padding: 90px 64px 0; position: relative; }
+  .portada .der { width: 44%; background: var(--azul); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .portada h1 { font-size: 54px; margin: 18px 0 18px; }
+  .portada .sub { font-size: 19px; max-width: 560px; }
+  .portada .firma { position: absolute; left: 64px; bottom: 54px; }
+  .portada .firma b { display: block; font-size: 22px; letter-spacing: 1.5px; color: var(--azul); margin-bottom: 8px; }
+  .portada .firma span { font-size: 14px; color: var(--gris); }
+  .portada .der p { color: #c9d3dd; font-size: 14px; letter-spacing: .6px; margin-top: 22px; text-transform: uppercase; font-weight: 600; }
+  .raya { width: 70px; height: 5px; background: var(--naranja); }
+
+  /* Números */
+  .cifras { display: flex; gap: 18px; margin: 40px 0 44px; }
+  .cifra { flex: 1; background: var(--claro); border-top: 5px solid var(--naranja); padding: 30px 26px; }
+  .cifra b { display: block; font-size: 46px; font-weight: 800; color: var(--azul); line-height: 1; margin-bottom: 8px; }
+  .cifra span { font-size: 17px; color: var(--gris); line-height: 1.35; display: block; }
+  .texto { font-size: 22px; line-height: 1.55; max-width: 1080px; }
+  .compromiso { background: var(--azul); color: #fff; border-left: 10px solid var(--naranja); padding: 32px 34px; display: flex; gap: 30px; align-items: center; }
+  .compromiso .et { font-size: 14px; font-weight: 700; letter-spacing: 1px; color: var(--naranja); text-transform: uppercase; width: 150px; flex: none; }
+  .compromiso .tx { font-size: 24px; font-weight: 700; line-height: 1.4; }
+
+  /* Tarjetas */
+  .grilla { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; }
+  .item { display: flex; gap: 16px; background: var(--claro); padding: 13px 18px; align-items: flex-start; }
+  .item .n { font-size: 22px; font-weight: 800; color: var(--naranja); width: 34px; flex: none; line-height: 1.1; }
+  .item h3 { font-size: 16px; font-weight: 700; color: var(--azul); margin: 0 0 3px; }
+  .item p { font-size: 14px; color: var(--tinta); line-height: 1.4; }
+  .item.destacado { background: var(--azul); }
+  .item.destacado h3 { color: #fff; }
+  .item.destacado p { color: #dfe6ed; }
+  .item.nota { background: #fff; border: 2px solid var(--naranja); }
+
+  .frentes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .frente { background: var(--claro); padding: 28px 22px; min-height: 420px; border-top: 5px solid var(--azul); }
+  .frente.opcional { border-top-color: var(--naranja); }
+  .frente .n { font-size: 42px; font-weight: 800; color: var(--naranja); line-height: 1; margin-bottom: 10px; }
+  .frente h3 { font-size: 19px; font-weight: 700; color: var(--azul); margin: 0 0 14px; line-height: 1.3; min-height: 50px; }
+  .frente p { font-size: 15.5px; line-height: 1.5; margin-bottom: 10px; }
+  .frente .ref { font-size: 13.5px; font-weight: 700; color: var(--naranja); }
+
+  .dos { display: flex; gap: 22px; margin-bottom: 30px; }
+  .dos > div { flex: 1; background: var(--claro); padding: 24px 26px; }
+  .dos h3 { font-size: 15px; font-weight: 700; color: var(--naranja); letter-spacing: .6px; text-transform: uppercase; margin: 0 0 8px; }
+  .dos p { font-size: 17.5px; line-height: 1.5; }
+  .flujo { display: flex; align-items: stretch; gap: 0; }
+  .paso { flex: 1; background: var(--azul); color: #fff; padding: 24px 20px; min-height: 170px; }
+  .paso b { display: block; font-size: 13px; letter-spacing: .8px; color: var(--naranja); margin-bottom: 6px; }
+  .paso p { font-size: 16.5px; line-height: 1.45; }
+  .flecha { width: 34px; display: flex; align-items: center; justify-content: center; color: var(--naranja); font-size: 26px; font-weight: 800; flex: none; }
+  .pie-nota { margin-top: 24px; font-size: 16px; color: var(--gris); }
+  .pie-nota b { color: var(--azul); }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 18px; }
+  th { text-align: left; font-size: 12.5px; letter-spacing: .8px; color: var(--naranja); text-transform: uppercase; padding: 0 14px 10px 0; border-bottom: 2px solid var(--azul); }
+  td { font-size: 15.5px; padding: 13px 14px 13px 0; border-bottom: 1px solid var(--linea); vertical-align: top; line-height: 1.4; }
+  td:first-child { font-weight: 700; color: var(--azul); width: 21%; }
+  td:nth-child(2) { width: 27%; color: var(--gris); }
+
+  .apto { display: flex; gap: 26px; }
+  .apto .izq { flex: 1.35; }
+  .apto .der { flex: 1; background: var(--azul); color: #fff; padding: 30px 30px; display: flex; flex-direction: column; justify-content: center; }
+  .apto .der b { color: var(--naranja); font-size: 14px; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 12px; }
+  .apto .der p { font-size: 22px; line-height: 1.5; font-weight: 600; margin-bottom: 14px; }
+  .apto .der small { font-size: 16px; color: #c9d3dd; line-height: 1.45; }
+  .cond { background: var(--claro); padding: 18px 24px; margin-bottom: 12px; }
+  .cond h3 { font-size: 18px; font-weight: 700; color: var(--azul); margin: 0 0 3px; }
+  .cond p { font-size: 16px; line-height: 1.45; }
+  .no { font-size: 16px; color: var(--gris); margin-top: 6px; }
+  .no b { color: var(--tinta); }
+
+  .etapas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 6px; }
+  .etapa { border-top: 6px solid var(--naranja); background: var(--claro); padding: 30px 26px; min-height: 330px; }
+  .etapa b { display: block; font-size: 17px; letter-spacing: 1px; color: var(--azul); margin-bottom: 12px; }
+  .etapa li { font-size: 17px; line-height: 1.45; margin-bottom: 10px; }
+  .etapa ul { margin: 0; padding-left: 18px; }
+  .franja { margin-top: 26px; background: var(--azul); color: #fff; text-align: center; padding: 14px; font-size: 14px; font-weight: 700; letter-spacing: 1.2px; }
+
+  .inv { display: flex; gap: 30px; }
+  .inv .izq { flex: 1.15; }
+  .inv .der { flex: 1; }
+  .inv td:first-child { width: 42%; }
+  .inv td:nth-child(2) { width: auto; color: var(--tinta); }
+  .inv tr.total td { background: var(--azul); color: #fff; padding-left: 12px; font-size: 16px; }
+  .cuenta { border: 2px solid var(--naranja); padding: 18px 22px; margin-bottom: 14px; }
+  .cuenta b { color: var(--naranja); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 6px; }
+  .cuenta p { font-size: 17px; line-height: 1.45; }
+  .cuenta p.cita { font-weight: 700; color: var(--azul); margin-bottom: 6px; }
+  .reglas li { font-size: 13.5px; line-height: 1.45; margin-bottom: 6px; }
+  .reglas { margin: 0; padding-left: 18px; }
+  h2 { font-size: 16px; font-weight: 700; color: var(--azul); margin: 16px 0 8px; }
+
+  .final { display: flex; gap: 30px; height: 100%; }
+  .final .izq { flex: 1.3; }
+  .final .der { flex: 1; background: var(--azul); color: #fff; padding: 34px 34px; display: flex; flex-direction: column; justify-content: center; margin: -46px -64px -40px 0; }
+  .final .der b { font-size: 24px; letter-spacing: 1.5px; display: block; margin-bottom: 18px; }
+  .final .der p { font-size: 17px; line-height: 1.7; }
+  .final .der .raya { margin-bottom: 22px; }
+  .empezar { font-size: 22px; font-weight: 700; color: var(--azul); line-height: 1.45; margin: 4px 0 28px; }
+  .bloque-no { background: var(--claro); padding: 18px 22px; margin-bottom: 16px; }
+  .bloque-no b { color: var(--naranja); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 6px; }
+  .bloque-no p { font-size: 15.5px; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<!-- 1 · PORTADA -->
+<section class="lamina portada">
+  <div class="izq">
+    <p class="ceja">Propuesta para Hernán · Hytter / Grupo Guadalupe</p>
+    <h1>Un piloto para vender cabañas Hytter</h1>
+    <p class="sub">90 días para llevar a su equipo compradores con capacidad real de compra y avanzar a la firma.</p>
+    <div class="raya"></div>
+    <div class="firma"><b>TWO&amp;HUMAN</b><span>Mariam Neme y Julio Briones · 23 de octubre de 2026</span></div>
+  </div>
+  <div class="der">
+    <svg width="330" height="250" viewBox="0 0 330 250" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M20 120 L165 20 L310 120"/>
+      <path d="M50 100 L50 225 L280 225 L280 100"/>
+      <path d="M135 225 L135 150 L195 150 L195 225"/>
+      <rect x="72" y="140" width="40" height="40"/>
+      <rect x="218" y="140" width="40" height="40"/>
+      <path d="M150 85 L180 85 L180 112 L150 112 Z"/>
+      <path d="M10 225 L320 225" stroke="#f7941d" stroke-width="6"/>
+      <path d="M232 60 L232 30 L254 30 L254 75" />
+    </svg>
+    <p>Cabañas escandinavas · construidas en el lugar</p>
+  </div>
+</section>
+
+<!-- 2 · LO QUE ENTENDIMOS -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>2 / 10</span></div>
+  <p class="ceja">Punto de partida</p>
+  <h1>Lo que entendimos</h1>
+  <p class="texto">Hytter tiene lo difícil resuelto. Las ventas llegan por recomendación y contacto directo. Las redes trajeron consultas, no compradores. <b>Ustedes compran ventas, no clics.</b> El piloto parte de ahí.</p>
+  <div class="cifras">
+    <div class="cifra"><b>120</b><span>cabañas construidas en 18 provincias</span></div>
+    <div class="cifra"><b>90 días</b><span>hábiles de entrega, por contrato</span></div>
+    <div class="cifra"><b>70 %</b><span>financiado en 12 cuotas fijas en dólares, sin banco</span></div>
+    <div class="cifra"><b>20</b><span>cabañas por mes de capacidad de producción</span></div>
+  </div>
+  <div class="compromiso">
+    <div class="et">Nuestro compromiso</div>
+    <div class="tx">Conseguir al menos 1 venta atribuible al piloto dentro de los 90 días. Si no se concreta, seguimos 30 días más sin fee mensual.</div>
+  </div>
+</section>
+
+<!-- 3 · QUÉ MEJORAMOS -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>3 / 10</span></div>
+  <p class="ceja">Lo que ya existe</p>
+  <h1>Qué mejoramos para que lleguen compradores</h1>
+  <p class="sub">La web, Instagram, Google y los carteles tienen que filtrar al curioso y convencer al que puede comprar.</p>
+  <div class="grilla">
+    <div class="item destacado"><div class="n">01</div><div><h3>Visita al showroom</h3><p>La acción principal de la web: invitaciones a agendar la visita en cada sección, con día y horario a elegir.</p></div></div>
+    <div class="item"><div class="n">02</div><div><h3>Precio y condiciones a la vista</h3><p>Precio desde, 70 % financiado en 12 cuotas en dólares y entrega en 90 días hábiles por contrato.</p></div></div>
+    <div class="item"><div class="n">03</div><div><h3>Fotos reales</h3><p>Obras terminadas, obra en proceso y materiales, con su lugar. Nada de imágenes hechas con IA.</p></div></div>
+    <div class="item"><div class="n">04</div><div><h3>No es una prefabricada</h3><p>Construida en el lugar y a medida, en wood frame con aislación. Cómo se adapta al terreno: pilotes en Tafí del Valle.</p></div></div>
+    <div class="item"><div class="n">05</div><div><h3>Contacto que filtra</h3><p>Formulario de 4 preguntas y un canal de la empresa con respuesta en un día hábil. Nunca un teléfono personal.</p></div></div>
+    <div class="item"><div class="n">06</div><div><h3>Google sin pagar anuncios</h3><p>Perfil de empresa, páginas por zona (Delta, Córdoba y Tucumán) y los mismos datos de contacto en todos lados.</p></div></div>
+    <div class="item"><div class="n">07</div><div><h3>Medición</h3><p>Cada oportunidad registrada con su origen. Un QR propio por cartel o barrio para saber cuál trae compradores.</p></div></div>
+    <div class="item nota"><div class="n">→</div><div><h3>Objetivo</h3><p>Menos consultas de curiosos y más visitas de compradores que pueden pagar.</p></div></div>
+  </div>
+</section>
+
+<!-- 4 · FUENTES DE COMPRADORES -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>4 / 10</span></div>
+  <p class="ceja">Lo que ponemos en marcha</p>
+  <h1>Fuentes de compradores</h1>
+  <p class="sub">Cuatro frentes nuevos. Los tres primeros no dependen de publicidad paga; el cuarto es opcional y acotado.</p>
+  <div class="frentes">
+    <div class="frente"><div class="n">1</div><h3>Contacto directo con empresas e inversores</h3><p>Glamping, complejos, hoteles, estancias y desarrolladores turísticos.</p><p>Uno a uno, con quien decide. Sin envíos masivos.</p><p class="ref">Detalle en la lámina 5</p></div>
+    <div class="frente"><div class="n">2</div><h3>Referidos, alianzas y QR</h3><p>Countries, inmobiliarias, escribanos, arquitectos, asesores y clientes de Hytter.</p><p>Un QR propio por barrio o cartel.</p><p class="ref">Detalle en la lámina 6</p></div>
+    <div class="frente"><div class="n">3</div><h3>Visitas y seguimiento al cierre</h3><p>Visita al showroom o a una obra.</p><p>Cada oportunidad registrada a nombre de Hytter. Reporte semanal de visitas, propuestas, reservas y ventas.</p></div>
+    <div class="frente opcional"><div class="n">4</div><h3>Anuncios solo donde está el comprador (opcional)</h3><p>No es la campaña masiva que ya probaron. Solo en countries, barrios cerrados y barrios como Recoleta, con fotos reales y precio desde.</p><p>Tope de USD 300 a 400 por mes, que aprueba y paga Hytter. <b>Si a los 60 días no traen compradores aptos, se apagan y no se vuelven a hacer.</b></p></div>
+  </div>
+</section>
+
+<!-- 5 · EMPRESAS TURÍSTICAS -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>5 / 10</span></div>
+  <p class="ceja">Frente 1 · Cómo llegamos</p>
+  <h1>Empresas turísticas e inversores</h1>
+  <p class="sub">Sin envíos masivos y todo a distancia: correo, teléfono, WhatsApp y videollamada, en horario laboral.</p>
+  <div class="dos">
+    <div><h3>A quién</h3><p>Estancias y campos que quieren sumar turismo, complejos de cabañas y glamping que quieren ampliar o sumar domos, hoteles, hosterías y loteos turísticos. El perfil de las 10 cabañas de Tafí del Valle, los domos de Tigre, La Pampa y Tolhuin.</p></div>
+    <div><h3>Dónde los encontramos</h3><p>Listas armadas a mano con fuentes públicas: registros de alojamiento de los entes de turismo, cámaras hoteleras y de turismo rural, Google Maps, plataformas de alquiler y notas sobre emprendimientos nuevos.</p></div>
+  </div>
+  <div class="flujo">
+    <div class="paso"><b>PASO 1</b><p>Llamada a quien decide: "¿Están pensando sumar unidades para la próxima temporada?"</p></div>
+    <div class="flecha">→</div>
+    <div class="paso"><b>PASO 2</b><p>Ficha Hytter por correo o WhatsApp: modelos para turismo, domos, obras reales, plazo y financiación.</p></div>
+    <div class="flecha">→</div>
+    <div class="paso"><b>PASO 3</b><p>Seguimiento a los 3 y a los 10 días. Si no hay interés, no insistimos.</p></div>
+    <div class="flecha">→</div>
+    <div class="paso"><b>PASO 4</b><p>Si califica, reunión con su equipo de ventas o visita al showroom.</p></div>
+  </div>
+  <p class="pie-nota"><b>Cada contacto queda registrado</b> con su origen, estado, próxima acción y resultado. Con permiso del cliente, las fotos de la obra de Tafí del Valle sirven de vidriera.</p>
+</section>
+
+<!-- 6 · ALIANZAS -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>6 / 10</span></div>
+  <p class="ceja">Frente 2 · Cómo llegamos</p>
+  <h1>Gente que ya trata con compradores con plata</h1>
+  <table>
+    <tr><th>Aliado</th><th>Por qué tiene compradores</th><th>Qué le proponemos</th></tr>
+    <tr><td>Countries y barrios cerrados</td><td>Propietarios con lote sin construir, en barrios donde Hytter es una de las 5 o 6 empresas habilitadas.</td><td>Figurar en la lista de constructoras. Charla virtual: "Cómo construir en tu lote en 90 días, con financiación". Cartel con QR en cada obra. Con permiso del dueño, visita a una cabaña terminada del barrio: <b>así llegó la última venta.</b></td></tr>
+    <tr><td>Inmobiliarias de lotes y premium</td><td>Venden lotes a gente que después tiene que construir.</td><td>"Lote más cabaña": la ficha Hytter para cada comprador de lote y un reconocimiento por venta concretada.</td></tr>
+    <tr><td>Escribanos</td><td>Firman la compra de lotes y campos.</td><td>La ficha Hytter para sus clientes. Reconocimiento solo si su colegio lo permite.</td></tr>
+    <tr><td>Arquitectos</td><td>Clientes que quieren construir rápido o en madera.</td><td>Hytter como constructora de sus proyectos, con plazo por contrato.</td></tr>
+    <tr><td>Asesores patrimoniales</td><td>Clientes que buscan dónde poner sus dólares.</td><td>La cabaña para alquiler turístico como inversión, con financiación propia.</td></tr>
+    <tr><td>Clientes de Hytter</td><td>Conocen gente como ellos.</td><td>Una carta que envía Hytter, con un reconocimiento por cada recomendación que termine en venta.</td></tr>
+  </table>
+  <p class="pie-nota"><b>Kit para cada aliado:</b> ficha, fotos reales, precio desde, financiación y un QR o link propio. Reunión por videollamada o teléfono y contacto mensual. Hytter define el reconocimiento.</p>
+</section>
+
+<!-- 7 · COMPRADOR APTO -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>7 / 10</span></div>
+  <p class="ceja">El filtro</p>
+  <h1>Qué entendemos por comprador apto</h1>
+  <p class="sub">Solo llega a su equipo quien cumple las cuatro condiciones.</p>
+  <div class="apto">
+    <div class="izq">
+      <div class="cond"><h3>Proyecto concreto</h3><p>Vivienda, fin de semana, alquiler turístico o complejo.</p></div>
+      <div class="cond"><h3>Terreno</h3><p>Propio, con posesión o escritura y la parcela identificada, o con una compra concreta en curso.</p></div>
+      <div class="cond"><h3>Capacidad de pago</h3><p>Contado o, si Hytter lo aprueba, 30 % de anticipo y hasta 70 % en 12 cuotas fijas en dólares.</p></div>
+      <div class="cond"><h3>Plazo y decisión</h3><p>Quiere empezar la obra dentro de los próximos 6 meses y quien decide acepta una reunión o una visita.</p></div>
+      <p class="no"><b>No cuenta</b> quien solo pregunta el precio o pide otros trabajos, como cambiar ventanas o hacer contrapisos.</p>
+    </div>
+    <div class="der">
+      <b>Venta atribuible</b>
+      <p>Una reserva o un contrato firmado, con el anticipo cobrado, que se originó en una fuente nueva del piloto durante los 90 días.</p>
+      <small>Fuentes: la web, una alianza, un QR, un referido, el contacto directo o los anuncios, si se aprobaron. No cuentan los clientes ni las oportunidades que ya estaban en gestión antes de empezar.</small>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · PLAN -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>8 / 10</span></div>
+  <p class="ceja">Ejecución</p>
+  <h1>Claro desde el inicio</h1>
+  <p class="sub">Un piloto con entregables, una persona responsable en su equipo y revisión semanal de oportunidades.</p>
+  <div class="etapas">
+    <div class="etapa"><b>DÍAS 1 A 15</b><ul>
+      <li>Elegimos el perfil y la zona inicial: Delta, Córdoba o Tucumán.</li>
+      <li>Acordamos precio desde, financiación y criterio de comprador apto.</li>
+      <li>Reunimos fotos y datos verificables de las obras.</li>
+      <li>Kit para aliados y clientes, y primeras listas.</li></ul></div>
+    <div class="etapa"><b>DÍAS 16 A 30</b><ul>
+      <li>Web con la visita al showroom como acción principal, precios, obras reales y diferencia constructiva.</li>
+      <li>Primeros contactos uno a uno, alianzas y QR por barrio.</li>
+      <li>Anuncios por zona preparados, si Hytter los aprueba.</li></ul></div>
+    <div class="etapa"><b>DÍAS 31 A 90</b><ul>
+      <li>Ritmo constante de contactos y alianzas.</li>
+      <li>Anuncios, si se aprobaron: si a los 60 días no traen compradores aptos, se apagan.</li>
+      <li>Visitas y seguimiento hasta la firma.</li>
+      <li>Revisión del día 90: se sigue, se ajusta o se corta.</li></ul></div>
+  </div>
+  <div class="franja">REVISIÓN SEMANAL · ENTREGABLES CLAROS · UNA PERSONA RESPONSABLE</div>
+</section>
+
+<!-- 9 · INVERSIÓN -->
+<section class="lamina">
+  <div class="top"><span>PROPUESTA COMERCIAL · HYTTER</span><span>9 / 10</span></div>
+  <p class="ceja">Inversión</p>
+  <h1>Inversión del piloto</h1>
+  <div class="inv">
+    <div class="izq">
+      <table>
+        <tr><th>Concepto</th><th>Monto</th></tr>
+        <tr><td>Web · pago único</td><td>USD 700: USD 350 al inicio y USD 350 contra entrega</td></tr>
+        <tr><td>Gestión comercial · 90 días</td><td>USD 700 por mes · USD 2.100 en total</td></tr>
+        <tr class="total"><td>Total del piloto</td><td>USD 2.800 de honorarios</td></tr>
+        <tr><td>Anuncios por zona · opcional</td><td>Tope de USD 300 a 400 por mes. Los paga Hytter directo a Meta y solo se activan con su aprobación.</td></tr>
+      </table>
+      <h2>Para que el compromiso sea justo y medible</h2>
+      <ul class="reglas">
+        <li><b>Hytter</b> designa a una persona, responde cada oportunidad en un día hábil, coordina las visitas y aprueba precios y textos.</li>
+        <li><b>Two&amp;Human</b> entrega la web, registra el origen de cada oportunidad y reporta cada semana.</li>
+        <li><b>Extensión:</b> hasta 30 días sin fee mensual si no hay venta atribuible y Hytter cumplió los plazos, las condiciones y las visitas.</li>
+        <li><b>Contrato</b> por escrito con alcance, plazos y compromisos.</li>
+      </ul>
+    </div>
+    <div class="der">
+      <div class="cuenta"><b>Su cuenta</b><p class="cita">"Una por mes cubre los costos de ustedes de un año."</p><p>Con esa misma cuenta, una sola cabaña vendida paga el piloto entero.</p></div>
+      <div class="cuenta"><b>Si el piloto vende</b><p>Revisamos la tarifa con una parte por venta, como usted propuso: si Hytter gana, ganamos.</p></div>
+      <div class="cuenta"><b>Sin sorpresas</b><p>La inversión es la del cuadro. Los anuncios son opcionales, con tope mensual y con fecha de corte.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · PARA EMPEZAR -->
+<section class="lamina">
+  <div class="final">
+    <div class="izq">
+      <div class="top" style="right:auto;"><span>PROPUESTA COMERCIAL · HYTTER · 10 / 10</span></div>
+      <p class="ceja">Próximo paso</p>
+      <h1>Para empezar</h1>
+      <p class="empezar">Confirmar la zona y el perfil prioritarios, quién recibe las oportunidades y las condiciones vigentes (precio desde y financiación). Con eso fijamos la fecha de inicio.</p>
+      <div class="bloque-no"><b>Qué no incluye</b><p>Presupuesto de anuncios · fotos o video profesional · impresión y colocación de carteles · dominio, hosting y licencias · viajes · reconocimientos a quien recomienda, que paga Hytter.</p></div>
+      <div class="bloque-no"><b>Todo queda a nombre de Hytter</b><p>O de Grupo Guadalupe, si decide incorporarla: web, registro, contactos y materiales.</p></div>
+    </div>
+    <div class="der">
+      <div class="raya"></div>
+      <b>TWO&amp;HUMAN</b>
+      <p>Mariam Neme y Julio Briones<br>+54 381 509 8972<br>mariam@twoandhuman.com<br>julio@twoandhuman.com</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

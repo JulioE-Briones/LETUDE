@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Propuesta Arte &amp; Mármol · Two&amp;Human</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --verde: #1d3d33; --oro: #b5874a; --gris: #555; --claro: #e9efec; --beige: #f5efe6; --borde: #d9d3c7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "DejaVu Sans", Arial, sans-serif; color: #222; font-size: 9pt; line-height: 1.38; }
+  .pagina { width: 210mm; height: 297mm; overflow: hidden; position: relative; padding: 14mm 16mm 16mm; page-break-after: always; }
+  .pagina:last-child { page-break-after: auto; }
+  .barra { position: absolute; top: 0; left: 0; right: 0; height: 7mm; background: var(--oro); }
+  .cabecera { display: flex; justify-content: space-between; font-size: 8pt; margin-top: 2mm; margin-bottom: 6mm; }
+  .cabecera b { color: var(--verde); letter-spacing: .5px; }
+  .cabecera span { color: var(--gris); letter-spacing: .4px; }
+  .ceja { color: var(--oro); font-weight: bold; font-size: 8.5pt; letter-spacing: .6px; text-transform: uppercase; margin: 0 0 2mm; }
+  h1 { color: var(--verde); font-size: 21pt; line-height: 1.12; margin: 0 0 2mm; }
+  .sub { color: var(--gris); font-size: 9.4pt; margin: 0 0 3mm; padding-bottom: 3mm; border-bottom: 1.5px solid var(--oro); }
+  h2 { color: var(--verde); font-size: 11.5pt; margin: 4mm 0 1.5mm; }
+  p { margin: 0 0 2mm; }
+  .compromiso { display: flex; background: var(--claro); border: 1px solid var(--verde); border-left: 5px solid var(--oro); margin: 3mm 0; }
+  .compromiso .et { width: 34mm; padding: 4mm; color: var(--oro); font-weight: bold; font-size: 8.5pt; text-transform: uppercase; display: flex; align-items: center; }
+  .compromiso .tx { padding: 3mm 4mm; color: var(--verde); font-weight: bold; font-size: 10.5pt; line-height: 1.35; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; }
+  th { background: var(--verde); color: #fff; text-align: left; font-size: 8.2pt; padding: 2.2mm 2.5mm; letter-spacing: .3px; }
+  td { border: 1px solid var(--borde); padding: 1.8mm 2.2mm; vertical-align: top; font-size: 8pt; line-height: 1.32; }
+  tr:nth-child(even) td { background: #faf8f4; }
+  td b { color: var(--verde); }
+  .bloque { display: flex; background: var(--beige); border: 1px solid var(--borde); margin-bottom: 2mm; }
+  .bloque .n { width: 40mm; padding: 2.6mm 3mm; font-weight: bold; color: var(--verde); font-size: 8.8pt; text-transform: uppercase; }
+  .bloque .d { padding: 2.6mm 3mm; flex: 1; font-size: 8.5pt; }
+  .bloque .d em { color: var(--oro); font-style: normal; font-weight: bold; }
+  .nota { background: var(--beige); border: 1px solid var(--oro); padding: 2.5mm 3.5mm; margin: 2.5mm 0; font-size: 8.5pt; }
+  .fuente { color: #777; font-size: 7.4pt; margin-top: 1mm; }
+  ul { margin: 0 0 2mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  .pie { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; border-top: 1px solid var(--borde); padding-top: 2mm; display: flex; justify-content: space-between; color: #777; font-size: 7.6pt; }
+  .inv td { font-size: 8.8pt; }
+  .inv .total td { background: var(--claro); font-weight: bold; color: var(--verde); }
+  .pasos { margin: 1mm 0 2mm; padding-left: 5mm; }
+  .pasos li { margin-bottom: .8mm; font-size: 8.6pt; }
+  .detalle p { font-size: 8.6pt; margin-bottom: 1.6mm; }
+  .aliados td { font-size: 7.9pt; }
+  .contacto { color: #666; font-size: 8pt; margin-top: 3mm; }
+</style><style>
+  .cifras { display: flex; gap: 3mm; margin: 2mm 0 2mm; }
+  .cifra { flex: 1; min-width: 0; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.5mm 3.5mm; }
+  .cifra b { display: block; font-size: 13pt; white-space: nowrap; color: var(--verde); margin-bottom: .8mm; }
+  .cifra span { font-size: 7.8pt; color: var(--gris); line-height: 1.3; display: block; }
+  .dos { display: flex; gap: 5mm; align-items: flex-start; }
+  .dos .txt { flex: 1.15; }
+  .dos .txt p, .dos .txt li { font-size: 8.8pt; }
+  .dos .boceto { flex: 1; position: relative; border: 1px solid var(--borde); padding: 6mm 3mm 3mm; background: #fff; }
+  .etq { position: absolute; top: 1.5mm; left: 3mm; font-size: 7.5pt; font-weight: bold; letter-spacing: .6px; text-transform: uppercase; color: var(--oro); }
+  .pieza { border-radius: 3mm; overflow: hidden; border: 1px solid var(--borde); }
+  .pieza .foto { height: 14mm; background: linear-gradient(135deg, #2f5d50, #8fb3a3); color: #fff; font-size: 7.5pt; font-style: italic; display: flex; align-items: flex-end; padding: 2mm 3mm; }
+  .pieza .cuerpo { padding: 2.5mm 3.5mm 3mm; background: #fbf9f5; }
+  .pieza .lema { font-size: 12.5pt; font-weight: bold; color: var(--verde); margin: 0 0 .6mm; line-height: 1.15; }
+  .pieza .aval { font-size: 7.4pt; color: var(--oro); font-weight: bold; margin: 0 0 1.8mm; }
+  .pieza .fila { display: flex; justify-content: space-between; font-size: 7.9pt; padding: 1mm 0; border-bottom: 1px solid var(--borde); }
+  .pieza .fila b { color: var(--verde); }
+  .pieza .incluye { font-size: 7.2pt; color: var(--gris); margin: 1.8mm 0 2mm; }
+  .pieza .boton { background: var(--verde); color: #fff; text-align: center; font-size: 7.8pt; font-weight: bold; padding: 1.8mm; border-radius: 2mm; }
+  .embudo { display: flex; gap: 2.5mm; margin: 1.5mm 0 2mm; }
+  .paso { flex: 1; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.2mm 2.5mm; }
+  .paso i { display: block; font-style: normal; font-size: 7pt; color: var(--oro); font-weight: bold; letter-spacing: .5px; text-transform: uppercase; }
+  .paso b { display: block; color: var(--verde); font-size: 9.2pt; margin: .5mm 0 .8mm; }
+  .paso span { display: block; font-size: 7.5pt; color: var(--gris); line-height: 1.3; }
+  .opciones { display: flex; gap: 4mm; margin: 2mm 0 2.5mm; }
+  .opcion { flex: 1; border: 1px solid var(--borde); background: #fbf9f5; display: flex; flex-direction: column; }
+  .opcion .tit { background: var(--verde); color: #fff; padding: 2.4mm 3mm; font-weight: bold; font-size: 9.6pt; }
+  .opcion .tit small { display: block; color: #e3cfa9; font-weight: normal; font-size: 7.6pt; margin-top: .4mm; }
+  .opcion ul { padding: 2.4mm 3mm 0 7mm; margin: 0; flex: 1; }
+  .opcion li { font-size: 8.1pt; margin-bottom: 1.1mm; }
+  .opcion .precio { border-top: 1px solid var(--borde); padding: 2.2mm 3mm; background: var(--beige); }
+  .opcion .precio b { font-size: 14pt; color: var(--verde); }
+  .opcion .precio span { display: block; font-size: 7.6pt; color: var(--gris); }
+  .crono td { font-size: 8pt; }
+</style>
+<style>
+  .hallazgos li { font-size: 8.7pt; margin-bottom: 1.3mm; }
+  .opcion li { font-size: 7.9pt; }
+  .opciones .opcion ul { padding-bottom: 1.5mm; }
+  .crono td { font-size: 8pt; }
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · ARTE &amp; MÁRMOL</span></div>
+
+  <p class="ceja">Propuesta para Gabriel · Arte &amp; Mármol</p>
+  <h1>Más visitas al showroom de Quilmes, desde Instagram y WhatsApp</h1>
+  <p class="sub">Un solo plan, mes a mes: anuncios que llevan a tu WhatsApp Empresa y terminan en una visita al showroom, con tus trabajos reales como prueba.</p>
+
+  <p>Tenés lo más difícil: un showroom en Lavalle 720, Quilmes centro, y todo en un solo lugar (mármoles, granitos, pisos, revestimientos, baños, cocinas, muebles y bachas), con entrega, instalación y cotización sin costo. <b>La gente quiere ver antes de comprar:</b> el reel del showroom tiene 1.326 reproducciones, cuatro veces más que los otros dos. Lo que falta es que el interesado sepa dónde estás y tenga un motivo para ir.</p>
+
+  <div class="cifras">
+    <div class="cifra"><b>1.326</b><span>reproducciones del reel del showroom, contra 291 y 223 de los otros</span></div>
+    <div class="cifra"><b>Lavalle 720</b><span>tu showroom en Quilmes centro, que no aparece en la bio</span></div>
+    <div class="cifra"><b>1.722</b><span>cuentas seguidas, casi lo mismo que tus 1.774 seguidores</span></div>
+    <div class="cifra"><b>2021</b><span>año de las historias destacadas de Showroom y Remodelaciones</span></div>
+  </div>
+
+  <h2>Lo que encontramos en tu Instagram</h2>
+  <ul class="hallazgos">
+    <li><b>La dirección no está en la bio.</b> Aparece en un reel y en historias viejas: el que entra al perfil no sabe si le queda cerca.</li>
+    <li><b>Las destacadas son de 2021 y 2022.</b> Quien entra hoy no ve trabajos recientes ni el showroom actual.</li>
+    <li><b>Varias fotos parecen de catálogo.</b> Las de trabajos propios, como la cocina con mesada de granito de tus historias, generan mucha más confianza que una foto de revista.</li>
+    <li><b>Seguidos casi iguales a seguidores.</b> Es una audiencia armada por intercambio, no compradores de zona sur, y eso hace que Instagram muestre menos tus publicaciones.</li>
+    <li><b>El que escribe no sabe qué mandar.</b> Llega un "info?" y se pierde tiempo. Conviene pedirle desde el primer mensaje qué necesita, medidas o una foto, y su barrio.</li>
+  </ul>
+
+  <h2>La idea: del anuncio a la visita</h2>
+  <div class="embudo">
+    <div class="paso"><i>Paso 1</i><b>Anuncio en zona sur</b><span>Un trabajo tuyo con su antes y después, o un recorrido por el showroom.</span></div>
+    <div class="paso"><i>Paso 2</i><b>WhatsApp Empresa</b><span>Bienvenida automática que pide qué necesita, medidas o foto, y barrio.</span></div>
+    <div class="paso"><i>Paso 3</i><b>Cotización sin costo</b><span>Cotización sin costo, invitación al showroom con día y horario, y recordatorio automático el día antes.</span></div>
+    <div class="paso"><i>Paso 4</i><b>Visita y cierre</b><span>Elige la placa en persona y vos cerrás la venta cara a cara.</span></div>
+  </div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>1 / 2</span></div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · ARTE &amp; MÁRMOL</span></div>
+
+  <p class="ceja">El trabajo</p>
+  <h1>Plan mensual de marketing</h1>
+  <p class="sub">Un solo plan con todo incluido, mes a mes. La publicidad la pagás vos aparte.</p>
+
+  <div class="opciones">
+    <div class="opcion">
+      <div class="tit">Atraer<small>Que te vea la gente de la zona</small></div>
+      <ul>
+        <li>Anuncios a tu WhatsApp Empresa: antes y después de remodelaciones, recorrido del showroom y mesada a medida.</li>
+        <li>Primero Quilmes; cuando un anuncio gana, sumamos los alrededores.</li>
+        <li>Videos, fotos, carruseles e historias con tus trabajos propios.</li>
+        <li>Perfil al día: dirección en la bio y destacadas nuevas.</li>
+      </ul>
+    </div>
+    <div class="opcion">
+      <div class="tit">Convertir<small>Que la consulta termine en visita</small></div>
+      <ul>
+        <li>WhatsApp automático que pide qué necesita, medidas o foto, y barrio.</li>
+        <li>Invitación al showroom con día y horario.</li>
+        <li>Recordatorio al cliente el día antes, y aviso a vos de quién viene.</li>
+        <li>Etiquetas y planilla de consultas, visitas y ventas.</li>
+      </ul>
+    </div>
+    <div class="opcion">
+      <div class="tit">Fidelizar<small>Que cada cliente deje más</small></div>
+      <ul>
+        <li>Pedido de opinión después de cada instalación.</li>
+        <li>Recomendación: el cliente que trae a otro recibe un beneficio que definís vos.</li>
+        <li>Complementos: bacha, grifería o revestimiento al que compra una mesada.</li>
+        <li>Reporte cada semana.</li>
+      </ul>
+    </div>
+  </div>
+
+  <table class="inv">
+    <tr><th style="width:30%">Concepto</th><th style="width:46%">Detalle</th><th>Monto</th></tr>
+    <tr><td><b>Plan mensual de marketing</b></td><td>Videos, fotos, historias, branding, anuncios armados, WhatsApp automático y reportes. Mes a mes.</td><td>$650.000 por mes</td></tr>
+    <tr><td><b>Publicidad (la pagás vos)</b></td><td>Directo a Meta con tu tarjeta; elegís el monto. Los primeros 14 días, sin cortar.</td><td>Desde $5.000 por día</td></tr>
+  </table>
+
+  <div class="compromiso"><div class="et">Nuestra garantía</div><div class="tx">Con $5.000 por día de publicidad, al menos 60 consultas por WhatsApp de gente de la zona en el primer mes. Si no llegamos, el segundo mes no cobramos el plan hasta lograrlo.</div></div>
+  <p class="fuente">Cuenta como consulta cada conversación de WhatsApp iniciada desde los anuncios, según el informe de Meta. Aplica si la publicidad estuvo activa todo el mes, sin cortes, y si las fotos de trabajos propios se entregaron en la primera semana.</p>
+
+  <h2>Cómo arrancamos</h2>
+  <table class="crono">
+    <tr><th style="width:25%">Semana 1</th><th style="width:25%">Semana 2</th><th style="width:25%">Semanas 3 y 4</th><th>Cada semana</th></tr>
+    <tr><td>Perfil al día, WhatsApp automático y elección de tus trabajos propios.</td><td>Anuncios con dos enfoques, solo en Quilmes.</td><td>Con el ganador, sumamos los alrededores y un tercer enfoque.</td><td>Reporte con consultas, visitas y ventas.</td></tr>
+  </table>
+
+  <h2>Condiciones</h2>
+  <ul>
+    <li><b>Mes a mes:</b> pagás el mes por adelantado y seguís solo si te sirve.</li>
+    <li><b>Solo trabajos propios:</b> en los anuncios mostramos únicamente trabajos que hiciste vos.</li>
+    <li><b>Todo queda a tu nombre:</b> cuentas, cuenta publicitaria, fotos y videos.</li>
+  </ul>
+
+  <div class="nota"><b>Para empezar:</b> pasarnos fotos de 3 a 5 trabajos tuyos (si tenés el antes, mejor) y darnos acceso a Instagram, Facebook y la cuenta publicitaria. Con eso arrancamos en la semana.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · +54 381 509 8972 · mariam@twoandhuman.com · julio@twoandhuman.com</span><span>2 / 2</span></div>
+</section>
+
+</body>
+</html>
