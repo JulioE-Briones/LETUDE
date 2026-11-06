@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Propuesta Inglés a tu medida · Two&amp;Human</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --verde: #1d3d33; --oro: #b5874a; --gris: #555; --claro: #e9efec; --beige: #f5efe6; --borde: #d9d3c7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "DejaVu Sans", Arial, sans-serif; color: #222; font-size: 9pt; line-height: 1.38; }
+  .pagina { width: 210mm; height: 297mm; overflow: hidden; position: relative; padding: 14mm 16mm 16mm; page-break-after: always; }
+  .pagina:last-child { page-break-after: auto; }
+  .barra { position: absolute; top: 0; left: 0; right: 0; height: 7mm; background: var(--oro); }
+  .cabecera { display: flex; justify-content: space-between; font-size: 8pt; margin-top: 2mm; margin-bottom: 6mm; }
+  .cabecera b { color: var(--verde); letter-spacing: .5px; }
+  .cabecera span { color: var(--gris); letter-spacing: .4px; }
+  .ceja { color: var(--oro); font-weight: bold; font-size: 8.5pt; letter-spacing: .6px; text-transform: uppercase; margin: 0 0 2mm; }
+  h1 { color: var(--verde); font-size: 21pt; line-height: 1.12; margin: 0 0 2mm; }
+  .sub { color: var(--gris); font-size: 9.4pt; margin: 0 0 3mm; padding-bottom: 3mm; border-bottom: 1.5px solid var(--oro); }
+  h2 { color: var(--verde); font-size: 11.5pt; margin: 4mm 0 1.5mm; }
+  p { margin: 0 0 2mm; }
+  .compromiso { display: flex; background: var(--claro); border: 1px solid var(--verde); border-left: 5px solid var(--oro); margin: 3mm 0; }
+  .compromiso .et { width: 34mm; padding: 4mm; color: var(--oro); font-weight: bold; font-size: 8.5pt; text-transform: uppercase; display: flex; align-items: center; }
+  .compromiso .tx { padding: 3mm 4mm; color: var(--verde); font-weight: bold; font-size: 10.5pt; line-height: 1.35; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; }
+  th { background: var(--verde); color: #fff; text-align: left; font-size: 8.2pt; padding: 2.2mm 2.5mm; letter-spacing: .3px; }
+  td { border: 1px solid var(--borde); padding: 1.8mm 2.2mm; vertical-align: top; font-size: 8pt; line-height: 1.32; }
+  tr:nth-child(even) td { background: #faf8f4; }
+  td b { color: var(--verde); }
+  .bloque { display: flex; background: var(--beige); border: 1px solid var(--borde); margin-bottom: 2mm; }
+  .bloque .n { width: 40mm; padding: 2.6mm 3mm; font-weight: bold; color: var(--verde); font-size: 8.8pt; text-transform: uppercase; }
+  .bloque .d { padding: 2.6mm 3mm; flex: 1; font-size: 8.5pt; }
+  .bloque .d em { color: var(--oro); font-style: normal; font-weight: bold; }
+  .nota { background: var(--beige); border: 1px solid var(--oro); padding: 2.5mm 3.5mm; margin: 2.5mm 0; font-size: 8.5pt; }
+  .fuente { color: #777; font-size: 7.4pt; margin-top: 1mm; }
+  ul { margin: 0 0 2mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  .pie { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; border-top: 1px solid var(--borde); padding-top: 2mm; display: flex; justify-content: space-between; color: #777; font-size: 7.6pt; }
+  .inv td { font-size: 8.8pt; }
+  .inv .total td { background: var(--claro); font-weight: bold; color: var(--verde); }
+  .pasos { margin: 1mm 0 2mm; padding-left: 5mm; }
+  .pasos li { margin-bottom: .8mm; font-size: 8.6pt; }
+  .detalle p { font-size: 8.6pt; margin-bottom: 1.6mm; }
+  .aliados td { font-size: 7.9pt; }
+  .contacto { color: #666; font-size: 8pt; margin-top: 3mm; }
+</style><style>
+  .cifras { display: flex; gap: 3mm; margin: 2mm 0 2mm; }
+  .cifra { flex: 1; min-width: 0; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.5mm 3.5mm; }
+  .cifra b { display: block; font-size: 13pt; white-space: nowrap; color: var(--verde); margin-bottom: .8mm; }
+  .cifra span { font-size: 7.8pt; color: var(--gris); line-height: 1.3; display: block; }
+  .dos { display: flex; gap: 5mm; align-items: flex-start; }
+  .dos .txt { flex: 1.15; }
+  .dos .txt p, .dos .txt li { font-size: 8.8pt; }
+  .dos .boceto { flex: 1; position: relative; border: 1px solid var(--borde); padding: 6mm 3mm 3mm; background: #fff; }
+  .etq { position: absolute; top: 1.5mm; left: 3mm; font-size: 7.5pt; font-weight: bold; letter-spacing: .6px; text-transform: uppercase; color: var(--oro); }
+  .pieza { border-radius: 3mm; overflow: hidden; border: 1px solid var(--borde); }
+  .pieza .foto { height: 14mm; background: linear-gradient(135deg, #2f5d50, #8fb3a3); color: #fff; font-size: 7.5pt; font-style: italic; display: flex; align-items: flex-end; padding: 2mm 3mm; }
+  .pieza .cuerpo { padding: 2.5mm 3.5mm 3mm; background: #fbf9f5; }
+  .pieza .lema { font-size: 12.5pt; font-weight: bold; color: var(--verde); margin: 0 0 .6mm; line-height: 1.15; }
+  .pieza .aval { font-size: 7.4pt; color: var(--oro); font-weight: bold; margin: 0 0 1.8mm; }
+  .pieza .fila { display: flex; justify-content: space-between; font-size: 7.9pt; padding: 1mm 0; border-bottom: 1px solid var(--borde); }
+  .pieza .fila b { color: var(--verde); }
+  .pieza .incluye { font-size: 7.2pt; color: var(--gris); margin: 1.8mm 0 2mm; }
+  .pieza .boton { background: var(--verde); color: #fff; text-align: center; font-size: 7.8pt; font-weight: bold; padding: 1.8mm; border-radius: 2mm; }
+  .embudo { display: flex; gap: 2.5mm; margin: 1.5mm 0 2mm; }
+  .paso { flex: 1; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.2mm 2.5mm; }
+  .paso i { display: block; font-style: normal; font-size: 7pt; color: var(--oro); font-weight: bold; letter-spacing: .5px; text-transform: uppercase; }
+  .paso b { display: block; color: var(--verde); font-size: 9.2pt; margin: .5mm 0 .8mm; }
+  .paso span { display: block; font-size: 7.5pt; color: var(--gris); line-height: 1.3; }
+  .opciones { display: flex; gap: 4mm; margin: 2mm 0 2.5mm; }
+  .opcion { flex: 1; border: 1px solid var(--borde); background: #fbf9f5; display: flex; flex-direction: column; }
+  .opcion .tit { background: var(--verde); color: #fff; padding: 2.4mm 3mm; font-weight: bold; font-size: 9.6pt; }
+  .opcion .tit small { display: block; color: #e3cfa9; font-weight: normal; font-size: 7.6pt; margin-top: .4mm; }
+  .opcion ul { padding: 2.4mm 3mm 0 7mm; margin: 0; flex: 1; }
+  .opcion li { font-size: 8.1pt; margin-bottom: 1.1mm; }
+  .opcion .precio { border-top: 1px solid var(--borde); padding: 2.2mm 3mm; background: var(--beige); }
+  .opcion .precio b { font-size: 14pt; color: var(--verde); }
+  .opcion .precio span { display: block; font-size: 7.6pt; color: var(--gris); }
+  .crono td { font-size: 8pt; }
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · INGLÉS A TU MEDIDA</span></div>
+
+  <p class="ceja">Propuesta para Marcela · Inglés a tu medida</p>
+  <h1>Que los profesionales te encuentren y se inscriban online</h1>
+  <p class="sub">Clases virtuales de inglés para profesionales de toda la Argentina: página con embudo y cobro online, y un plan de marketing de 3 meses. Se contratan por separado.</p>
+
+  <p>Tenés algo que ninguna academia puede copiar: más de 30 años enseñando inglés y 10 años como traductora simultánea en Minera Alumbrera, en reuniones con americanos, australianos, ingleses y chilenos. Hoy tus alumnos llegan solo por recomendación, y los anuncios que hiciste trajeron gente de Tucumán que pedía clases gratis. <b>No te falta experiencia: falta que te vea el profesional indicado y que tenga una forma simple de inscribirse y pagar.</b></p>
+
+  <div class="cifras">
+    <div class="cifra"><b>+30 años</b><span>enseñando inglés, en todos los niveles</span></div>
+    <div class="cifra"><b>10 años</b><span>como traductora simultánea en Minera Alumbrera</span></div>
+    <div class="cifra"><b>TOEFL</b><span>y otros exámenes internacionales preparados</span></div>
+    <div class="cifra" style="flex:1.45"><b>Banco Mundial</b><span>Lucent y Colliers: traducción para empresas internacionales</span></div>
+  </div>
+
+  <h2>La idea: inglés para tu trabajo, no "clases de inglés"</h2>
+  <div class="dos">
+    <div class="txt">
+      <p>Empezamos por donde tu historia no tiene competencia: <b>inglés para minería y energía.</b> El profesional de Vaca Muerta, San Juan o Jujuy que tiene reuniones, capacitaciones o informes con extranjeros no busca "clases de inglés": busca entender y hacerse entender en su trabajo. Por eso paga, y por eso no pide clases gratis.</p>
+      <ul>
+        <li><b>Personalizado 1 a 1:</b> clases de 1 h 30, por avance y no por cantidad de clases.</li>
+        <li><b>Grupos chicos por nivel,</b> para empresas y equipos de trabajo.</li>
+        <li><b>Después sumamos</b> ingeniería, finanzas y preparación de exámenes, con el mismo sistema.</li>
+      </ul>
+    </div>
+    <div class="boceto">
+      <span class="etq">Boceto del inicio de tu página</span>
+      <div class="pieza">
+        <div class="foto">Tu foto, dando clase por videollamada</div>
+        <div class="cuerpo">
+          <p class="lema">Inglés para minería y energía</p>
+          <p class="aval">Con Marcela · 10 años traductora simultánea en Minera Alumbrera</p>
+          <div class="fila"><span>Personalizado 1 a 1 · 1 h 30</span><b>desde USD ___</b></div>
+          <div class="fila"><span>Grupos para empresas</span><b>a medida</b></div>
+          <p class="incluye">Clases por Meet, Teams o Jitsi, desde cualquier lugar del país</p>
+          <div class="boton">Hacé tu evaluación de nivel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Cómo llega y se inscribe un alumno</h2>
+  <div class="embudo">
+    <div class="paso"><i>Paso 1</i><b>Te ve</b><span>Un anuncio o una publicación para profesionales de minería y energía.</span></div>
+    <div class="paso"><i>Paso 2</i><b>Te conoce</b><span>Tu página: tu historia, los programas y el precio desde.</span></div>
+    <div class="paso"><i>Paso 3</i><b>Se postula</b><span>Formulario corto: profesión, nivel, objetivo y para cuándo.</span></div>
+    <div class="paso"><i>Paso 4</i><b>Se evalúa</b><span>Evaluación de nivel por videollamada, que se descuenta del primer mes.</span></div>
+    <div class="paso"><i>Paso 5</i><b>Paga y empieza</b><span>Pago online y primera clase agendada.</span></div>
+  </div>
+
+  <div class="nota"><b>Para que no lleguen pedidos de clases gratis:</b> el precio desde está a la vista, el formulario pregunta profesión y objetivo, y la evaluación tiene un costo que se descuenta del primer mes.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>1 / 2</span></div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · INGLÉS A TU MEDIDA</span></div>
+
+  <p class="ceja">El trabajo</p>
+  <h1>Qué hacemos</h1>
+  <p class="sub">Dos partes que se contratan por separado. Juntas forman el embudo completo: el marketing trae a la gente y la página la convierte en alumnos.</p>
+
+  <div class="opciones">
+    <div class="opcion">
+      <div class="tit">1 · Página con embudo y cobro online<small>Pago único</small></div>
+      <ul>
+        <li>Página propia con tu historia, tus programas, los precios desde y las preguntas frecuentes.</li>
+        <li>Formulario de evaluación y agenda para elegir día y horario.</li>
+        <li>Cobro online con Mercado Pago, y PayPal para alumnos del exterior.</li>
+        <li>Botón de WhatsApp y aviso a tu correo con cada inscripción.</li>
+        <li>Primero te mostramos el diseño, y se construye cuando lo aprobás.</li>
+      </ul>
+      <div class="precio"><b>$700.000</b><span>$350.000 al empezar y $350.000 al entregar</span></div>
+    </div>
+    <div class="opcion">
+      <div class="tit">2 · Plan mensual de marketing<small>3 meses</small></div>
+      <ul>
+        <li><b>Programas y precios:</b> los armamos con vos (personalizado, grupal y empresas).</li>
+        <li><b>Perfiles:</b> LinkedIn renovado, clave para profesionales, y "Inglés a tu medida con Marcela" al día en Facebook e Instagram.</li>
+        <li><b>Videos cortos cada mes:</b> vocabulario técnico, situaciones de reunión y tu historia. Vos grabás con el celular con nuestra guía; nosotros hacemos guion, edición y publicación.</li>
+        <li><b>Anuncios</b> en Facebook e Instagram para profesionales de Vaca Muerta, San Juan, Jujuy y Buenos Aires.</li>
+        <li><b>Contacto directo,</b> uno a uno, con empresas de minería y energía para ofrecer cursos grupales.</li>
+        <li><b>Respuestas rápidas</b> en WhatsApp y un reporte cada mes.</li>
+      </ul>
+      <div class="precio"><b>$690.000 por mes</b><span>Pago mes por adelantado</span></div>
+    </div>
+  </div>
+
+  <p><b>Publicidad, aparte:</b> la pagás directo a Meta, con un máximo de $300.000 por mes. Arrancamos con un monto de prueba y solo sube, dentro de ese tope, si trae alumnos.</p>
+  <p><b>Cuentas claras:</b> un solo alumno de preparación de examen, a USD 1.000 por mes como nos contaste, cubre más de un mes del plan.</p>
+
+  <h2>Cómo arrancamos</h2>
+  <table class="crono">
+    <tr><th style="width:25%">Semana 1</th><th style="width:25%">Semanas 2 y 3</th><th style="width:25%">Semana 4</th><th>Meses 2 y 3</th></tr>
+    <tr><td>Programas y precios. LinkedIn y Facebook al día. Guía para grabar los primeros videos.</td><td>Diseño de la página, aprobación y puesta en línea con el formulario y el cobro.</td><td>Primeros anuncios con un monto de prueba y primeros contactos con empresas.</td><td>Más de lo que trae alumnos; lo que no trae, se corta. Reporte con consultas, evaluaciones e inscriptos.</td></tr>
+  </table>
+
+  <h2>Condiciones</h2>
+  <ul>
+    <li><b>Plazo:</b> 3 meses del plan de marketing, con pago mes por adelantado.</li>
+    <li><b>Garantía de cumplimiento:</b> si al terminar el primer mes lo acordado no está funcionando, el segundo mes no se cobra hasta completarlo.</li>
+    <li><b>Todo queda a tu nombre:</b> página, cuentas, perfiles y videos.</li>
+    <li><b>No incluye:</b> la publicidad, el dominio y el hosting de la página, ni los libros digitales de Cambridge o Harvard.</li>
+  </ul>
+
+  <div class="nota"><b>Para empezar:</b> elegir qué querés contratar, pasarnos los precios de tus clases y darnos acceso a tu página de Facebook y a tu LinkedIn. Con eso arrancamos en la semana.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · +54 381 509 8972 · mariam@twoandhuman.com · julio@twoandhuman.com</span><span>2 / 2</span></div>
+</section>
+
+</body>
+</html>

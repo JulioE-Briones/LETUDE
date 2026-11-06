@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TWO&amp;HUMAN · MEDA Website Development Proposal</title>
+<style>
+@font-face { font-family: "Montserrat"; font-weight: 400; src: url("../assets/fonts/montserrat-400.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 500; src: url("../assets/fonts/montserrat-500.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 600; src: url("../assets/fonts/montserrat-600.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 700; src: url("../assets/fonts/montserrat-700.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url("../assets/fonts/montserrat-800.woff") format("woff"); }
+@page { size: Letter; margin: 0; }
+:root { --navy:#34495e; --orange:#f7941d; --grey:#5b6672; --light:#f2f4f6; --line:#dfe6ed; --sage:#4f6b5a; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:"Montserrat",sans-serif; color:#24303c; font-size:9.1pt; line-height:1.42; }
+.page { width:8.5in; height:11in; position:relative; overflow:hidden; padding:0.6in 0.7in 0.75in; page-break-after:always; }
+.page:last-child { page-break-after:auto; }
+.bar { position:absolute; top:0; left:0; right:0; height:0.16in; background:var(--orange); }
+.head { display:flex; justify-content:space-between; font-size:7.8pt; letter-spacing:.6px; color:var(--grey); margin-bottom:0.2in; }
+.head b { color:var(--navy); letter-spacing:2px; font-weight:800; }
+h1 { font-size:21pt; line-height:1.12; color:var(--navy); margin:0 0 6px; font-weight:800; }
+h1 span { color:var(--orange); }
+.lead { font-size:10pt; color:var(--grey); margin:0 0 12px; padding-bottom:10px; border-bottom:2px solid var(--orange); }
+h2 { font-size:11.4pt; color:var(--navy); margin:13px 0 6px; font-weight:800; }
+h2 small { color:var(--orange); font-weight:700; letter-spacing:.5px; margin-right:6px; }
+h3 { font-size:9.5pt; color:var(--navy); margin:8px 0 3px; font-weight:700; }
+p { margin:0 0 6px; }
+ul { margin:0 0 6px; padding-left:16px; }
+li { margin-bottom:2.5px; }
+b { color:var(--navy); }
+table { width:100%; border-collapse:collapse; margin:4px 0 8px; }
+th { background:var(--navy); color:#fff; text-align:left; font-size:8pt; padding:5px 7px; font-weight:700; }
+td { border:1px solid var(--line); padding:4.5px 7px; vertical-align:top; font-size:8.5pt; }
+tr:nth-child(even) td { background:#fafbfc; }
+td.k { width:34%; font-weight:700; color:var(--navy); }
+td.n { width:18%; text-align:right; font-weight:700; color:var(--navy); white-space:nowrap; }
+tr.tot td { background:var(--light); font-weight:800; color:var(--navy); }
+.box { background:var(--light); border-left:4px solid var(--orange); padding:8px 11px; margin:8px 0; font-size:8.9pt; }
+.two { display:flex; gap:14px; }
+.two > div { flex:1; }
+.ok { color:#1f7a3d; font-weight:800; margin-right:4px; }
+.foot { position:absolute; left:0.7in; right:0.7in; bottom:0.38in; border-top:1px solid var(--line); padding-top:5px; display:flex; justify-content:space-between; font-size:7.4pt; color:var(--grey); }
+.ph { background:#fff1c9; color:#7a5600; padding:0 3px; border-radius:2px; font-weight:700; }
+/* cover */
+.cover { padding:0; }
+.cover .top { background:var(--navy); color:#fff; height:5.3in; padding:0.9in 0.8in 0.5in; position:relative; }
+.cover .top .tag { font-weight:800; letter-spacing:3px; font-size:10pt; color:var(--orange); margin-bottom:0.45in; }
+.cover .top h1 { color:#fff; font-size:30pt; margin-bottom:12px; }
+.cover .top p { color:#dfe6ed; font-size:12pt; max-width:5.6in; }
+.cover .meta { padding:0.45in 0.8in; }
+.cover .meta table td { font-size:9.5pt; padding:7px 9px; }
+/* mockup */
+.mock { border:1px solid #c9d3dd; border-radius:8px; overflow:hidden; background:#fff; }
+.mock .chrome { background:#e9edf1; padding:5px 8px; display:flex; gap:5px; align-items:center; }
+.mock .chrome i { width:7px; height:7px; border-radius:50%; background:#c4ccd4; display:inline-block; }
+.mock .chrome span { margin-left:8px; background:#fff; border-radius:4px; padding:1px 8px; font-size:6.5pt; color:var(--grey); }
+.mock .nav { display:flex; justify-content:space-between; align-items:center; padding:7px 12px; border-bottom:1px solid var(--line); }
+.mock .nav b { font-size:8pt; letter-spacing:1px; color:var(--sage); }
+.mock .nav span { font-size:6.6pt; color:var(--grey); margin-left:10px; }
+.mock .hero { background:linear-gradient(135deg,#3f5a4b,#7c9a86); color:#fff; padding:16px 14px; }
+.mock .hero .h { font-size:12.5pt; font-weight:800; line-height:1.15; margin-bottom:4px; }
+.mock .hero .s { font-size:7.4pt; color:#e6efe9; margin-bottom:8px; max-width:4in; }
+.mock .btn { display:inline-block; font-size:6.8pt; font-weight:700; padding:4px 8px; border-radius:3px; margin-right:5px; }
+.mock .btn.a { background:#fff; color:var(--sage); }
+.mock .btn.b { border:1px solid #fff; color:#fff; }
+.mock .body { display:flex; gap:10px; padding:10px 12px 12px; }
+.mock .col { flex:1; }
+.mock .col .t { font-size:7.6pt; font-weight:800; color:var(--navy); margin-bottom:4px; }
+.mock .doc { display:flex; justify-content:space-between; border:1px solid var(--line); border-radius:3px; padding:3px 6px; font-size:6.6pt; margin-bottom:3px; }
+.mock .doc em { font-style:normal; color:var(--orange); font-weight:700; }
+.mock .col p { font-size:6.6pt; color:var(--grey); margin:0 0 3px; }
+.mocknote { font-size:7.4pt; color:var(--grey); margin-top:4px; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="page cover">
+<div class="top">
+<div class="tag">TWO&amp;HUMAN</div>
+<h1>Website Development for the Moffat Economic Development Authority</h1>
+<p>Proposal in response to RFP #2026-3. A simple, professional and affordable Phase 1 website that MEDA owns and controls, with a clear path to grow in Phase 2.</p>
+</div>
+<div class="meta">
+<table>
+<tr><td class="k">To</td><td>Moffat Economic Development Authority (MEDA) · Attn: Jeff Comstock<br>1198 W. Victory Way, Suite 104, Craig, CO 81625 · jcomstock@moffatcounty.net</td></tr>
+<tr><td class="k">From</td><td>TWO&amp;HUMAN · Julio Briones, Co-founder (Web &amp; Digital Marketing) · Mariam Neme, Co-founder (Software Engineering)</td></tr>
+<tr><td class="k">Contact</td><td>julio@twoandhuman.com · +54 381 509 8972 (phone and WhatsApp) · twoandhuman.com</td></tr>
+<tr><td class="k">Date</td><td><span class="ph">[DATE]</span></td></tr>
+<tr><td class="k">Phase 1 summary</td><td><b>$2,620 one-time</b> (design, development, document section, email setup and first-year domain) · <b>about $1,320 per year</b> in recurring costs · launch in February 2027</td></tr>
+</table>
+</div>
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>MEDA RFP #2026-3</span></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>MEDA WEBSITE DEVELOPMENT PROPOSAL · RFP #2026-3</span></div>
+
+<h2><small>01</small>About TWO&amp;HUMAN</h2>
+<p>TWO&amp;HUMAN is a small, two-person web and digital marketing studio founded in 2026 by Julio Briones (web and digital marketing) and Mariam Neme (software engineering). We are based in Argentina and work remotely in English and Spanish. We are a new firm, and we say so plainly: we would rather earn MEDA's trust with a clear plan, honest pricing and full ownership for MEDA than with claims we cannot back up.</p>
+<p>The RFP asks for a dependable partner, not the most elaborate website. That is how we work: simple sites that are fast, easy to update and fully owned by the client.</p>
+
+<h2><small>02</small>Our understanding of MEDA's needs</h2>
+<p>MEDA needs a credible public home by February 2027: who MEDA is, what it does for Craig and Moffat County, how to reach it, and <b>easy public access to meeting minutes, bylaws, founding documents and policies</b>. It needs a dedicated email address, staff who can upload documents without calling a developer, low ongoing costs, and full control of the domain, site and content. And it needs a base that can grow into business-attraction pages and marketing in 2028, without starting over.</p>
+
+<h2><small>03</small>Phase 1 approach</h2>
+<table>
+<tr><th style="width:30%">Requirement</th><th>How we will deliver it</th></tr>
+<tr><td class="k">Platform</td><td><b>WordPress</b>, the most widely used website platform. It is open source with no license fees, and almost any web provider in Colorado or elsewhere can maintain it. We use a free, lightweight theme and free plugins only, so there are no paid licenses to transfer.</td></tr>
+<tr><td class="k">Landing page</td><td>One clean, responsive page: MEDA's name and purpose, a short description of its mission and role in economic development, contact details, and a prominent "Meeting Minutes &amp; Public Documents" section. Tested on desktop, tablet and mobile.</td></tr>
+<tr><td class="k">Document section</td><td>A searchable document library organized by type (meeting minutes by year, bylaws, founding documents, policies and procedures), newest first. Staff upload a PDF, choose a category, and it appears on the site.</td></tr>
+<tr><td class="k">Email</td><td>A dedicated MEDA address (for example, info@ on MEDA's domain) on Google Workspace, set up with the records that keep email out of spam folders. Billed by Google directly to MEDA. Microsoft 365 is also possible if MEDA prefers.</td></tr>
+<tr><td class="k">Domain</td><td>No domain exists today, as Mr. Comstock confirmed. We will propose two or three short, available names and register the chosen one <b>in MEDA's name</b>. As a public corporation, MEDA may also be eligible for a free <b>.gov</b> domain; we can help apply if MEDA wishes (see optional features).</td></tr>
+<tr><td class="k">Hosting</td><td>Managed WordPress hosting on U.S. servers, with daily backups and a free security certificate (https). The account is in MEDA's name.</td></tr>
+<tr><td class="k">Accessibility</td><td>Built to WCAG 2.1 AA, the accessibility standard widely used for public-sector websites. Training covers how to publish accessible, searchable PDFs.</td></tr>
+<tr><td class="k">Training</td><td>A recorded one-hour video session for the staff MEDA designates, plus a short written guide: uploading documents, editing text, and where to find each account.</td></tr>
+</table>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>2 / 6</span></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>MEDA WEBSITE DEVELOPMENT PROPOSAL · RFP #2026-3</span></div>
+
+<h2><small>04</small>Concept mockup of the Phase 1 landing page</h2>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>[medadomain].org</span></div>
+<div class="nav"><b>MEDA</b><div><span>About</span><span>Documents</span><span>Contact</span></div></div>
+<div class="hero">
+<div class="h">Moffat Economic Development Authority</div>
+<div class="s">Investing settlement funds in economic development initiatives that benefit the City of Craig and Moffat County.</div>
+<span class="btn a">Meeting Minutes &amp; Documents</span><span class="btn b">Contact MEDA</span>
+</div>
+<div class="body">
+<div class="col">
+<div class="t">About MEDA</div>
+<p>A public corporation created by the City of Craig and Moffat County, governed by a volunteer Board appointed by the City Council, the Board of County Commissioners and the Moffat County School District RE 1.</p>
+<div class="t" style="margin-top:6px">Contact</div>
+<p>info@[medadomain].org · 1198 W. Victory Way, Suite 104, Craig, CO 81625</p>
+</div>
+<div class="col">
+<div class="t">Meeting Minutes &amp; Public Documents</div>
+<div class="doc"><span>Board Meeting Minutes · [Month Year]</span><em>PDF</em></div>
+<div class="doc"><span>Board Meeting Minutes · [Month Year]</span><em>PDF</em></div>
+<div class="doc"><span>Bylaws</span><em>PDF</em></div>
+<div class="doc"><span>Establishment Agreement</span><em>PDF</em></div>
+<div class="doc"><span>Policies &amp; Procedures</span><em>PDF</em></div>
+</div>
+</div>
+</div>
+<p class="mocknote">Concept prepared for this proposal with placeholder content. The final design will use MEDA's branding, text and documents, and will be approved by MEDA before development.</p>
+
+<h2><small>05</small>Timeline (launch in February 2027)</h2>
+<table>
+<tr><th style="width:24%">When</th><th>What happens</th></tr>
+<tr><td class="k">Week 1 (December)</td><td>Kickoff video call. Domain registered and email and hosting accounts opened, all in MEDA's name. MEDA shares content and documents.</td></tr>
+<tr><td class="k">Weeks 2 to 3</td><td>Design of the landing page and document section, shared for MEDA's review. One round of revisions.</td></tr>
+<tr><td class="k">Weeks 4 to 6 (January)</td><td>Development, document library set up and initial documents uploaded. Review on a private preview link.</td></tr>
+<tr><td class="k">Weeks 7 to 8 (February)</td><td>Final revisions, training session, written guide and summary of ongoing costs. Launch.</td></tr>
+</table>
+<p><b>Estimated time for Phase 1:</b> about 8 weeks from kickoff, around 40 hours of work. Holiday schedules are built in.</p>
+<h3>What we will need from MEDA</h3>
+<ul>
+<li>A main contact for approvals, and the staff who will be trained.</li>
+<li>Mission and description text, or approval of a short draft we prepare from public information.</li>
+<li>Logo or branding, if any, and the documents to publish, ideally as searchable PDFs.</li>
+<li>Choice of domain name, and a payment method for the domain, hosting and email accounts in MEDA's name.</li>
+</ul>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>3 / 6</span></div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>MEDA WEBSITE DEVELOPMENT PROPOSAL · RFP #2026-3</span></div>
+
+<h2><small>06</small>Pricing (U.S. dollars)</h2>
+<table>
+<tr><th>Service</th><th style="width:44%">Notes</th><th style="width:16%;text-align:right">Proposed cost</th></tr>
+<tr><td class="k">Landing page design and development</td><td>Design, development, responsive testing, accessibility review</td><td class="n">$1,800</td></tr>
+<tr><td class="k">Meeting minutes/document section</td><td>Document library and upload of up to 50 initial documents</td><td class="n">$600</td></tr>
+<tr><td class="k">Email setup</td><td>Google Workspace, 1 to 2 addresses, spam-protection records</td><td class="n">$200</td></tr>
+<tr><td class="k">Domain registration, if applicable</td><td>First year, in MEDA's name, at cost</td><td class="n">$20</td></tr>
+<tr><td class="k">Annual website hosting</td><td>U.S.-based managed WordPress hosting, billed to MEDA by the provider (estimate)</td><td class="n">$300 / year</td></tr>
+<tr><td class="k">Annual maintenance and support</td><td>See below. Billed monthly at $75, or yearly</td><td class="n">$900 / year</td></tr>
+<tr><td class="k">Other required costs</td><td>Google Workspace, about $100 per address per year, billed by Google (estimate for 1 address)</td><td class="n">$100 / year</td></tr>
+<tr class="tot"><td>Total initial Phase 1 cost</td><td>One-time work plus first-year domain</td><td class="n">$2,620</td></tr>
+<tr class="tot"><td>Estimated annual recurring costs</td><td>Hosting, maintenance, email and domain renewal</td><td class="n">$1,320 / year</td></tr>
+</table>
+<p><b>Payment:</b> 50% of the one-time work at kickoff and 50% at launch. Hosting, email and domain are paid by MEDA directly to each provider, at their prices, with no markup from us.</p>
+
+<div class="two">
+<div>
+<h3>Annual maintenance includes</h3>
+<ul>
+<li>WordPress, theme and plugin updates, and security monitoring</li>
+<li>Checking that daily backups run, and restoring if needed</li>
+<li>Up to 1 hour per month of content help (uploads, text changes)</li>
+<li>Replies within 1 business day; same-day response if the site is down</li>
+</ul>
+<h3>Rates</h3>
+<ul>
+<li><b>Hourly rate</b> for work outside maintenance: <b>$60 per hour</b>, always quoted and approved in writing first.</li>
+<li><b>Phase 2 pages:</b> about <b>$350 per standard page</b> with MEDA-provided content. See section 09.</li>
+</ul>
+</div>
+<div>
+<h3>Optional features</h3>
+<ul>
+<li>.gov domain application support: $150 (the domain itself is free for eligible public entities)</li>
+<li>Simple logo or wordmark, if MEDA has none: $300</li>
+<li>Meeting calendar with upcoming Board meetings: $250</li>
+<li>Email newsletter sign-up (free tier of a newsletter service): $200</li>
+<li>Visitor analytics and Google Business Profile setup: $150</li>
+</ul>
+<h3>Assumptions and exclusions</h3>
+<ul>
+<li>MEDA provides final text, branding and documents; we do light editing.</li>
+<li>Two rounds of revisions on the design and one on the final site.</li>
+<li>Scanned documents that need accessibility repair are quoted separately.</li>
+<li>Professional photography and paid stock images are not included.</li>
+</ul>
+</div>
+</div>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>4 / 6</span></div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>MEDA WEBSITE DEVELOPMENT PROPOSAL · RFP #2026-3</span></div>
+
+<h2><small>07</small>Website ownership and transfer (RFP section 7)</h2>
+<table>
+<tr><th style="width:44%">Requirement</th><th>Our commitment</th></tr>
+<tr><td class="k">MEDA owns or directly controls its domain</td><td><span class="ok">Yes.</span> Registered in MEDA's name, with MEDA's email as the owner contact.</td></tr>
+<tr><td class="k">MEDA has admin access to website and hosting</td><td><span class="ok">Yes.</span> All accounts are opened in MEDA's name. We work as an invited user and can be removed at any time.</td></tr>
+<tr><td class="k">MEDA retains ownership of content and documents</td><td><span class="ok">Yes.</span> All content, documents and the site itself belong to MEDA.</td></tr>
+<tr><td class="k">Content can be exported or transferred</td><td><span class="ok">Yes.</span> WordPress exports everything. On request, we deliver a full backup of files and database at no cost.</td></tr>
+<tr><td class="k">Third-party software, licenses or transfer fees disclosed</td><td><span class="ok">Yes.</span> WordPress, the theme and the plugins we use are free and open source. No licenses, no transfer fees. Recurring third-party costs are listed in section 06.</td></tr>
+<tr><td class="k">Can be maintained by another qualified provider</td><td><span class="ok">Yes.</span> Standard WordPress, with no custom code that locks MEDA in.</td></tr>
+<tr><td class="k">Limitations on transfer</td><td><b>None</b> from our side. If MEDA changes providers, we help with the handover.</td></tr>
+</table>
+
+<h2><small>08</small>Communication and ongoing support</h2>
+<ul>
+<li><b>One point of contact:</b> Julio Briones, by email, phone or video call. Mariam Neme handles technical issues.</li>
+<li><b>Working hours:</b> Argentina is four hours ahead of Mountain Time in winter, so our day covers MEDA's morning and early afternoon.</li>
+<li><b>Requests:</b> sent by email; we reply within 1 business day. If the site is down, we respond the same day.</li>
+<li><b>Monthly check:</b> a short email each month confirming updates, backups and any changes made.</li>
+<li><b>Interviews:</b> we are glad to meet the Board by video call. If an in-person interview is required, please let us know.</li>
+</ul>
+
+<h2><small>09</small>Response to Phase 2 (from January 2028)</h2>
+<p>Phase 1 is built so Phase 2 adds pages instead of starting over. WordPress lets us add sections such as About MEDA and leadership, Board agendas, business resources, available properties, workforce, community and quality of life, infrastructure, incentives, news and success stories, and business inquiry forms, all using the same design and the same document library.</p>
+<table>
+<tr><th style="width:46%">Phase 2 item</th><th style="text-align:right">Estimated cost</th></tr>
+<tr><td class="k">Standard page (MEDA provides content)</td><td class="n">about $350 per page</td></tr>
+<tr><td class="k">Starter package: 6 pages plus a news section</td><td class="n">about $2,400</td></tr>
+<tr><td class="k">Available properties listing with filters</td><td class="n">$1,500 to $2,500</td></tr>
+<tr><td class="k">Business inquiry form routed to MEDA staff</td><td class="n">$300</td></tr>
+</table>
+<p><b>Optional marketing assistance (separate from website development):</b> monthly business-attraction content for LinkedIn and Facebook, a news article each month, and a simple monthly report, <b>from $750 per month</b>. Paid advertising budgets would be separate and approved by the Board.</p>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>5 / 6</span></div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>MEDA WEBSITE DEVELOPMENT PROPOSAL · RFP #2026-3</span></div>
+
+<h2><small>10</small>Qualifications</h2>
+<table>
+<tr><th style="width:34%">RFP item</th><th>Our answer</th></tr>
+<tr><td class="k">Description of the business</td><td>A two-person web and digital marketing studio founded in 2026. Julio Briones leads web and marketing; Mariam Neme, a software engineer, leads development and technical support.</td></tr>
+<tr><td class="k">Examples of completed websites</td><td><span class="ph">[Real links only, with each person's role. If none are ready, say so and point to the concept mockup in section 04.]</span></td></tr>
+<tr><td class="k">Maintenance and content management</td><td>We build sites that clients update themselves, and we train staff to do it. Maintenance covers updates, security, backups and small content changes.</td></tr>
+<tr><td class="k">Public-facing document libraries</td><td>We have not yet built one for a public body. The document section in this proposal follows common practice for public-sector sites: organized by type and year, newest first, searchable and accessible.</td></tr>
+<tr><td class="k">Small businesses, nonprofits, public organizations</td><td>Our work focuses on small, owner-run businesses. MEDA would be our first public organization, and we would treat it as a flagship project.</td></tr>
+<tr><td class="k">Client references</td><td>As a new firm, we do not yet have client references to offer.</td></tr>
+</table>
+
+<h2><small>11</small>Why TWO&amp;HUMAN</h2>
+<ul>
+<li><b>Affordable now and later:</b> $2,620 to launch and about $1,320 per year, with every third-party cost disclosed.</li>
+<li><b>MEDA owns everything:</b> domain, hosting, email, website and content, with no licenses or transfer fees.</li>
+<li><b>Easy to manage:</b> staff can upload minutes and documents without a developer, with training and a written guide.</li>
+<li><b>Ready to grow:</b> Phase 2 adds pages on the same foundation, priced per page and approved by the Board.</li>
+<li><b>Direct and honest:</b> two founders who answer personally and say plainly what we have and have not done.</li>
+</ul>
+
+<div class="box">Thank you for the opportunity to submit this proposal. We would be glad to answer any questions or meet the Board.<br><br><b>Julio Briones</b>, Co-founder, TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</div>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>6 / 6</span></div>
+</section>
+</body>
+</html>
