@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>New Shop · Black Friday · Retiro en el local</title>
+<link rel="stylesheet" href="flyer.css">
+<style>
+  .titulo { top: 104px; left: 0; right: 0; text-align: center; font-size: 172px; }
+  .retira { font-size: 66px; left: 0; right: 0; top: 278px; text-align: center; transform: rotate(-5deg); }
+  .estrella-rosa { left: 900px; top: 262px; }
+  .brillo { left: 40px; top: 470px; }
+
+  .te { position: absolute; left: 0; right: 0; top: 392px; z-index: 6; text-align: center;
+    font-weight: 800; font-size: 44px; letter-spacing: 4px; }
+  .monto { position: absolute; left: 0; right: 0; top: 440px; z-index: 6; text-align: center;
+    font-family: "Anton"; font-size: 300px; line-height: 1; color: var(--rosa); letter-spacing: 4px;
+    text-shadow: 0 8px 0 rgba(0, 0, 0, .45); }
+  .cond { position: absolute; left: 0; right: 0; top: 768px; z-index: 6; text-align: center;
+    font-weight: 800; font-size: 44px; }
+  .cond b { font-family: "Anton"; font-weight: normal; font-size: 64px; letter-spacing: 2px; color: var(--negro);
+    background: var(--blanco); padding: 0 14px; margin-left: 6px; display: inline-block; transform: rotate(-2deg);
+    vertical-align: -6px; }
+
+  .pasos { position: absolute; left: 60px; right: 60px; top: 902px; z-index: 6;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .paso { border: 2px dashed rgba(246, 243, 239, .28); border-radius: 18px; padding: 22px 20px 20px; position: relative; }
+  .paso .n { position: absolute; top: -20px; left: 20px; width: 44px; height: 44px; border-radius: 50%;
+    background: var(--rosa); color: var(--negro); font-family: "Anton"; font-size: 28px;
+    display: grid; place-items: center; }
+  .paso svg { display: block; margin: 6px 0 12px; }
+  .paso p { font-weight: 700; font-size: 23px; line-height: 1.2; }
+  .paso p b { color: var(--rosa); }
+
+  .franja-cat { top: 1138px; left: -20px; right: -20px; transform: rotate(-2deg); padding: 10px 0 12px; }
+  .franja-cat .cat { font-family: "Anton"; font-size: 52px; letter-spacing: 3px; line-height: 1; }
+  .franja-cat .cat b { color: var(--blanco); font-weight: normal; padding: 0 6px; }
+  .franja-cat .uno { font-family: "Marker"; font-size: 30px; color: var(--blanco); line-height: 1.1; margin-top: 4px; }
+
+  .pie { top: 1268px; }
+  .legal { font-weight: 500; font-size: 18px; line-height: 1.35; color: var(--gris); text-align: right; max-width: 470px; }
+</style>
+</head>
+<body>
+<div class="flyer">
+
+  <div class="arriba">
+    <div class="marca">NEW<b>·</b>SHOP</div>
+    <div class="fecha"><i>‹</i>VIERNES 27 NOV<i>›</i></div>
+  </div>
+
+  <h1 class="titulo"><span>Black Friday</span></h1>
+  <div class="marcador retira">¡Retirá por el local!</div>
+
+  <svg class="estrella estrella-rosa" width="120" height="120" viewBox="-60 -60 120 120" aria-hidden="true">
+    <polygon id="est8" fill="#ff2e88"/>
+  </svg>
+  <svg class="estrella brillo" width="110" height="110" viewBox="-55 -55 110 110" aria-hidden="true">
+    <polygon id="est4" fill="#f6f3ef"/>
+  </svg>
+
+  <div class="te">Y TE RECONOCEMOS HASTA</div>
+  <div class="monto">$5.000</div>
+  <div class="cond">en compras de más de <b>$100.000</b></div>
+
+  <div class="pasos">
+    <div class="paso">
+      <span class="n">1</span>
+      <svg width="62" height="62" viewBox="0 0 24 24" fill="none" stroke="#ff2e88" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <p>Armá tu pedido de más de <b>$100.000</b> por WhatsApp</p>
+    </div>
+    <div class="paso">
+      <span class="n">2</span>
+      <svg width="62" height="62" viewBox="0 0 24 24" fill="none" stroke="#ff2e88" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M8 17h6l3-6h-4l-2-3H8"/><path d="M15 8h3l1 3M3 12h6"/></svg>
+      <p>Mandalo a retirar al local con tu <b>cadete o mensajería</b></p>
+    </div>
+    <div class="paso">
+      <span class="n">3</span>
+      <svg width="62" height="62" viewBox="0 0 24 24" fill="none" stroke="#ff2e88" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5" fill="#ff2e88"/></svg>
+      <p>Te reconocemos <b>hasta $5.000</b> por el retiro</p>
+    </div>
+  </div>
+
+  <div class="franja franja-cat">
+    <div class="cat">MAQUILLAJE<b>·</b>MANICURÍA<b>·</b>PELUQUERÍA</div>
+    <div class="uno">¡Todo en un solo lugar!</div>
+  </div>
+
+  <div class="pie">
+    <div class="dato">
+      <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="#ff2e88" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-2-1.5 1z" fill="#ff2e88" stroke="none"/></svg>
+      <div>Pedí por WhatsApp<small>Te respondemos al instante</small></div>
+    </div>
+    <div class="legal">Promo Black Friday. Hasta $5.000 por compra de más de $100.000 con retiro en el local.</div>
+  </div>
+
+  <div class="grano"></div>
+</div>
+
+<script>
+  const estrella = (id, puntas, R, r) => {
+    const pts = [];
+    for (let i = 0; i < puntas * 2; i++) {
+      const a = Math.PI * i / puntas - Math.PI / 2, rad = i % 2 ? r : R;
+      pts.push((Math.cos(a) * rad).toFixed(1) + "," + (Math.sin(a) * rad).toFixed(1));
+    }
+    document.getElementById(id).setAttribute("points", pts.join(" "));
+  };
+  estrella("est8", 8, 58, 21);
+  estrella("est4", 4, 52, 11);
+</script>
+</body>
+</html>
