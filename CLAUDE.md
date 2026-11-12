@@ -85,7 +85,7 @@ Para Black Friday, Cyber Monday, Hot Sale y otras fechas de descuentos, usa este
 | atención por WhatsApp, respuestas rápidas, lista VIP, difusión, guiones de cierre | `bf-whatsapp` |
 | cómo va la campaña, subir o apagar anuncios, reporte diario y final | `bf-monitoreo` |
 
-Orden: `bf-oferta` → `bf-calendario` → `bf-creativos` → `bf-meta-campana` → `bf-whatsapp` → `bf-monitoreo`. Las mismas reglas de `meta-ads`: nunca publicar ni gastar sin confirmación, precios y stock reales, y ninguna fecha límite falsa.
+Orden: `bf-oferta` → `bf-calendario` → `bf-creativos` → `bf-meta-campana` → `bf-whatsapp` → `bf-monitoreo`. La versión para subir a Claude.ai (extensión de Chrome) es una sola skill con las seis partes como referencias, en `claude-ai/black-friday/` (zip en `claude-ai/black-friday.zip`); si cambias una skill `bf-*`, actualiza también esa copia. Las mismas reglas de `meta-ads`: nunca publicar ni gastar sin confirmación, precios y stock reales, y ninguna fecha límite falsa.
 
 ## Skills de VSL (cartas de ventas en video)
 
