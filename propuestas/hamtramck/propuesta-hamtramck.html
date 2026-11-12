@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TWO&amp;HUMAN · Hamtramck Parks Conservancy Website Redesign Proposal</title>
+<style>
+@font-face { font-family: "Montserrat"; font-weight: 400; src: url("../assets/fonts/montserrat-400.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 500; src: url("../assets/fonts/montserrat-500.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 600; src: url("../assets/fonts/montserrat-600.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 700; src: url("../assets/fonts/montserrat-700.woff") format("woff"); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url("../assets/fonts/montserrat-800.woff") format("woff"); }
+@page { size: Letter; margin: 0; }
+:root { --navy:#34495e; --orange:#f7941d; --grey:#5b6672; --light:#f2f4f6; --line:#dfe6ed; --sage:#4f6b5a; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:"Montserrat",sans-serif; color:#24303c; font-size:9.1pt; line-height:1.42; }
+.page { width:8.5in; height:11in; position:relative; overflow:hidden; padding:0.6in 0.7in 0.75in; page-break-after:always; }
+.page:last-child { page-break-after:auto; }
+.bar { position:absolute; top:0; left:0; right:0; height:0.16in; background:var(--orange); }
+.head { display:flex; justify-content:space-between; font-size:7.8pt; letter-spacing:.6px; color:var(--grey); margin-bottom:0.2in; }
+.head b { color:var(--navy); letter-spacing:2px; font-weight:800; }
+h1 { font-size:21pt; line-height:1.12; color:var(--navy); margin:0 0 6px; font-weight:800; }
+h1 span { color:var(--orange); }
+.lead { font-size:10pt; color:var(--grey); margin:0 0 12px; padding-bottom:10px; border-bottom:2px solid var(--orange); }
+h2 { font-size:11.4pt; color:var(--navy); margin:13px 0 6px; font-weight:800; }
+h2 small { color:var(--orange); font-weight:700; letter-spacing:.5px; margin-right:6px; }
+h3 { font-size:9.5pt; color:var(--navy); margin:8px 0 3px; font-weight:700; }
+p { margin:0 0 6px; }
+ul { margin:0 0 6px; padding-left:16px; }
+li { margin-bottom:2.5px; }
+b { color:var(--navy); }
+table { width:100%; border-collapse:collapse; margin:4px 0 8px; }
+th { background:var(--navy); color:#fff; text-align:left; font-size:8pt; padding:5px 7px; font-weight:700; }
+td { border:1px solid var(--line); padding:4.5px 7px; vertical-align:top; font-size:8.5pt; }
+tr:nth-child(even) td { background:#fafbfc; }
+td.k { width:34%; font-weight:700; color:var(--navy); }
+td.n { width:18%; text-align:right; font-weight:700; color:var(--navy); white-space:nowrap; }
+tr.tot td { background:var(--light); font-weight:800; color:var(--navy); }
+.box { background:var(--light); border-left:4px solid var(--orange); padding:8px 11px; margin:8px 0; font-size:8.9pt; }
+.two { display:flex; gap:14px; }
+.two > div { flex:1; }
+.ok { color:#1f7a3d; font-weight:800; margin-right:4px; }
+.foot { position:absolute; left:0.7in; right:0.7in; bottom:0.38in; border-top:1px solid var(--line); padding-top:5px; display:flex; justify-content:space-between; font-size:7.4pt; color:var(--grey); }
+.ph { background:#fff1c9; color:#7a5600; padding:0 3px; border-radius:2px; font-weight:700; }
+/* cover */
+.cover { padding:0; }
+.cover .top { background:var(--navy); color:#fff; height:5.3in; padding:0.9in 0.8in 0.5in; position:relative; }
+.cover .top .tag { font-weight:800; letter-spacing:3px; font-size:10pt; color:var(--orange); margin-bottom:0.45in; }
+.cover .top h1 { color:#fff; font-size:30pt; margin-bottom:12px; }
+.cover .top p { color:#dfe6ed; font-size:12pt; max-width:5.6in; }
+.cover .meta { padding:0.45in 0.8in; }
+.cover .meta table td { font-size:9.5pt; padding:7px 9px; }
+/* mockup */
+.mock { border:1px solid #c9d3dd; border-radius:8px; overflow:hidden; background:#fff; }
+.mock .chrome { background:#e9edf1; padding:5px 8px; display:flex; gap:5px; align-items:center; }
+.mock .chrome i { width:7px; height:7px; border-radius:50%; background:#c4ccd4; display:inline-block; }
+.mock .chrome span { margin-left:8px; background:#fff; border-radius:4px; padding:1px 8px; font-size:6.5pt; color:var(--grey); }
+.mock .nav { display:flex; justify-content:space-between; align-items:center; padding:7px 12px; border-bottom:1px solid var(--line); }
+.mock .nav b { font-size:8pt; letter-spacing:1px; color:var(--sage); }
+.mock .nav span { font-size:6.6pt; color:var(--grey); margin-left:10px; }
+.mock .hero { background:linear-gradient(135deg,#3f5a4b,#7c9a86); color:#fff; padding:16px 14px; }
+.mock .hero .h { font-size:12.5pt; font-weight:800; line-height:1.15; margin-bottom:4px; }
+.mock .hero .s { font-size:7.4pt; color:#e6efe9; margin-bottom:8px; max-width:4in; }
+.mock .btn { display:inline-block; font-size:6.8pt; font-weight:700; padding:4px 8px; border-radius:3px; margin-right:5px; }
+.mock .btn.a { background:#fff; color:var(--sage); }
+.mock .btn.b { border:1px solid #fff; color:#fff; }
+.mock .body { display:flex; gap:10px; padding:10px 12px 12px; }
+.mock .col { flex:1; }
+.mock .col .t { font-size:7.6pt; font-weight:800; color:var(--navy); margin-bottom:4px; }
+.mock .doc { display:flex; justify-content:space-between; border:1px solid var(--line); border-radius:3px; padding:3px 6px; font-size:6.6pt; margin-bottom:3px; }
+.mock .doc em { font-style:normal; color:var(--orange); font-weight:700; }
+.mock .col p { font-size:6.6pt; color:var(--grey); margin:0 0 3px; }
+.mocknote { font-size:7.4pt; color:var(--grey); margin-top:4px; }
+/* extra para Hamtramck */
+.mock .nav .don { background:var(--orange); color:#fff; font-weight:700; padding:2px 7px; border-radius:3px; }
+.mock .nav .lang { color:var(--sage); font-weight:700; }
+.mock .park { display:flex; gap:6px; align-items:center; border:1px solid var(--line); border-radius:4px; padding:4px; margin-bottom:4px; }
+.mock .park i { width:34px; height:24px; border-radius:3px; background:linear-gradient(135deg,#7c9a86,#c9d8bf); display:inline-block; flex:none; }
+.mock .park span { font-size:6.6pt; color:var(--navy); font-weight:700; line-height:1.2; }
+.mock .park small { display:block; font-weight:500; color:var(--grey); font-size:6pt; }
+.mock .ev { display:flex; justify-content:space-between; border-bottom:1px dashed var(--line); padding:3px 0; font-size:6.6pt; }
+.mock .ev em { font-style:normal; color:var(--orange); font-weight:700; }
+.mock .strip { background:#f6efe3; padding:7px 12px; display:flex; justify-content:space-between; align-items:center; font-size:7pt; color:var(--navy); font-weight:700; }
+.mock .strip span.b { background:var(--orange); color:#fff; padding:3px 8px; border-radius:3px; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="page cover">
+<div class="top">
+<div class="tag">TWO&amp;HUMAN</div>
+<h1>Website Redesign for the Hamtramck Parks Conservancy</h1>
+<p>Proposal in response to the "Website redesign" request for proposals on BidNet Direct. A fresh, easy-to-update website that helps every neighbor find a park, join an event and support the Conservancy.</p>
+</div>
+<div class="meta">
+<table>
+<tr><td class="k">To</td><td>Hamtramck Parks Conservancy · Hamtramck, Michigan · info@hamtramckparks.com<br>Submitted through BidNet Direct</td></tr>
+<tr><td class="k">From</td><td>TWO&amp;HUMAN · Julio Briones, Co-founder (Web &amp; Digital Marketing) · Mariam Neme, Co-founder (Software Engineering)</td></tr>
+<tr><td class="k">Contact</td><td>julio@twoandhuman.com · +54 381 509 8972 (phone and WhatsApp) · twoandhuman.com</td></tr>
+<tr><td class="k">Date</td><td>November 2026</td></tr>
+<tr><td class="k">Summary</td><td><b>$4,800 lump sum</b> (discovery, design, development, content migration, accessibility testing and training) · optional language pages and maintenance · <b>launch in March 2027</b>, before the March 31 deadline</td></tr>
+</table>
+</div>
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>Website redesign · Hamtramck Parks Conservancy</span></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>WEBSITE REDESIGN PROPOSAL · HAMTRAMCK PARKS CONSERVANCY</span></div>
+
+<h2><small>01</small>About TWO&amp;HUMAN</h2>
+<p>TWO&amp;HUMAN is a small, two-person web and digital marketing studio founded in 2026 by Julio Briones (web and digital marketing) and Mariam Neme (software engineering). We are based in Argentina, two hours ahead of Michigan in winter, and work remotely in English and Spanish. We are a new firm, and we say so plainly: we would rather earn the Conservancy's trust with a clear plan, a fixed price and full ownership for the Conservancy than with claims we cannot back up.</p>
+
+<h2><small>02</small>Our understanding of the Conservancy's needs</h2>
+<p>The Hamtramck Parks Conservancy brings together the City, Hamtramck Public Schools and community partners to operate, improve and provide <b>equitable access to green spaces and recreation</b> in Hamtramck, including Veterans Memorial Park and Historic Hamtramck Stadium. Its website should make that work visible and easy to join: where the parks are and what each one offers, what is happening this month, how to volunteer at a stewardship day, and how to donate or partner.</p>
+<p>The current site has the basics, but some pages still need care (the About page shows placeholder text). The redesign is the chance to put the most important actions, <b>find a park, see events, volunteer and donate</b>, one click from the home page, on a site that staff and volunteers can update without a developer. And since many languages are spoken in Hamtramck, key pages can be offered in more than one.</p>
+
+<h2><small>03</small>Our approach</h2>
+<table>
+<tr><th style="width:26%">Area</th><th>How we will deliver it</th></tr>
+<tr><td class="k">Platform</td><td><b>WordPress</b>: open source, no license fees, and easy for staff and volunteers to update. If the Conservancy prefers to stay on its current platform, we can work within it; we confirm this after reviewing the current setup.</td></tr>
+<tr><td class="k">Current content</td><td>We review every current page, keep what is up to date, remove placeholder text and lightly edit for clarity. The Conservancy approves all text.</td></tr>
+<tr><td class="k">Parks directory</td><td>One page per park, with a map, amenities, rules and hours, photos and current projects, starting with Veterans Memorial Park and Historic Hamtramck Stadium.</td></tr>
+<tr><td class="k">Events and volunteering</td><td>An events calendar with stewardship days and community events, linked to the Eventbrite registration the Conservancy already uses, plus a volunteer sign-up form.</td></tr>
+<tr><td class="k">Support the parks</td><td>A visible Donate button connected to the Conservancy's current donation platform, a partners and sponsors section, a page for annual reports, and newsletter sign-up.</td></tr>
+<tr><td class="k">Languages (optional)</td><td>Key pages in additional languages chosen by the Conservancy (for example Arabic, Bengali and Polish), with a language switcher. Translations are provided or reviewed by the Conservancy's community partners.</td></tr>
+<tr><td class="k">Accessibility</td><td>Built to WCAG 2.1 AA: readable on phones, keyboard navigation, image descriptions and good color contrast.</td></tr>
+<tr><td class="k">Training</td><td>A recorded one-hour video session and a short written guide: adding events, updating park pages and uploading reports.</td></tr>
+</table>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>2 / 5</span></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>WEBSITE REDESIGN PROPOSAL · HAMTRAMCK PARKS CONSERVANCY</span></div>
+
+<h2><small>04</small>Concept mockup of the new home page</h2>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>hamtramckparks.com</span></div>
+<div class="nav"><b>HAMTRAMCK PARKS</b><div><span>Parks</span><span>Events</span><span>Volunteer</span><span>About</span><span class="lang">EN · AR · BN · PL</span><span class="don">Donate</span></div></div>
+<div class="hero">
+<div class="h">Parks for every neighbor in Hamtramck</div>
+<div class="s">Find a park, join a stewardship day and help us keep Hamtramck green, safe and open to everyone.</div>
+<span class="btn a">Find a park</span><span class="btn b">Volunteer</span>
+</div>
+<div class="body">
+<div class="col">
+<div class="t">Our parks</div>
+<div class="park"><i></i><span>Veterans Memorial Park<small>Historic Hamtramck Stadium · fields · playground</small></span></div>
+<div class="park"><i></i><span>[Park name]<small>[Amenities]</small></span></div>
+<div class="park"><i></i><span>[Park name]<small>[Amenities]</small></span></div>
+</div>
+<div class="col">
+<div class="t">Upcoming events</div>
+<div class="ev"><span>Park Stewardship Day</span><em>[Date]</em></div>
+<div class="ev"><span>Community event at [park]</span><em>[Date]</em></div>
+<div class="ev"><span>Volunteer orientation</span><em>[Date]</em></div>
+<p style="margin-top:6px">Register on Eventbrite · See all events</p>
+</div>
+</div>
+<div class="strip"><span>Support your parks: every donation stays in Hamtramck.</span><span class="b">Donate</span></div>
+</div>
+<p class="mocknote">Concept prepared for this proposal with placeholder content. The final design will use the Conservancy's branding, photos and text, and will be approved before development.</p>
+
+<h2><small>05</small>Timeline (launch in March 2027)</h2>
+<table>
+<tr><th style="width:26%">When</th><th>What happens</th></tr>
+<tr><td class="k">Week 1 (December)</td><td>Kickoff video call. Access to the current site, hosting and domain. Content inventory and site map.</td></tr>
+<tr><td class="k">Weeks 2 to 4</td><td>Design of the home page and page templates, shared for review. Holiday schedules are built in.</td></tr>
+<tr><td class="k">Weeks 5 to 9 (January–February)</td><td>Development, parks directory, events and volunteer section, and content migration. Review on a private preview link.</td></tr>
+<tr><td class="k">Weeks 10 to 12 (February–March)</td><td>Accessibility testing, final revisions, optional language pages and training. Launch in early to mid-March, with time to spare before March 31.</td></tr>
+</table>
+<p><b>Estimated effort:</b> about 12 weeks from kickoff, around 80 hours of work.</p>
+<h3>What we will need from the Conservancy</h3>
+<ul>
+<li>A main contact for approvals, and the staff or volunteers who will be trained.</li>
+<li>Access to the current website, hosting and domain, and the logo or brand guidelines.</li>
+<li>Photos of the parks (or permission to use those already published), the list of parks with their amenities, and the events calendar.</li>
+<li>The donation platform the Conservancy uses today, and translations if it chooses the language pages.</li>
+</ul>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>3 / 5</span></div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>WEBSITE REDESIGN PROPOSAL · HAMTRAMCK PARKS CONSERVANCY</span></div>
+
+<h2><small>06</small>Pricing (U.S. dollars, lump sum)</h2>
+<table>
+<tr><th>Item</th><th>Includes</th><th class="n">Price</th></tr>
+<tr><td class="k">Discovery and site map</td><td>Kickoff call, review of the current site, content inventory and new site map</td><td class="n">$400</td></tr>
+<tr><td class="k">Design</td><td>Home page and page templates, with two rounds of revisions</td><td class="n">$1,200</td></tr>
+<tr><td class="k">Development</td><td>Parks directory, events and volunteer section, Donate and newsletter integration, forms, mobile version</td><td class="n">$2,000</td></tr>
+<tr><td class="k">Content migration</td><td>Up to 15 pages migrated and lightly edited, placeholder text removed, basic search optimization</td><td class="n">$700</td></tr>
+<tr><td class="k">Testing, launch and training</td><td>WCAG 2.1 AA review, launch, recorded training session and written guide</td><td class="n">$500</td></tr>
+<tr class="tot"><td>Total lump sum</td><td>Everything above, at a fixed price</td><td class="n">$4,800</td></tr>
+</table>
+<p><b>Payment:</b> 40% at kickoff, 30% when the design is approved and 30% at launch. Prices are valid for 90 days.</p>
+
+<h3>Optional items</h3>
+<table>
+<tr><th>Option</th><th>Includes</th><th class="n">Price</th></tr>
+<tr><td class="k">Language pages</td><td>Up to 5 key pages in 3 additional languages, with a language switcher; translations provided by the Conservancy</td><td class="n">$900</td></tr>
+<tr><td class="k">Maintenance and support</td><td>Updates, security, backups, up to 1 hour of content help per month and replies within 1 business day</td><td class="n">$90 / month</td></tr>
+</table>
+
+<h3>Third-party costs</h3>
+<p>Paid by the Conservancy directly to each provider, with no markup from us. If the current hosting works well, we keep it. If a new host is needed, managed WordPress hosting in the U.S. costs about $300 per year. Domain renewal is about $20 per year. We do not plan any paid plugins.</p>
+
+<div class="two">
+<div>
+<h3>Rates</h3>
+<ul>
+<li><b>Hourly rate</b> for work outside the scope: <b>$60 per hour</b>, always quoted and approved in writing first.</li>
+<li><b>New pages after launch:</b> about <b>$250 per standard page</b> with content provided by the Conservancy.</li>
+</ul>
+</div>
+<div>
+<h3>Assumptions</h3>
+<ul>
+<li>The Conservancy provides final text, photos and translations; we do light editing.</li>
+<li>Professional photography and paid stock images are not included.</li>
+<li>Online store, ticketing or membership systems are quoted separately if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>4 / 5</span></div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>WEBSITE REDESIGN PROPOSAL · HAMTRAMCK PARKS CONSERVANCY</span></div>
+
+<h2><small>07</small>Ownership</h2>
+<table>
+<tr><th style="width:44%">Topic</th><th>Our commitment</th></tr>
+<tr><td class="k">Domain, hosting and accounts</td><td><span class="ok">Yes.</span> They stay in the Conservancy's name. We work as an invited user and can be removed at any time.</td></tr>
+<tr><td class="k">Content, design and photos</td><td><span class="ok">Yes.</span> Everything we build for the site belongs to the Conservancy once paid.</td></tr>
+<tr><td class="k">Export and transfer</td><td><span class="ok">Yes.</span> On request, we deliver a full backup of files and database at no cost.</td></tr>
+<tr><td class="k">Licenses and lock-in</td><td><span class="ok">None.</span> Free and open-source software, with no custom code that ties the Conservancy to us.</td></tr>
+</table>
+
+<h2><small>08</small>Communication and support</h2>
+<ul>
+<li><b>One point of contact:</b> Julio Briones, by email, phone or video call. Mariam Neme handles technical issues.</li>
+<li><b>Working hours:</b> Argentina is two hours ahead of Michigan in winter, so our day covers the Conservancy's full morning and afternoon.</li>
+<li><b>Requests:</b> we reply within 1 business day. If the site is down, we respond the same day.</li>
+<li><b>Progress:</b> a short weekly update by email during the project, and a review call at each milestone.</li>
+<li><b>Meetings:</b> we are glad to present by video call to staff or the Board.</li>
+</ul>
+
+<h2><small>09</small>Qualifications</h2>
+<table>
+<tr><th style="width:34%">Topic</th><th>Our answer</th></tr>
+<tr><td class="k">Team</td><td>Julio Briones leads web design, content and marketing. Mariam Neme, a software engineer, leads development, accessibility and technical support.</td></tr>
+<tr><td class="k">Work samples</td><td>We do not yet have public client websites to share. Instead, we prepared the concept in section 04 specifically for the Conservancy, and we are glad to walk the team through it by video call.</td></tr>
+<tr><td class="k">Nonprofits and community organizations</td><td>Our work focuses on small, community-based organizations. The Conservancy would be one of our first clients, and we would treat it as a flagship project.</td></tr>
+<tr><td class="k">References</td><td>As a new firm, we do not have client references to offer yet.</td></tr>
+</table>
+
+<h2><small>10</small>Why TWO&amp;HUMAN</h2>
+<ul>
+<li><b>Fixed price:</b> $4,800 for the full redesign, with every third-party cost disclosed.</li>
+<li><b>Built for the community:</b> parks, events, volunteering and donations one click away, with optional pages in other languages.</li>
+<li><b>Easy to manage:</b> staff and volunteers can update the site without a developer.</li>
+<li><b>On time:</b> launch planned for March, with margin before the March 31 deadline.</li>
+<li><b>Direct and honest:</b> two founders who answer personally and say plainly what we have and have not done.</li>
+</ul>
+<div class="box">Thank you for the opportunity to submit this proposal. We would be glad to answer any questions or present by video call.<br><br><b>Julio Briones</b>, Co-founder, TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</div>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>5 / 5</span></div>
+</section>
+
+</body>
+</html>
