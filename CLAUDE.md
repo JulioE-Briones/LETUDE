@@ -71,6 +71,22 @@ Para todo lo de publicidad pagada (Meta, Google, LinkedIn, TikTok) usa estas ski
 
 Orden sugerido para una campaña nueva: `ads-quick` → `ads-audience` → `ads-competitors` → `ads-funnel` → `ads-copy` / `ads-hooks` / `ads-video` → `ads-creative` → `ads-landing` → `ads-budget` → `ads-testing`.
 
+## Skills de Black Friday y fechas de descuentos (Meta Ads)
+
+Para Black Friday, Cyber Monday, Hot Sale y otras fechas de descuentos, usa este pack antes que las skills generales de anuncios. `black-friday` es la general: junta el contexto, calcula las fechas y arma el plan en una página; para una sola etapa, usa la skill especializada.
+
+| Si el usuario pide… | Usa |
+|---|---|
+| campaña de Black Friday completa, "qué hacemos para el Black Friday", Cyber Monday, Hot Sale | `black-friday` |
+| qué descuento poner, cuánto aguanta el margen, combos, beneficio por monto, "¿10 % o monto fijo?" | `bf-oferta` |
+| cronograma, "cuándo arranco", plan día por día, "me quedan pocos días" | `bf-calendario` |
+| flyers, piezas, textos de anuncios, prompt para generar el flyer con IA, reel de la promo | `bf-creativos` |
+| estructura en Meta, presupuesto de la promo, retargeting, plan de carga para Ads Manager | `bf-meta-campana` |
+| atención por WhatsApp, respuestas rápidas, lista VIP, difusión, guiones de cierre | `bf-whatsapp` |
+| cómo va la campaña, subir o apagar anuncios, reporte diario y final | `bf-monitoreo` |
+
+Orden: `bf-oferta` → `bf-calendario` → `bf-creativos` → `bf-meta-campana` → `bf-whatsapp` → `bf-monitoreo`. Las mismas reglas de `meta-ads`: nunca publicar ni gastar sin confirmación, precios y stock reales, y ninguna fecha límite falsa.
+
 ## Skills de VSL (cartas de ventas en video)
 
 | Si el usuario pide… | Usa |
