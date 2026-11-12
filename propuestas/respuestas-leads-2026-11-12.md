@@ -12,7 +12,7 @@
 
 | # | Lead | Decisión | Qué se manda | Cuándo |
 |---|---|---|---|---|
-| 1 | MEDA (Colorado) | Presentar | Propuesta PDF (7 páginas) | ESPERAR el OK de Julio al precio; enviar el 18/11, o el 19/11 antes de las 15:00 |
+| 1 | MEDA (Colorado) | Presentar | Propuesta PDF (7 páginas) | LISTO: precio confirmado por Julio. Enviar ya, o a más tardar el 19/11 antes de las 15:00 |
 | 2 | City of Monroe (Michigan) | Preguntar antes de decidir | Preguntas, empezando por la elegibilidad | HOY 12/11 o mañana 13/11 |
 | 3 | Hamtramck Parks (Michigan) | Presentar | Nada por mail: preguntas por BidNet | Registrarse hoy; preguntas antes del lun 16/11 |
 | 4 | Santa Gota (Chile) | Seguir | Grilla de muestra de una semana | Esta semana |
@@ -35,7 +35,7 @@ Fríos (GlobalInc, Universidad Autónoma del Perú, InsurScale, Froimovici, Floq
 - **Para:** jcomstock@moffatcounty.net
 - **Asunto (exacto):** MEDA Website Development Proposal
 - **Adjunto:** TWO_HUMAN_MEDA_Website_Proposal.pdf
-- **Cuándo:** ESPERAR el OK de Julio al precio ($2,620 de inicio y unos $1,320 por año). Enviar el miércoles 18/11, o el jueves 19/11 antes de las 15:00 (Tucumán). El cierre es a las 16:00.
+- **Cuándo:** LISTO. Julio confirmó el precio ($2,620 de inicio y unos $1,320 por año). Enviar ya, o a más tardar el jueves 19/11 antes de las 15:00 (Tucumán). El cierre es a las 16:00.
 
 ```
 Dear Mr. Comstock,
