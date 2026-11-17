@@ -19,16 +19,24 @@
 
 ## Texto de la publicación
 
-> Antes de poner un peso en anuncios, te haríamos estas 6 preguntas 👇
->
-> 1. ¿Qué vendés y cuánto te deja cada venta?
-> 2. ¿Quién te compra hoy y quién querés que te compre?
-> 3. ¿Quién NO es tu cliente?
-> 4. ¿Dónde se cierra la venta: WhatsApp, local o web?
-> 5. ¿Cuánto podés invertir por mes?
-> 6. ¿Qué probaste y qué pasó?
->
-> Escribí DIAGNÓSTICO y te las mandamos para que las respondas. Con tus respuestas te decimos por dónde empezaríamos.
+```
+Las 6 preguntas que le haríamos a tu negocio antes de que pongas un peso en anuncios 👇
+
+1. ¿Qué vendés y cuánto te deja cada venta?
+2. ¿Quién te compra hoy y quién querés que te compre?
+3. ¿Quién NO es tu cliente?
+4. ¿Dónde se cierra la venta: WhatsApp, local o web?
+5. ¿Cuánto podés invertir por mes?
+6. ¿Qué probaste y qué pasó?
+
+Si alguna te cuesta responderla, ese es el primer trabajo antes de anunciar.
+
+Comentá DIAGNÓSTICO y te las mandamos por mensaje. Con tus respuestas te decimos por dónde empezaríamos.
+.
+#marketingparapymes #emprendedorestucuman #twoandhuman #estrategiademarketing #emprendedores
+```
+
+Los hashtags van al final o en el primer comentario. Antes de publicar, revisá en el buscador de Instagram cuántas publicaciones tiene cada uno.
 
 ## Respuesta por mensaje privado a quien escribe DIAGNÓSTICO
 

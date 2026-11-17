@@ -18,16 +18,25 @@
 
 ## Texto de la publicación
 
-> ¿Te escriben muchos y no te compra ninguno? 👇
->
-> Casi nunca es la gente: es lo que dice tu anuncio y cómo arranca la conversación.
->
-> Los 3 filtros que usamos:
-> 1. Precio "desde" en el anuncio.
-> 2. Una pregunta en el mensaje de WhatsApp.
-> 3. Decir para quién no es.
->
-> Escribí FILTRO y te mandamos las preguntas por mensaje privado.
+```
+Te escriben "info", "precio", "cuánto sale".. y después no compra nadie.
+
+Muchas veces el problema está en lo que dice el anuncio y en cómo arranca la conversación, más que en la gente.
+
+Estos son los 3 filtros que usamos en nuestros propios anuncios:
+
+1. el precio "desde", escrito en el anuncio
+2. una pregunta en el mensaje de WhatsApp, por ejemplo "¿para cuándo lo necesitás?"
+3. decir para quién no es
+
+Llegan menos mensajes, pero de gente con más intención de compra.
+
+Comentá FILTRO y te mandamos por mensaje las preguntas que usamos.
+.
+#ventasporwhatsapp #clientespotenciales #twoandhuman #emprendedoresargentinos #marketingdigital
+```
+
+Los hashtags van al final o en el primer comentario. Antes de publicar, revisá en el buscador de Instagram cuántas publicaciones tiene cada uno.
 
 ## Respuesta por mensaje privado a quien escribe FILTRO
 

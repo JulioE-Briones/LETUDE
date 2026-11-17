@@ -18,16 +18,23 @@
 
 ## Texto de la publicación
 
-> ¿A cuál de los dos le escribirías? 👇
->
-> El primero muestra lo que vendés. El segundo, lo que la persona va a vivir… y además dice el precio y para quién es.
->
-> Un anuncio que vende junta 3 cosas:
-> 1. El resultado, no el producto.
-> 2. Para quién es (y para quién no).
-> 3. El precio, aunque sea "desde".
->
-> Mandanos tu anuncio por mensaje privado y te decimos 3 cosas que cambiaríamos. Sin costo.
+```
+Dos anuncios del mismo rubro: a uno le escriben curiosos y al otro, gente que quiere comprar 👇
+
+El segundo hace tres cosas que el primero no:
+
+1. muestra lo que la persona va a vivir, en lugar del producto solo
+2. dice para quién es (y para quién no)
+3. dice el precio, aunque sea "desde"
+
+Del otro lado tiene que haber alguien que responda rápido por WhatsApp, o una web que convierta.
+
+Mandanos tu anuncio por mensaje privado y te respondemos con 3 cambios concretos, sin costo.
+.
+#metaadsargentina #publicidadeninstagram #pymesargentinas #twoandhuman #publicidaddigital
+```
+
+Los hashtags van al final o en el primer comentario. Antes de publicar, revisá en el buscador de Instagram cuántas publicaciones tiene cada uno.
 
 ## Respuesta a quien manda su anuncio (mini auditoría)
 
