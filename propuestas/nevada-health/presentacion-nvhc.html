@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TWO&amp;HUMAN · Care, Found Faster</title>
+<link rel="stylesheet" href="../assets/slides.css">
+<style>
+.mock .nav b { color:#0d6b6e; }
+.mock .nav .lang { border:1px solid #0d6b6e; color:#0d6b6e; font-weight:700; padding:1px 7px; border-radius:10px; }
+.mock .nav .call { background:var(--orange); color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+.mock .hero { background:linear-gradient(135deg,#0d6b6e,#3f9b8f); }
+.search { background:#fff; border-radius:5px; padding:6px 10px; font-size:8.5pt; color:var(--grey); display:flex; justify-content:space-between; max-width:5.2in; }
+.search em { font-style:normal; background:var(--orange); color:#fff; font-weight:700; padding:1px 8px; border-radius:3px; }
+.four { display:grid; grid-template-columns:repeat(4,1fr); gap:7px; padding:10px 14px 6px; }
+.four div { border:1px solid var(--line); border-radius:5px; padding:7px; font-size:8.3pt; font-weight:800; color:#0d6b6e; }
+.four div small { display:block; font-weight:500; color:var(--grey); font-size:7.3pt; margin-top:2px; }
+.svc { display:flex; gap:6px; padding:2px 14px 6px; flex-wrap:wrap; }
+.svc span { background:#e9f4f2; color:#0d6b6e; border-radius:10px; padding:2px 9px; font-size:7.6pt; font-weight:700; }
+.fee { margin:4px 14px 12px; background:#fff6e9; border-left:3px solid var(--orange); padding:6px 9px; font-size:8pt; color:#5b4a30; }
+
+.finder { display:grid; grid-template-columns:1.9in 1fr; }
+.filters { background:#f4f7f9; padding:10px 12px; border-right:1px solid var(--line); }
+.filters .f { font-size:7.4pt; font-weight:800; color:var(--grey); letter-spacing:.5px; margin:6px 0 3px; text-transform:uppercase; }
+.filters .v { background:#fff; border:1px solid var(--line); border-radius:4px; padding:3px 7px; font-size:8.2pt; color:#0d6b6e; font-weight:700; }
+.filters .chk { font-size:8pt; color:#24303c; margin:2px 0; }
+.filters .chk::before { content:"■ "; color:#0d6b6e; }
+.results { padding:8px 12px; }
+.res { border:1px solid var(--line); border-radius:5px; padding:7px 9px; margin-bottom:6px; display:flex; justify-content:space-between; gap:8px; }
+.res .n { font-size:9pt; font-weight:800; color:var(--navy); }
+.res .d { font-size:7.6pt; color:var(--grey); margin-top:1px; }
+.res .open { font-size:7.2pt; font-weight:800; color:var(--green); }
+.res .btns { display:flex; gap:4px; align-items:center; flex:none; }
+.res .btns span { font-size:7.2pt; font-weight:700; border:1px solid #0d6b6e; color:#0d6b6e; border-radius:3px; padding:2px 6px; }
+.res .btns span.p { background:#0d6b6e; color:#fff; }
+.res.mob { background:#fff6e9; border-color:#f3d3a6; }
+.av { width:26px; height:26px; border-radius:50%; background:linear-gradient(135deg,#9cc9c3,#0d6b6e); flex:none; }
+
+.qs { display:grid; grid-template-columns:repeat(4,1fr); gap:0.2in; margin-top:10px; }
+.qs div { background:var(--light); border-radius:8px; padding:14px 16px; border-top:4px solid var(--orange); }
+.qs div b { display:block; font-size:22pt; color:var(--orange); line-height:1; margin-bottom:6px; }
+.qs div p { font-size:13pt; font-weight:700; color:var(--navy); margin:0 0 6px; line-height:1.25; }
+.qs div span { font-size:11pt; color:var(--grey); }
+.weight { display:inline-block; background:var(--navy); color:#fff; font-size:10pt; font-weight:800; border-radius:12px; padding:2px 10px; margin-left:8px; vertical-align:4px; letter-spacing:1px; }
+.gantt.w18 { grid-template-columns:2.7in repeat(18,1fr); }
+.gantt.w18 .hd { font-size:8.5pt; }
+.gantt.w18 .bar { font-size:9.5pt; padding:0 5px; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Care, Found Faster</h1>
+<p class="sub">Proposal for the Nevada Health Centers Website Redesign RFP: a bilingual, accessible website built around what patients come to do, find a health center or mobile program, find a provider, understand costs and request an appointment, live by May 3, 2027.</p>
+<div class="meta">
+<div><b>To</b>Nevada Health Centers · Attn. Josh Charlebois</div>
+<div><b>From</b>TWO&amp;HUMAN · Julio Briones and Mariam Neme, co-founders</div>
+<div><b>Date</b>November 2026</div>
+</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+<div class="kicker">At a glance</div>
+<h2>A fixed price within budget, the finder working in week 4, launch on May 3</h2>
+<p class="lead">A new WordPress website in English and Spanish, built to WCAG 2.1 AA, with a provider and location finder your staff keep current without code.</p>
+<div class="cols-4" style="margin-top:16px">
+<div class="stat"><div class="big">$61,500</div><div class="lbl">Fixed implementation price, within the $81,000 ceiling</div></div>
+<div class="stat"><div class="big">Week 4</div><div class="lbl">Clickable prototype of the provider and location finder</div></div>
+<div class="stat"><div class="big">May 3</div><div class="lbl">Launch in 2027, with 10 days of margin built in</div></div>
+<div class="stat"><div class="big">1 year</div><div class="lbl">Warranty included: bug fixes and security patches</div></div>
+</div>
+<div class="box" style="margin-top:20px">Hosting is quoted separately, as the RFP requests. Each payment is due only after NVHC approves that milestone, and the website stores no protected health information: appointments and the patient portal stay in NVHC's existing systems.</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+<div class="kicker">01 · Understanding of NVHC's needs <span class="weight">20%</span></div>
+<h2>For many patients, the website is the first step to care</h2>
+<p>Nevada Health Centers is a Federally Qualified Health Center network serving communities across Nevada, from Las Vegas to Reno, Carson City and Elko, with family medicine, pediatrics, dental, behavioral health, pharmacy and more, plus mobile programs such as the Mammovan. It accepts Medicaid and Medicare and offers a sliding fee scale. Patients often arrive on a phone, often in Spanish, sometimes under stress. The site must answer four questions in seconds:</p>
+<div class="qs">
+<div><b>1</b><p>Where is the nearest center, and is it open?</p><span>Locations and mobile program stops, with hours, map and phone.</span></div>
+<div><b>2</b><p>Who can see me, in my language?</p><span>Providers by specialty, location and language spoken.</span></div>
+<div><b>3</b><p>Do you take my insurance, or can I pay less?</p><span>Medicaid, Medicare and the sliding fee scale, in plain words.</span></div>
+<div><b>4</b><p>How do I get an appointment?</p><span>Call, request online or go to the patient portal, in one tap.</span></div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+<div class="kicker">02 · UX, accessibility and design <span class="weight">20%</span></div>
+<h2>Designed around patient tasks, accessible by default</h2>
+<table class="t-sm">
+<tr><th style="width:26%">Need</th><th>How we address it</th></tr>
+<tr><td class="k">Provider and location finder</td><td>Filters by location, service, specialty and language spoken; every location page shows map, hours, phone, services and directions; mobile programs show their upcoming stops.</td></tr>
+<tr><td class="k">Insurance and fees</td><td>Plain-language pages on accepted insurance, Medicaid and Medicare, and the sliding fee scale, with a short "Can I pay less?" guide using content NVHC approves.</td></tr>
+<tr><td class="k">English and Spanish</td><td>A full bilingual site with a language switch on every page. Spanish written and reviewed by native speakers, never machine-only.</td></tr>
+<tr><td class="k">Accessibility</td><td>WCAG 2.1 AA: contrast, keyboard navigation, screen reader testing, accessible forms, text resizing and a public accessibility statement.</td></tr>
+<tr><td class="k">Mobile first</td><td>Large tap targets, click-to-call, fast-loading pages and short forms, designed for the phone first.</td></tr>
+<tr><td class="k">Plain language</td><td>Patient pages written at an easy reading level, tested with real tasks before launch.</td></tr>
+<tr><td class="k">Conversions</td><td>Clear calls to action (Call, Request an appointment, Get directions) measured in analytics.</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+<div class="kicker">02 · Concept prepared for NVHC</div>
+<h2>Homepage: "Find care near you"</h2>
+<div class="cols-60" style="grid-template-columns:1.7fr 1fr">
+<div>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>nevadahealthcenters.org</span></div>
+<div class="nav"><b>NEVADA HEALTH CENTERS</b><div><span>Services</span><span>Locations</span><span>Patients</span><span class="lang">English | Español</span> <span class="call">Call us</span></div></div>
+<div class="hero"><div class="h">Find care near you</div><div class="s">Encuentre atención cerca de usted · Medical, dental and behavioral health for every Nevadan, with or without insurance.</div><div class="search"><span>City, ZIP code or service</span><em>Search</em></div></div>
+<div class="four">
+<div>Find a location<small>Centers and mobile programs</small></div>
+<div>Find a provider<small>By specialty and language</small></div>
+<div>Insurance &amp; fees<small>Medicaid, Medicare, sliding fee</small></div>
+<div>Request an appointment<small>Call, online or portal</small></div>
+</div>
+<div class="svc"><span>Family medicine</span><span>Pediatrics</span><span>Dental</span><span>Behavioral health</span><span>Pharmacy</span><span>Mammovan</span></div>
+<div class="fee">No insurance? You may qualify for the sliding fee scale. <b style="color:#5b4a30">See if you can pay less ›</b></div>
+</div>
+<p class="mocknote">Conceptual sketch prepared for this proposal. The final design uses NVHC's brand, photos, services and approved content.</p>
+</div>
+<div>
+<h3 style="margin-top:0">How it works</h3>
+<ul>
+<li><b>One search box</b> for city, ZIP code or service.</li>
+<li><b>Four doors</b> that match the four patient questions.</li>
+<li><b>Language switch and Call button</b> always visible.</li>
+<li><b>Services strip</b> including mobile programs.</li>
+<li><b>Sliding fee message</b> on the homepage, so cost never stops anyone from looking for care.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+<div class="kicker">02 · Concept prepared for NVHC</div>
+<h2>The finder: the right place and the right provider</h2>
+<div class="cols-60" style="grid-template-columns:1.7fr 1fr">
+<div>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>nevadahealthcenters.org/find-care</span></div>
+<div class="finder">
+<div class="filters">
+<div class="f">Near</div><div class="v">Las Vegas, NV</div>
+<div class="f">Service</div><div class="v">Dental</div>
+<div class="f">Language spoken</div><div class="v">Español</div>
+<div class="f">Show</div>
+<div class="chk">Open today</div>
+<div class="chk">Accepting new patients</div>
+<div class="chk">Mobile programs</div>
+</div>
+<div class="results">
+<div class="res"><div><div class="n">Las Vegas health center</div><div class="d">Dental · Family medicine · Pharmacy · 2.1 mi</div><div class="open">Open today</div></div><div class="btns"><span>Call</span><span>Directions</span><span class="p">Request</span></div></div>
+<div class="res"><div class="av"></div><div style="flex:1"><div class="n">Dentist · Speaks English and Spanish</div><div class="d">Accepting new patients · Las Vegas health center</div></div><div class="btns"><span class="p">Request</span></div></div>
+<div class="res"><div><div class="n">North Las Vegas health center</div><div class="d">Dental · Pediatrics · 6.4 mi</div><div class="open">Open today</div></div><div class="btns"><span>Call</span><span>Directions</span><span class="p">Request</span></div></div>
+<div class="res mob"><div><div class="n">Mammovan · mobile program</div><div class="d">Next stops near you, with dates and how to book</div></div><div class="btns"><span>See stops</span></div></div>
+</div>
+</div>
+</div>
+<p class="mocknote">Conceptual sketch prepared for this proposal. Locations, providers and distances shown are illustrative.</p>
+</div>
+<div>
+<h3 style="margin-top:0">Built to stay accurate</h3>
+<ul>
+<li><b>Structured content:</b> one record per location, provider and mobile program, linked to each other.</li>
+<li><b>Staff edit, not developers:</b> change hours or add a provider in a simple form.</li>
+<li><b>Bulk updates</b> from a spreadsheet or an export from NVHC's systems.</li>
+<li><b>Accessible:</b> every filter works with keyboard and screen reader.</li>
+</ul>
+<p class="small">NVHC sees this working as a clickable prototype in week 4.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+<div class="kicker">03 · Technical architecture, security and integrations <span class="weight">20%</span></div>
+<h2>Simple to run, secure by design, no patient data on the website</h2>
+<table class="t-sm">
+<tr><th style="width:24%">Area</th><th>How we address it</th></tr>
+<tr><td class="k">Platform</td><td>WordPress with custom content types for locations, providers, services and mobile programs, editable by staff without code. No proprietary page builder.</td></tr>
+<tr><td class="k">Integrations</td><td>Links or embeds to NVHC's existing appointment-request and patient-portal systems, mapped in discovery. The finder can be fed by staff or by a scheduled import from NVHC's systems.</td></tr>
+<tr><td class="k">Privacy</td><td>The website does not collect or store protected health information. Appointment and portal actions run in NVHC's existing systems; general contact forms ask for no health details.</td></tr>
+<tr><td class="k">Security</td><td>Hardened WordPress, SSL, web application firewall, least-privilege accounts, two-factor login, security monitoring, daily off-site backups and a tested restore.</td></tr>
+<tr><td class="k">Analytics</td><td>Google Analytics 4 in NVHC's account, configured so no health information is sent to third parties and no tracking runs on appointment or portal pages. Conversion events and a monthly dashboard.</td></tr>
+<tr><td class="k">Migration and SEO</td><td>Content inventory, URL map and 301 redirects, so patients and search engines still find every page.</td></tr>
+<tr><td class="k">BAA</td><td>The architecture avoids handling PHI. If NVHC determines a Business Associate Agreement is needed, TWO&amp;HUMAN will sign one.</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+<div class="kicker">04 · Healthcare and FQHC experience <span class="weight">15%</span></div>
+<h2>Honest about our experience, specific about how we reduce your risk</h2>
+<div class="cols">
+<div>
+<h3 style="margin-top:0">Where we stand</h3>
+<p>We are a new firm and do not yet have healthcare projects or public client references to share. Instead, we prepared the homepage and finder concepts on slides 5 and 6 specifically for Nevada Health Centers, and we would be glad to walk your team through them in an interview. NVHC would be one of our first clients, and we would treat it as a flagship project.</p>
+<h3>What we already build in</h3>
+<ul>
+<li>The sliding fee scale, Medicaid and Medicare explained in plain language.</li>
+<li>Section 1557 nondiscrimination notice and language-assistance taglines.</li>
+<li>The federal notices health centers display, such as the FTCA deemed-status notice, where applicable.</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-top:0">How we reduce your risk</h3>
+<div class="card" style="margin-bottom:10px"><h3>See it before you pay for it</h3><p>The finder works as a prototype in week 4, before development starts.</p></div>
+<div class="card" style="margin-bottom:10px"><h3>Pay only for approved work</h3><p>Four payments, each one after NVHC approves a milestone.</p></div>
+<div class="card"><h3>No lock-in</h3><p>Standard WordPress, accounts and code in NVHC's name, so any vendor can take over.</p></div>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+<div class="kicker">05 · Team, management and timeline <span class="weight">10%</span></div>
+<h2>Two founders, one point of contact, 17 weeks to a launch-ready site</h2>
+<div class="gantt w18" style="--n:18">
+<div></div><div class="hd">W1</div><div class="hd">W2</div><div class="hd">W3</div><div class="hd">W4</div><div class="hd">W5</div><div class="hd">W6</div><div class="hd">W7</div><div class="hd">W8</div><div class="hd">W9</div><div class="hd">W10</div><div class="hd">W11</div><div class="hd">W12</div><div class="hd">W13</div><div class="hd">W14</div><div class="hd">W15</div><div class="hd">W16</div><div class="hd">W17</div><div class="hd">May 3</div>
+<div class="lb">Discovery<span>Interviews, inventory, integrations, sitemap</span></div><div class="bar o" style="grid-column:2 / 5">Discovery</div>
+<div class="lb">Finder prototype<span>Milestone 1 · approval</span></div><div class="bar o" style="grid-column:5 / 6">M1</div>
+<div class="lb">Design system and templates<span>Milestone 2 · approval</span></div><div class="bar" style="grid-column:6 / 9">Design · M2</div>
+<div class="lb">Development<span>Finder, bilingual setup, integrations</span></div><div class="bar" style="grid-column:9 / 15">Development · M3 staging</div>
+<div class="lb">Content migration and Spanish review</div><div class="bar s" style="grid-column:13 / 17">Content</div>
+<div class="lb">Accessibility, security and QA<span>Staff training</span></div><div class="bar s" style="grid-column:16 / 18">QA</div>
+<div class="lb">Margin<span>Launch-ready by April 23</span></div><div class="bar l" style="grid-column:18 / 19">Buffer</div>
+<div class="lb">Launch<span>Milestone 4, then 1-year warranty</span></div><div class="bar o" style="grid-column:19 / 20">Live</div>
+</div>
+<p class="small" style="margin-top:12px">Assumes award in December 2026 and kickoff on January 4, 2027. <b>Julio Briones</b> (co-founder): project lead, UX, content and analytics, single point of contact. <b>Mariam Neme</b> (co-founder, software engineer): development, accessibility, security and integrations. Weekly status report and a demo at each milestone; Argentina is 5 hours ahead of Pacific Time in winter (4 after March 14), so our day overlaps your full morning.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+<div class="kicker">06 · Cost and long-term value <span class="weight">10%</span></div>
+<h2>$61,500 fixed, 24% below the ceiling, warranty included</h2>
+<div class="cols-60">
+<table class="t-sm">
+<tr><th>Item</th><th class="n">USD</th></tr>
+<tr><td>Discovery and architecture</td><td class="n">6,500</td></tr>
+<tr><td>UX and visual design, including the finder prototype</td><td class="n">11,000</td></tr>
+<tr><td>Development, including the provider and location finder</td><td class="n">21,000</td></tr>
+<tr><td>Bilingual setup and Spanish content</td><td class="n">6,000</td></tr>
+<tr><td>Content migration and redirects</td><td class="n">5,000</td></tr>
+<tr><td>Accessibility, security and QA</td><td class="n">4,500</td></tr>
+<tr><td>Analytics and conversion tracking</td><td class="n">2,000</td></tr>
+<tr><td>Training and launch</td><td class="n">3,000</td></tr>
+<tr><td>1-year warranty: bug fixes and security patches</td><td class="n">2,500</td></tr>
+<tr class="tot"><td>Total implementation, fixed</td><td class="n">61,500</td></tr>
+</table>
+<div>
+<div class="card navy"><h3>Pay only for approved work</h3><p>25% on approval of the finder prototype, 25% on design approval, 25% on the staging site and 25% at launch, or according to NVHC's terms.</p></div>
+<ul style="margin-top:10px">
+<li><b>Out-of-scope work:</b> $60 per hour.</li>
+<li><b>Payment</b> in U.S. dollars by international bank transfer. As a foreign vendor, we provide IRS Form W-8BEN-E.</li>
+<li><b>Valid</b> for 90 days.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+<div class="kicker">06 · Hosting, care and ownership</div>
+<h2>Hosting quoted separately, everything owned by NVHC</h2>
+<div class="cols">
+<div>
+<div class="card" style="margin-bottom:10px"><h3>Hosting · quoted separately</h3><p>Managed WordPress hosting with CDN, web application firewall, staging site and daily backups, contracted in NVHC's name and paid directly to the provider with no markup: <b>estimated $2,400 to $3,600 per year</b>, depending on the plan NVHC chooses. Setup and configuration are included in our price.</p></div>
+<div class="card"><h3>Care plan after the warranty · optional</h3><p><b>$450 per month</b> for 6 hours of updates, content changes and improvements, plus monitoring. Cancel with 30 days' notice.</p></div>
+</div>
+<div>
+<h3 style="margin-top:0">Ownership</h3>
+<table class="t-sm">
+<tr><th style="width:44%">Item</th><th>Owner</th></tr>
+<tr><td class="k">Domain, hosting, WordPress admin</td><td><span class="ok">NVHC,</span> from day one</td></tr>
+<tr><td class="k">Analytics and accounts</td><td><span class="ok">NVHC,</span> from day one</td></tr>
+<tr><td class="k">Content, design files, code</td><td><span class="ok">NVHC,</span> on final payment</td></tr>
+<tr><td class="k">Lock-in</td><td><span class="ok">None.</span> No proprietary code; any vendor can take over</td></tr>
+</table>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+<div class="kicker">07 · Included at no extra cost</div>
+<h2>Every common concern, answered in advance</h2>
+<table class="t-sm">
+<tr><th style="width:46%">Included</th><th>The concern it resolves</th></tr>
+<tr><td class="k">Finder prototype in week 4</td><td>"We won't see the most important feature until the end."</td></tr>
+<tr><td class="k">Native Spanish content review</td><td>"Our Spanish-speaking patients won't understand machine translation."</td></tr>
+<tr><td class="k">10-day launch margin</td><td>"Any delay puts the May 3 launch at risk."</td></tr>
+<tr><td class="k">Accessibility report before launch</td><td>"How do we prove the site meets WCAG 2.1 AA?"</td></tr>
+<tr><td class="k">Staff editing guide in English and Spanish, plus recorded training</td><td>"Our team won't keep providers and hours current."</td></tr>
+<tr><td class="k">Monthly analytics dashboard for the first year</td><td>"We won't know if the new site brings patients to care."</td></tr>
+<tr><td class="k">Two revision rounds per milestone</td><td>"What if leadership asks for changes?"</td></tr>
+<tr><td class="k">Everything in NVHC's name</td><td>"Will we be locked in to this vendor?"</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+<div class="kicker">08 · Insurance, compliance and working together</div>
+<h2>Covered, compliant and easy to reach</h2>
+<div class="cols">
+<div>
+<h3 style="margin-top:0">Insurance and compliance</h3>
+<ul>
+<li><b>Insurance:</b> TWO&amp;HUMAN will provide certificates of general liability, professional liability (E&amp;O) and cyber liability insurance, at the limits NVHC requires, before the contract is signed.</li>
+<li><b>BAA:</b> signed if NVHC determines one is needed (slide 7).</li>
+<li><b>Accessibility:</b> WCAG 2.1 AA, with a written report and a public accessibility statement.</li>
+<li><b>Contract forms:</b> IRS Form W-8BEN-E as a foreign vendor.</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-top:0">What we need from NVHC</h3>
+<ul>
+<li>One decision-maker and one content contact.</li>
+<li>Access to the current site, analytics and the scheduling and portal teams during discovery.</li>
+<li>The list of locations, providers and services, or an export from NVHC's systems.</li>
+<li>Feedback within 5 business days at each milestone.</li>
+</ul>
+<div class="card" style="margin-top:12px"><h3>Single point of contact</h3><p>Julio Briones · julio@twoandhuman.com · +54 381 509 8972 (phone and WhatsApp) · reply within one business day</p></div>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 14 -->
+<section class="slide">
+<div class="kicker">Annex</div>
+<h2>Compliance matrix</h2>
+<table class="t-sm">
+<tr><th>RFP criterion or requirement</th><th style="width:12%">Slide</th><th style="width:18%">Meets</th></tr>
+<tr><td>Understanding of needs (20%)</td><td>3</td><td class="yes">Yes</td></tr>
+<tr><td>UX, accessibility and design (20%)</td><td>4 · 5 · 6</td><td class="yes">Yes</td></tr>
+<tr><td>Technical architecture, security and integrations (20%)</td><td>7</td><td class="yes">Yes</td></tr>
+<tr><td>Healthcare or FQHC experience (15%)</td><td>8</td><td class="part">Partial</td></tr>
+<tr><td>Team, management and timeline (10%)</td><td>9 · 13</td><td class="yes">Yes</td></tr>
+<tr><td>Cost and long-term value (10%)</td><td>10 · 11</td><td class="yes">Yes, $61,500 of $81,000</td></tr>
+<tr><td>Provider and location finder, insurance and fee information</td><td>4 · 5 · 6</td><td class="yes">Yes</td></tr>
+<tr><td>Discovery, migration, QA and launch by May 3, 2027</td><td>9</td><td class="yes">Yes</td></tr>
+<tr><td>1-year warranty</td><td>10</td><td class="yes">Yes, included</td></tr>
+<tr><td>Hosting quoted separately</td><td>11</td><td class="yes">Yes</td></tr>
+<tr><td>General liability, E&amp;O and cyber insurance</td><td>13</td><td class="yes">Yes, before signing</td></tr>
+<tr><td>Business Associate Agreement</td><td>7 · 13</td><td class="yes">Yes, if required</td></tr>
+</table>
+<p class="small" style="margin-top:8px">"Partial": we are a new firm. We offset it with the concepts on slides 5 and 6, a working finder prototype in week 4 and payment against approved milestones.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Nevada Health Centers</span><span class="pg"></span></div>
+</section>
+
+<!-- 15 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Thank you. We would be glad to walk you through the finder.</h1>
+<p class="sub">Julio Briones · Co-founder · julio@twoandhuman.com · +54 381 509 8972 (phone and WhatsApp) · twoandhuman.com</p>
+<div class="meta">
+<div><b>Price</b>$61,500 fixed, 1-year warranty included</div>
+<div><b>First result</b>Finder prototype in week 4</div>
+<div><b>Launch</b>May 3, 2027</div>
+</div>
+</section>
+
+<script>
+var s=document.querySelectorAll('.slide');
+s.forEach(function(el,i){var p=el.querySelector('.pg'); if(p) p.textContent=(i+1)+' / '+s.length;});
+</script>
+</body>
+</html>

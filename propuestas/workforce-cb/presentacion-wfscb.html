@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TWO&amp;HUMAN · Find a Job, Find Talent</title>
+<link rel="stylesheet" href="../assets/slides.css">
+<style>
+.mock .nav b { color:#0b5c8a; }
+.mock .nav .lang { border:1px solid #0b5c8a; color:#0b5c8a; font-weight:700; padding:1px 7px; border-radius:10px; }
+.mock .hero { background:linear-gradient(135deg,#0b5c8a,#1d8a8a); }
+.doors { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:10px 14px 6px; }
+.door { border-radius:6px; padding:9px 11px; color:#fff; }
+.door.a { background:#0b5c8a; } .door.b { background:#e07b1a; }
+.door .h { font-size:11.5pt; font-weight:800; line-height:1.1; }
+.door .s { font-size:7.6pt; opacity:.92; margin-top:2px; }
+.door .chips { margin-top:6px; display:flex; flex-wrap:wrap; gap:4px; }
+.door .chips span { background:rgba(255,255,255,.2); border-radius:3px; padding:1px 6px; font-size:7.4pt; font-weight:700; }
+.quick { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; padding:4px 14px 6px; }
+.quick div { background:#eef4f8; border-radius:4px; padding:5px 6px; font-size:7.6pt; font-weight:700; color:#0b5c8a; text-align:center; }
+.ev2 { display:flex; justify-content:space-between; margin:0 14px; border-top:1px dashed var(--line); padding:4px 0; font-size:7.8pt; }
+.ev2 em { font-style:normal; color:#e07b1a; font-weight:700; }
+.eo { background:#f2f4f6; font-size:6.8pt; color:var(--grey); padding:5px 14px; margin-top:4px; }
+
+.path { display:flex; gap:8px; align-items:stretch; margin:6px 0 4px; }
+.path div { flex:1; background:var(--light); border-radius:6px; padding:14px 14px; font-size:13pt; min-height:1.15in; position:relative; }
+.path div b { display:block; font-size:10.5pt; margin-bottom:3px; letter-spacing:1px; color:var(--orange); text-transform:uppercase; }
+.path div:not(:last-child)::after { content:"›"; position:absolute; right:-9px; top:50%; transform:translateY(-50%); font-size:18pt; color:var(--orange); font-weight:800; }
+.path.emp div b { color:#0b5c8a; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Find a Job, Find Talent</h1>
+<p class="sub">Proposal for RFP 26-01, Website Design: a bilingual, accessible website and web application for Workforce Solutions of the Coastal Bend, built around the two people it serves, job seekers and employers.</p>
+<div class="meta">
+<div><b>To</b>Workforce Solutions of the Coastal Bend · Attn. Imelda Treviño</div>
+<div><b>From</b>TWO&amp;HUMAN · Julio Briones and Mariam Neme, co-founders</div>
+<div><b>Date</b>November 2026</div>
+</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+<div class="kicker">At a glance</div>
+<h2>A fixed price, a prototype in week 3, launch in week 14</h2>
+<p class="lead">A new WordPress website in English and Spanish, with the web application features your customers use most, accessible to everyone and editable by your staff.</p>
+<div class="cols-4" style="margin-top:16px">
+<div class="stat"><div class="big">$11,800</div><div class="lbl">Fixed price for design, development and launch</div></div>
+<div class="stat"><div class="big">Week 3</div><div class="lbl">Clickable homepage prototype, in both languages</div></div>
+<div class="stat"><div class="big">Week 14</div><div class="lbl">Launch, followed by 30 days of fixes at no cost</div></div>
+<div class="stat"><div class="big">EN · ES</div><div class="lbl">Every page in English and Spanish, written by native speakers</div></div>
+</div>
+<div class="box" style="margin-top:20px">Built to <b>WCAG 2.1 AA and Section 508</b>, in line with the U.S. Department of Labor's accessibility requirements. Each payment is due only after Workforce Solutions approves that milestone, and the site, code and accounts stay in Workforce Solutions' name.</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+<div class="kicker">01 · What we understood</div>
+<h2>Two front doors for a 12-county region</h2>
+<p>Workforce Solutions of the Coastal Bend connects job seekers, youth and employers across the 12-county Coastal Bend region, from Corpus Christi to its rural communities, with jobs, training, child care support and hiring services. Many of the people you serve read in Spanish, use a phone as their only screen, or rely on assistive technology. The website has four jobs:</p>
+<div class="cols-4" style="margin-top:10px">
+<div class="card"><h3>Job seekers</h3><p>Find a job, get training or child care support, in a few taps.</p></div>
+<div class="card"><h3>Employers</h3><p>Post jobs, recruit, train staff and join hiring events.</p></div>
+<div class="card"><h3>Everyone, in their language</h3><p>The same information in English and Spanish, on every page.</p></div>
+<div class="card"><h3>Accessible by law</h3><p>Usable by people with disabilities, as federal workforce programs require.</p></div>
+</div>
+<p style="margin-top:14px">RFP 26-01 asks for website design and web application development that meet DOL accessibility requirements, Section 508 and WCAG 2.1 AA, aimed at employers and job seekers. That accessibility-first scope is how we already work.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+<div class="kicker">02 · Approach</div>
+<h2>What the RFP asks for and how we deliver it</h2>
+<table class="t-sm">
+<tr><th style="width:26%">Requirement</th><th>How we deliver it</th></tr>
+<tr><td class="k">Website design</td><td>A mobile-first design system in WordPress, with reusable blocks your staff can edit without a developer.</td></tr>
+<tr><td class="k">Web application development</td><td>Office finder with map, hours and directions; events and hiring fair calendar with online registration; "Get started" forms for job seekers and service requests for employers, sent to the right team.</td></tr>
+<tr><td class="k">Job seekers and employers</td><td>Two clear front doors from the homepage, each with its own path, services and contact.</td></tr>
+<tr><td class="k">English and Spanish</td><td>A full bilingual site with a language switch on every page. We write and review the Spanish ourselves, with no machine-only translation.</td></tr>
+<tr><td class="k">Accessibility</td><td>WCAG 2.1 AA and Section 508: contrast, keyboard navigation, alt text, accessible forms and PDFs, tested with automated tools and screen readers before launch.</td></tr>
+<tr><td class="k">State systems</td><td>Clear links to WorkInTexas.com and the Texas Workforce Commission services your customers use.</td></tr>
+<tr><td class="k">Content and handover</td><td>Migration and plain-language editing of current content, redirects from old addresses, recorded training and a bilingual editing guide.</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+<div class="kicker">03 · Concept prepared for Workforce Solutions</div>
+<h2>Homepage: "What brings you here today?"</h2>
+<div class="cols-60" style="grid-template-columns:1.7fr 1fr">
+<div>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>workforcesolutionscb.org</span></div>
+<div class="nav"><b>WORKFORCE SOLUTIONS · COASTAL BEND</b><div><span>Offices</span><span>Events</span><span>About</span><span class="lang">English | Español</span></div></div>
+<div class="hero"><div class="h">Your next job or your next hire starts here</div><div class="s">Free job search, training and hiring services across the Coastal Bend.</div></div>
+<div class="doors">
+<div class="door a"><div class="h">I'm looking for work</div><div class="s">Busco trabajo</div><div class="chips"><span>Find a job</span><span>Training</span><span>Child care</span><span>Youth</span></div></div>
+<div class="door b"><div class="h">I'm hiring</div><div class="s">Quiero contratar</div><div class="chips"><span>Post a job</span><span>Hiring events</span><span>Train my staff</span></div></div>
+</div>
+<div class="quick"><div>Find an office</div><div>WorkInTexas.com</div><div>Upcoming events</div><div>Call us</div></div>
+<div class="ev2"><span>Hiring fair · Corpus Christi</span><em>Register</em></div>
+<div class="ev2"><span>Employer workshop</span><em>Details</em></div>
+<div class="eo">Equal Opportunity Employer/Program · Auxiliary aids and services available upon request · Relay Texas: 711</div>
+</div>
+<p class="mocknote">Conceptual sketch prepared for this proposal. The final design uses Workforce Solutions' logo, colors, photos, services and events.</p>
+</div>
+<div>
+<h3 style="margin-top:0">How it works</h3>
+<ul>
+<li><b>Two big doors</b> above the fold, in both languages.</li>
+<li><b>Quick actions</b> for the most common tasks.</li>
+<li><b>Language switch</b> on every page, remembered between visits.</li>
+<li><b>Upcoming events</b> with registration in two taps.</li>
+<li><b>Equal opportunity notice</b> and accessibility statement in the footer.</li>
+</ul>
+<p class="small">Your team reviews this as a clickable prototype in week 3.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+<div class="kicker">04 · Two journeys, designed end to end</div>
+<h2>From the first visit to the right service</h2>
+<h3 style="margin-top:4px">Job seeker</h3>
+<div class="path">
+<div><b>Arrives</b>From Google or a phone, often in Spanish</div>
+<div><b>Chooses</b>"I'm looking for work" / "Busco trabajo"</div>
+<div><b>Finds</b>Jobs, training, child care or youth programs</div>
+<div><b>Acts</b>"Get started" form, WorkInTexas.com or nearest office</div>
+<div><b>Is contacted</b>The form reaches the right team</div>
+</div>
+<h3 style="margin-top:14px">Employer</h3>
+<div class="path emp">
+<div><b>Arrives</b>Needs to hire or train staff</div>
+<div><b>Chooses</b>"I'm hiring" / "Quiero contratar"</div>
+<div><b>Finds</b>Recruiting, hiring events, training programs</div>
+<div><b>Acts</b>Service request or hiring fair registration</div>
+<div><b>Is contacted</b>A business services representative follows up</div>
+</div>
+<div class="box" style="margin-top:16px">Every step is measured: Google Analytics 4 in Workforce Solutions' account tracks form submissions, event registrations, calls and visits to WorkInTexas.com, by language.</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+<div class="kicker">05 · Accessibility and compliance</div>
+<h2>Accessible from the first sketch, not fixed at the end</h2>
+<div class="cols">
+<div>
+<h3 style="margin-top:0">Standards we build to</h3>
+<ul>
+<li><b>WCAG 2.1 AA</b> on every template and component.</li>
+<li><b>Section 508</b> of the Rehabilitation Act.</li>
+<li><b>WIOA Section 188 and 29 CFR Part 38</b>: equal access for people with disabilities and people with limited English proficiency.</li>
+<li><b>Equal opportunity notice</b> with Relay Texas 711 on every page.</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-top:0">How we test it</h3>
+<ul>
+<li>Automated checks on every template during development.</li>
+<li>Manual keyboard-only and screen reader testing (NVDA and VoiceOver) before launch.</li>
+<li>Color contrast and text resizing checks up to 200%.</li>
+<li>Accessible forms with clear labels and error messages, in both languages.</li>
+<li>A written accessibility report and a public accessibility statement at launch.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+<div class="kicker">06 · Included at no extra cost</div>
+<h2>Every common concern, answered in advance</h2>
+<table class="t-sm">
+<tr><th style="width:46%">Included</th><th>The concern it resolves</th></tr>
+<tr><td class="k">Clickable homepage prototype in week 3</td><td>"We won't know what we're getting until the end."</td></tr>
+<tr><td class="k">Spanish written and reviewed by native speakers</td><td>"Machine translation confuses our Spanish-speaking customers."</td></tr>
+<tr><td class="k">Accessibility report before launch</td><td>"How do we prove the site meets WCAG 2.1 AA and Section 508?"</td></tr>
+<tr><td class="k">Recorded training and a bilingual editing guide</td><td>"Our staff won't be able to update it."</td></tr>
+<tr><td class="k">Two revision rounds per milestone</td><td>"What if the board asks for changes?"</td></tr>
+<tr><td class="k">Redirects from old web addresses</td><td>"Will people still find us on Google?"</td></tr>
+<tr><td class="k">30 days of post-launch fixes</td><td>"What if something breaks after launch?"</td></tr>
+<tr><td class="k">Everything in Workforce Solutions' name</td><td>"Will we be locked in to this vendor?"</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+<div class="kicker">07 · Timeline</div>
+<h2>14 weeks from kickoff to launch</h2>
+<div class="gantt" style="--n:14">
+<div></div><div class="hd">W1</div><div class="hd">W2</div><div class="hd">W3</div><div class="hd">W4</div><div class="hd">W5</div><div class="hd">W6</div><div class="hd">W7</div><div class="hd">W8</div><div class="hd">W9</div><div class="hd">W10</div><div class="hd">W11</div><div class="hd">W12</div><div class="hd">W13</div><div class="hd">W14</div>
+<div class="lb">Kickoff, content inventory, sitemap</div><div class="bar o" style="grid-column:2 / 4">Discovery</div>
+<div class="lb">Clickable homepage prototype<span>Revision round 1</span></div><div class="bar o" style="grid-column:4 / 5">Proto</div>
+<div class="lb">Design system and key templates<span>Milestone 1 · approval</span></div><div class="bar" style="grid-column:5 / 7">Design · M1</div>
+<div class="lb">Development and bilingual setup<span>Office finder, events, forms</span></div><div class="bar" style="grid-column:7 / 12">Development</div>
+<div class="lb">Content migration and Spanish review<span>Milestone 2 · staging review</span></div><div class="bar s" style="grid-column:11 / 14">Content · M2</div>
+<div class="lb">Accessibility testing and staff training</div><div class="bar s" style="grid-column:14 / 15">QA</div>
+<div class="lb">Launch<span>Milestone 3, then 30 days of fixes</span></div><div class="bar o" style="grid-column:15 / 16">Launch</div>
+</div>
+<p class="small" style="margin-top:16px">Weeks count from kickoff. Approvals are planned within 5 business days; the schedule moves only if feedback or content arrives later.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+<div class="kicker">08 · Price (U.S. dollars, fixed)</div>
+<h2>$11,800, itemized, paid against approved work</h2>
+<div class="cols-60">
+<table class="t-sm">
+<tr><th>Item</th><th class="n">USD</th></tr>
+<tr><td>Discovery, content inventory and sitemap</td><td class="n">1,200</td></tr>
+<tr><td>UX and visual design: prototype, design system and templates</td><td class="n">2,400</td></tr>
+<tr><td>WordPress development: office finder, events, forms, integrations</td><td class="n">4,200</td></tr>
+<tr><td>Bilingual setup and Spanish content review</td><td class="n">1,600</td></tr>
+<tr><td>Content migration and redirects</td><td class="n">1,100</td></tr>
+<tr><td>Accessibility testing, training and launch</td><td class="n">1,300</td></tr>
+<tr class="tot"><td>Total, fixed</td><td class="n">11,800</td></tr>
+</table>
+<div>
+<div class="card navy"><h3>Pay only for approved work</h3><p>30% on approval of milestone 1 (design), 30% on milestone 2 (staging site) and 40% at launch, or according to your procurement terms.</p></div>
+<ul style="margin-top:10px">
+<li><b>Optional maintenance</b> after the 30 included days: $140 per month (updates, backups, security monitoring, small edits).</li>
+<li><b>Out-of-scope work:</b> $60 per hour.</li>
+<li><b>Third-party costs</b> (hosting, domain, premium plugins) paid directly by Workforce Solutions, with no markup.</li>
+<li><b>Valid</b> for 90 days.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+<div class="kicker">09 · Working together and ownership</div>
+<h2>Bilingual, on Central Time, with no lock-in</h2>
+<div class="cols">
+<div>
+<h3 style="margin-top:0">Communication</h3>
+<ul>
+<li><b>Single point of contact:</b> Julio Briones, in English or Spanish. Mariam Neme leads development.</li>
+<li><b>Hours:</b> Argentina is 3 hours ahead of Central Time in winter, so our day covers your full business day.</li>
+<li><b>Reporting:</b> a weekly written update and a video demo at each milestone.</li>
+<li><b>Response time:</b> within one business day.</li>
+<li><b>Contract forms:</b> as a foreign vendor, we provide IRS Form W-8BEN-E. Payment in U.S. dollars by international bank transfer.</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-top:0">Ownership</h3>
+<table class="t-sm">
+<tr><th style="width:44%">Item</th><th>Owner</th></tr>
+<tr><td class="k">Domain, hosting, WordPress admin</td><td><span class="ok">Workforce Solutions,</span> from day one</td></tr>
+<tr><td class="k">Analytics and accounts</td><td><span class="ok">Workforce Solutions,</span> from day one</td></tr>
+<tr><td class="k">Content, design files, code</td><td><span class="ok">Workforce Solutions,</span> on final payment</td></tr>
+<tr><td class="k">Lock-in</td><td><span class="ok">None.</span> Standard WordPress any developer can maintain</td></tr>
+</table>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+<div class="kicker">10 · Team, references and why us</div>
+<h2>The founders do the work, in both languages</h2>
+<div class="cols">
+<div>
+<div class="card" style="margin-bottom:10px"><h3>Julio Briones · Co-founder</h3><p>Strategy, content, UX and digital marketing. Single point of contact.</p></div>
+<div class="card"><h3>Mariam Neme · Co-founder, software engineer</h3><p>WordPress development, web application features, accessibility and integrations.</p></div>
+<p class="small" style="margin-top:8px">TWO&amp;HUMAN is a marketing and software studio founded in 2026 in Tucumán, Argentina, working 100% remotely and natively in English and Spanish.</p>
+</div>
+<div>
+<h3 style="margin-top:0">References</h3>
+<p>We are a new firm and do not yet have public client references to share. Instead, we prepared the homepage concept and the two journeys on slides 5 and 6 specifically for Workforce Solutions of the Coastal Bend, and we would be glad to walk your team through them in an interview. Workforce Solutions would be one of our first clients, and we would treat it as a flagship project.</p>
+<h3>Why TWO&amp;HUMAN</h3>
+<ul>
+<li>Native Spanish and English in the same small team.</li>
+<li>Design, development and accessibility under one fixed price.</li>
+<li>Everything stays in Workforce Solutions' name.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+<div class="kicker">Annex</div>
+<h2>Compliance matrix</h2>
+<table class="t-sm">
+<tr><th>Requirement</th><th style="width:13%">Slide</th><th style="width:12%">Meets</th></tr>
+<tr><td>Website design</td><td>4 · 5</td><td class="yes">Yes</td></tr>
+<tr><td>Web application development</td><td>4 · 6</td><td class="yes">Yes</td></tr>
+<tr><td>Aimed at employers and job seekers</td><td>3 · 5 · 6</td><td class="yes">Yes</td></tr>
+<tr><td>DOL accessibility requirements</td><td>7</td><td class="yes">Yes</td></tr>
+<tr><td>Section 508</td><td>7</td><td class="yes">Yes</td></tr>
+<tr><td>WCAG 2.1 AA</td><td>7 · 8</td><td class="yes">Yes</td></tr>
+<tr><td>Mobile-responsive design</td><td>4 · 5</td><td class="yes">Yes</td></tr>
+<tr><td>English and Spanish content</td><td>4 · 8</td><td class="yes">Yes</td></tr>
+<tr><td>Staff can update the site without a developer</td><td>4 · 8</td><td class="yes">Yes</td></tr>
+<tr><td>Proposal by November 30, 2026, 4:00 p.m. CT</td><td>1</td><td class="yes">Yes</td></tr>
+<tr><td>Work samples and references</td><td>5 · 6 · 12</td><td class="part">Partial</td></tr>
+</table>
+<p class="small" style="margin-top:8px">"Partial": we are a new firm. We offset it with the concept on slides 5 and 6, payment against approved milestones and an interview.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Workforce Solutions of the Coastal Bend</span><span class="pg"></span></div>
+</section>
+
+<!-- 14 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Thank you. We would be glad to walk you through the concept.</h1>
+<p class="sub">Julio Briones · Co-founder · julio@twoandhuman.com · +54 381 509 8972 (phone and WhatsApp) · twoandhuman.com</p>
+<div class="meta">
+<div><b>Price</b>$11,800 fixed</div>
+<div><b>First result</b>Clickable homepage prototype in week 3</div>
+<div><b>Launch</b>Week 14 from kickoff</div>
+</div>
+</section>
+
+<script>
+var s=document.querySelectorAll('.slide');
+s.forEach(function(el,i){var p=el.querySelector('.pg'); if(p) p.textContent=(i+1)+' / '+s.length;});
+</script>
+</body>
+</html>
