@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Propuesta Axel Tapicería · Two&amp;Human</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --verde: #1d3d33; --oro: #b5874a; --gris: #555; --claro: #e9efec; --beige: #f5efe6; --borde: #d9d3c7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "DejaVu Sans", Arial, sans-serif; color: #222; font-size: 9pt; line-height: 1.38; }
+  .pagina { width: 210mm; height: 297mm; overflow: hidden; position: relative; padding: 14mm 16mm 16mm; page-break-after: always; }
+  .pagina:last-child { page-break-after: auto; }
+  .barra { position: absolute; top: 0; left: 0; right: 0; height: 7mm; background: var(--oro); }
+  .cabecera { display: flex; justify-content: space-between; font-size: 8pt; margin-top: 2mm; margin-bottom: 6mm; }
+  .cabecera b { color: var(--verde); letter-spacing: .5px; }
+  .cabecera span { color: var(--gris); letter-spacing: .4px; }
+  .ceja { color: var(--oro); font-weight: bold; font-size: 8.5pt; letter-spacing: .6px; text-transform: uppercase; margin: 0 0 2mm; }
+  h1 { color: var(--verde); font-size: 21pt; line-height: 1.12; margin: 0 0 2mm; }
+  .sub { color: var(--gris); font-size: 9.4pt; margin: 0 0 3mm; padding-bottom: 3mm; border-bottom: 1.5px solid var(--oro); }
+  h2 { color: var(--verde); font-size: 11.5pt; margin: 4mm 0 1.5mm; }
+  p { margin: 0 0 2mm; }
+  .compromiso { display: flex; background: var(--claro); border: 1px solid var(--verde); border-left: 5px solid var(--oro); margin: 3mm 0; }
+  .compromiso .et { width: 34mm; padding: 4mm; color: var(--oro); font-weight: bold; font-size: 8.5pt; text-transform: uppercase; display: flex; align-items: center; }
+  .compromiso .tx { padding: 3mm 4mm; color: var(--verde); font-weight: bold; font-size: 10.5pt; line-height: 1.35; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; }
+  th { background: var(--verde); color: #fff; text-align: left; font-size: 8.2pt; padding: 2.2mm 2.5mm; letter-spacing: .3px; }
+  td { border: 1px solid var(--borde); padding: 1.8mm 2.2mm; vertical-align: top; font-size: 8pt; line-height: 1.32; }
+  tr:nth-child(even) td { background: #faf8f4; }
+  td b { color: var(--verde); }
+  .bloque { display: flex; background: var(--beige); border: 1px solid var(--borde); margin-bottom: 2mm; }
+  .bloque .n { width: 40mm; padding: 2.6mm 3mm; font-weight: bold; color: var(--verde); font-size: 8.8pt; text-transform: uppercase; }
+  .bloque .d { padding: 2.6mm 3mm; flex: 1; font-size: 8.5pt; }
+  .bloque .d em { color: var(--oro); font-style: normal; font-weight: bold; }
+  .nota { background: var(--beige); border: 1px solid var(--oro); padding: 2.5mm 3.5mm; margin: 2.5mm 0; font-size: 8.5pt; }
+  .fuente { color: #777; font-size: 7.4pt; margin-top: 1mm; }
+  ul { margin: 0 0 2mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  .pie { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; border-top: 1px solid var(--borde); padding-top: 2mm; display: flex; justify-content: space-between; color: #777; font-size: 7.6pt; }
+  .inv td { font-size: 8.8pt; }
+  .inv .total td { background: var(--claro); font-weight: bold; color: var(--verde); }
+  .pasos { margin: 1mm 0 2mm; padding-left: 5mm; }
+  .pasos li { margin-bottom: .8mm; font-size: 8.6pt; }
+  .detalle p { font-size: 8.6pt; margin-bottom: 1.6mm; }
+  .aliados td { font-size: 7.9pt; }
+  .contacto { color: #666; font-size: 8pt; margin-top: 3mm; }
+</style><style>
+  .cifras { display: flex; gap: 3mm; margin: 2mm 0 2mm; }
+  .cifra { flex: 1; min-width: 0; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.5mm 3.5mm; }
+  .cifra b { display: block; font-size: 13pt; white-space: nowrap; color: var(--verde); margin-bottom: .8mm; }
+  .cifra span { font-size: 7.8pt; color: var(--gris); line-height: 1.3; display: block; }
+  .dos { display: flex; gap: 5mm; align-items: flex-start; }
+  .dos .txt { flex: 1.15; }
+  .dos .txt p, .dos .txt li { font-size: 8.8pt; }
+  .dos .boceto { flex: 1; position: relative; border: 1px solid var(--borde); padding: 6mm 3mm 3mm; background: #fff; }
+  .etq { position: absolute; top: 1.5mm; left: 3mm; font-size: 7.5pt; font-weight: bold; letter-spacing: .6px; text-transform: uppercase; color: var(--oro); }
+  .pieza { border-radius: 3mm; overflow: hidden; border: 1px solid var(--borde); }
+  .pieza .foto { height: 14mm; background: linear-gradient(135deg, #2f5d50, #8fb3a3); color: #fff; font-size: 7.5pt; font-style: italic; display: flex; align-items: flex-end; padding: 2mm 3mm; }
+  .pieza .cuerpo { padding: 2.5mm 3.5mm 3mm; background: #fbf9f5; }
+  .pieza .lema { font-size: 12.5pt; font-weight: bold; color: var(--verde); margin: 0 0 .6mm; line-height: 1.15; }
+  .pieza .aval { font-size: 7.4pt; color: var(--oro); font-weight: bold; margin: 0 0 1.8mm; }
+  .pieza .fila { display: flex; justify-content: space-between; font-size: 7.9pt; padding: 1mm 0; border-bottom: 1px solid var(--borde); }
+  .pieza .fila b { color: var(--verde); }
+  .pieza .incluye { font-size: 7.2pt; color: var(--gris); margin: 1.8mm 0 2mm; }
+  .pieza .boton { background: var(--verde); color: #fff; text-align: center; font-size: 7.8pt; font-weight: bold; padding: 1.8mm; border-radius: 2mm; }
+  .embudo { display: flex; gap: 2.5mm; margin: 1.5mm 0 2mm; }
+  .paso { flex: 1; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.2mm 2.5mm; }
+  .paso i { display: block; font-style: normal; font-size: 7pt; color: var(--oro); font-weight: bold; letter-spacing: .5px; text-transform: uppercase; }
+  .paso b { display: block; color: var(--verde); font-size: 9.2pt; margin: .5mm 0 .8mm; }
+  .paso span { display: block; font-size: 7.5pt; color: var(--gris); line-height: 1.3; }
+  .opciones { display: flex; gap: 4mm; margin: 2mm 0 2.5mm; }
+  .opcion { flex: 1; border: 1px solid var(--borde); background: #fbf9f5; display: flex; flex-direction: column; }
+  .opcion .tit { background: var(--verde); color: #fff; padding: 2.4mm 3mm; font-weight: bold; font-size: 9.6pt; }
+  .opcion .tit small { display: block; color: #e3cfa9; font-weight: normal; font-size: 7.6pt; margin-top: .4mm; }
+  .opcion ul { padding: 2.4mm 3mm 0 7mm; margin: 0; flex: 1; }
+  .opcion li { font-size: 8.1pt; margin-bottom: 1.1mm; }
+  .opcion .precio { border-top: 1px solid var(--borde); padding: 2.2mm 3mm; background: var(--beige); }
+  .opcion .precio b { font-size: 14pt; color: var(--verde); }
+  .opcion .precio span { display: block; font-size: 7.6pt; color: var(--gris); }
+  .crono td { font-size: 8pt; }
+</style>
+<style>
+  .pieza .tachado { font-size: 8pt; color: #999; text-decoration: line-through; margin-right: 1.5mm; font-weight: normal; }
+  .canales .bloque .n { width: 38mm; }
+  .inv td { font-size: 8.6pt; }
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · AXEL TAPICERÍA</span></div>
+
+  <p class="ceja">Propuesta para Axel · Tapicería</p>
+  <h1>Que vuelvan los mensajes todas las mañanas</h1>
+  <p class="sub">Anuncios en Facebook e Instagram para tus respaldos y combos, con una semana de prueba y mes a mes.</p>
+
+  <p>Fabricás respaldos canelones y pétalos, capitoné, pie de cama y sillones, con un trabajo que se nota: hay clientas que vuelven y suman un respaldo, un sillón y una mesita. Tenés capacidad para entregar 15 a 20 productos por semana, pero hay semanas de 5. Los anuncios llegaron a traerte 9 o 10 mensajes cada mañana y, hace dos semanas, dejaron de traer. <b>El trabajo está; lo que hay que recuperar es que te lleguen consultas todas las semanas.</b></p>
+
+  <div class="cifras">
+    <div class="cifra"><b>58</b><span>conversaciones en la semana buena</span></div>
+    <div class="cifra"><b>$605</b><span>costó cada conversación esa semana</span></div>
+    <div class="cifra"><b>$3.600</b><span>gastó Meta en la semana floja, contra $35.000</span></div>
+    <div class="cifra"><b>15 a 20</b><span>productos por semana que podés entregar</span></div>
+  </div>
+
+  <h2>Qué pasó con los anuncios</h2>
+  <p>En la semana buena, Meta gastó $35.000 y te trajo 58 conversaciones. En la floja gastó unos $3.600. <b>No es que la gente dejó de interesarse: Meta casi dejó de mostrar tus anuncios.</b> Las causas más comunes son un anuncio rechazado o pausado, un cambio de imagen que apagó al que funcionaba, un problema con el pago de la tarjeta o un público que se achicó. Lo primero que hacemos es revisar la cuenta y encontrar cuál fue.</p>
+
+  <h2>Vender por lo que vale, no solo por precio</h2>
+  <div class="dos">
+    <div class="txt">
+      <p>El que compra solo por precio se va con el vecino que lo hace más barato. Al que valora un trabajo que dura, hay que mostrárselo:</p>
+      <ul>
+        <li><b>Fotos en un ambiente real,</b> no en el taller: el respaldo puesto en un dormitorio.</li>
+        <li><b>Fabricación propia,</b> los materiales y cómo queda por dentro.</li>
+        <li><b>Lo que dicen tus clientes,</b> como la clienta que volvió por un sillón y una mesita.</li>
+        <li><b>Combos</b> de respaldo y pie de cama, para que cada venta sea más grande.</li>
+      </ul>
+    </div>
+    <div class="boceto">
+      <span class="etq">Boceto de un anuncio</span>
+      <div class="pieza">
+        <div class="foto">Foto real: el respaldo canelones en un dormitorio</div>
+        <div class="cuerpo">
+          <p class="lema">Respaldo Canelones de 2 plazas</p>
+          <p class="aval">Fabricación propia · Loma Hermosa</p>
+          <div class="fila"><span>Promo de esta semana</span><b><span class="tachado">$90.000</span>$75.000</b></div>
+          <div class="fila"><span>Combo con pie de cama</span><b>consultá</b></div>
+          <p class="incluye">Presupuesto sin cargo · Elegí medida y color</p>
+          <div class="boton">Escribinos por WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>1 / 2</span></div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · AXEL TAPICERÍA</span></div>
+
+  <p class="ceja">El trabajo</p>
+  <h1>Cómo trabajamos</h1>
+  <p class="sub">El anuncio que funciona no se apaga: se sigue usando mientras probamos otros para superarlo.</p>
+
+  <div class="embudo">
+    <div class="paso"><i>Paso 1</i><b>Revisar la cuenta</b><span>Encontramos por qué Meta dejó de gastar y lo corregimos.</span></div>
+    <div class="paso"><i>Paso 2</i><b>Semana de prueba</b><span>4 a 6 anuncios con distintas fotos y promos: canelones, pétalos, capitoné y combos.</span></div>
+    <div class="paso"><i>Paso 3</i><b>Quedarse con el ganador</b><span>El que más conversaciones trae sigue corriendo y recibe más presupuesto.</span></div>
+    <div class="paso"><i>Paso 4</i><b>Renovar cada semana</b><span>Los que no funcionan se cambian por nuevos, sin tocar al ganador.</span></div>
+  </div>
+
+  <h2>Qué incluye</h2>
+  <ul>
+    <li><b>Anuncios en Facebook e Instagram</b> para tu zona, armados y revisados cada semana.</li>
+    <li><b>Imágenes nuevas cada mes</b> con tus fotos, más una guía para sacarlas con el celular en un ambiente real.</li>
+    <li><b>WhatsApp listo para vender:</b> mensaje de bienvenida con el catálogo, precios por medida y respuestas rápidas para preguntar medida, color, zona y para cuándo.</li>
+    <li><b>Una planilla simple de consultas y ventas,</b> para saber cuánto te cuesta cada venta y no solo cada mensaje.</li>
+    <li><b>Un resumen cada semana por WhatsApp:</b> cuánto se gastó, cuántas conversaciones y cuántas ventas.</li>
+  </ul>
+
+  <h2>Inversión</h2>
+  <table class="inv">
+    <tr><th style="width:30%">Concepto</th><th style="width:46%">Qué incluye</th><th>Monto</th></tr>
+    <tr><td><b>Plan de anuncios</b></td><td>Todo lo de arriba. Mes a mes, sin permanencia.</td><td>$400.000 por mes</td></tr>
+    <tr><td><b>Publicidad</b></td><td>La pagás directo a Meta con tu tarjeta. Arrancamos con $6.000 por día, cerca de lo que venías poniendo, y sube solo si trae ventas.</td><td>$6.000 por día (unos $180.000 por mes)</td></tr>
+  </table>
+  <p><b>Cuentas claras:</b> en tu semana buena, cada conversación costó $605. Si de cada 10 conversaciones sale una venta de $75.000, cada venta te cuesta unos $6.000 de publicidad.</p>
+
+  <h2>Condiciones</h2>
+  <ul>
+    <li><b>Mes a mes:</b> pagás el mes por adelantado y seguís solo si te sirve.</li>
+    <li><b>Garantía de cumplimiento:</b> si al terminar el primer mes los anuncios no están funcionando como acordamos, el mes siguiente no se cobra hasta lograrlo.</li>
+    <li><b>Todo queda a tu nombre:</b> la cuenta publicitaria, la página y las imágenes.</li>
+    <li><b>No incluye:</b> la publicidad, que pagás directo a Meta.</li>
+  </ul>
+
+  <div class="nota"><b>Para empezar:</b> pasarnos tu usuario de Instagram y Facebook, pedirle al gestor actual los anuncios que estaba usando y darnos acceso a la cuenta publicitaria. Con eso arrancamos con la revisión en la semana.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · +54 381 509 8972 · mariam@twoandhuman.com · julio@twoandhuman.com</span><span>2 / 2</span></div>
+</section>
+
+</body>
+</html>

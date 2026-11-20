@@ -1,0 +1,88 @@
+@font-face { font-family: "Anton"; src: url(fonts/Anton-Regular.ttf); }
+@font-face { font-family: "Marker"; src: url(fonts/PermanentMarker-Regular.ttf); }
+@font-face { font-family: "ArchivoBlack"; src: url(fonts/ArchivoBlack-Regular.ttf); }
+@font-face { font-family: "Montserrat"; font-weight: 500; src: url(fonts/montserrat-500.woff); }
+@font-face { font-family: "Montserrat"; font-weight: 700; src: url(fonts/montserrat-700.woff); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url(fonts/montserrat-800.woff); }
+
+:root {
+  --negro: #0b0b0d;
+  --rosa: #ff2e88;
+  --rosa-claro: #ff8cc0;
+  --blanco: #f6f3ef;
+  --gris: #9a979c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; background: var(--negro); }
+
+.flyer {
+  position: relative;
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  color: var(--blanco);
+  font-family: "Montserrat", sans-serif;
+  background:
+    radial-gradient(ellipse 70% 45% at 30% 62%, rgba(255, 46, 136, .16), transparent 70%),
+    radial-gradient(ellipse 90% 60% at 60% 20%, #1f1b22, transparent 75%),
+    var(--negro);
+}
+
+/* Textura de papel granulado encima de todo */
+.grano {
+  position: absolute; inset: 0; pointer-events: none; z-index: 50;
+  opacity: .28; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+.trazo { position: absolute; z-index: 1; }
+
+.arriba {
+  position: absolute; top: 44px; left: 60px; right: 60px; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.marca { font-family: "ArchivoBlack"; font-size: 34px; letter-spacing: 6px; color: var(--blanco); }
+.marca b { color: var(--rosa); font-weight: normal; }
+.fecha {
+  font-family: "Montserrat"; font-weight: 800; font-size: 28px; letter-spacing: 2px;
+  color: var(--blanco); display: flex; align-items: center; gap: 14px;
+}
+.fecha i { font-style: normal; color: var(--rosa); font-size: 38px; line-height: 1; }
+
+.titulo {
+  position: absolute; z-index: 5;
+  font-family: "Anton"; text-transform: uppercase; color: var(--blanco);
+  line-height: .86; letter-spacing: 3px;
+  text-shadow: 0 6px 0 rgba(0, 0, 0, .35);
+}
+.titulo span { display: block; }
+
+.marcador {
+  position: absolute; z-index: 6;
+  font-family: "Marker"; color: var(--rosa);
+  transform: rotate(-9deg);
+  text-shadow: 0 4px 0 rgba(0, 0, 0, .45);
+}
+
+.estrella { position: absolute; z-index: 4; }
+
+.damero {
+  position: absolute; z-index: 3; height: 60px;
+  background:
+    conic-gradient(var(--rosa) 25%, transparent 0 50%, var(--rosa) 0 75%, transparent 0) 0 0 / 60px 60px;
+}
+
+.franja {
+  position: absolute; left: 0; right: 0; z-index: 8;
+  background: var(--rosa); color: var(--negro);
+  text-align: center;
+}
+
+.pie {
+  position: absolute; left: 60px; right: 60px; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.dato { display: flex; align-items: center; gap: 16px; font-weight: 700; font-size: 29px; line-height: 1.15; }
+.dato svg { flex: none; }
+.dato small { display: block; font-weight: 500; font-size: 21px; color: var(--gris); }
