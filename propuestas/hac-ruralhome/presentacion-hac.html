@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TWO&amp;HUMAN · Rural Research, Easy to Find</title>
+<link rel="stylesheet" href="../assets/slides.css">
+<style>
+.mock .nav b { color:#2f5d3a; }
+.mock .nav .don { background:var(--orange); color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+.mock .hero { background:linear-gradient(135deg,#2f5d3a,#6d8f4e); }
+.paths { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; max-width:5.6in; }
+.paths div { background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.5); border-radius:5px; padding:6px 9px; font-size:8.5pt; font-weight:800; }
+.paths div small { display:block; font-weight:500; font-size:7.2pt; opacity:.9; }
+.spot { display:grid; grid-template-columns:1.3fr 1fr; gap:10px; padding:10px 14px 6px; }
+.spot .r { border:1px solid var(--line); border-radius:6px; padding:8px; }
+.spot .r b { font-size:8.8pt; color:var(--navy); display:block; }
+.spot .r small { font-size:7.4pt; color:var(--grey); }
+.spot .r .fig { margin-top:6px; height:30px; display:flex; align-items:flex-end; gap:4px; }
+.spot .r .fig u { flex:1; background:#6d8f4e; border-radius:2px 2px 0 0; }
+.spot .s { border:1px solid var(--line); border-radius:6px; padding:8px; }
+.spot .s .in { border:1px solid #cfd8e0; border-radius:14px; padding:3px 9px; font-size:7.6pt; color:var(--grey); margin-bottom:5px; }
+.spot .s .ch { display:flex; gap:4px; flex-wrap:wrap; }
+.spot .s .ch span { background:#eef3ea; color:#2f5d3a; border-radius:9px; padding:1px 7px; font-size:7.2pt; font-weight:700; }
+.band3 { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; padding:4px 14px 12px; }
+.band3 div { background:#f4f7f2; border-radius:5px; padding:6px 8px; font-size:8pt; font-weight:800; color:#2f5d3a; }
+.band3 div small { display:block; font-weight:500; color:var(--grey); font-size:7.2pt; }
+
+.lib { display:grid; grid-template-columns:1.85in 1fr; }
+.filters { background:#f5f7f4; padding:10px 12px; border-right:1px solid var(--line); }
+.filters .f { font-size:7.4pt; font-weight:800; color:var(--grey); letter-spacing:.5px; margin:6px 0 3px; text-transform:uppercase; }
+.filters .v { background:#fff; border:1px solid var(--line); border-radius:4px; padding:3px 7px; font-size:8.2pt; color:#2f5d3a; font-weight:700; }
+.results { padding:8px 12px; }
+.results .q { border:1px solid #cfd8e0; border-radius:14px; padding:4px 10px; font-size:8pt; color:var(--grey); margin-bottom:7px; }
+.pub { border:1px solid var(--line); border-radius:5px; padding:7px 9px; margin-bottom:6px; display:flex; gap:9px; }
+.pub i { width:34px; height:44px; border-radius:3px; background:linear-gradient(160deg,#6d8f4e,#2f5d3a); flex:none; }
+.pub .n { font-size:8.8pt; font-weight:800; color:var(--navy); line-height:1.2; }
+.pub .d { font-size:7.4pt; color:var(--grey); margin-top:2px; }
+.pub .t { margin-top:4px; display:flex; gap:4px; }
+.pub .t span { font-size:7pt; font-weight:700; border:1px solid #2f5d3a; color:#2f5d3a; border-radius:3px; padding:1px 6px; }
+.pub .t span.p { background:#2f5d3a; color:#fff; }
+
+.sheet { border:1px solid #c9d3dd; border-radius:8px; overflow:hidden; box-shadow:0 6px 18px rgba(52,73,94,.12); }
+.sheet table td, .sheet table th { font-size:9pt; padding:5px 8px; }
+.act { font-weight:800; }
+.act.k { color:var(--green); } .act.u { color:#b26a00; } .act.m { color:#1f5f99; } .act.a { color:#8a3b3b; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Rural Research, Easy to Find</h1>
+<p class="sub">Proposal for the redesign of ruralhome.org: the Rural Knowledge Hub Redesign, a new WordPress site organized around what visitors need, with HAC's research out of the PDF drawer and into a fast, searchable library.</p>
+<div class="meta">
+<div><b>To</b>Housing Assistance Council · Website Redesign RFP</div>
+<div><b>From</b>TWO&amp;HUMAN · Julio Briones and Mariam Neme, co-founders</div>
+<div><b>Date</b>December 2026</div>
+</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+<div class="kicker">At a glance</div>
+<h2>Audit findings in week 2, a prototype in week 4, launch in week 16</h2>
+<p class="lead">A new ruralhome.org that HAC's staff can publish on without a developer, built to WCAG 2.1 AA and owned entirely by HAC.</p>
+<div class="cols-4" style="margin-top:16px">
+<div class="stat"><div class="big">$14,900</div><div class="lbl">Fixed price for the full redesign and migration</div></div>
+<div class="stat"><div class="big">Week 2</div><div class="lbl">Content audit findings: what to keep, update, merge or archive</div></div>
+<div class="stat"><div class="big">Week 4</div><div class="lbl">Clickable homepage prototype to review</div></div>
+<div class="stat"><div class="big">Week 16</div><div class="lbl">Launch, with two weeks of margin included</div></div>
+</div>
+<div class="box" style="margin-top:20px">Each payment is due only after HAC approves that milestone. Every changed web address gets a redirect, so partners' links and search rankings survive the move.</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+<div class="kicker">01 · What we understood</div>
+<h2>For many visitors, ruralhome.org is HAC's library</h2>
+<p>Since 1971, the Housing Assistance Council has supported affordable housing in rural America through lending, research, training and technical assistance, and policy work. Its website serves very different people: local housing organizations looking for loans and training, researchers and policymakers looking for data, journalists, and funders.</p>
+<div class="cols-4" style="margin-top:10px">
+<div class="card"><h3>Local organizations</h3><p>Find financing, training and technical assistance.</p></div>
+<div class="card"><h3>Researchers and policymakers</h3><p>Find reports and data by topic, state and year.</p></div>
+<div class="card"><h3>Press</h3><p>Get the key figure and the source, fast.</p></div>
+<div class="card"><h3>Funders and partners</h3><p>See HAC's reach and impact at a glance.</p></div>
+</div>
+<p style="margin-top:14px">The RFP describes the problems clearly: navigation that mirrors HAC's internal structure, accessibility gaps, weak mobile and performance, research locked in PDFs with limited search, and a site staff can't easily publish on.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+<div class="kicker">02 · From problem to solution</div>
+<h2>Each problem in the RFP has a concrete answer</h2>
+<table class="t-sm">
+<tr><th style="width:34%">What the RFP describes</th><th>What we do about it</th></tr>
+<tr><td class="k">Navigation mirrors internal structure</td><td>Navigation built around visitor tasks: Lending, Research &amp; Data, Training &amp; TA, Policy, News and About, validated with 5 users before design.</td></tr>
+<tr><td class="k">Accessibility gaps</td><td>WCAG 2.1 AA from the first template: semantic structure, contrast, keyboard navigation, alt text and accessible forms, tested automatically and by hand before launch.</td></tr>
+<tr><td class="k">Weak mobile and performance</td><td>Mobile-first templates, optimized images, caching and a lean theme without a heavy page builder.</td></tr>
+<tr><td class="k">Research stuck in PDFs, limited search</td><td>A publications library with filters (topic, year, state or region, format), full-text search and an HTML summary page for every report, with the PDF one click away.</td></tr>
+<tr><td class="k">Staff depend on a developer to publish</td><td>The WordPress block editor with locked, reusable patterns for reports, news and events, plus two recorded trainings and an editor's guide.</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+<div class="kicker">03 · Concept prepared for HAC</div>
+<h2>Homepage: two clear paths from the first screen</h2>
+<div class="cols-60" style="grid-template-columns:1.7fr 1fr">
+<div>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>ruralhome.org</span></div>
+<div class="nav"><b>HOUSING ASSISTANCE COUNCIL</b><div><span>Lending</span><span>Research &amp; Data</span><span>Training</span><span>Policy</span><span class="don">Donate</span></div></div>
+<div class="hero"><div class="h">Building homes and communities in rural America</div>
+<div class="paths"><div>Find financing and training<small>For local housing organizations</small></div><div>Explore research and data<small>For policymakers, researchers and press</small></div></div></div>
+<div class="spot">
+<div class="r"><small>RESEARCH SPOTLIGHT</small><b>Latest report, with its key figure pulled out</b><div class="fig"><u style="height:40%"></u><u style="height:62%"></u><u style="height:55%"></u><u style="height:80%"></u><u style="height:100%"></u></div></div>
+<div class="s"><div class="in">Search reports and data</div><div class="ch"><span>Topic</span><span>State</span><span>Year</span><span>Format</span></div></div>
+</div>
+<div class="band3"><div>Loans<small>Financing for local organizations</small></div><div>Training<small>Upcoming courses and webinars</small></div><div>Technical assistance<small>Expert help for your project</small></div></div>
+</div>
+<p class="mocknote">Conceptual sketch prepared for this proposal. The final design keeps HAC's logo and colors and uses HAC's photos and content.</p>
+</div>
+<div>
+<h3 style="margin-top:0">How it works</h3>
+<ul>
+<li><b>Two paths</b> above the fold: financing and training, or research and data.</li>
+<li><b>Research spotlight</b> with the key figure, not just a cover.</li>
+<li><b>Search with filters</b> right on the homepage.</li>
+<li><b>Loans, training and TA</b>, each with a single action.</li>
+<li><b>News, policy updates</b> and newsletter sign-up below.</li>
+</ul>
+<p class="small">HAC reviews this as a clickable prototype in week 4.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+<div class="kicker">03 · Concept prepared for HAC</div>
+<h2>The library: every report findable, readable and citable</h2>
+<div class="cols-60" style="grid-template-columns:1.7fr 1fr">
+<div>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>ruralhome.org/research</span></div>
+<div class="lib">
+<div class="filters">
+<div class="f">Topic</div><div class="v">Rental housing</div>
+<div class="f">State or region</div><div class="v">Southwest</div>
+<div class="f">Year</div><div class="v">2020 – 2026</div>
+<div class="f">Format</div><div class="v">Report · Brief · Data</div>
+</div>
+<div class="results">
+<div class="q">Search inside reports</div>
+<div class="pub"><i></i><div><div class="n">Research report on rural rental housing</div><div class="d">Report · Topic and region tags · Summary page</div><div class="t"><span class="p">Read summary</span><span>PDF</span><span>Cite</span></div></div></div>
+<div class="pub"><i></i><div><div class="n">Research brief on housing conditions by state</div><div class="d">Brief · Key figures in HTML</div><div class="t"><span class="p">Read summary</span><span>PDF</span><span>Cite</span></div></div></div>
+<div class="pub"><i></i><div><div class="n">Data table by county</div><div class="d">Data · Downloadable CSV</div><div class="t"><span class="p">View data</span><span>CSV</span></div></div></div>
+</div>
+</div>
+</div>
+<p class="mocknote">Conceptual sketch prepared for this proposal. Titles and tags shown are illustrative.</p>
+</div>
+<div>
+<h3 style="margin-top:0">Built for research</h3>
+<ul>
+<li><b>One record per publication:</b> title, date, topic, region, format, authors and summary.</li>
+<li><b>An HTML summary</b> for every report, so search engines and screen readers can read it.</li>
+<li><b>Full-text search</b> across summaries and PDFs.</li>
+<li><b>"Cite this"</b> button with the reference ready to copy.</li>
+<li><b>Related work</b> suggested by topic and region.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+<div class="kicker">04 · Content audit and migration</div>
+<h2>Nothing lost, nothing carried over by inertia</h2>
+<div class="cols-60" style="grid-template-columns:1.4fr 1fr">
+<div>
+<div class="sheet">
+<table>
+<tr><th>Page or publication</th><th>Type</th><th>Traffic</th><th>Action</th></tr>
+<tr><td>Program page</td><td>Page</td><td>High</td><td class="act k">Keep</td></tr>
+<tr><td>Older research report</td><td>Report</td><td>Medium</td><td class="act u">Add summary</td></tr>
+<tr><td>Two similar training pages</td><td>Page</td><td>Low</td><td class="act m">Merge</td></tr>
+<tr><td>Expired event</td><td>Event</td><td>None</td><td class="act a">Archive</td></tr>
+<tr><td>News item</td><td>Post</td><td>Low</td><td class="act k">Keep</td></tr>
+</table>
+</div>
+<p class="mocknote">Example rows showing the format. The real audit covers every page and publication on ruralhome.org.</p>
+</div>
+<div>
+<h3 style="margin-top:0">How it works</h3>
+<ul>
+<li><b>Week 1–2:</b> a full inventory with type, date, topic, traffic and a recommended action for each item.</li>
+<li><b>HAC decides:</b> staff confirm or change every recommendation.</li>
+<li><b>Migration:</b> all approved content moves to the new site, with metadata for the library.</li>
+<li><b>Redirects:</b> a 301 map for every changed address, tested before launch.</li>
+<li><b>Yours to keep:</b> the audit spreadsheet stays with HAC.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+<div class="kicker">05 · Approach</div>
+<h2>The full scope, step by step</h2>
+<table class="t-sm">
+<tr><th style="width:24%">Area</th><th>What we deliver</th></tr>
+<tr><td class="k">Discovery</td><td>Kickoff workshop, 5 interviews across lending, research, training and communications, analytics review and audience map.</td></tr>
+<tr><td class="k">Information architecture</td><td>New sitemap and navigation by visitor task, tested with 5 users.</td></tr>
+<tr><td class="k">Design</td><td>Homepage prototype in week 4, a design system based on HAC's current brand, and templates for every page type.</td></tr>
+<tr><td class="k">WordPress build</td><td>Block editor, custom content types for publications, events and news, staging site, no proprietary page builder.</td></tr>
+<tr><td class="k">Integrations</td><td>Newsletter, donations, training and event registration and analytics, connected to the platforms HAC already uses and mapped in discovery.</td></tr>
+<tr><td class="k">Performance and security</td><td>Image optimization, caching, hardening, two-factor login and daily backups.</td></tr>
+<tr><td class="k">Training and launch</td><td>Two recorded trainings, an editor's guide, a launch checklist and 30 days of post-launch fixes.</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+<div class="kicker">06 · Included at no extra cost</div>
+<h2>Every common concern, answered in advance</h2>
+<table class="t-sm">
+<tr><th style="width:46%">Included</th><th>The concern it resolves</th></tr>
+<tr><td class="k">Content audit spreadsheet, delivered to HAC</td><td>"Will we lose content or links?"</td></tr>
+<tr><td class="k">301 redirect map for every changed address</td><td>"Will our search rankings drop?"</td></tr>
+<tr><td class="k">HTML summary page for every report</td><td>"Our research is invisible inside PDFs."</td></tr>
+<tr><td class="k">Staging site for review before launch</td><td>"We need to see it before it goes live."</td></tr>
+<tr><td class="k">Editor's guide and two recorded trainings</td><td>"Can our staff publish without a developer?"</td></tr>
+<tr><td class="k">WCAG 2.1 AA test report</td><td>"Can we prove the site is accessible?"</td></tr>
+<tr><td class="k">30 days of post-launch fixes</td><td>"What if something breaks after launch?"</td></tr>
+<tr><td class="k">Everything in HAC's name</td><td>"Will we be locked in to this vendor?"</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+<div class="kicker">07 · Timeline</div>
+<h2>16 weeks from kickoff to launch</h2>
+<div class="gantt" style="--n:16">
+<div></div><div class="hd">W1</div><div class="hd">W2</div><div class="hd">W3</div><div class="hd">W4</div><div class="hd">W5</div><div class="hd">W6</div><div class="hd">W7</div><div class="hd">W8</div><div class="hd">W9</div><div class="hd">W10</div><div class="hd">W11</div><div class="hd">W12</div><div class="hd">W13</div><div class="hd">W14</div><div class="hd">W15</div><div class="hd">W16</div>
+<div class="lb">Discovery and content audit<span>Audit findings in week 2</span></div><div class="bar o" style="grid-column:2 / 4">Audit</div>
+<div class="lb">Information architecture and prototype<span>Clickable prototype in week 4</span></div><div class="bar o" style="grid-column:4 / 6">Prototype</div>
+<div class="lb">Design system and templates<span>Milestone 1 · design approval</span></div><div class="bar" style="grid-column:6 / 9">Design · M1</div>
+<div class="lb">Development and publications library</div><div class="bar" style="grid-column:9 / 14">Development</div>
+<div class="lb">Content migration and redirects<span>Full content on staging</span></div><div class="bar s" style="grid-column:13 / 15">Migration</div>
+<div class="lb">Accessibility testing, QA and training</div><div class="bar s" style="grid-column:15 / 16">QA</div>
+<div class="lb">Margin and launch<span>Milestone 2 · launch</span></div><div class="bar o" style="grid-column:16 / 18">Launch</div>
+</div>
+<p class="small" style="margin-top:14px">Weeks count from kickoff. Approvals are planned within 5 business days; the schedule moves only if feedback or content arrives later.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+<div class="kicker">08 · Price (U.S. dollars, fixed)</div>
+<h2>$14,900, itemized, paid against approved work</h2>
+<div class="cols-60">
+<table class="t-sm">
+<tr><th>Item</th><th class="n">USD</th></tr>
+<tr><td>Discovery, strategy and information architecture</td><td class="n">1,600</td></tr>
+<tr><td>Content audit of pages and publications</td><td class="n">1,800</td></tr>
+<tr><td>UX and UI design: prototype, design system, templates</td><td class="n">3,200</td></tr>
+<tr><td>WordPress development, including the publications library</td><td class="n">5,200</td></tr>
+<tr><td>Integrations with HAC's current platforms</td><td class="n">900</td></tr>
+<tr><td>Content migration and 301 redirects</td><td class="n">1,300</td></tr>
+<tr><td>Accessibility testing, QA, training and launch</td><td class="n">900</td></tr>
+<tr class="tot"><td>Total, fixed</td><td class="n">14,900</td></tr>
+</table>
+<div>
+<div class="card navy"><h3>Pay only for approved work</h3><p>50% on approval of the design (milestone 1) and 50% at launch (milestone 2), or according to HAC's terms.</p></div>
+<ul style="margin-top:10px">
+<li><b>Optional:</b> maintenance plan, $120 per month (updates, backups, monitoring and one hour of small changes); growth retainer, $750 per month; out-of-scope work, $60 per hour.</li>
+<li><b>Third-party costs</b> (hosting, premium plugins, stock images) paid directly by HAC, with no markup.</li>
+<li><b>Payment</b> in U.S. dollars by international bank transfer; as a foreign vendor we provide IRS Form W-8BEN-E. <b>Valid</b> for 90 days.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+<div class="kicker">09 · Team, references, ownership and communication</div>
+<h2>The founders do the work, and HAC owns the result</h2>
+<div class="cols">
+<div>
+<div class="card" style="margin-bottom:10px"><h3>Julio Briones · Co-founder</h3><p>Strategy, content audit, information architecture, UX and project management. Single point of contact.</p></div>
+<div class="card" style="margin-bottom:10px"><h3>Mariam Neme · Co-founder, software engineer</h3><p>WordPress development, the publications library, integrations, accessibility and support.</p></div>
+<ul>
+<li><b>Hours:</b> Argentina is 2 hours ahead of Washington in winter, so our day covers HAC's full business day.</li>
+<li><b>Rhythm:</b> a written update every Friday and a 30-minute call every two weeks.</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-top:0">References</h3>
+<p>We are a new firm and do not yet have public client references to share. Instead, we prepared the homepage and library concepts on slides 5 and 6 specifically for the Housing Assistance Council, and we would be glad to walk your team through them in an interview. HAC would be one of our first clients, and we would treat it as a flagship project.</p>
+<h3>Ownership and insurance</h3>
+<p>HAC owns the domain, hosting, accounts, code, design files and content. Standard WordPress means any developer can maintain it. We will provide certificates of insurance, at the coverage HAC requires, before the contract is signed.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+<div class="kicker">Annex</div>
+<h2>Compliance matrix</h2>
+<table class="t-sm">
+<tr><th>Requirement described in the RFP</th><th style="width:13%">Slide</th><th style="width:16%">Meets</th></tr>
+<tr><td>Navigation organized around visitors, not internal structure</td><td>4 · 5</td><td class="yes">Yes</td></tr>
+<tr><td>Accessibility</td><td>4 · 9</td><td class="yes">Yes, WCAG 2.1 AA</td></tr>
+<tr><td>Mobile and performance</td><td>4 · 8</td><td class="yes">Yes</td></tr>
+<tr><td>Research easy to search, beyond PDFs</td><td>4 · 6</td><td class="yes">Yes</td></tr>
+<tr><td>A CMS staff can publish on without a developer</td><td>4 · 8</td><td class="yes">Yes</td></tr>
+<tr><td>Content audit and migration</td><td>7</td><td class="yes">Yes</td></tr>
+<tr><td>Training and launch support</td><td>8 · 9</td><td class="yes">Yes</td></tr>
+<tr><td>Ownership of domain, accounts and files</td><td>12</td><td class="yes">Yes</td></tr>
+<tr><td>Work samples and references</td><td>5 · 6 · 12</td><td class="part">Partial</td></tr>
+<tr><td>Insurance</td><td>12</td><td class="yes">Yes, before signing</td></tr>
+</table>
+<p class="small" style="margin-top:8px">"Partial": we are a new firm. We offset it with concepts prepared for HAC, a prototype in week 4 and payment against approved milestones.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · Housing Assistance Council</span><span class="pg"></span></div>
+</section>
+
+<!-- 14 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Thank you. We would be glad to walk you through the library.</h1>
+<p class="sub">Julio Briones · Co-founder · julio@twoandhuman.com · +54 381 509 8972 (phone and WhatsApp) · twoandhuman.com</p>
+<div class="meta">
+<div><b>Price</b>$14,900 fixed</div>
+<div><b>First result</b>Audit findings in week 2</div>
+<div><b>Launch</b>Week 16 from kickoff</div>
+</div>
+</section>
+
+<script>
+var s=document.querySelectorAll('.slide');
+s.forEach(function(el,i){var p=el.querySelector('.pg'); if(p) p.textContent=(i+1)+' / '+s.length;});
+</script>
+</body>
+</html>
