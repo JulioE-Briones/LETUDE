@@ -123,8 +123,9 @@ def build(d):
               f'<div class="card who"><div class="face" style="background-image:url(../../assets/img5/mariam.jpg)"></div><div><h3 style="margin:0">Mariam Neme</h3><p style="font-size:9pt;color:var(--p1);font-weight:700;margin:2px 0 4px">Co-founder · Software engineer</p><p style="font-size:9pt">{d["mariam_bio"]}</p></div></div>'
               f'<p class="small">Established 2026 · Tucumán, Argentina · remote, in English and Spanish · founder-led: the people in this proposal do the work.</p></div>'
               + qas(d["qa"]) + "</div>", f)
-    # 9 investment
-    h += page(ic(I["inv"], "width:1.6in;right:0.7in;top:0.4in", "i3 r2") +
+    # 9 investment (se omite si la propuesta económica va en archivo aparte)
+    if not d.get("no_inv"):
+      h += page(ic(I["inv"], "width:1.6in;right:0.7in;top:0.4in", "i3 r2") +
               f'<div class="kick">09 · Investment (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
               f'<div class="gar" style="margin-top:16px"><img src="{P('tick')}"><div>{d["guarantee"]}</div></div>'
               f'<p class="small" style="margin-top:9px">{d["inv_note"]}</p>', f)
@@ -132,12 +133,12 @@ def build(d):
     rows = "".join(f'<div class="cl"><span>{r}</span><b>{s}</b></div>' for r, s in d["compliance"])
     nxt = "".join(f'<div class="card" style="background:rgba(255,255,255,.14);box-shadow:none;color:#fff;padding:12px 16px;margin-bottom:10px"><div style="font:800 10pt ID">{i+1} · {t}</div><p style="color:rgba(255,255,255,.86);font-size:9.4pt">{p}</p></div>' for i, (t, p) in enumerate(d["next"]))
     h += page(ic(I["close"], "width:1.5in;right:0.8in;top:0.5in", "i3 r2") +
-              spark("sh30", "#ffffff", "0.55in", "right:2.6in;top:0.7in;opacity:.8") + f'<div class="kick">10 · Compliance and next steps</div><h2 style="color:#fff">{d["close_h"]}</h2>'
+              spark("sh30", "#ffffff", "0.55in", "right:2.6in;top:0.7in;opacity:.8") + f'<div class="kick">{"09" if d.get("no_inv") else "10"} · Compliance and next steps</div><h2 style="color:#fff">{d["close_h"]}</h2>'
               f'<div style="display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start;max-width:9.2in"><div>{rows}</div><div>{nxt}</div></div>'
               f'<p style="margin-top:16px;font-size:9.6pt;opacity:.92">Julio Briones · julio@twoandhuman.com · +54 381 509 8972 · twoandhuman.com</p>',
               f, "pg grad")
     h += "<script>var p=document.querySelectorAll('.pg');p.forEach(function(e,i){var n=e.querySelector('.pgn');if(n)n.textContent=(i+1)+' / '+p.length;});</script></body></html>"
-    open(os.path.join(HERE, d["slug"] + ".html"), "w").write(h)
+    open(os.path.join(d.get("out", HERE), d["slug"] + ".html"), "w").write(h)
 
 # ---------- mockups ----------
 LAGUNA_CONCEPT = '''<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:22px;align-items:start">
