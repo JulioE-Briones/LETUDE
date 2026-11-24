@@ -221,3 +221,10 @@ Todos los PDF de propuestas se hacen con el estilo "pop" aprobado por Julio: por
 - Generadores de referencia: `propuestas/latam/v2/gen.py` (propuestas comerciales) y `propuestas/lote5/v2/gen_us.py` (licitaciones).
 - Peso máximo por PDF: 25 MB. Para que sea liviano, usar degradados radiales en lugar de `filter: blur` y no usar `drop-shadow` (las sombras ya vienen en los PNG).
 - Página fija "Presencia de marca" (después de los bocetos): muestra las marcas conceptuales de `propuestas/assets/brands/` con la aclaración de que son marcas ficticias creadas por TWO&HUMAN, no clientes. Elegir 6 según el cliente; para organismos públicos, colegios o clínicas no usar Maison Céleste, Orilla ni Olas Vivas.
+
+## Antes de armar cualquier propuesta (obligatorio)
+
+1. **Gmail de julio@twoandhuman.com:** buscar todos los hilos del lead (nombre, dominio, número de licitación y contactos) y leerlos completos: respuestas, criterios, lo que el cliente dijo que busca, preguntas y respuestas, adendas, adjuntos y rebotes. También lo que nosotros le prometimos en mensajes anteriores, porque la propuesta tiene que cumplirlo.
+2. **Auditoría en internet:** web (velocidad, medición, reserva o contacto), ficha de Google y reseñas, redes y su interacción, Biblioteca de anuncios de Meta, competidores y noticias recientes. Toda cifra va con fuente y fecha.
+3. **Matriz de criterios:** cada criterio o pedido del cliente tiene que aparecer respondido en la propuesta. Si hay un requisito que no cumplimos (elegibilidad, años de registro, experiencia mínima, presencia física, seguro), se avisa a Julio antes de diseñar.
+4. En la respuesta a Julio, decir qué se revisó y qué no se pudo revisar.
