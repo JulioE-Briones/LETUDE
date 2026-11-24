@@ -37,6 +37,17 @@ def opts(items):
 def page(body, foot, cls="pg"):
     return f'<section class="{cls}">{body}<div class="foot"><span><b>TWO&amp;HUMAN</b> · {foot}</span><span class="pgn"></span></div></section>\n'
 
+
+def brands_page(d, f):
+    tiles = "".join(f'<div class="bb"><img src="../../assets/brands/{b}.jpg"><span>{n}<small>{c}</small></span></div>' for b, n, c in d["brands"])
+    apps = "".join(f'<span class="chip">{x}</span> ' for x in ["Logo y sistema", "Paleta y tipografía", "Cartelería", "Indumentaria", "Packaging", "Plantillas para redes"])
+    bh = d.get("brand_h") or 'Cada cliente tiene <span class="mk">un mundo de marca, no solo un logo.</span>'
+    bs = d.get("brand_side") or "Diseñamos cada punto de contacto: logo, paleta, cartelería, indumentaria, packaging y redes, con el mismo nivel de cuidado."
+    return page(f'<div class="kick">05 · Presencia de marca</div><h2>{bh}</h2>'
+                f'<div class="bw"><div class="bgrid">{tiles}</div>'
+                f'<div class="card"><h3>Presencia, no solo un logo</h3><p>{bs}</p><div style="margin-top:6px">{apps}</div></div></div>'
+                f'<p class="small" style="margin-top:12px">Marcas conceptuales creadas por TWO&amp;HUMAN para mostrar nuestra dirección de arte. Son marcas ficticias, no proyectos de clientes.</p>', f)
+
 def build(d):
     f = d["foot"]
     h = f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Propuesta — {d["name"]}</title>
@@ -60,18 +71,21 @@ def build(d):
     # 5 así se vería
     h += page(f'<div class="kick">04 · Así se vería</div><h2>{d["mock_h"]}</h2>' + d["mock"] +
               f'<p class="concept">{d["mock_note"]}</p>', f)
+    k = 1 if d.get("brands") else 0
+    if k:
+        h += brands_page(d, f)
     # 6 90 días
     h += page(icon(d["plan_icon"], "width:1.6in;right:0.75in;top:0.4in", "i3 r1") +
-              f'<div class="kick">05 · Primeros 90 días</div><h2>{d["plan_h"]}</h2>' + meses(d["meses"]) + chips(d["plan_chips"]), f)
+              f'<div class="kick">{5+k:02d} · Primeros 90 días</div><h2>{d["plan_h"]}</h2>' + meses(d["meses"]) + chips(d["plan_chips"]), f)
     # 7 inversión
     h += page(icon(d["inv_icon"], "width:1.7in;right:0.7in;top:0.35in", "i3 r2") +
-              f'<div class="kick">06 · Inversión (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
+              f'<div class="kick">{6+k:02d} · Inversión (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
               f'<div class="gar" style="margin-top:18px"><img src="{A}check.png"><div>{d["garantia"]}</div></div>'
               f'<p class="small" style="margin-top:10px">{d["inv_nota"]}</p>', f)
     # 8 empecemos
     pasos = "".join(f'<div class="card" style="background:rgba(255,255,255,.14);box-shadow:none;color:#fff"><div class="num" style="background:#fff;color:{d["p1"]}">{i+1}</div><h3>{t}</h3><p style="color:rgba(255,255,255,.86)">{p}</p></div>' for i, (t, p) in enumerate(d["pasos"]))
     h += page(icon("check", "width:1.8in;right:0.8in;top:0.6in", "i3 r2") +
-              f'<div class="kick">07 · Empecemos</div><h2 style="color:#fff">Tres pasos <span class="mk">y arrancamos.</span></h2><div class="row c3" style="max-width:8.2in">{pasos}</div>'
+              f'<div class="kick">{7+k:02d} · Empecemos</div><h2 style="color:#fff">Tres pasos <span class="mk">y arrancamos.</span></h2><div class="row c3" style="max-width:8.2in">{pasos}</div>'
               f'<div style="display:flex;gap:28px;align-items:center;margin-top:30px">'
               f'<div style="display:flex;gap:12px;align-items:center"><div class="face" style="background-image:url(../../assets/img5/julio.jpg)"></div><div><b>Julio Briones</b><br><span style="font-size:9.4pt;opacity:.85">{d["rol_julio"]}</span></div></div>'
               f'<div style="display:flex;gap:12px;align-items:center"><div class="face" style="background-image:url(../../assets/img5/mariam.jpg)"></div><div><b>Mariam Neme</b><br><span style="font-size:9.4pt;opacity:.85">Ingeniera de software</span></div></div>'

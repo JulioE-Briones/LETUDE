@@ -42,6 +42,15 @@ def opts(items):
 def qas(items):
     return '<div class="row c2" style="gap:12px">' + "".join(f'<div class="qa"><div class="q">{q}</div><p>{a}</p></div>' for q, a in items) + "</div>"
 
+
+def brands_page(d, f):
+    tiles = "".join(f'<div class="bb"><img src="../../assets/brands/{b}.jpg"><span>{n}<small>{c}</small></span></div>' for b, n, c in d["brands"])
+    apps = "".join(f'<span class="chip">{x}</span> ' for x in ["Logo system", "Palette and type", "Signage", "Apparel and merch", "Packaging", "Social templates"])
+    return page(f'<div class="kick">05 · Brand presence</div><h2>{d["brand_h"]}</h2>'
+                f'<div class="bw"><div class="bgrid">{tiles}</div>'
+                f'<div class="card"><h3>Presence, not just a logo</h3><p>{d["brand_side"]}</p><div style="margin-top:6px">{apps}</div></div></div>'
+                f'<p class="small" style="margin-top:12px">Concept brands created by TWO&amp;HUMAN to show our art direction and standard of execution. Fictional brands, not client projects.</p>', f)
+
 def build(d):
     f = d["foot"]
     h = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{d["htitle"]}</title>'
@@ -67,16 +76,19 @@ def build(d):
     # 5 concept
     h += page(f'<div class="kick">04 · Preliminary concept</div><h2>{d["concept_h"]}</h2><div class="zm">' + d["concept"] + '</div>' +
               f'<p class="concept">{d["concept_note"]}</p>', f)
+    # 5b brand presence
+    if d.get("brands"):
+        h += brands_page(d, f)
     # 6 scope
     h += page(ic("boxes", "width:1.5in;right:0.75in;top:0.45in", "i3 r1") +
-              f'<div class="kick">05 · Scope and deliverables</div><h2>{d["scope_h"]}</h2>' + minis(d["scope"], d.get("scope_cols", 3)) +
+              f'<div class="kick">06 · Scope and deliverables</div><h2>{d["scope_h"]}</h2>' + minis(d["scope"], d.get("scope_cols", 3)) +
               f'<div class="card tint" style="margin-top:14px;padding:12px 18px"><p style="font-size:9.8pt"><b style="color:var(--ink)">Assumptions that protect your budget:</b> {d["assume"]}</p></div>', f)
     # 7 timeline
     h += page(ic("calendar", "width:1.5in;right:0.75in;top:0.45in", "i3 r1") +
-              f'<div class="kick">06 · Timeline and success measures</div><h2>{d["time_h"]}</h2>' + phases(d["phases"]) +
+              f'<div class="kick">07 · Timeline and success measures</div><h2>{d["time_h"]}</h2>' + phases(d["phases"]) +
               f'<p class="small" style="margin-top:12px">{d["time_note"]}</p>' + chips(d["kpis"], False), f)
     # 8 team + questions
-    h += page(f'<div class="kick">07 · Team and the questions you should ask</div><h2>{d["team_h"]}</h2>'
+    h += page(f'<div class="kick">08 · Team and the questions you should ask</div><h2>{d["team_h"]}</h2>'
               f'<div style="display:grid;grid-template-columns:3.6in 1fr;gap:20px;align-items:start">'
               f'<div style="display:grid;gap:12px">'
               f'<div class="card who"><div class="face" style="background-image:url(../../assets/img5/julio.jpg)"></div><div><h3 style="margin:0">Julio Briones</h3><p style="font-size:9pt;color:var(--p1);font-weight:700;margin:2px 0 4px">Co-founder · {d["julio_role"]}</p><p style="font-size:9pt">{d["julio_bio"]}</p></div></div>'
@@ -85,14 +97,14 @@ def build(d):
               + qas(d["qa"]) + "</div>", f)
     # 9 investment
     h += page(ic("piggy", "width:1.6in;right:0.7in;top:0.4in", "i3 r2") +
-              f'<div class="kick">08 · Investment (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
+              f'<div class="kick">09 · Investment (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
               f'<div class="gar" style="margin-top:16px"><img src="{A}check.png"><div>{d["guarantee"]}</div></div>'
               f'<p class="small" style="margin-top:9px">{d["inv_note"]}</p>', f)
     # 10 compliance + next steps
     rows = "".join(f'<div class="cl"><span>{r}</span><b>{s}</b></div>' for r, s in d["compliance"])
     nxt = "".join(f'<div class="card" style="background:rgba(255,255,255,.14);box-shadow:none;color:#fff;padding:12px 16px;margin-bottom:10px"><div style="font:800 10pt ID">{i+1} · {t}</div><p style="color:rgba(255,255,255,.86);font-size:9.4pt">{p}</p></div>' for i, (t, p) in enumerate(d["next"]))
     h += page(ic("check", "width:1.5in;right:0.8in;top:0.5in", "i3 r2") +
-              f'<div class="kick">09 · Compliance and next steps</div><h2 style="color:#fff">{d["close_h"]}</h2>'
+              f'<div class="kick">10 · Compliance and next steps</div><h2 style="color:#fff">{d["close_h"]}</h2>'
               f'<div style="display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start;max-width:9.2in"><div>{rows}</div><div>{nxt}</div></div>'
               f'<p style="margin-top:16px;font-size:9.6pt;opacity:.92">Julio Briones · julio@twoandhuman.com · +54 381 509 8972 · twoandhuman.com</p>',
               f, "pg grad")
@@ -149,7 +161,8 @@ BRAZ_CONCEPT = '''<div style="display:grid;grid-template-columns:repeat(3,1fr);g
 COMMON_QA_PAY = ("Contracts, insurance and payments?", "Invoices in U.S. dollars, IRS Form W-8BEN-E as a foreign vendor, and certificates of insurance as required " + V + ".")
 
 CLIENTS = [
-dict(slug="laguna", htitle="Many Departments, One Laguna — TWO&HUMAN", foot="City of Laguna Beach · CM-26-013 · Draft pending validation",
+dict(slug="laguna", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('traza', 'TRAZA', 'Urban accessories'), ('ayven', 'AYVEN', 'Performance apparel'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant')], brand_h='Laguna has a strong identity. <span class="mk">We design at that level.</span>', brand_side="We design every touchpoint a brand needs. For Laguna, that same standard shapes the website\'s visual system: color, type, photography and templates every department can use.",
+  htitle="Many Departments, One Laguna — TWO&HUMAN", foot="City of Laguna Beach · CM-26-013 · Draft pending validation",
  vars="--bg:#f0fafb;--ink:#0f2a36;--mut:#4f6670;--p1:#0b8aa8;--p2:#ff7a59;--t1:#d9f2f6;--hl:#ffd4c4;--hl2:#ffc94d;--b1:#bdebf2;--b2:#ffe0d3;--g1:#0b6f9c;--g2:#19b6c9;--g3:#ff9a76;",
  kick="Proposal · RFP CM-26-013 · Website Redesign and Replacement",
  cover_icons=[("target","width:3in;right:0.6in;top:0.9in"),("calendar","width:1.6in;right:2.9in;top:5.1in"),("check","width:1.3in;right:0.8in;top:5.3in")],
@@ -206,7 +219,8 @@ dict(slug="laguna", htitle="Many Departments, One Laguna — TWO&HUMAN", foot="C
  compliance=[("Website redesign and replacement","Yes"),("Decentralized departmental editing","Yes"),("WCAG 2.1 AA","Yes"),("Automated accessibility checks","Yes"),("Launch before April 30, 2027","Yes · Apr 16"),("Training and documentation","Included"),("Official forms and criteria","Mapped " + V),("Insurance","As required " + V)],
  next=[("Questions","We answer any clarification in writing."),("Working session","A video walk-through of the concepts and plan."),("Kickoff · January 11","Prototype in week 4.")]),
 
-dict(slug="pura", htitle="Renewal You Can See — TWO&HUMAN", foot="Pueblo Urban Renewal Authority · Website RFP · Draft pending validation",
+dict(slug="pura", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('traza', 'TRAZA', 'Urban accessories'), ('ayven', 'AYVEN', 'Performance apparel'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant')], brand_h='Every client gets <span class="mk">a brand world, not just a logo.</span>', brand_side="We design every touchpoint a brand needs. For PURA, that standard gives the new website a clear, confident public face that matches the scale of what renewal builds.",
+  htitle="Renewal You Can See — TWO&HUMAN", foot="Pueblo Urban Renewal Authority · Website RFP · Draft pending validation",
  vars="--bg:#fff6f1;--ink:#1f2a33;--mut:#5b6670;--p1:#d9532b;--p2:#2f8fbf;--t1:#ffe3d8;--hl:#ffd6a8;--hl2:#ffc94d;--b1:#ffd7c7;--b2:#cbe9f7;--g1:#c9472a;--g2:#ff8a4c;--g3:#2f8fbf;",
  kick="Proposal · Website Redevelopment, Hosting and Maintenance",
  cover_icons=[("growth","width:3.2in;right:0.5in;top:1.1in"),("megaphone","width:1.8in;right:2.9in;top:5.1in"),("check","width:1.3in;right:0.8in;top:5.3in")],
@@ -262,7 +276,8 @@ dict(slug="pura", htitle="Renewal You Can See — TWO&HUMAN", foot="Pueblo Urban
  compliance=[("Website redevelopment","Yes"),("Hosting","Yes · U.S. data centers"),("Maintenance","Yes · monthly care"),("WCAG 2.1 AA","Yes"),("Staff updates without programming","Yes"),("Training and documentation","Included"),("Official forms and criteria","Mapped " + V),("Insurance","As required " + V)],
  next=[("Questions","We answer any clarification in writing."),("Working session","A video walk-through of the concepts."),("Kickoff · January 11","Prototype in week 3.")]),
 
-dict(slug="brazosport", htitle="Sixty Years, One Brazosport — TWO&HUMAN", foot="Brazosport College · RFP 2026.07 · Draft pending validation",
+dict(slug="brazosport", brands=[('ayven', 'AYVEN', 'Performance apparel'), ('traza', 'TRAZA', 'Urban accessories'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant'), ('serena-ritual', 'Serena Ritual', 'Spa and wellness')], brand_h='The brand presence we build: <span class="mk">a world, not just a logo.</span>', brand_side="This is the level of application we deliver: signage, apparel, merchandise, packaging and social. For Brazosport, it applies to the College, the Gators and the 60th anniversary, as one family.",
+  htitle="Sixty Years, One Brazosport — TWO&HUMAN", foot="Brazosport College · RFP 2026.07 · Draft pending validation",
  vars="--bg:#f3f6ff;--ink:#12213d;--mut:#55607a;--p1:#1f4fd1;--p2:#1f9d6a;--t1:#e2e9ff;--hl:#ffe08a;--hl2:#ffc23d;--b1:#cfdbff;--b2:#cdf1df;--g1:#12306b;--g2:#1f9d6a;--g3:#ffc23d;",
  kick="Proposal · RFP 2026.07 · Brand Identity Services",
  cover_icons=[("megaphone","width:3.1in;right:0.5in;top:1.1in"),("target","width:1.6in;right:2.9in;top:5.1in"),("check","width:1.3in;right:0.8in;top:5.3in")],

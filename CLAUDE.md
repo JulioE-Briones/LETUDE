@@ -220,3 +220,4 @@ Todos los PDF de propuestas se hacen con el estilo "pop" aprobado por Julio: por
 - Íconos 3D limpios en `propuestas/assets/3d/` (las fuentes originales están en `3d/src/`). No usar imágenes con marca de agua ni logos de terceros.
 - Generadores de referencia: `propuestas/latam/v2/gen.py` (propuestas comerciales) y `propuestas/lote5/v2/gen_us.py` (licitaciones).
 - Peso máximo por PDF: 25 MB. Para que sea liviano, usar degradados radiales en lugar de `filter: blur` y no usar `drop-shadow` (las sombras ya vienen en los PNG).
+- Página fija "Presencia de marca" (después de los bocetos): muestra las marcas conceptuales de `propuestas/assets/brands/` con la aclaración de que son marcas ficticias creadas por TWO&HUMAN, no clientes. Elegir 6 según el cliente; para organismos públicos, colegios o clínicas no usar Maison Céleste, Orilla ni Olas Vivas.
