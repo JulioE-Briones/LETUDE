@@ -217,7 +217,8 @@ Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-a
 
 Todos los PDF de propuestas se hacen con el estilo "pop" aprobado por Julio: portada y cierre con degradado, íconos 3D, paleta viva por cliente, títulos con resaltador y poco texto por tarjeta.
 - CSS: `propuestas/assets/pop.css` (A4 apaisado) y además `propuestas/assets/pop-us.css` para licitaciones de EE. UU. (US Letter apaisado).
-- Íconos 3D limpios en `propuestas/assets/3d/` (las fuentes originales están en `3d/src/`). No usar imágenes con marca de agua ni logos de terceros.
+- Íconos 3D limpios en `propuestas/assets/3d/` (las fuentes originales están en `3d/src/`). Prefijos: `p-` violeta, `b-` set azul, `g-` verde, `s-` redes sociales (solo para indicar canales), `r-` collage rojo. No usar imágenes con marca de agua ni logos de terceros como decoración.
+- Texturas en `propuestas/assets/tex/` (concrete, paper, halftone-teal, halftone-orange, liquid-bw, liquid-purple, waves-pink); formas y destellos en `propuestas/assets/shapes/` (`sh00`–`sh35`, se colorean con `spark()` en `gen_us.py`) y cintas washi (`washi0`–`washi9`).
 - Generadores de referencia: `propuestas/latam/v2/gen.py` (propuestas comerciales) y `propuestas/lote5/v2/gen_us.py` (licitaciones).
 - Peso máximo por PDF: 25 MB. Para que sea liviano, usar degradados radiales en lugar de `filter: blur` y no usar `drop-shadow` (las sombras ya vienen en los PNG).
 - Página fija "Presencia de marca" (después de los bocetos): muestra las marcas conceptuales de `propuestas/assets/brands/` con la aclaración de que son marcas ficticias creadas por TWO&HUMAN, no clientes. Elegir 6 según el cliente; para organismos públicos, colegios o clínicas no usar Maison Céleste, Orilla ni Olas Vivas.

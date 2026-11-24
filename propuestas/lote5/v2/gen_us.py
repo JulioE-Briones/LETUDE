@@ -8,8 +8,20 @@ V = '<span class="vf">verify</span>'
 def ic(n, style, cls="i3"):
     return f'<img class="{cls}" src="{A}{n}.png" style="{style}">'
 
+from PIL import Image as _Im
+SH = os.path.join(HERE, "../../assets/shapes/")
+def spark(name, color, w, style):
+    os.makedirs(SH + "c", exist_ok=True)
+    out = f"c/{name}-{color.strip('#')}.png"
+    if not os.path.exists(SH + out):
+        a = _Im.open(SH + name + ".png").getchannel("A")
+        im = _Im.new("RGBA", a.size, color); im.putalpha(a); im.save(SH + out)
+    return f'<img class="spk" src="../../assets/shapes/{out}" style="width:{w};{style}">'
+CUR = {}
 def page(body, foot, cls="pg"):
-    return (f'<section class="{cls}"><div class="draftn">Draft · pending validation</div>{body}'
+    tx = CUR.get("tex_grad" if "grad" in cls else "tex_light")
+    txh = f'<img class="tx {"g" if "grad" in cls else "l"}" src="../../assets/tex/{tx}.jpg">' if tx else ""
+    return (f'<section class="{cls}">{txh}<div class="draftn">Draft · pending validation</div>{body}'
             f'<div class="foot"><span><b>TWO&amp;HUMAN</b> · {foot}</span><span class="pgn"></span></div></section>\n')
 
 def stats(items):
@@ -44,7 +56,8 @@ def qas(items):
 
 
 def brands_page(d, f):
-    tiles = "".join(f'<div class="bb"><img src="../../assets/brands/{b}.jpg"><span>{n}<small>{c}</small></span></div>' for b, n, c in d["brands"])
+    tapes = d.get("tapes", [])
+    tiles = "".join(f'<div class="bb">' + (f'<img class="tape" src="../../assets/shapes/washi{tapes[i % len(tapes)]}.png">' if tapes and i in (0, 2, 4) else "") + f'<img class="ph" src="../../assets/brands/{b}.jpg"><span>{n}<small>{c}</small></span></div>' for i, (b, n, c) in enumerate(d["brands"]))
     apps = "".join(f'<span class="chip">{x}</span> ' for x in ["Logo system", "Palette and type", "Signage", "Apparel and merch", "Packaging", "Social templates"])
     return page(f'<div class="kick">05 · Brand presence</div><h2>{d["brand_h"]}</h2>'
                 f'<div class="bw"><div class="bgrid">{tiles}</div>'
@@ -53,26 +66,30 @@ def brands_page(d, f):
 
 def build(d):
     f = d["foot"]
+    CUR.clear(); CUR.update(d)
+    I = {"heard": "magnifier", "asks": "target", "scope": "boxes", "time": "calendar", "inv": "piggy", "close": "check"}
+    I.update(d.get("icons", {}))
+    s1, s2 = d["spark"]
     h = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{d["htitle"]}</title>'
          f'<link rel="stylesheet" href="../../assets/pop.css"><link rel="stylesheet" href="../../assets/pop-us.css">'
          f'<style>body{{{d["vars"]}}}{d.get("css","")}</style></head><body>\n')
     # 1 cover
-    h += page("".join(ic(n, s) for n, s in d["cover_icons"]) +
+    h += page("".join(ic(n, st) for n, st in d["cover_icons"]) + spark("sh00", "#ffffff", "0.7in", "left:5.6in;top:0.75in;opacity:.85") + spark("sh29", s1, "0.45in", "left:0.45in;top:6.9in;opacity:.9") +
               f'<div class="kick">{d["kick"]}</div><h1 style="max-width:6.2in">{d["title"]}</h1><p class="sub" style="max-width:4.9in">{d["sub"]}</p>'
               f'<div class="meta"><div><b>Prepared for</b>{d["for"]}</div><div><b>Prepared by</b>TWO&amp;HUMAN<br>Julio Briones · Mariam Neme</div><div><b>Date</b>{d["date"]}</div></div>',
               f, "pg grad")
     # 2 what we heard
-    h += page(ic("magnifier", "width:1.8in;right:0.7in;top:0.5in") +
+    h += page(ic(I["heard"], "width:1.8in;right:0.7in;top:0.5in") +
               f'<div class="kick">01 · What we heard</div><h2>{d["heard_h"]}</h2>' + stats(d["stats"]) +
               f'<div class="row c2" style="margin-top:16px"><div class="card tint"><h3>What you asked for</h3><p>{d["asked"]}</p></div>'
               f'<div class="card solid"><h3>What success looks like</h3><p>{d["success"]}</p></div></div>'
               f'<p class="small" style="margin-top:12px">{d["sources"]}</p>', f)
     # 3 what the RFP really asks
-    h += page(ic("target", "width:1.6in;right:0.75in;top:0.45in", "i3 r2") +
+    h += page(ic(I["asks"], "width:1.6in;right:0.75in;top:0.45in", "i3 r2") +
               f'<div class="kick">02 · What the RFP really asks</div><h2>{d["asks_h"]}</h2>' + asks(d["asks"], d.get("asks_cols", 4)) +
               f'<div class="card" style="margin-top:16px;padding:14px 20px"><p style="font-size:10pt"><b style="color:var(--ink)">To confirm in discovery:</b> {d["confirm"]}</p></div>', f)
     # 4 solution
-    h += page(f'<div class="kick">03 · Our solution</div><h2>{d["sol_h"]}</h2>' + steps(d["steps"]) + chips(d["sol_chips"]), f)
+    h += page(spark("sh02", s2, "0.55in", "right:0.8in;top:0.75in") + f'<div class="kick">03 · Our solution</div><h2>{d["sol_h"]}</h2>' + steps(d["steps"]) + chips(d["sol_chips"]), f)
     # 5 concept
     h += page(f'<div class="kick">04 · Preliminary concept</div><h2>{d["concept_h"]}</h2><div class="zm">' + d["concept"] + '</div>' +
               f'<p class="concept">{d["concept_note"]}</p>', f)
@@ -80,11 +97,11 @@ def build(d):
     if d.get("brands"):
         h += brands_page(d, f)
     # 6 scope
-    h += page(ic("boxes", "width:1.5in;right:0.75in;top:0.45in", "i3 r1") +
+    h += page(ic(I["scope"], "width:1.5in;right:0.75in;top:0.45in", "i3 r1") +
               f'<div class="kick">06 · Scope and deliverables</div><h2>{d["scope_h"]}</h2>' + minis(d["scope"], d.get("scope_cols", 3)) +
               f'<div class="card tint" style="margin-top:14px;padding:12px 18px"><p style="font-size:9.8pt"><b style="color:var(--ink)">Assumptions that protect your budget:</b> {d["assume"]}</p></div>', f)
     # 7 timeline
-    h += page(ic("calendar", "width:1.5in;right:0.75in;top:0.45in", "i3 r1") +
+    h += page(ic(I["time"], "width:1.5in;right:0.75in;top:0.45in", "i3 r1") +
               f'<div class="kick">07 · Timeline and success measures</div><h2>{d["time_h"]}</h2>' + phases(d["phases"]) +
               f'<p class="small" style="margin-top:12px">{d["time_note"]}</p>' + chips(d["kpis"], False), f)
     # 8 team + questions
@@ -96,15 +113,15 @@ def build(d):
               f'<p class="small">Established 2026 · Tucumán, Argentina · remote, in English and Spanish · founder-led: the people in this proposal do the work.</p></div>'
               + qas(d["qa"]) + "</div>", f)
     # 9 investment
-    h += page(ic("piggy", "width:1.6in;right:0.7in;top:0.4in", "i3 r2") +
+    h += page(ic(I["inv"], "width:1.6in;right:0.7in;top:0.4in", "i3 r2") +
               f'<div class="kick">09 · Investment (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
               f'<div class="gar" style="margin-top:16px"><img src="{A}check.png"><div>{d["guarantee"]}</div></div>'
               f'<p class="small" style="margin-top:9px">{d["inv_note"]}</p>', f)
     # 10 compliance + next steps
     rows = "".join(f'<div class="cl"><span>{r}</span><b>{s}</b></div>' for r, s in d["compliance"])
     nxt = "".join(f'<div class="card" style="background:rgba(255,255,255,.14);box-shadow:none;color:#fff;padding:12px 16px;margin-bottom:10px"><div style="font:800 10pt ID">{i+1} · {t}</div><p style="color:rgba(255,255,255,.86);font-size:9.4pt">{p}</p></div>' for i, (t, p) in enumerate(d["next"]))
-    h += page(ic("check", "width:1.5in;right:0.8in;top:0.5in", "i3 r2") +
-              f'<div class="kick">10 · Compliance and next steps</div><h2 style="color:#fff">{d["close_h"]}</h2>'
+    h += page(ic(I["close"], "width:1.5in;right:0.8in;top:0.5in", "i3 r2") +
+              spark("sh30", "#ffffff", "0.55in", "right:2.6in;top:0.7in;opacity:.8") + f'<div class="kick">10 · Compliance and next steps</div><h2 style="color:#fff">{d["close_h"]}</h2>'
               f'<div style="display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start;max-width:9.2in"><div>{rows}</div><div>{nxt}</div></div>'
               f'<p style="margin-top:16px;font-size:9.6pt;opacity:.92">Julio Briones · julio@twoandhuman.com · +54 381 509 8972 · twoandhuman.com</p>',
               f, "pg grad")
@@ -161,11 +178,11 @@ BRAZ_CONCEPT = '''<div style="display:grid;grid-template-columns:repeat(3,1fr);g
 COMMON_QA_PAY = ("Contracts, insurance and payments?", "Invoices in U.S. dollars, IRS Form W-8BEN-E as a foreign vendor, and certificates of insurance as required " + V + ".")
 
 CLIENTS = [
-dict(slug="laguna", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('traza', 'TRAZA', 'Urban accessories'), ('ayven', 'AYVEN', 'Performance apparel'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant')], brand_h='Laguna has a strong identity. <span class="mk">We design at that level.</span>', brand_side="We design every touchpoint a brand needs. For Laguna, that same standard shapes the website\'s visual system: color, type, photography and templates every department can use.",
+dict(slug="laguna", icons={"heard":"p-bank","asks":"b-clipboard","scope":"g-box","time":"g-calendar","inv":"b-coins","close":"g-shield"}, spark=("#ff7a59","#0b8aa8"), tex_light="concrete", tex_grad="halftone-teal", tapes=[1,3,5], brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('traza', 'TRAZA', 'Urban accessories'), ('ayven', 'AYVEN', 'Performance apparel'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant')], brand_h='Laguna has a strong identity. <span class="mk">We design at that level.</span>', brand_side="We design every touchpoint a brand needs. For Laguna, that same standard shapes the website\'s visual system: color, type, photography and templates every department can use.",
   htitle="Many Departments, One Laguna — TWO&HUMAN", foot="City of Laguna Beach · CM-26-013 · Draft pending validation",
  vars="--bg:#f0fafb;--ink:#0f2a36;--mut:#4f6670;--p1:#0b8aa8;--p2:#ff7a59;--t1:#d9f2f6;--hl:#ffd4c4;--hl2:#ffc94d;--b1:#bdebf2;--b2:#ffe0d3;--g1:#0b6f9c;--g2:#19b6c9;--g3:#ff9a76;",
  kick="Proposal · RFP CM-26-013 · Website Redesign and Replacement",
- cover_icons=[("target","width:3in;right:0.6in;top:0.9in"),("calendar","width:1.6in;right:2.9in;top:5.1in"),("check","width:1.3in;right:0.8in;top:5.3in")],
+ cover_icons=[("p-browser","width:3.1in;right:0.55in;top:1.0in"),("g-shield","width:1.6in;right:2.9in;top:5.0in"),("b-chart","width:1.6in;right:0.7in;top:5.2in")],
  title='Many departments, <span class="mk">one Laguna.</span>',
  sub="A distinctive, accessible city website where every department publishes with confidence, launched before April 30, 2027.",
  **{"for": "City of Laguna Beach<br>City Manager's Office · Attn. Louie Lacasella"}, date="December 2026",
@@ -181,8 +198,8 @@ dict(slug="laguna", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness
        ("Launch before Apr 30","A fixed public date with approvals and holidays on the way.","Launch Apr 16, 2 weeks early",True)],
  confirm="current platform and hosting " + V + " · number of pages and documents to migrate " + V + " · integrations with payments, permits and agendas " + V,
  sol_h='The Laguna Publishing System: <span class="mk">four parts, one website.</span>',
- steps=[("magnifier","Task-first architecture","Built around what residents and visitors come to do."),("megaphone","Departments publish","Roles, locked patterns and an approval step."),
-        ("check","Accessibility built in","An open-source checker in the editor, plus monthly scans."),("growth","Monitor and improve","Analytics and scan reports that keep it right.")],
+ steps=[("magnifier","Task-first architecture","Built around what residents and visitors come to do."),("p-computer","Departments publish","Roles, locked patterns and an approval step."),
+        ("g-shield","Accessibility built in","An open-source checker in the editor, plus monthly scans."),("b-chart","Monitor and improve","Analytics and scan reports that keep it right.")],
  sol_chips=["Design system with Laguna's character","Open-source WordPress","No platform license fees","The City owns everything"],
  concept_h='A homepage for both audiences, <span class="mk">an editor that prevents errors.</span>',
  concept=LAGUNA_CONCEPT,
@@ -207,7 +224,7 @@ dict(slug="laguna", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness
  mariam_bio="Leads WordPress development, accessibility, integrations, hosting and security, and the documentation the City keeps.",
  qa=[("Can a team outside the U.S. keep a City deadline?","Argentina is 5 hours ahead of Pacific Time, so our afternoon covers your morning. Weekly written status, and launch is planned two weeks early."),
      ("What evidence do we have before we sign?","The concepts in this proposal, a working session with your team and a clickable prototype in week 4. Payments follow approved milestones."),
-     ("Will we be locked in?","No. Standard open-source WordPress, no proprietary builder and no platform license. Domain, code and content belong to the City."),
+     ("What if the City prefers another CMS?","We recommend open-source WordPress: no license fees and no lock-in. If the City prefers another platform, we build on it and confirm any price change in discovery, before work starts."),
      COMMON_QA_PAY],
  inv_h='One fixed build price, <span class="mk">three ways to care for it.</span>',
  opts=[("Launch","$18,500","one time","City-provided hosting",["Design, build and migration","WCAG 2.1 AA test report","Training by role","60-day stabilization"],False),
@@ -219,11 +236,11 @@ dict(slug="laguna", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness
  compliance=[("Website redesign and replacement","Yes"),("Decentralized departmental editing","Yes"),("WCAG 2.1 AA","Yes"),("Automated accessibility checks","Yes"),("Launch before April 30, 2027","Yes · Apr 16"),("Training and documentation","Included"),("Official forms and criteria","Mapped " + V),("Insurance","As required " + V)],
  next=[("Questions","We answer any clarification in writing."),("Working session","A video walk-through of the concepts and plan."),("Kickoff · January 11","Prototype in week 4.")]),
 
-dict(slug="pura", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('traza', 'TRAZA', 'Urban accessories'), ('ayven', 'AYVEN', 'Performance apparel'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant')], brand_h='Every client gets <span class="mk">a brand world, not just a logo.</span>', brand_side="We design every touchpoint a brand needs. For PURA, that standard gives the new website a clear, confident public face that matches the scale of what renewal builds.",
+dict(slug="pura", icons={"heard":"p-bank","asks":"b-clipboard","scope":"g-box","time":"g-calendar","inv":"b-moneybag","close":"g-shield"}, spark=("#2f8fbf","#d9532b"), tex_light="paper", tex_grad="halftone-orange", tapes=[5,3,1], brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('traza', 'TRAZA', 'Urban accessories'), ('ayven', 'AYVEN', 'Performance apparel'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant')], brand_h='Every client gets <span class="mk">a brand world, not just a logo.</span>', brand_side="We design every touchpoint a brand needs. For PURA, that standard gives the new website a clear, confident public face that matches the scale of what renewal builds.",
   htitle="Renewal You Can See — TWO&HUMAN", foot="Pueblo Urban Renewal Authority · Website RFP · Draft pending validation",
  vars="--bg:#fff6f1;--ink:#1f2a33;--mut:#5b6670;--p1:#d9532b;--p2:#2f8fbf;--t1:#ffe3d8;--hl:#ffd6a8;--hl2:#ffc94d;--b1:#ffd7c7;--b2:#cbe9f7;--g1:#c9472a;--g2:#ff8a4c;--g3:#2f8fbf;",
  kick="Proposal · Website Redevelopment, Hosting and Maintenance",
- cover_icons=[("growth","width:3.2in;right:0.5in;top:1.1in"),("megaphone","width:1.8in;right:2.9in;top:5.1in"),("check","width:1.3in;right:0.8in;top:5.3in")],
+ cover_icons=[("p-bank","width:3in;right:0.6in;top:1.0in"),("b-pin","width:1.5in;right:3.0in;top:5.0in"),("b-chart","width:1.6in;right:0.7in;top:5.2in")],
  title='Renewal <span class="mk">you can see.</span>',
  sub="A public website that shows Pueblo where renewal is happening, what it delivers and how to take part, and that staff can update without a programmer.",
  **{"for": "Pueblo Urban Renewal Authority<br>Attn. Shawn Carlson"}, date="November 2026",
@@ -239,8 +256,8 @@ dict(slug="pura", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness')
        ("No programming needed","A small team must post in minutes, with no developer in the loop.","Simple forms per content type",True)],
  confirm="current platform and hosting " + V + " · number of pages and documents to migrate " + V + " · posting or retention rules for board records " + V,
  sol_h='Four building blocks, <span class="mk">one public face for renewal.</span>',
- steps=[("target","Project map and pages","Every renewal area and project, with status, photos and documents."),("megaphone","Opportunities hub","RFPs, LAUNCH grants and sites, with deadlines and how to apply."),
-        ("boxes","Public records center","Agendas, minutes, budgets and plans, searchable by year."),("check","Accessible CMS, cared for","Simple forms, U.S. hosting and monthly care.")],
+ steps=[("b-pin","Project map and pages","Every renewal area and project, with status, photos and documents."),("p-megaphone","Opportunities hub","RFPs, LAUNCH grants and sites, with deadlines and how to apply."),
+        ("b-clipboard","Public records center","Agendas, minutes, budgets and plans, searchable by year."),("g-shield","Accessible CMS, cared for","Simple forms, U.S. hosting and monthly care.")],
  sol_chips=["English and Spanish key pages","Opportunities close automatically","Staff publish in 5 minutes","PURA owns everything"],
  concept_h='A homepage that shows renewal, <span class="mk">a form staff can use.</span>',
  concept=PURA_CONCEPT,
@@ -276,28 +293,28 @@ dict(slug="pura", brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness')
  compliance=[("Website redevelopment","Yes"),("Hosting","Yes · U.S. data centers"),("Maintenance","Yes · monthly care"),("WCAG 2.1 AA","Yes"),("Staff updates without programming","Yes"),("Training and documentation","Included"),("Official forms and criteria","Mapped " + V),("Insurance","As required " + V)],
  next=[("Questions","We answer any clarification in writing."),("Working session","A video walk-through of the concepts."),("Kickoff · January 11","Prototype in week 3.")]),
 
-dict(slug="brazosport", brands=[('ayven', 'AYVEN', 'Performance apparel'), ('traza', 'TRAZA', 'Urban accessories'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant'), ('serena-ritual', 'Serena Ritual', 'Spa and wellness')], brand_h='The brand presence we build: <span class="mk">a world, not just a logo.</span>', brand_side="This is the level of application we deliver: signage, apparel, merchandise, packaging and social. For Brazosport, it applies to the College, the Gators and the 60th anniversary, as one family.",
+dict(slug="brazosport", icons={"heard":"magnifier","asks":"b-clipboard","scope":"g-box","time":"g-calendar","inv":"b-coins","close":"p-trophy"}, spark=("#ffc23d","#1f9d6a"), tex_light="concrete", tex_grad="liquid-bw", tapes=[5,4,7], brands=[('ayven', 'AYVEN', 'Performance apparel'), ('traza', 'TRAZA', 'Urban accessories'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant'), ('serena-ritual', 'Serena Ritual', 'Spa and wellness')], brand_h='The brand presence we build: <span class="mk">a world, not just a logo.</span>', brand_side="This is the level of application we deliver: signage, apparel, merchandise, packaging and social. For Brazosport, it applies to the College, the Gators and the 60th anniversary, as one family.",
   htitle="Sixty Years, One Brazosport — TWO&HUMAN", foot="Brazosport College · RFP 2026.07 · Draft pending validation",
  vars="--bg:#f3f6ff;--ink:#12213d;--mut:#55607a;--p1:#1f4fd1;--p2:#1f9d6a;--t1:#e2e9ff;--hl:#ffe08a;--hl2:#ffc23d;--b1:#cfdbff;--b2:#cdf1df;--g1:#12306b;--g2:#1f9d6a;--g3:#ffc23d;",
  kick="Proposal · RFP 2026.07 · Brand Identity Services",
- cover_icons=[("megaphone","width:3.1in;right:0.5in;top:1.1in"),("target","width:1.6in;right:2.9in;top:5.1in"),("check","width:1.3in;right:0.8in;top:5.3in")],
+ cover_icons=[("p-trophy","width:3in;right:0.6in;top:0.9in"),("p-paint","width:1.6in;right:3.0in;top:5.0in"),("p-certificate","width:1.7in;right:0.7in;top:5.3in")],
  title='Sixty years, <span class="mk">one Brazosport.</span>',
  sub="One brand family for the College, its Gators and its 60th anniversary, built from what students, staff and the community already believe.",
  **{"for": "Brazosport College · Purchasing<br>Attn. Cara Green, MBA"}, date="December 2026",
  heard_h='A once-in-a-generation moment <span class="mk">to say who Brazosport is.</span>',
- stats=[("1968","year founded, per the College's 2019 RFQ " + V),("60","years to celebrate, with a year-long campaign"),("3","identities to unify: College, Gators, anniversary"),("2027","Gators baseball targeted for spring " + V)],
+ stats=[("1968","opened, with 868 students in its first semester"),("~3,800","students in 2024; about 88% study part-time"),("Fall 2027","athletics return: baseball and softball, NJCAA Region 14"),("3","identities to unify: College, Gators, 60th")],
  asked="Brand identity services covering the institutional brand, an athletics identity for the Gators and a campaign for the College's 60th anniversary.",
- success="Six months after launch, a flyer from any department looks like Brazosport without a call to Marketing, and the Gators marks are on uniforms and game-day posts.",
- sources="Sources: RFP 2026.07 notice on IonWave; Brazosport College 2019 RFQ; public athletics listings (to confirm with the College).",
+ success="Six months after launch, a flyer from any department looks like Brazosport without a call to Marketing, the Gators marks are ready for the Fall 2027 relaunch, and the brand speaks to the working adults who are most of your students.",
+ sources="Sources: RFP 2026.07 notice on IonWave; Data USA (2024 enrollment); Brazosport College history (opening year and first enrollment); University of St. Thomas athletics release, June 2026 (executive athletics director named, Fall 2027 relaunch).",
  asks_h='Three requests, <span class="mk">one risk to avoid.</span>',
  asks=[("Institutional brand","A clear position and a system that works from a diploma to a social post.","Research, platform, system",False),
-       ("Athletics identity","Gators marks that energize fans, reproduce on uniforms and still read as Brazosport.","Primary, secondary, wordmarks",False),
+       ("Athletics identity","A new executive athletics director and a Fall 2027 relaunch: the marks must be ready for uniforms and recruiting well before the first game.","Ready before uniform orders",False),
        ("60th anniversary","More than a commemorative logo: a year of stories that bring alumni back.","Signature, theme, campaign kit",False),
        ("The risk to avoid","Three good identities that look like three different institutions. We design them as one family from the first sketch.","",True)],
  confirm="current marks and any registered trademarks " + V + " · athletics conference, NJCAA or vendor requirements " + V + " · anniversary dates and events " + V,
  sol_h='Listen first, <span class="mk">then design one family.</span>',
- steps=[("magnifier","Listen","Audit, up to 12 interviews, 2 student sessions and a survey."),("target","Define","Position, promise, voice and messages by audience."),
-        ("megaphone","Design","Three routes in week 7, then two refinement rounds."),("check","Deliver and adopt","Guidelines, 25 templates, brand library and training.")],
+ steps=[("magnifier","Listen","Audit, up to 12 interviews, 2 student sessions and a survey."),("p-certificate","Define","Position, promise, voice and messages by audience."),
+        ("p-paint","Design","Three routes in week 7, then two refinement rounds."),("p-trophy","Deliver and adopt","Guidelines, 25 templates, brand library and training.")],
  sol_chips=["Masterbrand + linked athletics + time-limited 60th","Fonts and photos licensed in the College's name","Every source file","Full ownership"],
  concept_h='Three preliminary routes, <span class="mk">one family.</span>',
  concept=BRAZ_CONCEPT,
@@ -313,8 +330,8 @@ dict(slug="brazosport", brands=[('ayven', 'AYVEN', 'Performance apparel'), ('tra
          ("Weeks 4–6","Define",["Brand platform","Messages by audience","Milestone 1"]),
          ("Weeks 6–11","Design",["Three routes in week 7","Two refinement rounds","Milestone 2"]),
          ("Weeks 11–16","Develop and deliver",["Athletics and 60th systems","Guidelines and templates","Milestone 3 · training"])],
- time_note="Kickoff targeted for mid-January 2027 " + V + "; final delivery in May 2027 leaves the summer to prepare for fall and the anniversary year.",
- kpis=["Committee approves platform and route","Every department trained or with the launch kit in 60 days","Brand-use review at month 6","Gators marks in use for the first season"],
+ time_note="Kickoff targeted for mid-January 2027 " + V + "; final delivery in May 2027 leaves the summer for uniform orders, the Fall 2027 athletics relaunch and the anniversary year.",
+ kpis=["Committee approves platform and route","Every department trained or with the launch kit in 60 days","Brand-use review at month 6","Gators marks ready for Fall 2027 uniform orders"],
  team_h='Founder-led, <span class="mk">from research to final file.</span>',
  julio_role="Brand strategy and project lead", julio_bio="Single point of contact. Leads research, the brand platform and the campaign. Coordinates deliverables and QA for international marketing clients.",
  mariam_bio="Leads the digital side of the brand: shared brand library, editable templates, social and web applications, and file production.",
