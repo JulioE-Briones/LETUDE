@@ -1,12 +1,23 @@
 # Lote 5 en estilo pop (US Letter apaisado): Laguna Beach, PURA y Brazosport.
 # Uso: python3 gen_us.py  -> escribe <slug>.html en esta carpeta.
 import os
-A = "../../assets/3d/"
+A = "../../assets/3dicons/"
+OLD = {"magnifier":"zoom","target":"target","megaphone":"megaphone","calendar":"calender","growth":"chart","check":"tick","boxes":"cube","piggy":"money-bag",
+       "calculator":"calculator","prohibited":"thumb-down","p-bank":"chat-bubble","p-browser":"computer","p-computer":"computer","g-shield":"sheild",
+       "b-chart":"chart","b-clipboard":"file-text","g-box":"cube","g-calendar":"calender","b-coins":"dollar","b-moneybag":"money-bag","b-pin":"map-pin",
+       "p-megaphone":"megaphone","p-trophy":"trophy","p-paint":"paint-kit","p-certificate":"medal"}
+STYLE = "color-dynamic"
+def P(n, style=None):
+    n = OLD.get(n, n)
+    if "/" not in n:
+        n = (style or globals().get("CUR", {}).get("icon_style") or STYLE) + "/" + n
+    return A + n + ".png"
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 V = '<span class="vf">verify</span>'
 
 def ic(n, style, cls="i3"):
-    return f'<img class="{cls}" src="{A}{n}.png" style="{style}">'
+    return f'<img class="{cls}" src="{P(n)}" style="{style}">'
 
 from PIL import Image as _Im
 SH = os.path.join(HERE, "../../assets/shapes/")
@@ -33,7 +44,7 @@ def asks(items, cols=4):
         for i, (h, p, c, solid) in enumerate(items)) + "</div>"
 
 def steps(items):
-    return '<div class="steps">' + "".join(f'<div class="card"><img class="ic" src="{A}{n}.png"><h3>{h}</h3><p>{p}</p></div>' for n, h, p in items) + "</div>"
+    return '<div class="steps">' + "".join(f'<div class="card"><img class="ic" src="{P(n)}"><h3>{h}</h3><p>{p}</p></div>' for n, h, p in items) + "</div>"
 
 def chips(items, center=True):
     return f'<p style="margin-top:18px{";text-align:center" if center else ""}">' + " ".join(f'<span class="chip">{c}</span>' for c in items) + "</p>"
@@ -115,7 +126,7 @@ def build(d):
     # 9 investment
     h += page(ic(I["inv"], "width:1.6in;right:0.7in;top:0.4in", "i3 r2") +
               f'<div class="kick">09 · Investment (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
-              f'<div class="gar" style="margin-top:16px"><img src="{A}check.png"><div>{d["guarantee"]}</div></div>'
+              f'<div class="gar" style="margin-top:16px"><img src="{P('tick')}"><div>{d["guarantee"]}</div></div>'
               f'<p class="small" style="margin-top:9px">{d["inv_note"]}</p>', f)
     # 10 compliance + next steps
     rows = "".join(f'<div class="cl"><span>{r}</span><b>{s}</b></div>' for r, s in d["compliance"])

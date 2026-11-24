@@ -1,11 +1,22 @@
 # Genera las 4 propuestas LatAm en estilo "pop" (A4 apaisado, íconos 3D).
 # Uso: python3 gen.py  -> escribe <slug>.html en esta carpeta.
 import os
-A = "../../assets/3d/"
+A = "../../assets/3dicons/"
+OLD = {"magnifier":"zoom","target":"target","megaphone":"megaphone","calendar":"calender","growth":"chart","check":"tick","boxes":"cube","piggy":"money-bag",
+       "calculator":"calculator","prohibited":"thumb-down","p-bank":"chat-bubble","p-browser":"computer","p-computer":"computer","g-shield":"sheild",
+       "b-chart":"chart","b-clipboard":"file-text","g-box":"cube","g-calendar":"calender","b-coins":"dollar","b-moneybag":"money-bag","b-pin":"map-pin",
+       "p-megaphone":"megaphone","p-trophy":"trophy","p-paint":"paint-kit","p-certificate":"medal"}
+STYLE = "color-dynamic"
+def P(n, style=None):
+    n = OLD.get(n, n)
+    if "/" not in n:
+        n = (style or globals().get("CUR", {}).get("icon_style") or STYLE) + "/" + n
+    return A + n + ".png"
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 def icon(n, style, cls="i3"):
-    return f'<img class="{cls}" src="{A}{n}.png" style="{style}">'
+    return f'<img class="{cls}" src="{P(n)}" style="{style}">'
 
 def stats(items):
     return '<div class="row c4">' + "".join(f'<div class="card"><div class="big">{v}</div><div class="lbl">{t}</div></div>' for v, t in items) + "</div>"
@@ -20,7 +31,7 @@ def bars(title, rows):
     return out + "</div></div>"
 
 def steps(items):
-    return '<div class="steps">' + "".join(f'<div class="card"><img class="ic" src="{A}{ic}.png"><h3>{h}</h3><p>{p}</p></div>' for ic, h, p in items) + "</div>"
+    return '<div class="steps">' + "".join(f'<div class="card"><img class="ic" src="{P(ic)}"><h3>{h}</h3><p>{p}</p></div>' for ic, h, p in items) + "</div>"
 
 def chips(items, center=False):
     return f'<p style="margin-top:20px{";text-align:center" if center else ""}">' + " ".join(f'<span class="chip">{c}</span>' for c in items) + "</p>"
@@ -80,7 +91,7 @@ def build(d):
     # 7 inversión
     h += page(icon(d["inv_icon"], "width:1.7in;right:0.7in;top:0.35in", "i3 r2") +
               f'<div class="kick">{6+k:02d} · Inversión (USD)</div><h2>{d["inv_h"]}</h2>' + opts(d["opts"]) +
-              f'<div class="gar" style="margin-top:18px"><img src="{A}check.png"><div>{d["garantia"]}</div></div>'
+              f'<div class="gar" style="margin-top:18px"><img src="{P('tick')}"><div>{d["garantia"]}</div></div>'
               f'<p class="small" style="margin-top:10px">{d["inv_nota"]}</p>', f)
     # 8 empecemos
     pasos = "".join(f'<div class="card" style="background:rgba(255,255,255,.14);box-shadow:none;color:#fff"><div class="num" style="background:#fff;color:{d["p1"]}">{i+1}</div><h3>{t}</h3><p style="color:rgba(255,255,255,.86)">{p}</p></div>' for i, (t, p) in enumerate(d["pasos"]))
