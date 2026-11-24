@@ -1,6 +1,6 @@
 # Lote 5 en estilo pop (US Letter apaisado): Laguna Beach, PURA y Brazosport.
 # Uso: python3 gen_us.py  -> escribe <slug>.html en esta carpeta.
-import os
+import os, re
 A = "../../assets/3dicons/"
 OLD = {"magnifier":"zoom","target":"target","megaphone":"megaphone","calendar":"calender","growth":"chart","check":"tick","boxes":"cube","piggy":"money-bag",
        "calculator":"calculator","prohibited":"thumb-down","p-bank":"chat-bubble","p-browser":"computer","p-computer":"computer","g-shield":"sheild",
@@ -14,7 +14,7 @@ def P(n, style=None):
     return A + n + ".png"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-V = '<span class="vf">verify</span>'
+V = ''  # sin marcas de verificación en los PDF para clientes
 
 def ic(n, style, cls="i3"):
     return f'<img class="{cls}" src="{P(n)}" style="{style}">'
@@ -29,10 +29,15 @@ def spark(name, color, w, style):
         im = _Im.new("RGBA", a.size, color); im.putalpha(a); im.save(SH + out)
     return f'<img class="spk" src="../../assets/shapes/{out}" style="width:{w};{style}">'
 CUR = {}
+def clean(h):
+    head, sep, body = h.partition("</head>")
+    body = re.sub(r" +([.,;)])", r"\1", body); body = re.sub(r" {2,}", " ", body); body = body.replace(" ·<", "<").replace(" · <", "<")
+    return head + sep + body
 def page(body, foot, cls="pg"):
+    foot = foot.replace(" · Draft pending validation", "")
     tx = CUR.get("tex_grad" if "grad" in cls else "tex_light")
     txh = f'<img class="tx {"g" if "grad" in cls else "l"}" src="../../assets/tex/{tx}.jpg">' if tx else ""
-    return (f'<section class="{cls}">{txh}<div class="draftn">Draft · pending validation</div>{body}'
+    return (f'<section class="{cls}">{txh}{body}'
             f'<div class="foot"><span><b>TWO&amp;HUMAN</b> · {foot}</span><span class="pgn"></span></div></section>\n')
 
 def stats(items):
@@ -98,7 +103,7 @@ def build(d):
     # 3 what the RFP really asks
     h += page(ic(I["asks"], "width:1.6in;right:0.75in;top:0.45in", "i3 r2") +
               f'<div class="kick">02 · What the RFP really asks</div><h2>{d["asks_h"]}</h2>' + asks(d["asks"], d.get("asks_cols", 4)) +
-              f'<div class="card" style="margin-top:16px;padding:14px 20px"><p style="font-size:10pt"><b style="color:var(--ink)">To confirm in discovery:</b> {d["confirm"]}</p></div>', f)
+              f'<div class="card" style="margin-top:16px;padding:14px 20px"><p style="font-size:10pt"><b style="color:var(--ink)">We will confirm together in discovery:</b> {d["confirm"]}</p></div>', f)
     # 4 solution
     h += page(spark("sh02", s2, "0.55in", "right:0.8in;top:0.75in") + f'<div class="kick">03 · Our solution</div><h2>{d["sol_h"]}</h2>' + steps(d["steps"]) + chips(d["sol_chips"]), f)
     # 5 concept
@@ -138,7 +143,7 @@ def build(d):
               f'<p style="margin-top:16px;font-size:9.6pt;opacity:.92">Julio Briones · julio@twoandhuman.com · +54 381 509 8972 · twoandhuman.com</p>',
               f, "pg grad")
     h += "<script>var p=document.querySelectorAll('.pg');p.forEach(function(e,i){var n=e.querySelector('.pgn');if(n)n.textContent=(i+1)+' / '+p.length;});</script></body></html>"
-    open(os.path.join(d.get("out", HERE), d["slug"] + ".html"), "w").write(h)
+    open(os.path.join(d.get("out", HERE), d["slug"] + ".html"), "w").write(clean(h))
 
 # ---------- mockups ----------
 LAGUNA_CONCEPT = '''<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:22px;align-items:start">
@@ -245,7 +250,7 @@ dict(slug="laguna", icons={"heard":"p-bank","asks":"b-clipboard","scope":"g-box"
  guarantee="<b>Accessibility guarantee.</b> Zero critical errors in automated WCAG 2.1 AA scans at launch, and anything flagged in the first 60 days is fixed at no cost.",
  inv_note="Build: discovery 2,200 · architecture 1,800 · design 4,200 · build 5,400 · migration 2,600 · QA, training and launch 2,300. 3-year cost: $18,500 + City hosting · $29,300 · $41,900. Payments 30/40/30 on approved milestones · care cancellable with 60 days' notice · third-party costs at cost · valid 90 days · also entered in the City's price format " + V + ".",
  close_h='Ready for the questions, <span class="mk">ready for January.</span>',
- compliance=[("Website redesign and replacement","Yes"),("Decentralized departmental editing","Yes"),("WCAG 2.1 AA","Yes"),("Automated accessibility checks","Yes"),("Launch before April 30, 2027","Yes · Apr 16"),("Training and documentation","Included"),("Official forms and criteria","Mapped " + V),("Insurance","As required " + V)],
+ compliance=[("Website redesign and replacement","Yes"),("Decentralized departmental editing","Yes"),("WCAG 2.1 AA","Yes"),("Automated accessibility checks","Yes"),("Launch before April 30, 2027","Yes · Apr 16"),("Training and documentation","Included"),("Official forms and criteria","Included"),("Insurance","As required " + V)],
  next=[("Questions","We answer any clarification in writing."),("Working session","A video walk-through of the concepts and plan."),("Kickoff · January 11","Prototype in week 4.")]),
 
 dict(slug="pura", icons={"heard":"p-bank","asks":"b-clipboard","scope":"g-box","time":"g-calendar","inv":"b-moneybag","close":"g-shield"}, spark=("#2f8fbf","#d9532b"), tex_light="paper", tex_grad="halftone-orange", tapes=[5,3,1], brands=[('serena-ritual', 'Serena Ritual', 'Spa and wellness'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('traza', 'TRAZA', 'Urban accessories'), ('ayven', 'AYVEN', 'Performance apparel'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant')], brand_h='Every client gets <span class="mk">a brand world, not just a logo.</span>', brand_side="We design every touchpoint a brand needs. For PURA, that standard gives the new website a clear, confident public face that matches the scale of what renewal builds.",
@@ -302,7 +307,7 @@ dict(slug="pura", icons={"heard":"p-bank","asks":"b-clipboard","scope":"g-box","
  guarantee="<b>Staff independence guarantee.</b> If after training your staff cannot publish a meeting or an opportunity on their own in five minutes, we keep training and adjusting at no cost until they can.",
  inv_note="Build: discovery 1,200 · architecture 900 · design 2,200 · build 3,600 · migration 800 · QA, training and launch 1,100. 3-year cost: $9,800 + PURA hosting · $15,560 · $24,920. Payments 30/40/30 on approved milestones · care cancellable with 60 days' notice · third-party costs at cost · valid 90 days · also entered in PURA's price format " + V + ".",
  close_h='Ready to show Pueblo <span class="mk">what renewal builds.</span>',
- compliance=[("Website redevelopment","Yes"),("Hosting","Yes · U.S. data centers"),("Maintenance","Yes · monthly care"),("WCAG 2.1 AA","Yes"),("Staff updates without programming","Yes"),("Training and documentation","Included"),("Official forms and criteria","Mapped " + V),("Insurance","As required " + V)],
+ compliance=[("Website redevelopment","Yes"),("Hosting","Yes · U.S. data centers"),("Maintenance","Yes · monthly care"),("WCAG 2.1 AA","Yes"),("Staff updates without programming","Yes"),("Training and documentation","Included"),("Official forms and criteria","Included"),("Insurance","As required " + V)],
  next=[("Questions","We answer any clarification in writing."),("Working session","A video walk-through of the concepts."),("Kickoff · January 11","Prototype in week 3.")]),
 
 dict(slug="brazosport", icons={"heard":"magnifier","asks":"b-clipboard","scope":"g-box","time":"g-calendar","inv":"b-coins","close":"p-trophy"}, spark=("#ffc23d","#1f9d6a"), tex_light="concrete", tex_grad="liquid-bw", tapes=[5,4,7], brands=[('ayven', 'AYVEN', 'Performance apparel'), ('traza', 'TRAZA', 'Urban accessories'), ('atelier-lorenzo', 'Atelier Lorenzo', 'Leather atelier'), ('paleta-loca', 'Paleta Loca', 'Ice cream'), ('el-taco-club', 'El Taco Club', 'Restaurant'), ('serena-ritual', 'Serena Ritual', 'Spa and wellness')], brand_h='The brand presence we build: <span class="mk">a world, not just a logo.</span>', brand_side="This is the level of application we deliver: signage, apparel, merchandise, packaging and social. For Brazosport, it applies to the College, the Gators and the 60th anniversary, as one family.",

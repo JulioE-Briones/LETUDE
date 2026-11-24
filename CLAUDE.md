@@ -221,6 +221,7 @@ Todos los PDF de propuestas, sin excepción, se hacen con el estilo "pop" aproba
 - Texturas en `propuestas/assets/tex/` (concrete, paper, halftone-teal, halftone-orange, liquid-bw, liquid-purple, waves-pink); formas y destellos en `propuestas/assets/shapes/` (`sh00`–`sh35`, se colorean con `spark()` en `gen_us.py`) y cintas washi (`washi0`–`washi9`).
 - Generadores de referencia: `propuestas/latam/v2/gen.py` (propuestas comerciales), `propuestas/lote5/v2/gen_us.py` (licitaciones) y `propuestas/lote6/gen6.py` (licitaciones con propuesta técnica y económica en archivos separados, en A4 o US Letter).
 - Peso máximo por PDF: 25 MB. Para que sea liviano, usar degradados radiales en lugar de `filter: blur` y no usar `drop-shadow` (las sombras ya vienen en los PNG).
+- Los PDF van listos para el cliente: sin etiquetas de borrador ("Draft", "pending validation"), sin marcas "verify" y sin notas internas (dudas de elegibilidad, correos privados, "to confirm"). Los pendientes y riesgos se le cuentan a Julio en el mensaje, no en el PDF.
 - Página fija "Presencia de marca" (después de los bocetos): muestra las marcas conceptuales de `propuestas/assets/brands/` con la aclaración de que son marcas ficticias creadas por TWO&HUMAN, no clientes. Elegir 6 según el cliente; para organismos públicos, colegios o clínicas no usar Maison Céleste, Orilla ni Olas Vivas.
 
 ## Antes de armar cualquier propuesta (obligatorio)
