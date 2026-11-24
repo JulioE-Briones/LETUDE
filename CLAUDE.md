@@ -215,7 +215,7 @@ Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-a
 
 ## PDFs de propuestas (estilo aprobado)
 
-Todos los PDF de propuestas se hacen con el estilo "pop" aprobado por Julio: portada y cierre con degradado, íconos 3D, paleta viva por cliente, títulos con resaltador y poco texto por tarjeta.
+Todos los PDF de propuestas, sin excepción, se hacen con el estilo "pop" aprobado por Julio (referencia visual: `propuestas/lote5/v2/`, con íconos 3dicons): portada y cierre con degradado, íconos 3D, paleta viva por cliente, títulos con resaltador y poco texto por tarjeta.
 - CSS: `propuestas/assets/pop.css` (A4 apaisado) y además `propuestas/assets/pop-us.css` para licitaciones de EE. UU. (US Letter apaisado).
 - Íconos 3D: pack **3dicons** (licencia CC0, uso comercial libre) en `propuestas/assets/3dicons/<estilo>-<ángulo>/<nombre>.png`, con sombra incluida. Estilos: `color-dynamic` (por defecto), `color-front`, `color-iso`, `gradient-dynamic`, `gradient-front`, `clay-dynamic` y `premium-front` (negro y dorado, para marcas de lujo). En los generadores se usa `P("nombre")` o `P("estilo/nombre")`, y cada cliente puede fijar `icon_style`. Íconos de redes en `propuestas/assets/social/` (`s-*`), solo para indicar canales. No recortar imágenes a mano ni usar imágenes con marca de agua.
 - Texturas en `propuestas/assets/tex/` (concrete, paper, halftone-teal, halftone-orange, liquid-bw, liquid-purple, waves-pink); formas y destellos en `propuestas/assets/shapes/` (`sh00`–`sh35`, se colorean con `spark()` en `gen_us.py`) y cintas washi (`washi0`–`washi9`).
