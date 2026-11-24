@@ -212,3 +212,11 @@ Claude no tiene acceso a ManyChat: entrega el plano y la guía, y el usuario lo 
 Embudo completo: `calendario-contenido` → contenido con palabra clave (`carrusel-cta-palabra-clave`, `reels-en-mi-voz`, `secuencia-stories`) → `creador-recursos` → `manychat-flows` para automatizar la entrega y la calificación, o `comments-hunter` + `dm-closer` a mano → `objection-destroyer` para la llamada. Índice original en `.claude/skills/INDICE-dms.md`. Fuente de `dm-setter` (MIT): github.com/Dallionking/dm-setter-skill.
 
 Fuente de las skills de anuncios (licencia MIT): github.com/zubair-trabzada/ai-ads-claude. Índice original en `.claude/skills/INDICE-ads.md`. A las descripciones de estas skills se les añadieron frases de activación ("Use when…") para que se activen con pedidos naturales.
+
+## PDFs de propuestas (estilo aprobado)
+
+Todos los PDF de propuestas se hacen con el estilo "pop" aprobado por Julio: portada y cierre con degradado, íconos 3D, paleta viva por cliente, títulos con resaltador y poco texto por tarjeta.
+- CSS: `propuestas/assets/pop.css` (A4 apaisado) y además `propuestas/assets/pop-us.css` para licitaciones de EE. UU. (US Letter apaisado).
+- Íconos 3D limpios en `propuestas/assets/3d/` (las fuentes originales están en `3d/src/`). No usar imágenes con marca de agua ni logos de terceros.
+- Generadores de referencia: `propuestas/latam/v2/gen.py` (propuestas comerciales) y `propuestas/lote5/v2/gen_us.py` (licitaciones).
+- Peso máximo por PDF: 25 MB. Para que sea liviano, usar degradados radiales en lugar de `filter: blur` y no usar `drop-shadow` (las sombras ya vienen en los PNG).
