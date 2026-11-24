@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TWO&amp;HUMAN · Monroe, Front and Center</title>
+<link rel="stylesheet" href="../assets/slides.css">
+<style>
+.mock .nav b { color:#1d3f6e; }
+.mock .nav .tr { border:1px solid #1d3f6e; color:#1d3f6e; font-weight:700; padding:1px 7px; border-radius:10px; }
+.alert { background:#b3261e; color:#fff; font-size:8pt; font-weight:700; padding:4px 14px; display:flex; justify-content:space-between; }
+.photo { height:1.35in; background:linear-gradient(160deg,#3b6c8f 0%,#8fb3c9 45%,#c9b37a 75%,#5d7b4c 100%); position:relative; }
+.photo .h { position:absolute; left:16px; bottom:30px; right:16px; color:#fff; font-size:17pt; font-weight:800; line-height:1.1; text-shadow:0 1px 8px rgba(0,0,0,.35); }
+.photo .srch { position:absolute; left:16px; bottom:8px; background:#fff; border-radius:4px; padding:3px 10px; font-size:8pt; color:var(--grey); width:3.6in; }
+.tasks { display:grid; grid-template-columns:repeat(6,1fr); gap:6px; padding:9px 14px 6px; }
+.tasks div { border:1px solid var(--line); border-radius:5px; padding:6px 4px; font-size:7.6pt; font-weight:800; color:#1d3f6e; text-align:center; }
+.mrow { display:grid; grid-template-columns:1.2fr 1fr; gap:10px; padding:4px 14px 12px; }
+.mrow .n div { display:flex; justify-content:space-between; font-size:7.8pt; border-bottom:1px dashed var(--line); padding:3px 0; }
+.mrow .n em { font-style:normal; color:var(--orange); font-weight:700; }
+.mrow .c { background:#f2f5f8; border-radius:5px; padding:6px 8px; font-size:7.6pt; color:#1d3f6e; font-weight:700; }
+.mrow .c small { display:block; font-weight:500; color:var(--grey); }
+.weight { display:inline-block; background:var(--navy); color:#fff; font-size:10pt; font-weight:800; border-radius:12px; padding:2px 10px; margin-left:8px; vertical-align:4px; letter-spacing:1px; }
+.gantt.m9 { grid-template-columns:3in repeat(9,1fr); }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Monroe, Front and Center</h1>
+<p class="sub">Proposal for RFP 2026-025, Website and CMS Replacement: a photo-forward city website built on Monroe's own brand, organized around what residents come to do, on a vendor-hosted CMS your staff can run, live before CivicLive support ends.</p>
+<div class="meta">
+<div><b>To</b>City of Monroe, Michigan · Clerk-Treasurer · Attn. Jody Egen, Director of Communications</div>
+<div><b>From</b>TWO&amp;HUMAN · Julio Briones and Mariam Neme, co-founders</div>
+<div><b>Date</b>December 2026</div>
+</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+<div class="kicker">At a glance</div>
+<h2>Live by August 2, 2027, a month ahead of the City's target</h2>
+<p class="lead">A new monroemi.gov on a vendor-hosted WordPress CMS, with about 90% of current content and documents migrated and five years of hosting and care included in a fixed price.</p>
+<div class="cols-4" style="margin-top:16px">
+<div class="stat"><div class="big">$14,800</div><div class="lbl">Fixed price for design, build, migration and launch</div></div>
+<div class="stat"><div class="big">Aug 2</div><div class="lbl">Launch in 2027, before the September 1 target</div></div>
+<div class="stat"><div class="big">60 days</div><div class="lbl">Stabilization after launch, then acceptance</div></div>
+<div class="stat"><div class="big">$32,800</div><div class="lbl">Total for the 5-year term, hosting and care included</div></div>
+</div>
+<div class="box" style="margin-top:20px">Built to <b>WCAG 2.1 AA</b> with search, automatic translation, an emergency banner and a document library. Each payment follows an approved milestone, and the City can request acceptance well before the October 31, 2027 deadline.</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+<div class="kicker">01 · What we understood</div>
+<h2>A city website that looks like Monroe, not like a template</h2>
+<div class="cols">
+<div>
+<p>Monroe's current website runs on CivicLive, which loses support on September 30, 2027. The City wants a distinctive, photo-forward site aligned with its brand guide, where residents can pay, apply, report a problem, find a job or check a calendar without hunting through menus.</p>
+<p>Behind the scenes, staff need a vendor-hosted CMS with an easy editor, permissions and approvals, and a clean move of most existing pages and PDFs.</p>
+</div>
+<div>
+<h3 style="margin-top:0">What the RFP asks for</h3>
+<ul>
+<li>Distinctive design built on the City's brand guide.</li>
+<li>Clear resident tasks: payments, requests, reports, jobs, calendars.</li>
+<li>Vendor-hosted CMS with WYSIWYG editing, roles and approvals.</li>
+<li>Migration of about 90% of content and PDFs.</li>
+<li>WCAG 2.1 AA, search, automatic translation, emergency banner, document library and SSL.</li>
+<li>Launch by September 1, 2027, on a 5-year base contract.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+<div class="kicker">02 · Resident tasks first</div>
+<h2>Six doors on the homepage, the rest one click away</h2>
+<table class="t-sm">
+<tr><th style="width:22%">Resident task</th><th>What the site gives them</th></tr>
+<tr><td class="k">Pay</td><td>Direct links to the City's current payment systems for utilities, taxes and fees, with clear instructions.</td></tr>
+<tr><td class="k">Apply</td><td>Permits, licenses and forms in one place, each with requirements, fees and the right contact.</td></tr>
+<tr><td class="k">Report</td><td>Report a problem (potholes, streetlights, code issues) through the City's current request tools.</td></tr>
+<tr><td class="k">Jobs</td><td>Open positions and how to apply, linked to the City's current application process.</td></tr>
+<tr><td class="k">Calendar</td><td>Meetings, agendas, minutes and events in one calendar, filterable by board and type.</td></tr>
+<tr><td class="k">Find a service</td><td>Department pages written in plain language, with hours, phone and location.</td></tr>
+</table>
+<p class="small" style="margin-top:8px">We confirm the list with staff in discovery, using site analytics and the most common requests to the City.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+<div class="kicker">03 · Concept prepared for Monroe</div>
+<h2>Homepage: Monroe's own photos, residents' tasks first</h2>
+<div class="cols-60" style="grid-template-columns:1.7fr 1fr">
+<div>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>monroemi.gov</span></div>
+<div class="alert"><span>Emergency banner: staff can turn it on in seconds</span><span>Details ›</span></div>
+<div class="nav"><b>CITY OF MONROE · MICHIGAN</b><div><span>Residents</span><span>Business</span><span>Government</span><span class="tr">Translate</span></div></div>
+<div class="photo"><div class="h">Welcome to Monroe</div><div class="srch">Search services, documents and pages</div></div>
+<div class="tasks"><div>Pay</div><div>Apply</div><div>Report</div><div>Jobs</div><div>Calendar</div><div>Services</div></div>
+<div class="mrow">
+<div class="n"><div><span>City Council meeting</span><em>Agenda</em></div><div><span>Community event</span><em>Details</em></div><div><span>City news</span><em>Read</em></div></div>
+<div class="c">Document library<small>Agendas, minutes, budgets and reports, searchable</small></div>
+</div>
+</div>
+<p class="mocknote">Conceptual sketch prepared for this proposal. The final design follows the City's brand guide and uses the City's own photography and content.</p>
+</div>
+<div>
+<h3 style="margin-top:0">How it works</h3>
+<ul>
+<li><b>A large photo of Monroe</b> leads, as the RFP asks, with the search box on top of it.</li>
+<li><b>Six task doors</b> right below.</li>
+<li><b>Emergency banner</b> across every page when needed.</li>
+<li><b>Translate</b> always visible.</li>
+<li><b>Meetings, news and documents</b> pulled live from the CMS.</li>
+</ul>
+<p class="small">The City reviews this as a clickable prototype in week 6.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+<div class="kicker">04 · The CMS your staff will use</div>
+<h2>Easy to edit, safe to publish</h2>
+<table class="t-sm">
+<tr><th style="width:26%">Requirement</th><th>How we deliver it</th></tr>
+<tr><td class="k">Vendor-hosted CMS</td><td>WordPress, hosted and maintained by TWO&amp;HUMAN on managed infrastructure; standard and open source, with no lock-in.</td></tr>
+<tr><td class="k">WYSIWYG editing</td><td>The WordPress block editor with locked, reusable page patterns, so staff change content without breaking the design.</td></tr>
+<tr><td class="k">Permissions and approvals</td><td>Roles by department and an approval step before publishing, with revision history on every page.</td></tr>
+<tr><td class="k">Document library</td><td>Searchable library for agendas, minutes, budgets and reports, filterable by department, type and date.</td></tr>
+<tr><td class="k">Calendars</td><td>Events and meetings calendar with agendas and minutes attached.</td></tr>
+<tr><td class="k">Emergency banner</td><td>A site-wide banner that authorized staff can switch on and off in seconds.</td></tr>
+<tr><td class="k">Forms and integrations</td><td>Links or embeds to the City's current payment, request and job systems, confirmed in discovery.</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+<div class="kicker">05 · Accessibility, translation, search and security</div>
+<h2>Accessible, findable and secure by default</h2>
+<div class="cols">
+<div>
+<h3 style="margin-top:0">Accessibility and translation</h3>
+<ul>
+<li><b>WCAG 2.1 AA</b> on every template: contrast, keyboard navigation, alt text, accessible forms and tables.</li>
+<li><b>Testing</b> with automated tools and manual keyboard and screen reader checks before launch, with a written report.</li>
+<li><b>PDF triage:</b> the most-used PDFs become accessible web pages; the rest are flagged for remediation.</li>
+<li><b>Automatic translation</b> of every page, with a visible language selector.</li>
+<li><b>Site search</b> across pages and documents.</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-top:0">Hosting and security</h3>
+<ul>
+<li>Managed WordPress hosting on SOC 2 Type II–audited infrastructure in U.S. data centers.</li>
+<li>SSL, web application firewall, daily off-site backups and uptime monitoring.</li>
+<li>Two-factor login and least-privilege roles for every editor.</li>
+<li>Core, theme and plugin updates applied and tested monthly.</li>
+<li>TWO&amp;HUMAN does not hold its own SOC 2 report; we rely on the hosting provider's audited controls and document ours.</li>
+</ul>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+<div class="kicker">06 · Migration plan</div>
+<h2>About 90% of the content moves, nothing gets lost</h2>
+<div class="cols-4" style="margin-top:6px">
+<div class="card"><h3>1 · Inventory</h3><p>Every page and PDF on the current site, with traffic, owner and date.</p></div>
+<div class="card"><h3>2 · Decide</h3><p>Staff mark each item: keep, update, merge or retire, aiming at the RFP's 90%.</p></div>
+<div class="card"><h3>3 · Move</h3><p>Pages and documents migrated into the new structure, with metadata for search and the library.</p></div>
+<div class="card"><h3>4 · Redirect</h3><p>A 301 map for every changed address, tested before launch, so links and search results keep working.</p></div>
+</div>
+<div class="box" style="margin-top:18px">The City keeps the full inventory spreadsheet. During the 60-day stabilization period after launch, we fix any broken link or migration issue at no cost.</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+<div class="kicker">07 · Timeline</div>
+<h2>Kickoff in February, launch on August 2, acceptance by October</h2>
+<div class="gantt m9" style="--n:9">
+<div></div><div class="hd">Feb</div><div class="hd">Mar</div><div class="hd">Apr</div><div class="hd">May</div><div class="hd">Jun</div><div class="hd">Jul</div><div class="hd">Aug</div><div class="hd">Sep</div><div class="hd">Oct</div>
+<div class="lb">Discovery, content inventory, task architecture</div><div class="bar o" style="grid-column:2 / 3">Discovery</div>
+<div class="lb">Design and clickable prototype<span>Milestone 1 · design approval</span></div><div class="bar" style="grid-column:3 / 4">Design · M1</div>
+<div class="lb">CMS build and integrations</div><div class="bar" style="grid-column:4 / 6">Build</div>
+<div class="lb">Content migration and redirects<span>Milestone 2 · staging site</span></div><div class="bar s" style="grid-column:5 / 7">Migration · M2</div>
+<div class="lb">Accessibility testing, training</div><div class="bar s" style="grid-column:7 / 8">QA</div>
+<div class="lb">Launch on August 2<span>Milestone 3</span></div><div class="bar o" style="grid-column:8 / 9">Live</div>
+<div class="lb">60-day stabilization, acceptance<span>Before the October 31 deadline</span></div><div class="bar l" style="grid-column:8 / 11">Stabilization</div>
+</div>
+<p class="small" style="margin-top:12px">Assumes award in January 2027. Launching August 2 leaves a month of margin before the City's September 1 target and two months before CivicLive support ends on September 30.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+<div class="kicker">08 · Included at no extra cost</div>
+<h2>Every common concern, answered in advance</h2>
+<table class="t-sm">
+<tr><th style="width:46%">Included</th><th>The concern it resolves</th></tr>
+<tr><td class="k">Clickable homepage prototype in week 6</td><td>"We won't see the new site until it's too late to change it."</td></tr>
+<tr><td class="k">Launch a month before the September 1 target</td><td>"Any delay leaves us on an unsupported CMS."</td></tr>
+<tr><td class="k">60-day stabilization after launch</td><td>"What if something breaks right after launch?"</td></tr>
+<tr><td class="k">Recorded training and an editor's guide for each role</td><td>"Our staff won't know how to update it."</td></tr>
+<tr><td class="k">Accessibility report before launch</td><td>"How do we prove WCAG 2.1 AA?"</td></tr>
+<tr><td class="k">Redirect map for every changed address</td><td>"Residents' bookmarks and search results will break."</td></tr>
+<tr><td class="k">Standard WordPress, all content exportable</td><td>"We'll be locked in to this vendor for good."</td></tr>
+<tr><td class="k">One price for five years of hosting and care</td><td>"Hosting costs will keep growing."</td></tr>
+</table>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+<div class="kicker">09 · Price for the 5-year term (U.S. dollars)</div>
+<h2>$14,800 to build, $3,600 a year to host and care for it</h2>
+<div class="cols">
+<table class="t-sm">
+<tr><th>Build, fixed</th><th class="n">USD</th></tr>
+<tr><td>Discovery, content inventory and task architecture</td><td class="n">1,800</td></tr>
+<tr><td>Photo-forward design system and templates</td><td class="n">3,200</td></tr>
+<tr><td>CMS build: roles, approvals, search, translation, banner, library, calendars</td><td class="n">4,800</td></tr>
+<tr><td>Migration of about 90% of content and PDFs, redirects</td><td class="n">2,600</td></tr>
+<tr><td>Accessibility testing, PDF triage, QA and security hardening</td><td class="n">1,400</td></tr>
+<tr><td>Training, launch and 60-day stabilization</td><td class="n">1,000</td></tr>
+<tr class="tot"><td>Total build, fixed</td><td class="n">14,800</td></tr>
+</table>
+<div>
+<table class="t-sm">
+<tr><th>Contract year</th><th class="n">Build</th><th class="n">Hosting and care</th><th class="n">Total</th></tr>
+<tr><td>Year 1</td><td class="n">14,800</td><td class="n">3,600</td><td class="n">18,400</td></tr>
+<tr><td>Year 2</td><td class="n">None</td><td class="n">3,600</td><td class="n">3,600</td></tr>
+<tr><td>Year 3</td><td class="n">None</td><td class="n">3,600</td><td class="n">3,600</td></tr>
+<tr><td>Year 4</td><td class="n">None</td><td class="n">3,600</td><td class="n">3,600</td></tr>
+<tr><td>Year 5</td><td class="n">None</td><td class="n">3,600</td><td class="n">3,600</td></tr>
+<tr class="tot"><td>5-year total</td><td class="n">14,800</td><td class="n">18,000</td><td class="n">32,800</td></tr>
+</table>
+<p class="small" style="margin-top:8px"><b>Hosting and care ($300 per month):</b> managed hosting, updates, backups, security monitoring and up to 3 hours of changes a month. <b>Payments:</b> 30% on design approval, 40% on the staging site, 30% on launch acceptance; hosting and care billed monthly from launch. <b>Optional:</b> AI FAQ assistant in a second phase, $2,400 setup plus usage at cost; extra work $60 per hour. Valid for 90 days.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+<div class="kicker">10 · Team, references, insurance and ownership</div>
+<h2>The founders do the work, the City owns the result</h2>
+<div class="cols">
+<div>
+<div class="card" style="margin-bottom:10px"><h3>Julio Briones · Co-founder</h3><p>Project lead: discovery, task architecture, content, design direction and training. Single point of contact.</p></div>
+<div class="card" style="margin-bottom:10px"><h3>Mariam Neme · Co-founder, software engineer</h3><p>CMS build, integrations, migration, accessibility, hosting and security.</p></div>
+<ul>
+<li><b>Hours:</b> Argentina is 2 hours ahead of Eastern Time in winter, so our day covers the City's full business day.</li>
+<li><b>Rhythm:</b> a weekly 30-minute call during the build and a monthly report during the care plan.</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-top:0">References</h3>
+<p>We are a new firm and do not yet have public client references to share. Instead, we prepared the homepage concept on slide 5 specifically for the City of Monroe, and we would be glad to walk your team through it in the virtual demos. The City would be one of our first clients, and we would treat it as a flagship project.</p>
+<h3>Insurance and ownership</h3>
+<p>We will provide certificates of professional, cyber and general liability insurance, at the limits the City requires, before the contract is signed. The City owns its domain, content, design files and code; standard WordPress means any provider can take over.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+<div class="kicker">Annex</div>
+<h2>Compliance summary</h2>
+<table class="t-sm">
+<tr><th>Requirement</th><th style="width:12%">Slide</th><th style="width:18%">Meets</th></tr>
+<tr><td>Distinctive, photo-forward design aligned with the City's brand guide</td><td>5</td><td class="yes">Yes</td></tr>
+<tr><td>Clear resident tasks: payments, requests, reports, jobs, calendars</td><td>4 · 5</td><td class="yes">Yes</td></tr>
+<tr><td>Vendor-hosted CMS with WYSIWYG, permissions and approvals</td><td>6</td><td class="yes">Yes</td></tr>
+<tr><td>Migration of about 90% of content and PDFs, with a migration plan</td><td>8</td><td class="yes">Yes</td></tr>
+<tr><td>WCAG 2.1 AA, search, automatic translation, emergency banner, document library, SSL</td><td>6 · 7</td><td class="yes">Yes</td></tr>
+<tr><td>Accessibility and security documentation</td><td>7</td><td class="yes">Yes</td></tr>
+<tr><td>SOC 2 report</td><td>7</td><td class="part">Hosting provider's</td></tr>
+<tr><td>Launch by September 1, 2027; acceptance before October 31, 2027</td><td>9</td><td class="yes">Yes, August 2</td></tr>
+<tr><td>Pricing for the 5-year base term</td><td>11</td><td class="yes">Yes</td></tr>
+<tr><td>Professional, cyber and liability insurance</td><td>12</td><td class="yes">Before signing</td></tr>
+<tr><td>References</td><td>12</td><td class="part">Partial</td></tr>
+</table>
+<p class="small" style="margin-top:8px">The requirements matrix (Section B) and the 5-year pricing form (Appendix 1) are attached in the City's own format.</p>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Monroe, Michigan</span><span class="pg"></span></div>
+</section>
+
+<!-- 14 -->
+<section class="slide cover">
+<div class="amp">&amp;</div>
+<div class="brand">TWO&amp;HUMAN</div>
+<h1>Thank you. We would be glad to show you the concept in the demos.</h1>
+<p class="sub">Julio Briones · Co-founder · julio@twoandhuman.com · +54 381 509 8972 (phone and WhatsApp) · twoandhuman.com</p>
+<div class="meta">
+<div><b>Build</b>$14,800 fixed</div>
+<div><b>Launch</b>August 2, 2027</div>
+<div><b>5-year total</b>$32,800, hosting and care included</div>
+</div>
+</section>
+
+<script>
+var s=document.querySelectorAll('.slide');
+s.forEach(function(el,i){var p=el.querySelector('.pg'); if(p) p.textContent=(i+1)+' / '+s.length;});
+</script>
+</body>
+</html>
