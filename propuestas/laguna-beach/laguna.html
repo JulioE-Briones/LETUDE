@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Many Departments, One Laguna — TWO&amp;HUMAN × City of Laguna Beach (Draft)</title>
+<link rel="stylesheet" href="../assets/lote5.css">
+<style>
+body { --bg:#f4efe6; --card:#e9e1d3; --ink:#13252f; --deep:#0e3341; --paper:#f7f2ea; --paper2:#b8cacb; --accent:#b8532e; --accent2:#2a7680; --muted:#5b676c; --line:#d5c9b5; --soft:#cfe3df; --ok:#2b7a52; --warn:#a65a12; }
+.pg.dark { --accent2:#9fd3cb; }
+.coast { position:absolute; right:0; top:0; bottom:0; width:5.2in; }
+.cv-meta { position:absolute; left:0.72in; right:6.0in; bottom:0.62in; display:grid; grid-template-columns:1fr; gap:10px; border-top:1px solid rgba(255,255,255,.18); padding-top:12px; font-size:8.6pt; color:var(--paper2); }
+.cv-meta b { display:block; font:700 7pt IT; letter-spacing:.16em; text-transform:uppercase; color:var(--accent2); margin-bottom:3px; }
+/* homepage mock */
+.hp-hero { height:2.05in; position:relative; overflow:hidden; }
+.hp-nav { display:flex; justify-content:space-between; align-items:center; padding:8px 16px; font-size:7.4pt; border-bottom:1px solid #e6e1d8; }
+.hp-nav b { font:800 9pt ID; letter-spacing:.08em; color:#0e3341; }
+.hp-nav span { margin-left:12px; color:#5b676c; }
+.hp-nav .al { background:#b8532e; color:#fff; padding:2px 8px; border-radius:10px; font-weight:700; }
+.hp-t { position:absolute; left:18px; bottom:42px; color:#fff; }
+.hp-t .a { font:800 21pt/1 ID; letter-spacing:-.03em; }
+.hp-t .b { font:italic 17pt/1 IS; color:#ffe2cf; }
+.hp-s { position:absolute; left:18px; bottom:12px; width:3.3in; background:#fff; border-radius:16px; font-size:7.4pt; color:#6b7480; padding:5px 12px; display:flex; justify-content:space-between; }
+.hp-s em { font-style:normal; background:#0e3341; color:#fff; border-radius:10px; padding:0 8px; }
+.tasks { display:grid; grid-template-columns:repeat(6,1fr); gap:7px; padding:10px 16px 6px; }
+.tasks div { border:1px solid #e3ddd2; border-radius:8px; padding:7px 5px; font-size:7pt; font-weight:700; color:#0e3341; text-align:center; }
+.tasks div i { display:block; width:14px; height:14px; margin:0 auto 4px; border-radius:4px; background:#cfe3df; }
+.hp-low { display:grid; grid-template-columns:1.2fr 1fr; gap:10px; padding:4px 16px 14px; }
+.hp-low .n div { display:flex; justify-content:space-between; font-size:7pt; border-bottom:1px dashed #e3ddd2; padding:4px 0; }
+.hp-low .n em { font-style:normal; color:#b8532e; font-weight:700; }
+.hp-low .c { background:#f4efe6; border-radius:8px; padding:8px; font-size:7pt; font-weight:700; color:#0e3341; }
+.hp-low .c small { display:block; font-weight:500; color:#5b676c; }
+/* editor mock */
+.ed { display:grid; grid-template-columns:1fr 1.55in; }
+.ed .cv { padding:14px 18px; border-right:1px solid #e9e6e1; }
+.ed .cv .ttl { font:800 15pt ID; color:#13252f; margin-bottom:6px; }
+.ed .cv .ln { height:7px; background:#eceae6; border-radius:4px; margin-bottom:6px; }
+.ed .cv .img { height:0.9in; border-radius:6px; background:linear-gradient(135deg,#7fb5b8,#e7c9a7); position:relative; margin:8px 0; outline:2px solid #e0a35a; outline-offset:2px; }
+.ed .cv .h4 { font:700 9pt ID; color:#13252f; margin:8px 0 5px; outline:2px solid #e0a35a; outline-offset:2px; display:inline-block; }
+.ed .sb { background:#fbfaf8; padding:10px; }
+.ed .sb .hd { font:800 8pt ID; color:#13252f; margin-bottom:6px; }
+.ed .sb .is { border-radius:6px; padding:6px 7px; font-size:6.8pt; margin-bottom:6px; line-height:1.3; }
+.ed .sb .is.w { background:#fdf0dc; color:#6d4c00; }
+.ed .sb .is.ok { background:#e2f1e8; color:#205d3c; }
+.ed .sb .btn { margin-top:8px; background:#cfd4d8; color:#fff; border-radius:6px; text-align:center; font-size:7pt; font-weight:700; padding:5px; }
+.mob-top { height:1.35in; background:linear-gradient(180deg,#f0b48a 0%,#e58e6a 38%,#3f8a92 39%,#0e3341 100%); position:relative; }
+.mob-top b { position:absolute; left:10px; bottom:12px; color:#fff; font:800 13pt/1 ID; }
+.mob-top i { position:absolute; left:10px; bottom:0; font:italic 11pt IS; color:#ffe2cf; transform:translateY(-1px); }
+.mob-row { display:grid; grid-template-columns:1fr 1fr; gap:5px; padding:8px; }
+.mob-row div { background:#f4efe6; border-radius:7px; padding:7px 6px; font-size:6.6pt; font-weight:700; color:#0e3341; }
+.alertbar { background:#b8532e; color:#fff; font-size:6.6pt; font-weight:700; padding:4px 10px; }
+.gov { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+.gov div { background:var(--card); border-radius:12px; padding:12px; }
+.gov div b { display:block; font:800 11pt ID; margin-bottom:3px; }
+.gov div span { font-size:8.8pt; color:var(--muted); }
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="pg dark">
+<svg class="coast" viewBox="0 0 500 816" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e3341"/><stop offset=".45" stop-color="#245a66"/><stop offset=".62" stop-color="#e2936c"/><stop offset=".7" stop-color="#f3c39a"/></linearGradient>
+<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f8a92"/><stop offset="1" stop-color="#0b2a36"/></linearGradient>
+</defs>
+<rect width="500" height="816" fill="url(#sky)"/>
+<circle cx="300" cy="520" r="74" fill="#f8d6b0" opacity=".9"/>
+<rect y="560" width="500" height="256" fill="url(#sea)"/>
+<path d="M0 470 C60 455 90 420 140 430 C180 438 190 470 230 480 C260 488 270 520 300 560 L0 560 Z" fill="#163e4a"/>
+<path d="M0 520 C40 505 80 500 120 515 C160 530 175 548 210 560 L0 560 Z" fill="#0f3340"/>
+<path d="M500 430 C460 440 440 470 410 500 C390 520 380 545 360 560 L500 560 Z" fill="#12394a"/>
+<g fill="none" stroke="#f7f2ea" stroke-opacity=".35" stroke-width="2">
+<path d="M0 600 Q60 588 120 600 T240 600 T360 600 T500 600"/>
+<path d="M0 640 Q60 628 120 640 T240 640 T360 640 T500 640" stroke-opacity=".25"/>
+<path d="M0 690 Q60 678 120 690 T240 690 T360 690 T500 690" stroke-opacity=".18"/>
+<path d="M0 745 Q60 733 120 745 T240 745 T360 745 T500 745" stroke-opacity=".12"/>
+</g>
+<path d="M300 560 L240 816 L360 816 Z" fill="#f8d6b0" opacity=".12"/>
+</svg>
+<div class="draft">Draft · pending validation</div>
+<div style="max-width:4.75in">
+<div class="kick">Proposal · RFP CM-26-013 · Website Redesign and Replacement</div>
+<h1 class="h1" style="font-size:56pt;margin-top:0.55in">Many departments,<br><span class="it">one Laguna.</span></h1>
+<p class="lead" style="margin-top:18px;color:var(--paper2);font-size:13pt">A distinctive, accessible city website where every department publishes with confidence, launched before April 30, 2027.</p>
+</div>
+<div class="cv-meta">
+<div><b>Prepared for</b>City of Laguna Beach · City Manager's Office<br>Attn. Louie Lacasella</div>
+<div><b>Prepared by</b>TWO&amp;HUMAN · Julio Briones and Mariam Neme, co-founders</div>
+<div><b>Date</b>December 2026</div>
+</div>
+</section>
+
+<!-- 2 EXEC SUMMARY -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">Executive summary</div>
+<h2 class="h2">A city website that stays accessible<br><span class="it">every time someone hits publish.</span></h2>
+<div class="g3" style="margin-top:8px">
+<div class="card"><div class="n">What the City asked for</div><p>Replace and redesign the City's website, let each department edit its own content, meet WCAG 2.1 AA with automated accessibility checks, and launch before April 30, 2027.</p></div>
+<div class="card"><div class="n">What changes for Laguna</div><p>Residents, visitors and businesses find services in a few clicks. Departments publish on their own without breaking the design or accessibility. The City owns a modern platform it can grow for years.</p></div>
+<div class="card ink"><div class="n">How we get there</div><p>The <b>Laguna Publishing System</b>: a task-first site, a design system rooted in Laguna's identity, governed WordPress with roles and approvals, and accessibility checks built into the editor.</p></div>
+</div>
+<div class="g4" style="margin-top:26px">
+<div class="stat"><div class="v">$18,500</div><div class="t">Fixed price to design, build, migrate and launch, itemized on page 14</div></div>
+<div class="stat"><div class="v">Week 4</div><div class="t">Clickable homepage prototype, before development begins</div></div>
+<div class="stat"><div class="v">Apr 16</div><div class="t">Launch in 2027, two weeks ahead of the City's April 30 deadline</div></div>
+<div class="stat"><div class="v">Zero</div><div class="t">Critical errors in automated WCAG 2.1 AA scans at launch, in a written report</div></div>
+</div>
+<div class="band hr"><div class="kick" style="margin-bottom:9px">Why TWO&amp;HUMAN</div><div class="diff">
+<div><b>Founders do the work</b><span>The two people named in this proposal plan, design and build the site.</span></div>
+<div><b>Design and code in one team</b><span>No hand-off between a design agency and a separate developer.</span></div>
+<div><b>Accessibility in the workflow</b><span>Checked when content is created, not only once at launch.</span></div>
+<div><b>Pay on approval</b><span>Milestone payments. The City owns every file and account from day one.</span></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 3 UNDERSTANDING -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="split">
+<div>
+<div class="kick">01 · Understanding Laguna Beach</div>
+<h2 class="h2">A city with a strong identity deserves a website <span class="it">that feels like Laguna.</span></h2>
+<p>Laguna Beach is known far beyond Orange County for its coastline, its canyons and an arts heritage that includes the Festival of Arts and the Pageant of the Masters. Its website is often the first place people meet the City, and it should carry that character while making everyday tasks simple.</p>
+<p>The City Manager's Office has made public communication a priority, including its 2026 solicitations for communications support. This project gives that work a home that every department can keep current.</p>
+</div>
+<div>
+<div class="g2" style="gap:14px;margin-top:0.35in">
+<div class="card"><h3 class="h3">Residents</h3><p>Pay, apply, report a problem, follow Council meetings and get emergency updates.</p></div>
+<div class="card"><h3 class="h3">Visitors</h3><p>Parking, beaches, events and the information the City is responsible for, in a few taps.</p></div>
+<div class="card"><h3 class="h3">Businesses</h3><p>Permits, licenses and planning information without calling City Hall.</p></div>
+<div class="card ink"><h3 class="h3" style="color:var(--paper)">Department editors</h3><p>Publish their own updates quickly, with the system protecting design and accessibility.</p></div>
+</div>
+<p class="small" style="margin-top:12px">Audience priorities will be confirmed with City staff and site analytics during discovery.</p>
+</div>
+</div>
+<div class="band"><div class="dd">
+<div><div class="kick" style="margin-bottom:5px">Preliminary design direction</div><p class="small" style="margin:0">Color and type drawn from the coastline, the canyons and the arts. Final palette follows the City's brand standards and contrast tests.</p></div>
+<div class="sw" style="background:#0e3341"><span>Deep ocean</span></div>
+<div class="sw" style="background:#2a7680"><span>Sea glass</span></div>
+<div class="sw lt" style="background:#e9e1d3;border:1px solid #d5c9b5"><span>Sand</span></div>
+<div class="sw lt" style="background:#f3c39a"><span>Sunset</span></div>
+<div class="sw" style="background:#b8532e"><span>Coral</span></div>
+<div class="ty"><span style="font:800 24pt ID;color:#0e3341">Aa</span><span style="font:italic 28pt IS;color:#2a7680">Aa</span></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 4 DIAGNOSIS -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">02 · What the RFP tells us</div>
+<h2 class="h2">Four requirements, <span class="it">and what each one really asks of the vendor.</span></h2>
+<table class="tb" style="margin-top:6px">
+<tr><th style="width:24%">RFP requirement</th><th style="width:38%">What it means in practice</th><th>Our response</th></tr>
+<tr><td class="k">Redesign and replace the website</td><td>A new platform, a clean move of the content worth keeping and no broken links on launch day.</td><td>Content inventory, task-first architecture, migration with a full redirect map.</td></tr>
+<tr><td class="k">Decentralized departmental editing</td><td>Many editors with different skills. Without guardrails, pages drift in style, quality and accessibility within months.</td><td>Roles by department, locked page patterns, an approval step and a short guide per role.</td></tr>
+<tr><td class="k">WCAG 2.1 AA with automated checks</td><td>Accessibility is a daily habit, not a launch-day audit. Every new page and PDF must keep the standard.</td><td>Accessibility tested at launch plus an in-editor checker that flags issues before content goes live.</td></tr>
+<tr><td class="k">Launch before April 30, 2027</td><td>A fixed public deadline with holidays and approvals along the way.</td><td>A plan that launches April 16, with approvals scheduled and two weeks of margin.</td></tr>
+</table>
+<div class="card line" style="margin-top:16px;display:flex;gap:18px;align-items:center">
+<div class="h3" style="margin:0;white-space:nowrap">To confirm in discovery</div>
+<p class="small" style="margin:0">Current platform and hosting <span class="v">verify</span> · number of pages and documents to migrate <span class="v">verify</span> · integrations with payment, permitting and agenda systems <span class="v">verify</span></p>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 5 TRANSFORMATION -->
+<section class="pg dark">
+<div class="draft">Draft · pending validation</div>
+<div class="split">
+<div>
+<div class="kick">03 · The transformation</div>
+<h2 class="h2">From a website to manage <span class="it">to a system that manages itself.</span></h2>
+<p class="lead" style="font-size:12pt">The goal is not a prettier homepage. It is a website the City can trust after we hand it over: consistent, accessible and current, with every department doing its part.</p>
+</div>
+<div style="margin-top:0.2in">
+<div class="ft"><div class="f" style="border-color:rgba(255,255,255,.25);color:var(--paper2)">Organized around how the City is structured</div><div class="ar" style="color:var(--accent2)">→</div><div class="t" style="background:rgba(255,255,255,.08);color:var(--paper)">Organized around what people come to do</div></div>
+<div class="ft"><div class="f" style="border-color:rgba(255,255,255,.25);color:var(--paper2)">Accessibility checked once, at the end</div><div class="ar" style="color:var(--accent2)">→</div><div class="t" style="background:rgba(255,255,255,.08);color:var(--paper)">Accessibility checked every time someone publishes</div></div>
+<div class="ft"><div class="f" style="border-color:rgba(255,255,255,.25);color:var(--paper2)">Publishing depends on a few people</div><div class="ar" style="color:var(--accent2)">→</div><div class="t" style="background:rgba(255,255,255,.08);color:var(--paper)">Every department publishes, the system keeps it consistent</div></div>
+<div class="ft"><div class="f" style="border-color:rgba(255,255,255,.25);color:var(--paper2)">A generic municipal template</div><div class="ar" style="color:var(--accent2)">→</div><div class="t" style="background:rgba(255,255,255,.08);color:var(--paper)">A site with Laguna's coastline and arts character</div></div>
+<div class="ft"><div class="f" style="border-color:rgba(255,255,255,.25);color:var(--paper2)">A platform tied to one vendor</div><div class="ar" style="color:var(--accent2)">→</div><div class="t" style="background:rgba(255,255,255,.08);color:var(--paper)">Open, documented and owned by the City</div></div>
+</div>
+</div>
+<div class="band hr" style="display:grid;grid-template-columns:1fr 2.6in;gap:30px;align-items:end"><div class="big" style="font-size:24pt">We measure success on an ordinary Tuesday, six months after launch: is the site still accurate, consistent and accessible?</div><p class="small" style="color:var(--paper2);margin:0">That test shapes every decision in this proposal, from the page patterns to the approval step and the monthly scans.</p></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 6 SOLUTION -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">04 · The recommended solution</div>
+<h2 class="h2">The Laguna Publishing System: <span class="it">four parts that work as one.</span></h2>
+<div class="g4" style="margin-top:4px">
+<div class="card"><div class="n">01</div><h3 class="h3">Task-first architecture</h3><p>Navigation and homepage built around residents' top tasks, validated with staff and analytics.</p></div>
+<div class="card"><div class="n">02</div><h3 class="h3">A design system with character</h3><p>Typography, color and photography direction rooted in Laguna, applied to reusable, accessible templates.</p></div>
+<div class="card"><div class="n">03</div><h3 class="h3">Governed WordPress</h3><p>Department roles, locked patterns, revision history and an approval step before anything goes live.</p></div>
+<div class="card ink"><div class="n">04</div><h3 class="h3" style="color:var(--paper)">Accessibility built in</h3><p>An open-source in-editor checker such as Editoria11y, monthly automated scans and a written report.</p></div>
+</div>
+<div class="kick" style="margin-top:24px">How a department page goes live</div>
+<div class="flow">
+<div class="st"><div class="n">Draft</div><p>The editor builds the page from an approved pattern.</p></div>
+<div class="st"><div class="n">Check</div><p>The checker flags missing alt text, skipped headings or low contrast.</p></div>
+<div class="st"><div class="n">Approve</div><p>The department lead reviews and approves.</p></div>
+<div class="st"><div class="n">Publish</div><p>The page goes live with a full revision history.</p></div>
+<div class="st"><div class="n">Monitor</div><p>Monthly scans catch issues across the whole site.</p></div>
+</div>
+<div class="band hr"><div class="kick" style="margin-bottom:8px">What the City keeps after launch</div>
+<span class="chip">Full administrator access</span><span class="chip">Source code in a City-owned repository</span><span class="chip">Editable design files</span><span class="chip">Editor guide for each role</span><span class="chip">WCAG 2.1 AA test report</span><span class="chip">Redirect map</span><span class="chip">Hosting and DNS documentation</span></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 7 CONCEPT HOMEPAGE -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">05 · Preliminary concept · Homepage</div>
+<div style="display:grid;grid-template-columns:1fr 1.75in;gap:26px;align-items:start">
+<div>
+<div class="browser">
+<div class="bar"><i></i><i></i><i></i><span>lagunabeachcity.net</span></div>
+<div class="alertbar">Emergency banner · staff can switch it on across the site in seconds</div>
+<div class="hp-nav"><b>CITY OF LAGUNA BEACH</b><div><span>Residents</span><span>Visitors</span><span>Business</span><span>Government</span><span class="al">Report a problem</span></div></div>
+<div class="hp-hero">
+<svg viewBox="0 0 700 200" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%"><defs><linearGradient id="hs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#25606b"/><stop offset=".55" stop-color="#e59a72"/><stop offset=".62" stop-color="#f4c79e"/></linearGradient></defs><rect width="700" height="200" fill="url(#hs)"/><circle cx="520" cy="122" r="34" fill="#f8d9b6"/><rect y="124" width="700" height="76" fill="#2f7b84"/><path d="M0 95 C80 80 130 70 190 88 C240 102 260 118 300 124 L0 124Z" fill="#17424e"/><path d="M700 80 C640 90 610 104 570 124 L700 124Z" fill="#17424e"/><g stroke="#fff" stroke-opacity=".4" fill="none"><path d="M0 150 Q50 142 100 150 T200 150 T300 150 T400 150 T500 150 T600 150 T700 150"/><path d="M0 172 Q50 164 100 172 T200 172 T300 172 T400 172 T500 172 T600 172 T700 172" stroke-opacity=".25"/></g></svg>
+<div class="hp-t"><div class="a">Welcome to Laguna Beach</div><div class="b">your city, one click closer</div></div>
+<div class="hp-s"><span>Search services, meetings and documents</span><em>Search</em></div>
+</div>
+<div class="tasks"><div><i></i>Pay</div><div><i></i>Apply</div><div><i></i>Report</div><div><i></i>Parking</div><div><i></i>Meetings</div><div><i></i>Alerts</div></div>
+<div class="hp-low">
+<div class="n"><div><span>City Council meeting</span><em>Agenda</em></div><div><span>Beach and marine safety update</span><em>Read</em></div><div><span>Community event</span><em>Details</em></div></div>
+<div class="c">Department pages<small>Each department publishes its own news and services</small></div>
+</div>
+</div>
+<p class="concept">Preliminary concept prepared for this proposal, not an official City design. Final work follows the City's brand standards, photography and approved content.</p>
+</div>
+<div>
+<div class="phone"><div class="scr">
+<div class="alertbar">Emergency banner</div>
+<div class="mob-top"><b>Laguna Beach</b><i>one click closer</i></div>
+<div class="mob-row"><div>Pay a bill</div><div>Report a problem</div><div>Parking</div><div>Meetings</div><div>Apply</div><div>Alerts</div></div>
+</div></div>
+<p class="small" style="margin-top:12px"><b>Mobile first.</b> Large tap targets, the same six tasks and the alert banner on every screen.</p>
+</div>
+</div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 8 CONCEPT EDITOR -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="split2">
+<div>
+<div class="kick">06 · Preliminary concept · The editor's view</div>
+<div class="browser">
+<div class="bar"><i></i><i></i><i></i><span>Editing · Public Works · Street sweeping schedule</span></div>
+<div class="ed">
+<div class="cv">
+<div class="ttl">Street sweeping schedule</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:84%"></div><div class="ln" style="width:70%"></div>
+<div class="img"></div>
+<div class="h4">Heading level skipped</div>
+<div class="ln" style="width:88%"></div><div class="ln" style="width:60%"></div>
+</div>
+<div class="sb">
+<div class="hd">Accessibility check</div>
+<div class="is w"><b>Image needs alt text.</b> Describe what the photo shows.</div>
+<div class="is w"><b>Heading skipped.</b> Use Heading 2 here.</div>
+<div class="is ok"><b>Contrast passes</b> on all text.</div>
+<div class="btn">Fix 2 issues to submit</div>
+</div>
+</div>
+</div>
+<p class="concept">Preliminary concept of the editing experience. Checker shown for illustration; tool choice confirmed with City IT.</p>
+</div>
+<div style="margin-top:0.35in">
+<h2 class="h2" style="font-size:25pt">Accessibility, <span class="it">enforced where content is made.</span></h2>
+<p>With many departments publishing, the riskiest moment is not launch day. It is every ordinary Tuesday afterwards. The checker sits inside the editor and explains each issue in plain language, so editors fix it before the page reaches the public.</p>
+<div class="gov">
+<div><b>Editor</b><span>Drafts pages in their own section</span></div>
+<div><b>Approver</b><span>Reviews and publishes for the department</span></div>
+<div><b>Comms</b><span>Owns homepage and alerts</span></div>
+<div><b>Admin</b><span>Users, settings and integrations</span></div>
+</div>
+</div>
+</div>
+<div class="band hr"><div class="kick" style="margin-bottom:8px">The accessibility toolkit</div>
+<span class="chip">Accessible templates built and tested to WCAG 2.1 AA</span><span class="chip">In-editor checker</span><span class="chip">Monthly automated scans</span><span class="chip">Manual keyboard and screen-reader testing</span><span class="chip">Plain-language guide to accessible documents</span></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 9 SCOPE -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">07 · Scope and deliverables</div>
+<h2 class="h2">Everything needed to launch, <span class="it">and to keep it right afterwards.</span></h2>
+<table class="tb tight">
+<tr><th style="width:23%">Phase</th><th>Deliverables</th><th style="width:20%">City decision</th></tr>
+<tr><td class="k">Discovery</td><td>Kickoff workshop, stakeholder interviews by department, analytics review, content inventory with keep, update, merge or retire recommendations</td><td>Approved inventory</td></tr>
+<tr><td class="k">Architecture</td><td>Task-first sitemap, navigation, content model, department sections and roles</td><td>Approved sitemap</td></tr>
+<tr><td class="k">Design</td><td>Clickable homepage prototype in week 4, design system, templates for every page type</td><td>Milestone 1 · design</td></tr>
+<tr><td class="k">Build</td><td>WordPress build with roles and approvals, search, calendars and agendas, alert banner, forms and links to City systems, in-editor accessibility checker</td><td>Milestone 2 · staging</td></tr>
+<tr><td class="k">Migration</td><td>Approved pages and documents moved, metadata for search, 301 redirect map tested before launch</td><td>Content sign-off</td></tr>
+<tr><td class="k">Quality and launch</td><td>Automated and manual WCAG 2.1 AA testing with a written report, browser and device testing, role-based training, launch and 60-day stabilization</td><td>Milestone 3 · launch</td></tr>
+</table>
+<div class="band hr"><div class="kick" style="margin-bottom:9px">Assumptions that protect the City's budget</div><div class="diff">
+<div><b>Content volume</b><span>Up to 300 approved pages, with volume confirmed by the inventory in week 3.</span></div>
+<div><b>Templates</b><span>Up to 12 page templates cover every page type the inventory identifies.</span></div>
+<div><b>Revisions</b><span>Two revision rounds on each design deliverable, consolidated by the City's project lead.</span></div>
+<div><b>Change control</b><span>Anything outside this scope is quoted in writing and approved before work starts.</span></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 10 TIMELINE -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">08 · Methodology and timeline</div>
+<h2 class="h2">Fourteen weeks to launch, <span class="it">two weeks of margin before April 30.</span></h2>
+<div class="tl">
+<div class="axis" style="grid-template-columns:repeat(4,1fr)"><span>January 2027</span><span>February</span><span>March</span><span>April</span></div>
+<div class="bar"><div class="lbl">Discovery and inventory<span>Kickoff January 11</span></div><div class="track"><div class="seg a" style="left:0;width:17%">Discovery</div></div></div>
+<div class="bar"><div class="lbl">Architecture and prototype<span>Prototype week 4</span></div><div class="track"><div class="seg a" style="left:14%;width:14%">Prototype</div></div></div>
+<div class="bar"><div class="lbl">Design system and templates<span>Milestone 1 · design approval</span></div><div class="track"><div class="seg" style="left:26%;width:16%">Design · M1</div></div></div>
+<div class="bar"><div class="lbl">WordPress build<span>Roles, workflows, checker, search</span></div><div class="track"><div class="seg" style="left:40%;width:28%">Build</div></div></div>
+<div class="bar"><div class="lbl">Content migration and redirects<span>Milestone 2 · staging review</span></div><div class="track"><div class="seg b" style="left:52%;width:24%">Migration · M2</div></div></div>
+<div class="bar"><div class="lbl">Accessibility testing and training</div><div class="track"><div class="seg c" style="left:74%;width:12%">QA · training</div></div></div>
+<div class="bar"><div class="lbl">Launch April 16<span>Milestone 3, then 60-day stabilization</span></div><div class="track"><div class="seg a" style="left:86%;width:10%">Live</div></div></div>
+</div>
+<p class="small" style="margin-top:6px">Assumes award by early January 2027 <span class="v">verify</span>. City reviews are planned within 5 business days; the launch date only moves if content or approvals arrive later.</p>
+<div class="band hr"><div class="kick" style="margin-bottom:9px">What we need from the City</div><div class="diff">
+<div><b>A project lead</b><span>One person with authority to approve each milestone.</span></div>
+<div><b>Department content owners</b><span>One owner per department for the inventory and final content.</span></div>
+<div><b>An IT contact</b><span>For hosting, DNS, single sign-on and the systems the site links to.</span></div>
+<div><b>Timely reviews</b><span>Feedback within 5 business days of each delivery.</span></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 11 SUCCESS -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">09 · How the City will know it worked</div>
+<h2 class="h2">Measures we commit to report, <span class="it">not promises we cannot control.</span></h2>
+<table class="tb">
+<tr><th style="width:33%">Measure</th><th style="width:27%">Target</th><th>How it is measured</th></tr>
+<tr><td class="k">Launch date</td><td>On or before April 16, 2027</td><td>Milestone 3 sign-off</td></tr>
+<tr><td class="k">Accessibility at launch</td><td>Zero critical errors in automated scans</td><td>Written WCAG 2.1 AA report with manual test notes</td></tr>
+<tr><td class="k">Accessibility after launch</td><td>Issues flagged before publishing</td><td>In-editor checker plus monthly scan report (Care plan)</td></tr>
+<tr><td class="k">Departments publishing</td><td>Every department trained and publishing within 30 days</td><td>Training log and editor activity</td></tr>
+<tr><td class="k">Top tasks</td><td>Found in three clicks or fewer</td><td>Task tests with staff on the prototype and before launch</td></tr>
+<tr><td class="k">Links preserved</td><td>Every changed address redirected</td><td>Redirect map tested before launch</td></tr>
+</table>
+<div class="band"><div class="kick" style="margin-bottom:8px">Reporting rhythm</div><div class="flow">
+<div class="st"><div class="n">Weekly</div><p>Written status: done, next, decisions needed.</p></div>
+<div class="st"><div class="n">Each milestone</div><p>Deliverables, open items and approval request.</p></div>
+<div class="st"><div class="n">Launch</div><p>WCAG 2.1 AA report and redirect test results.</p></div>
+<div class="st"><div class="n">Days 30 and 60</div><p>Stabilization report: issues fixed, editor activity.</p></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 12 TEAM -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div style="display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:24px">
+<div>
+<div class="kick">10 · Who does the work</div>
+<h2 class="h2">Founder-led. <span class="it">Founders on every call.</span></h2>
+<p>TWO&amp;HUMAN is a multidisciplinary studio that brings marketing, design and software development together in one team. The founders lead every engagement personally, so the people who plan the City's website are the people who build it.</p>
+<div class="card line" style="margin-top:12px">
+<p class="small" style="margin:0"><b style="color:var(--ink)">Studio profile.</b> Established 2026 · Tucumán, Argentina · works 100% remotely in English and Spanish · two practice areas: GROW (strategy, brand, content, campaigns) and BUILD (web, software, integrations, UX).</p>
+</div>
+</div>
+<div>
+<div class="face" style="background-image:url(../assets/img5/julio.jpg)"></div>
+<h3 class="h3" style="margin-top:10px">Julio Briones</h3>
+<p class="small" style="color:var(--accent);font-weight:700;margin-bottom:6px">Co-founder · Strategy, content and project lead</p>
+<p style="font-size:9.2pt">Single point of contact for the City. Coordinates deliverables, revisions and quality assurance for international B2B and B2C marketing clients, including a consolidated audit of 13 client accounts. Works natively in Spanish and at C1 level in English.</p>
+</div>
+<div>
+<div class="face" style="background-image:url(../assets/img5/mariam.jpg)"></div>
+<h3 class="h3" style="margin-top:10px">Mariam Neme</h3>
+<p class="small" style="color:var(--accent);font-weight:700;margin-bottom:6px">Co-founder · Software engineer</p>
+<p style="font-size:9.2pt">Leads WordPress development, accessibility implementation, integrations, hosting and security, and the technical documentation the City keeps.</p>
+</div>
+</div>
+<div class="band hr"><div class="kick" style="margin-bottom:9px">How we work with the City</div><div class="diff">
+<div><b>One point of contact</b><span>Julio answers for the project from kickoff to stabilization.</span></div>
+<div><b>Live hours in Pacific Time</b><span>Available for calls 8:00 a.m. to 1:00 p.m. Pacific, Monday to Friday.</span></div>
+<div><b>One business day</b><span>Maximum reply time to any City email during the project.</span></div>
+<div><b>Everything in writing</b><span>Decisions, changes and approvals recorded in a shared project log.</span></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 13 QUESTIONS / RISK -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">11 · The questions a careful committee should ask</div>
+<h2 class="h2">We would ask them too. <span class="it">Here are our answers.</span></h2>
+<div class="g3" style="gap:20px 24px">
+<div class="qa"><div class="q">"Can a team outside the U.S. keep a City deadline?"</div><p>Argentina is 5 hours ahead of Pacific Time in winter, so our afternoon covers the City's morning. Weekly written status, video calls in Pacific hours and replies within one business day. Launch is planned two weeks early.</p></div>
+<div class="qa"><div class="q">"What evidence do we have before we sign?"</div><p>The concepts in this proposal, a working session with your team and a clickable prototype in week 4. Payments follow approved milestones, so the City sees the work before it pays for it.</p></div>
+<div class="qa"><div class="q">"Who carries the accessibility risk?"</div><p>We build and test to WCAG 2.1 AA, deliver a written report and leave the checker inside the editor, so the standard holds after handover.</p></div>
+<div class="qa"><div class="q">"What if one founder is unavailable?"</div><p>Both founders work on every project. Code lives in a shared repository, documentation is written as we go, and every credential is in the City's name from day one.</p></div>
+<div class="qa"><div class="q">"Will we be locked in?"</div><p>No. Standard open-source WordPress, no proprietary page builder. The City owns domain, content, code and design files, and any qualified developer can take over.</p></div>
+<div class="qa"><div class="q">"Contracts, insurance and payments?"</div><p>Invoices in U.S. dollars, IRS Form W-8BEN-E as a foreign vendor, and certificates of insurance as the City requires <span class="v">verify timing</span>.</p></div>
+</div>
+<div class="band"><div class="card ink" style="display:grid;grid-template-columns:1.3in repeat(4,1fr);gap:18px;align-items:center;padding:16px 20px">
+<div class="h3" style="color:var(--paper);margin:0">Our commitments</div>
+<p><b>Fixed price.</b> No change orders for anything in this scope.</p>
+<p><b>Pay on approval.</b> Three milestones the City signs off.</p>
+<p><b>60 days of stabilization</b> after launch at no extra cost.</p>
+<p><b>The City's name</b> on the domain, code and every account.</p>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 14 INVESTMENT -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="kick">12 · Investment (U.S. dollars)</div>
+<h2 class="h2" style="font-size:27pt">One fixed build price, <span class="it">three ways to care for it after launch.</span></h2>
+<div class="g3" style="margin-top:14px">
+<div class="opt"><div class="nm">Launch</div><div class="pr">$18,500</div><div class="pm">one time · City-provided hosting</div><ul class="l" style="margin-top:10px"><li>Full design, build and migration</li><li>WCAG 2.1 AA testing and report</li><li>Role-based training</li><li>60-day stabilization</li></ul></div>
+<div class="opt rec"><div class="badge">Recommended</div><div class="nm">Launch + Care</div><div class="pr">$18,500</div><div class="pm">+ $300 per month after launch</div><ul class="l" style="margin-top:10px"><li>Everything in Launch</li><li>Managed hosting in U.S. data centers</li><li>Updates, backups and security monitoring</li><li>Monthly accessibility scan report</li><li>Up to 3 hours of changes a month</li></ul></div>
+<div class="opt"><div class="nm">Launch + Care + Evolve</div><div class="pr">$18,500</div><div class="pm">+ $650 per month after launch</div><ul class="l" style="margin-top:10px"><li>Everything in Care</li><li>Quarterly UX and content review with recommendations</li><li>Up to 8 hours of changes a month</li><li>Editor refresher training twice a year</li></ul></div>
+</div>
+<table class="tb" style="margin-top:16px;font-size:8.8pt">
+<tr><th>Build, fixed</th><th class="r">Discovery</th><th class="r">Architecture</th><th class="r">Design</th><th class="r">Build</th><th class="r">Migration</th><th class="r">QA · training · launch</th><th class="r">Total</th></tr>
+<tr><td class="k">USD</td><td class="r">2,200</td><td class="r">1,800</td><td class="r">4,200</td><td class="r">5,400</td><td class="r">2,600</td><td class="r">2,300</td><td class="r"><b>18,500</b></td></tr>
+</table>
+<p class="small" style="margin-top:8px">Payments: 30% at design approval, 40% at staging approval, 30% at launch acceptance. Care plans billed monthly from launch and cancellable with 60 days' notice. Third-party licenses at cost, no markup. Valid for 90 days. Pricing will also be entered in the City's required format <span class="v">verify</span>.</p>
+<div class="band"><div class="g3" style="text-align:center">
+<div class="card line" style="padding:10px"><span class="small">3-year cost</span><div class="h3" style="margin:2px 0 0">$18,500 + City hosting</div></div>
+<div class="card line" style="padding:10px;border-color:var(--deep)"><span class="small">3-year cost</span><div class="h3" style="margin:2px 0 0">$29,300 all in</div></div>
+<div class="card line" style="padding:10px"><span class="small">3-year cost</span><div class="h3" style="margin:2px 0 0">$41,900 all in</div></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 15 COMPLIANCE + NEXT -->
+<section class="pg">
+<div class="draft">Draft · pending validation</div>
+<div class="split2">
+<div>
+<div class="kick">13 · Compliance summary</div>
+<table class="tb" style="font-size:9pt">
+<tr><th>Requirement</th><th style="width:16%">Page</th><th style="width:20%">Meets</th></tr>
+<tr><td>Website redesign and replacement</td><td>6 · 9</td><td class="y">Yes</td></tr>
+<tr><td>Decentralized departmental editing</td><td>6 · 8</td><td class="y">Yes</td></tr>
+<tr><td>WCAG 2.1 AA</td><td>4 · 11</td><td class="y">Yes</td></tr>
+<tr><td>Automated accessibility checks</td><td>6 · 8</td><td class="y">Yes</td></tr>
+<tr><td>Launch before April 30, 2027</td><td>10</td><td class="y">Yes, April 16</td></tr>
+<tr><td>Staff training and documentation</td><td>9</td><td class="y">Included</td></tr>
+<tr><td>Official evaluation criteria and forms</td><td>All</td><td class="p">Mapped on receipt <span class="v">verify</span></td></tr>
+<tr><td>Insurance</td><td>13</td><td class="p">As required <span class="v">verify</span></td></tr>
+</table>
+</div>
+<div>
+<div class="kick">14 · Next steps</div>
+<div class="flow col">
+<div class="st"><div class="n">1 · Questions</div><p>We answer any clarification the committee needs, in writing.</p></div>
+<div class="st"><div class="n">2 · Working session</div><p>A video session with your team to walk through the concepts and plan.</p></div>
+<div class="st"><div class="n">3 · Kickoff</div><p>Award and kickoff, targeting January 11, 2027.</p></div>
+<div class="st"><div class="n">4 · Prototype</div><p>The City clicks through its new homepage in week 4.</p></div>
+</div>
+</div>
+</div>
+<div class="band hr"><div class="diff" style="grid-template-columns:1.2fr 1fr 1fr 1fr">
+<div><b>Prepared for</b><span>City of Laguna Beach · City Manager's Office · Attn. Louie Lacasella</span></div>
+<div><b>Proposal contact</b><span>Julio Briones · julio@twoandhuman.com · +54 381 509 8972</span></div>
+<div><b>Validity</b><span>Pricing valid for 90 days from submission.</span></div>
+<div><b>Status</b><span>Draft pending validation against the final RFP documents.</span></div>
+</div></div>
+<div class="foot"><span><b>TWO&amp;HUMAN</b> · City of Laguna Beach · CM-26-013</span><span class="pgn"></span></div>
+</section>
+
+<!-- 16 CLOSE -->
+<section class="pg dark">
+<svg class="coast" viewBox="0 0 500 816" preserveAspectRatio="xMidYMid slice" style="opacity:.55"><use href="#none"/><rect width="500" height="816" fill="#0e3341"/><circle cx="300" cy="520" r="74" fill="#f8d6b0" opacity=".5"/><rect y="560" width="500" height="256" fill="#164552"/><g fill="none" stroke="#f7f2ea" stroke-opacity=".25" stroke-width="2"><path d="M0 600 Q60 588 120 600 T240 600 T360 600 T500 600"/><path d="M0 650 Q60 638 120 650 T240 650 T360 650 T500 650"/><path d="M0 700 Q60 688 120 700 T240 700 T360 700 T500 700"/></g></svg>
+<div class="draft">Draft · pending validation</div>
+<div style="max-width:5.6in;margin-top:1.1in">
+<div class="kick">Thank you</div>
+<h1 class="h1" style="font-size:44pt">Let's build the website <span class="it">Laguna's departments can keep right.</span></h1>
+<p class="lead" style="margin-top:16px;color:var(--paper2)">Julio Briones · Co-founder · julio@twoandhuman.com · +54 381 509 8972 · twoandhuman.com</p>
+</div>
+<div class="cv-meta">
+<div><b>Investment</b>$18,500 fixed build · Care from $300 per month</div>
+<div><b>First result</b>Clickable homepage prototype in week 4</div>
+<div><b>Launch</b>April 16, 2027</div>
+</div>
+</section>
+
+<script>
+var p=document.querySelectorAll('.pg'); p.forEach(function(el,i){var n=el.querySelector('.pgn'); if(n) n.textContent=(i+1)+' / '+p.length;});
+</script>
+</body>
+</html>
