@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Lote 5 — Estrategia interna (TWO&amp;HUMAN)</title>
+<style>
+@font-face { font-family: IT; font-weight: 400; src: url(../assets/fonts5/Inter-400.ttf); }
+@font-face { font-family: IT; font-weight: 500; src: url(../assets/fonts5/Inter-500.ttf); }
+@font-face { font-family: IT; font-weight: 600; src: url(../assets/fonts5/Inter-600.ttf); }
+@font-face { font-family: IT; font-weight: 700; src: url(../assets/fonts5/Inter-700.ttf); }
+@font-face { font-family: IT; font-weight: 800; src: url(../assets/fonts5/Inter-800.ttf); }
+@font-face { font-family: ID; font-weight: 800; src: url(../assets/fonts5/ID-800.ttf); }
+@font-face { font-family: IS; font-style: italic; src: url(../assets/fonts5/InstrumentSerif-Italic.ttf); }
+@page { size: letter; margin: 0.62in 0.7in 0.75in; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: IT, sans-serif; font-size: 9.8pt; line-height: 1.45; color: #1d2733; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.foot { position: fixed; bottom: -0.45in; left: 0; right: 0; font-size: 7.4pt; color: #7a8491; display: flex; justify-content: space-between; border-top: 1px solid #e1ddd5; padding-top: 5px; }
+.cover { background: #1d2733; color: #f6f3ee; border-radius: 16px; padding: 30px 32px 28px; margin-bottom: 20px; }
+.cover .k { font: 700 8pt IT; letter-spacing: .2em; text-transform: uppercase; color: #f2b632; }
+.cover h1 { font: 800 30pt/1.02 ID; letter-spacing: -.035em; margin: 10px 0 6px; }
+.cover h1 i { font-family: IS; font-weight: 400; color: #8cc3dc; }
+.cover p { color: #b8c3cb; margin: 0; font-size: 10pt; }
+h2 { font: 800 17pt/1.1 ID; letter-spacing: -.02em; margin: 22px 0 8px; color: #1d2733; }
+h2 .n { color: #b5482a; margin-right: 6px; }
+h3 { font: 800 11.5pt ID; margin: 14px 0 5px; }
+p { margin: 0 0 7px; }
+.brk { page-break-before: always; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0 10px; font-size: 8.9pt; }
+th { background: #1d2733; color: #fff; text-align: left; padding: 6px 8px; font-size: 8pt; font-weight: 700; }
+td { padding: 6px 8px; border-bottom: 1px solid #e3ded4; vertical-align: top; }
+td.k { font-weight: 700; }
+td.r, th.r { text-align: right; white-space: nowrap; }
+tr.tot td { font-weight: 800; background: #f1ede6; }
+.go { color: #2b7a52; font-weight: 800; }
+.cond { color: #a65a12; font-weight: 800; }
+.no { color: #b23a2a; font-weight: 800; }
+.box { border-radius: 12px; padding: 12px 15px; margin: 8px 0 12px; }
+.box.warn { background: #fdf0dc; }
+.box.info { background: #e6f0f5; }
+.box.dark { background: #1d2733; color: #f6f3ee; }
+.box b.t { display: block; font: 800 10.5pt ID; margin-bottom: 3px; }
+ul { margin: 3px 0 8px; padding-left: 17px; }
+li { margin-bottom: 3px; }
+.g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.card { background: #f1ede6; border-radius: 12px; padding: 12px 14px; }
+.card .t { font: 800 11pt ID; margin-bottom: 2px; }
+.card .s { font-size: 8.4pt; color: #5b6670; }
+.big { font: 800 20pt/1 ID; letter-spacing: -.03em; margin: 6px 0 2px; }
+.sc td.s { text-align: center; font-weight: 800; width: 13%; }
+.s9 { background: #cfe9d9; } .s8 { background: #dcefe3; } .s7 { background: #eef5e6; } .s6 { background: #fbf1d6; } .s5 { background: #fde6cf; } .s4 { background: #f9d6c8; }
+.tag { display: inline-block; font: 700 7pt IT; letter-spacing: .08em; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; background: #f5e2ae; color: #6d4c00; }
+.small { font-size: 8.4pt; color: #5b6670; }
+.nobr { page-break-inside: avoid; }
+tr, .box, .card { page-break-inside: avoid; }
+h2, h3 { page-break-after: avoid; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+<div class="k">Informe interno · Lote 5 · Confidencial, no enviar a clientes · 24/11/2026</div>
+<h1>Tres licitaciones de EE. UU., <i>tres decisiones para esta semana.</i></h1>
+<p>City of Laguna Beach (CA) · Pueblo Urban Renewal Authority (CO) · Brazosport College (TX). Qué está verificado, qué falta, cuánto cobrar, qué riesgos hay y qué hacer cada día hasta el envío.</p>
+</div>
+
+<h2><span class="n">1</span>Resumen y decisión</h2>
+<table>
+<tr><th style="width:17%">Licitación</th><th>Objeto</th><th style="width:19%">Cierre (hora Tucumán)</th><th style="width:11%">Enviar el</th><th style="width:17%">Precio recomendado</th><th style="width:12%">Decisión</th></tr>
+<tr><td class="k">PURA · Pueblo, CO</td><td>Rediseño del sitio, hosting y mantenimiento, WCAG 2.1 AA, CMS editable por el equipo</td><td>Lun 30/11, 21:00 (17:00 MT)</td><td><b>Dom 29/11</b></td><td>$9.800 + $160/mes</td><td class="go">GO</td></tr>
+<tr><td class="k">Laguna Beach · CA</td><td>RFP CM-26-013: rediseño y reemplazo del sitio de la Ciudad, edición por departamento, WCAG 2.1 AA con controles automáticos, lanzamiento antes del 30/04/2027</td><td>Vie 4/12 (hora a confirmar en el portal)</td><td><b>Jue 3/12</b></td><td>$18.500 + $300/mes</td><td class="cond">GO condicionado</td></tr>
+<tr><td class="k">Brazosport College · TX</td><td>RFP 2026.07: identidad de marca institucional, identidad de atletismo (Gators) y campaña del 60.º aniversario</td><td>Mié 9/12, 17:00 (14:00 CT) vía IonWave</td><td><b>Mar 8/12</b></td><td>$16.800 (opciones $11.900 y $22.800)</td><td class="cond">GO condicionado</td></tr>
+</table>
+<div class="box warn"><b class="t">Tres correcciones al brief original</b>
+<ul style="margin:0">
+<li><b>PURA no es Connecticut:</b> es la Pueblo Urban Renewal Authority, en Pueblo, Colorado (115 E Riverwalk, Ste 410). Contacto: Shawn Carlson, scarlson@puebloura.org.</li>
+<li><b>Brazosport no pide un sitio web:</b> el RFP 2026.07 es de identidad de marca (institucional, atletismo y 60.º aniversario). Los precios de $8.500 (web) y $5.000 (identidad) no sirven para este alcance.</li>
+<li><b>Laguna Beach</b> es la City of Laguna Beach, City Manager's Office (contacto: Louie Lacasella). RFP CM-26-013, publicado el 4/11; las preguntas cerraron el 18/11.</li>
+</ul></div>
+<p><b>Condiciones de los GO:</b> Laguna, revisar las adendas y respuestas a preguntas y confirmar que no exijan presencia o licencia local. Brazosport, registrarse en IonWave y obtener respuesta sobre la elegibilidad de empresas extranjeras: los agregadores dicen "USA Organization" y nuestra pregunta del 12/11 sigue sin respuesta. Si la respuesta es "solo EE. UU.", es <span class="no">NO-GO</span>, como pasó con MUB.</p>
+
+<h2><span class="n">2</span>Datos verificados que usan las propuestas</h2>
+<table>
+<tr><th style="width:17%">Dato</th><th>PURA</th><th>Laguna Beach</th><th>Brazosport</th></tr>
+<tr><td class="k">Fuente</td><td>Gmail (RFP, 1/11) + web</td><td>Gmail (aviso del portal) + web</td><td>Gmail (IonWave, 6/11) + RFQ 2019 del College</td></tr>
+<tr><td class="k">Requisitos citados</td><td>Rediseño, hosting, mantenimiento, WCAG 2.1 AA, edición sin programar</td><td>Edición descentralizada, WCAG 2.1 AA, controles automáticos de accesibilidad, lanzamiento antes del 30/04/2027</td><td>Marca institucional, atletismo, 60.º aniversario</td></tr>
+<tr><td class="k">Contexto citado</td><td>Subsidios LAUNCH de hasta $25.000; oportunidades de desarrollo (hotel céntrico, casa sobre el Riverwalk); RFP de las parcelas de Central Main Street</td><td>Festival of Arts y Pageant of the Masters; RFPs de comunicación 2026 (CM-010, CM-011)</td><td>Fundado en 1968 (según el RFQ 2019); Gators; 500 College Drive, Lake Jackson, TX 77566</td></tr>
+<tr><td class="k">Respuesta a nuestros mails</td><td>Sin respuesta al mail del 5/11</td><td>Sin respuesta</td><td>Sin respuesta a la pregunta de elegibilidad del 12/11</td></tr>
+</table>
+
+<h2><span class="n">3</span>Pendientes que hay que validar antes de enviar</h2>
+<p>Cada uno aparece en los PDF con una marca amarilla <span class="tag">verify</span>. Antes del envío final hay que resolverlos y yo genero la versión sin marcas y sin el sello "Draft · pending validation".</p>
+<table>
+<tr><th style="width:15%">Propuesta</th><th>Pendiente</th><th style="width:12%">Página</th><th style="width:26%">Cómo resolverlo</th></tr>
+<tr><td class="k">Las tres</td><td>Formularios oficiales, criterios de evaluación y formato de precio</td><td>Cumplimiento e inversión</td><td>Descargar el pliego completo y adendas; volcar el precio en su formulario</td></tr>
+<tr><td class="k">Las tres</td><td>Seguros exigidos (montos y momento)</td><td>Preguntas y cumplimiento</td><td>Leer la sección de seguros; pedir cotización (GL, E&amp;O, cyber)</td></tr>
+<tr><td class="k">PURA</td><td>Plataforma y hosting actuales, cantidad de páginas y documentos, reglas para publicar actas</td><td>4</td><td>Preguntar o revisar el sitio actual; no afirmamos nada sobre él</td></tr>
+<tr><td class="k">PURA</td><td>Herramienta de alertas por email para oportunidades</td><td>8</td><td>Confirmar si ya usan una (Mailchimp, Constant Contact)</td></tr>
+<tr><td class="k">PURA</td><td>Fecha de adjudicación (kickoff estimado 11/01/2027)</td><td>11</td><td>Pliego o pregunta a Shawn Carlson</td></tr>
+<tr><td class="k">Laguna</td><td>Plataforma actual, volumen a migrar, integraciones (pagos, permisos, agendas)</td><td>4</td><td>Adendas y respuestas a preguntas del 18/11</td></tr>
+<tr><td class="k">Laguna</td><td>Adjudicación a inicios de enero de 2027</td><td>10</td><td>Pliego (cronograma de evaluación)</td></tr>
+<tr><td class="k">Laguna</td><td>Hora exacta de cierre del 4/12</td><td>—</td><td>Portal lagunabeachcity.net/do-business-here/rfps-bids</td></tr>
+<tr><td class="k">Brazosport</td><td>Marcas actuales y registradas, reglas de conferencia o NJCAA y proveedores de uniformes</td><td>4 · 8</td><td>Pregunta vía IonWave o purchasing@brazosport.edu</td></tr>
+<tr><td class="k">Brazosport</td><td>Año de fundación y fechas del aniversario (1968 → 60.º en 2028)</td><td>9</td><td>Confirmar con el College; si cuentan desde otro año, cambia la firma "Since 1968"</td></tr>
+<tr><td class="k">Brazosport</td><td>Fecha de adjudicación (kickoff estimado a mediados de enero)</td><td>11</td><td>Pliego</td></tr>
+<tr><td class="k">Equipo</td><td>Bio de Mariam y aprobación de las fotos de ambos</td><td>Equipo</td><td>Julio y Mariam revisan; hoy Mariam solo figura como "software engineer"</td></tr>
+<tr><td class="k">Equipo</td><td>Quién ejecuta el diseño gráfico de marca en Brazosport</td><td>13</td><td>Si es un diseñador externo, nombrarlo y confirmar disponibilidad; el RFP puede pedir declarar subcontratistas</td></tr>
+</table>
+
+<h2><span class="n">4</span>Riesgos de descalificación</h2>
+<table>
+<tr><th style="width:24%">Riesgo</th><th style="width:12%">Dónde</th><th style="width:10%">Nivel</th><th>Mitigación</th></tr>
+<tr><td class="k">Elegibilidad solo para empresas de EE. UU.</td><td>Brazosport</td><td class="no">Alto</td><td>Respuesta escrita antes de invertir más horas. Si es "solo EE. UU.", NO-GO.</td></tr>
+<tr><td class="k">Formularios firmados, notarizados o de proveedor (W-9, HUB, conflicto de interés)</td><td>Las tres</td><td class="cond">Medio</td><td>Leer el pliego completo. Como empresa extranjera corresponde el W-8BEN-E, no el W-9; preguntar si lo aceptan.</td></tr>
+<tr><td class="k">Seguro exigido antes de adjudicar</td><td>Las tres</td><td class="cond">Medio</td><td>Cotizar ya. Muchas entidades lo piden recién al adjudicar; confirmar.</td></tr>
+<tr><td class="k">Precio fuera del formato oficial</td><td>Las tres</td><td class="cond">Medio</td><td>Volcar las cifras en el formulario del pliego además del PDF.</td></tr>
+<tr><td class="k">Envío tarde o por el canal equivocado</td><td>Las tres</td><td class="no">Alto</td><td>Enviar un día antes; IonWave en Brazosport; pedir acuse de recibo.</td></tr>
+<tr><td class="k">Referencias de clientes obligatorias</td><td>Laguna y Brazosport</td><td class="cond">Medio</td><td>Responder con honestidad (estudio fundado en 2026). Ofrecer referencias profesionales de los fundadores si el pliego lo permite y muestras de trabajo con permiso del cliente.</td></tr>
+<tr><td class="k">Límite de páginas o estructura obligatoria</td><td>Las tres</td><td class="cond">Medio</td><td>Si el pliego fija secciones o páginas, reordeno o recorto las propuestas en minutos.</td></tr>
+<tr><td class="k">Exigencia de hosting o datos en EE. UU.</td><td>PURA y Laguna</td><td class="go">Bajo</td><td>Ya ofrecemos hosting administrado en centros de datos de EE. UU.</td></tr>
+</table>
+
+<h2><span class="n">5</span>Precios: por qué no usar los sugeridos</h2>
+<p>Los precios del brief se tomaron como punto de partida y se recalcularon desde el alcance y las horas, a la tarifa de referencia de <b>USD 60 por hora</b>. No se cotizó un porcentaje de ningún presupuesto porque ninguno de los tres pliegos verificados publica un tope.</p>
+<div class="g3">
+<div class="card"><div class="t">Laguna Beach</div><div class="s">Sugerido $7.500 → recomendado</div><div class="big">$18.500</div><div class="s">≈ 308 horas. Con $7.500 (125 h) no alcanza ni para diseño, construcción y migración de un sitio municipal con muchos departamentos. Un precio tan bajo también le resta credibilidad ante un comité de una ciudad.</div></div>
+<div class="card"><div class="t">PURA</div><div class="s">Sugerido $12.500 → recomendado</div><div class="big">$9.800</div><div class="s">≈ 163 horas para un sitio chico (supuesto: hasta 60 páginas). Bajamos la entrada para competir con agencias de Colorado, pero el plan mensual lleva el total a 3 años a $15.560–$24.920, por encima del sugerido.</div></div>
+<div class="card"><div class="t">Brazosport</div><div class="s">Sugerido $5.000 → recomendado</div><div class="big">$16.800</div><div class="s">≈ 280 horas para investigación más tres identidades (institucional, atletismo y aniversario). Con $5.000 solo alcanza para un logo. La opción Foundation de $11.900 da una salida si el presupuesto es menor.</div></div>
+</div>
+
+<h3>Rentabilidad estimada por propuesta</h3>
+<table>
+<tr><th style="width:24%">Concepto</th><th class="r">Precio</th><th class="r">Horas est.</th><th class="r">Costos directos</th><th class="r">Neto / hora</th><th class="r">Neto / hora con 20 % más de horas</th></tr>
+<tr><td class="k">Laguna · construcción</td><td class="r">$18.500</td><td class="r">308</td><td class="r">$855</td><td class="r">$57</td><td class="r">$48</td></tr>
+<tr><td class="k">Laguna · Care $300/mes</td><td class="r">$3.600/año</td><td class="r">48/año</td><td class="r">$420/año</td><td class="r">$66</td><td class="r">$55</td></tr>
+<tr><td class="k">Laguna · Evolve $650/mes</td><td class="r">$7.800/año</td><td class="r">114/año</td><td class="r">$420/año</td><td class="r">$65</td><td class="r">$54</td></tr>
+<tr><td class="k">PURA · construcción</td><td class="r">$9.800</td><td class="r">163</td><td class="r">$444</td><td class="r">$57</td><td class="r">$48</td></tr>
+<tr><td class="k">PURA · Essential $160/mes</td><td class="r">$1.920/año</td><td class="r">21/año</td><td class="r">$360/año</td><td class="r">$74</td><td class="r">$62</td></tr>
+<tr><td class="k">PURA · Care + Content $420/mes</td><td class="r">$5.040/año</td><td class="r">72/año</td><td class="r">$360/año</td><td class="r">$65</td><td class="r">$54</td></tr>
+<tr><td class="k">Brazosport · One Brazosport</td><td class="r">$16.800</td><td class="r">280</td><td class="r">$604</td><td class="r">$58</td><td class="r">$48</td></tr>
+<tr><td class="k">Brazosport · Rollout</td><td class="r">$6.000</td><td class="r">96 máx.</td><td class="r">$180</td><td class="r">$61</td><td class="r">—</td></tr>
+</table>
+<p class="small">Costos directos estimados: 3 % de comisiones por cobro internacional, plugins o herramientas ($300 en Laguna, $150 en PURA, $100 en Brazosport) y hosting administrado de unos $30–35 por mes en los planes de cuidado. Fuentes, fotos e impresión se trasladan al costo. No incluye impuestos argentinos ni el costo de seguros: hay que consultarlo con el contador. Todas las horas son estimaciones mías.</p>
+<div class="box info"><b class="t">Qué protege la rentabilidad</b>
+<ul style="margin:0">
+<li><b>Topes explícitos:</b> 300 páginas en Laguna, 60 en PURA, 12 u 8 plantillas, dos rondas de revisión y control de cambios por escrito.</li>
+<li><b>Pagos por hito:</b> 30/40/30, así nunca financiamos más de un tercio del trabajo.</li>
+<li><b>Sin garantías ilimitadas:</b> estabilización de 60 días en Laguna y 30 en PURA, sin promesas de resultados que no controlamos (solo medidas que reportamos).</li>
+<li><b>Ingresos recurrentes:</b> los planes de cuidado suben el valor del cliente sin bajar el precio de entrada.</li>
+</ul></div>
+
+<h3>Capacidad: el riesgo de ganar demasiado</h3>
+<p>Si en enero se adjudicaran a la vez Laguna (≈22 h/semana), PURA (≈16 h/semana) y Brazosport (≈17 h/semana), más OIC y Monroe del lote anterior, el equipo superaría las 80 horas semanales. Es poco probable que se ganen todas, pero hay que decidir ahora un plan: a quién se suma como apoyo freelance bajo supervisión de los fundadores (declarándolo si el pliego lo pide) y qué proyecto se reprograma. Las fechas de lanzamiento de Laguna (16/04) y PURA (semana del 15/03) tienen margen para escalonarse.</p>
+
+<h2><span class="n">6</span>Diferenciación y estrategia competitiva</h2>
+<p><b>Contra quién competimos:</b> agencias de EE. UU. con portafolio de gobierno o educación, proveedores especializados en sitios municipales con plataformas propias y estudios locales con presencia física. Nos ganan en referencias y presencia. Les ganamos en estas cinco cosas:</p>
+<table>
+<tr><th style="width:24%">Diferenciador</th><th>Cómo aparece en las propuestas</th><th style="width:30%">Principio aplicado</th></tr>
+<tr><td class="k">Conceptos hechos antes de firmar</td><td>Home, vista del editor, hub de oportunidades y tres rutas de marca diseñadas para cada organización</td><td>Reciprocidad (Cialdini) y prueba en lugar de promesa (Sant)</td></tr>
+<tr><td class="k">Fundadores en todo el proyecto</td><td>"Founder-led": quien planifica también construye y responde</td><td>Posicionamiento enfocado (Enns, Baker)</td></tr>
+<tr><td class="k">Accesibilidad en el flujo diario</td><td>Verificador dentro del editor y escaneos mensuales, no solo una auditoría al lanzar</td><td>Resultado soñado y menor probabilidad de fallar (ecuación de valor de Hormozi)</td></tr>
+<tr><td class="k">Riesgo invertido</td><td>Precio fijo, pago por hito aprobado, propiedad total y sin dependencia del proveedor</td><td>Reversión de riesgo (Hormozi) y opciones como "elección de síes" (Weiss)</td></tr>
+<tr><td class="k">Bilingüe nativo</td><td>Páginas clave en español incluidas en PURA</td><td>Diferencial concreto donde importa (Pueblo tiene una población hispana muy grande)</td></tr>
+</table>
+<p><b>Objeciones anticipadas</b> (auditoría de acusaciones, Voss): distancia, falta de antecedentes, accesibilidad, continuidad si falta un fundador, dependencia del proveedor, pagos, seguros y W-8BEN-E. Cada propuesta tiene una página "The questions a careful committee should ask" que las responde antes de que las planteen. En ningún lugar se dice "first client" ni "new firm without experience": el estudio se presenta como "Established 2026", sin esconderlo y sin disculparse.</p>
+<div class="box warn"><b class="t">La debilidad que sigue abierta: evidencia</b>Ninguna propuesta muestra casos de clientes porque no inventamos ninguno. La forma más rápida de mejorar el puntaje es sumar dos o tres muestras reales de trabajo con permiso del cliente (por ejemplo, sitios ya publicados por el estudio, si existen y se pueden mostrar) y una referencia profesional de cada fundador. Apenas me pases el material, lo agrego en una página "Selected work".</div>
+
+<h2><span class="n">7</span>Auditoría competitiva desde seis roles</h2>
+<table>
+<tr><th style="width:17%">Rol</th><th>Hallazgo</th><th style="width:30%">Qué se hizo</th></tr>
+<tr><td class="k">Evaluador</td><td>Necesita encontrar rápido cada requisito y defender la elección ante su jefe.</td><td>Matriz de cumplimiento con números de página, resumen ejecutivo con cuatro cifras y bloque "Why TWO&amp;HUMAN". <span class="go">Corregido</span></td></tr>
+<tr><td class="k">Agencia de EE. UU. rival</td><td>Atacaría la distancia, la falta de referencias y la continuidad.</td><td>Página de preguntas del comité, horarios de solape con la zona horaria de cada cliente y pagos por hito. <span class="cond">Las referencias siguen abiertas</span></td></tr>
+<tr><td class="k">Compras</td><td>Formularios, seguros, formato de precio y W-8BEN-E.</td><td>Marcados como pendientes, sin inventar nada. <span class="cond">Requiere el pliego completo</span></td></tr>
+<tr><td class="k">CFO</td><td>Quiere el costo total, saber qué no está incluido y salidas sin penalidad.</td><td>Costo a 3 años en las tres opciones, supuestos de alcance, planes cancelables con 60 días de aviso y licencias al costo. <span class="go">Corregido</span></td></tr>
+<tr><td class="k">Director creativo</td><td>Concepto propio por organización y no plantillas genéricas.</td><td>Tres direcciones de arte distintas (costera, cívica e institucional deportiva), conceptos marcados como preliminares y paleta exploratoria declarada. <span class="go">Corregido</span></td></tr>
+<tr><td class="k">Líder técnico</td><td>¿Se puede construir con dos personas en los plazos? ¿WordPress cumple?</td><td>WordPress estándar sin constructor propietario, verificador de código abierto, topes de alcance y plazos con margen (Laguna lanza dos semanas antes). <span class="cond">Capacidad: ver sección 5</span></td></tr>
+</table>
+<p class="small">También corregido durante la revisión: número de página citado en el resumen de Laguna, conflicto de estilos que mostraba los textos de los próximos pasos en mayúsculas, etiquetas recortadas en la portada de PURA, superposición de la tabla de entregables de Brazosport y páginas con mucho espacio vacío (se sumaron supuestos, ritmo de reportes, qué necesitamos del cliente y costo a 3 años).</p>
+
+<div class="nobr"><h3>Puntajes (1 a 10)</h3>
+<table class="sc">
+<tr><th>Criterio</th><th class="r" style="text-align:center">Laguna</th><th style="text-align:center">PURA</th><th style="text-align:center">Brazosport</th><th style="width:34%">Qué lo subiría</th></tr>
+<tr><td class="k">Personalización</td><td class="s s8">8</td><td class="s s9">9</td><td class="s s8">8</td><td>Datos del sitio actual y de analítica (después del kickoff)</td></tr>
+<tr><td class="k">Persuasión</td><td class="s s8">8</td><td class="s s8">8</td><td class="s s8">8</td><td>Una cita o dato del propio cliente en la portada</td></tr>
+<tr><td class="k">Valor percibido</td><td class="s s8">8</td><td class="s s9">9</td><td class="s s8">8</td><td>—</td></tr>
+<tr><td class="k">Diferenciación</td><td class="s s7">7</td><td class="s s8">8</td><td class="s s7">7</td><td>Muestras de trabajo propias</td></tr>
+<tr><td class="k">Evidencia</td><td class="s s4">4</td><td class="s s4">4</td><td class="s s4">4</td><td>Casos reales y referencias de los fundadores</td></tr>
+<tr><td class="k">Calidad visual</td><td class="s s9">9</td><td class="s s8">8</td><td class="s s9">9</td><td>Fotos reales de cada ciudad o campus (con licencia)</td></tr>
+<tr><td class="k">Factibilidad</td><td class="s s7">7</td><td class="s s8">8</td><td class="s s7">7</td><td>Plan de capacidad y diseñador confirmado (Brazosport)</td></tr>
+<tr><td class="k">Rentabilidad</td><td class="s s7">7</td><td class="s s8">8</td><td class="s s7">7</td><td>Mantener los topes de alcance en la negociación</td></tr>
+<tr><td class="k">Cumplimiento</td><td class="s s6">6</td><td class="s s6">6</td><td class="s s5">5</td><td>Pliego completo, formularios, seguros y elegibilidad</td></tr>
+<tr class="tot"><td>Promedio</td><td class="s">7,1</td><td class="s">7,6</td><td class="s">7,0</td><td></td></tr>
+</table></div>
+
+<h2><span class="n">8</span>Próximos pasos, día por día</h2>
+<table>
+<tr><th style="width:15%">Cuándo</th><th style="width:15%">Quién</th><th>Qué</th></tr>
+<tr><td class="k">Mar 24/11 – mié 25/11</td><td>Julio</td><td>Descargar los pliegos completos y adendas de las tres. Pasarme formularios, criterios, seguros y formato de precio. Aprobar bios y fotos.</td></tr>
+<tr><td class="k">Mié 25/11</td><td>Julio</td><td>Brazosport: registrarse en IonWave y volver a preguntar por la elegibilidad de empresas extranjeras a purchasing@brazosport.edu (Cara Green). Laguna: revisar las respuestas a preguntas.</td></tr>
+<tr><td class="k">Jue 26/11</td><td>Julio y Mariam</td><td>Pedir cotizaciones de seguros (responsabilidad general, profesional o E&amp;O, cyber). Completar el W-8BEN-E.</td></tr>
+<tr><td class="k">Vie 27/11</td><td>Yo</td><td>Versión final de PURA sin marcas ni sello de borrador, con los formularios del pliego.</td></tr>
+<tr><td class="k">Dom 29/11</td><td>Julio</td><td><b>Enviar PURA</b> por el canal que indique el pliego y pedir acuse de recibo. Cierra el lun 30/11 a las 21:00 de Tucumán.</td></tr>
+<tr><td class="k">Mar 1/12</td><td>Yo</td><td>Versión final de Laguna, con la hora de cierre confirmada.</td></tr>
+<tr><td class="k">Jue 3/12</td><td>Julio</td><td><b>Enviar Laguna Beach.</b> Cierra el vie 4/12.</td></tr>
+<tr><td class="k">Hasta el 4/12</td><td>Julio</td><td>Brazosport: con la elegibilidad confirmada, seguir; si es "solo EE. UU.", archivar como NO-GO.</td></tr>
+<tr><td class="k">Lun 7/12</td><td>Yo</td><td>Versión final de Brazosport y carga en IonWave.</td></tr>
+<tr><td class="k">Mar 8/12</td><td>Julio</td><td><b>Enviar Brazosport</b> por IonWave. Cierra el mié 9/12 a las 17:00 de Tucumán.</td></tr>
+</table>
+<div class="box dark"><b class="t" style="color:#f2b632">Nota sobre las fuentes</b>Los libros mencionados (Hormozi, Weiss, Sant, Enns, Cialdini, Voss, Baker) no se adjuntaron en esta sesión. Sus principios se aplicaron desde conocimiento general y se señalan en la sección 6. Ningún dato de cliente, número de licitación, fecha, requisito o precio oficial se inventó: lo que no está verificado está marcado y listado en la sección 3.</div>
+
+</body>
+</html>

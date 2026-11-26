@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>TWO&amp;HUMAN · Propuesta Comunidad Avina</title>
+<link rel="stylesheet" href="../assets/propuesta.css">
+<style>
+@page { size: A4; margin: 0; }
+.page { width:210mm; height:297mm; }
+.cover .top { height:5.6in; }
+/* boceto de la plataforma */
+.mock .nav span.me { background:var(--sage); color:#fff; border-radius:10px; padding:1px 7px; }
+.mock .hero { padding:12px 14px; }
+.doors { display:flex; gap:6px; padding:9px 12px 4px; }
+.doors div { flex:1; border:1px solid var(--line); border-top:3px solid var(--sage); border-radius:4px; padding:6px 7px; font-size:6.8pt; color:var(--grey); }
+.doors div b { display:block; color:var(--navy); font-size:7.4pt; margin-bottom:2px; }
+.mock .col .item { border:1px solid var(--line); border-radius:3px; padding:3px 6px; font-size:6.6pt; margin-bottom:3px; display:flex; justify-content:space-between; }
+.mock .col .item em { font-style:normal; color:var(--orange); font-weight:700; }
+.filters { display:flex; gap:4px; flex-wrap:wrap; margin-bottom:4px; }
+.filters span { font-size:6.2pt; border:1px solid var(--line); border-radius:9px; padding:1px 6px; color:var(--grey); }
+.dash { display:grid; grid-template-columns:repeat(4,1fr); gap:4px; }
+.dash div { background:var(--light); border-radius:3px; padding:4px 5px; font-size:6.1pt; color:var(--grey); line-height:1.25; }
+.dash div b { display:block; color:var(--navy); font-size:8pt; }
+.private { margin:0 12px 10px; border:1px dashed var(--sage); border-radius:4px; padding:5px 8px; font-size:6.8pt; color:var(--sage); font-weight:700; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<section class="page cover">
+<div class="top">
+<div class="tag">TWO&amp;HUMAN</div>
+<h1>Plataforma Digital de Colaboración — Comunidad Avina</h1>
+<p>Propuesta técnica y económica para diseñar, implementar, pilotear con Impulsouth y consolidar la Comunidad Avina en WordPress + BuddyBoss, con community manager dedicado.</p>
+</div>
+<div class="meta">
+<table>
+<tr><td class="k">Para</td><td>Fundación Avina · Términos de Referencia "Plataforma Digital de Colaboración (Comunidad Avina)" · Postulación vía BambooHR</td></tr>
+<tr><td class="k">De</td><td>TWO&amp;HUMAN · Julio Briones, cofundador (estrategia, marketing digital y web) · Mariam Neme, cofundadora (ingeniería de software)</td></tr>
+<tr><td class="k">Contacto</td><td>julio@twoandhuman.com · +54 381 509 8972 (teléfono y WhatsApp) · twoandhuman.com</td></tr>
+<tr><td class="k">Fecha</td><td>18 de noviembre de 2026</td></tr>
+<tr><td class="k">Resumen</td><td><b>USD 14.800 en total</b> por las 4 fases y los 7 productos, de diciembre de 2026 a diciembre de 2027, dentro del tope de USD 17.400. Incluye community manager dedicado durante el piloto. <b>Cada pago se factura solo después de que Avina aprueba el producto.</b> Se factura en la moneda local que indique Avina.</td></tr>
+</table>
+</div>
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>Comunidad Avina</span></div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>PROPUESTA · PLATAFORMA DIGITAL DE COLABORACIÓN — COMUNIDAD AVINA</span></div>
+
+<h2><small>01</small>Quiénes somos</h2>
+<p>TWO&amp;HUMAN es un estudio de marketing y software fundado en 2026 en Tucumán, Argentina, por Julio Briones (estrategia, marketing digital, web y contenido) y Mariam Neme (ingeniera de software: desarrollo, accesibilidad, integraciones y soporte). Trabajamos de forma 100 % remota, en español e inglés, en el mismo horario que la mayor parte de América Latina. Somos una firma nueva y lo decimos con claridad: preferimos ganarnos la confianza de Avina con un plan concreto, pagos contra productos aprobados y todo a nombre de Avina, antes que con afirmaciones que no podemos respaldar.</p>
+
+<h2><small>02</small>Lo que entendimos</h2>
+<p>Fundación Avina conecta y moviliza recursos para esfuerzos colaborativos en el Sur Global, en tres pilares: <b>Acción Climática, Economía Justa y Regenerativa, e Innovación Democrática</b>. La <b>Comunidad Avina</b> busca reunir en un mismo espacio a colaboradores, inversores y aliados para que trabajen juntos: grupos temáticos, convocatorias colaborativas, un repositorio de contenidos, espacios de inteligencia colectiva, newsletters y datos de uso que muestren si la comunidad está viva. La comunidad de práctica de <b>Impulsouth</b> es el primer piloto.</p>
+<p>Instalar WordPress y BuddyBoss es la parte sencilla. Lo difícil es que la gente vuelva. Por eso nuestra propuesta une la plataforma con el trabajo de comunidad desde el primer día: cada función se diseña para una acción concreta de un miembro (sumarse a un grupo, responder una convocatoria, compartir un documento) y cada mes se mide.</p>
+
+<h2><small>03</small>Enfoque</h2>
+<table>
+<tr><th style="width:31%">Lo que piden</th><th>Cómo lo resolvemos</th></tr>
+<tr><td class="k">WordPress + BuddyBoss en SiteGround</td><td>Instalamos y configuramos en el servidor que habilita el equipo de TI de Avina, con un entorno de prueba (staging) para que ningún cambio afecte a la comunidad en vivo. Sin plugins pagos adicionales sin aprobación de Avina.</td></tr>
+<tr><td class="k">Grupos temáticos</td><td>Grupos por pilar y por tema, públicos, privados u ocultos, con moderadores designados por Avina.</td></tr>
+<tr><td class="k">Convocatorias colaborativas</td><td>Una plantilla de convocatoria (objetivo, plazo, perfil buscado y botón "Sumarme") con estados abierta, en curso y cerrada, para medir los ciclos de colaboración.</td></tr>
+<tr><td class="k">Repositorio de contenidos</td><td>Biblioteca con filtros por pilar, país, tipo de documento e idioma, y registro de descargas.</td></tr>
+<tr><td class="k">Inteligencia colectiva</td><td>Foros de preguntas, encuestas y espacios de cocreación dentro de cada convocatoria, con una síntesis mensual que publica el community manager.</td></tr>
+<tr><td class="k">Newsletters</td><td>Una newsletter mensual de la comunidad, segmentada por pilar, con la herramienta que Avina ya use o una integrada sin costo de licencia.</td></tr>
+<tr><td class="k">Analítica y tableros</td><td>Tablero de indicadores con Google Analytics 4, datos de BuddyBoss y Looker Studio (sin costo de licencia), actualizado cada mes.</td></tr>
+<tr><td class="k">Community manager dedicado</td><td>Julio Briones, cofundador, durante el piloto: moderación en días hábiles, activación semanal, newsletter, síntesis de inteligencia colectiva e informe mensual.</td></tr>
+<tr><td class="k">Metodología ágil y escalabilidad</td><td>Ciclos de dos semanas con una demostración y aprobación al final de cada uno. Una estructura replicable para sumar nuevas comunidades de práctica después de Impulsouth.</td></tr>
+<tr><td class="k">Accesibilidad</td><td>Pautas WCAG 2.1 AA: contraste, navegación con teclado y textos alternativos.</td></tr>
+</table>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>2 / 7</span></div>
+</section>
+
+<!-- PÁGINA 3 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>PROPUESTA · PLATAFORMA DIGITAL DE COLABORACIÓN — COMUNIDAD AVINA</span></div>
+
+<h2><small>04</small>Concepto de la plataforma (conceptual)</h2>
+<p>Así imaginamos la pantalla de inicio de un miembro. Es un boceto preparado para esta propuesta: el diseño final se define en la fase 1 con el equipo de Avina y con lo que aprendamos de Impulsouth.</p>
+<div class="mock">
+<div class="chrome"><i></i><i></i><i></i><span>comunidad.avina.net</span></div>
+<div class="nav"><b>COMUNIDAD AVINA</b><div><span class="me">Mi comunidad</span><span>Grupos</span><span>Convocatorias</span><span>Biblioteca</span><span>Newsletter</span></div></div>
+<div class="hero">
+<div class="h">Mi comunidad</div>
+<div class="s">Hola, Ana. Tus grupos, las convocatorias abiertas para colaborar y lo nuevo en la biblioteca, en un solo lugar.</div>
+<span class="btn a">Ver convocatorias abiertas</span><span class="btn b">Compartir un documento</span>
+</div>
+<div class="doors">
+<div><b>Acción Climática</b>Grupos, convocatorias y documentos del pilar</div>
+<div><b>Economía Justa y Regenerativa</b>Grupos, convocatorias y documentos del pilar</div>
+<div><b>Innovación Democrática</b>Grupos, convocatorias y documentos del pilar</div>
+</div>
+<div class="body">
+<div class="col">
+<div class="t">Mis grupos y convocatorias</div>
+<div class="item"><span>Finanzas climáticas</span><em>3 novedades</em></div>
+<div class="item"><span>Convocatoria: Mapa de iniciativas regenerativas</span><em>Abierta</em></div>
+<div class="item"><span>Convocatoria: Agenda de innovación democrática</span><em>En curso</em></div>
+<div class="t" style="margin-top:6px">Biblioteca</div>
+<div class="filters"><span>Pilar</span><span>País</span><span>Tipo</span><span>Idioma</span></div>
+<div class="item"><span>Guía de colaboración multiactor</span><em>PDF</em></div>
+</div>
+<div class="col">
+<div class="t">Tablero de la comunidad (para el equipo de Avina)</div>
+<div class="dash">
+<div><b>—</b>Personas registradas</div>
+<div><b>—</b>Activas en 30 días</div>
+<div><b>—</b>Países</div>
+<div><b>—</b>Contenidos publicados</div>
+<div><b>—</b>Descargas</div>
+<div><b>—</b>Participación por grupo</div>
+<div><b>—</b>Ciclos abiertos / cerrados</div>
+<div><b>—</b>Apertura de newsletter</div>
+</div>
+</div>
+</div>
+<div class="private">Espacio privado del piloto: comunidad de práctica Impulsouth (solo miembros invitados)</div>
+</div>
+<p class="mocknote">Boceto conceptual con contenido de ejemplo. Los indicadores se muestran sin valores: se completan con datos reales desde el piloto.</p>
+
+<h2><small>05</small>Plan de trabajo por fases</h2>
+<table>
+<tr><th style="width:24%">Fase y período</th><th>Qué hacemos</th></tr>
+<tr><td class="k">1 · Diagnóstico y benchmark<br><span class="small">Mes 1 · diciembre 2026</span></td><td>Entrevistas con el equipo de Avina y con referentes de Impulsouth, revisión de 3 a 5 plataformas de comunidad comparables, mapa de miembros y de usos, y arquitectura de la plataforma para aprobar.</td></tr>
+<tr><td class="k">2 · Implementación<br><span class="small">Meses 2 a 4 · enero a marzo 2027</span></td><td>Configuración de WordPress + BuddyBoss en SiteGround, grupos, convocatorias, biblioteca, newsletter, tablero de indicadores, guías de uso y moderación, y capacitación del equipo de Avina. Entrega en ciclos de dos semanas.</td></tr>
+<tr><td class="k">3 · Piloto con Impulsouth<br><span class="small">Meses 5 a 10 · abril a septiembre 2027</span></td><td>Lanzamiento con la comunidad de práctica Impulsouth y community manager dedicado. Ajustes mensuales según los datos de uso e informe mensual.</td></tr>
+<tr><td class="k">4 · Consolidación<br><span class="small">Meses 11 y 12 · octubre a diciembre 2027</span></td><td>Recomendaciones para abrir la plataforma a nuevas comunidades, manual de operación, traspaso completo al equipo de Avina e informe final.</td></tr>
+</table>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>3 / 7</span></div>
+</section>
+
+<!-- PÁGINA 4 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>PROPUESTA · PLATAFORMA DIGITAL DE COLABORACIÓN — COMUNIDAD AVINA</span></div>
+
+<h2><small>06</small>Productos, plazos y criterios de aprobación</h2>
+<p class="small">Contrato del 1 de diciembre de 2026 al 30 de diciembre de 2027.</p>
+<table>
+<tr><th style="width:6%">#</th><th style="width:30%">Producto</th><th style="width:15%">Entrega</th><th>Se aprueba cuando…</th></tr>
+<tr><td>1</td><td class="k">Informe de diagnóstico y benchmark</td><td>Fin del mes 1</td><td>Avina valida el mapa de miembros, los usos prioritarios y la arquitectura propuesta.</td></tr>
+<tr><td>2</td><td class="k">Plataforma implementada</td><td>Mes 3</td><td>Grupos, convocatorias, biblioteca y perfiles funcionan en el entorno de prueba y pasan la revisión de Avina.</td></tr>
+<tr><td>3</td><td class="k">Tablero de indicadores y plan de analítica</td><td>Mes 4</td><td>El tablero muestra todos los indicadores acordados con datos de prueba.</td></tr>
+<tr><td>4</td><td class="k">Guías de uso, moderación y capacitación</td><td>Mes 4</td><td>El equipo de Avina recibe la capacitación grabada y puede operar la plataforma solo.</td></tr>
+<tr><td>5</td><td class="k">Piloto Impulsouth con community manager</td><td>Meses 5 a 10</td><td>Cada mes, con el informe mensual de actividad, indicadores y ajustes realizados.</td></tr>
+<tr><td>6</td><td class="k">Mantenimiento técnico</td><td>Cada 2 a 3 meses</td><td>Cada una de las 5 intervenciones se cierra con su informe: actualizaciones, copias de seguridad y seguridad.</td></tr>
+<tr><td>7</td><td class="k">Informe final y traspaso</td><td>Mes 12</td><td>Avina recibe el manual de operación, las recomendaciones de escalamiento y todos los accesos.</td></tr>
+</table>
+
+<h3>Qué necesitamos de Avina</h3>
+<ul>
+<li>Una persona de contacto para aprobaciones y acceso de TI al servidor SiteGround.</li>
+<li>La licencia de BuddyBoss, a nombre de Avina, y la herramienta de newsletter si ya tienen una.</li>
+<li>Contactos de referentes de Impulsouth para las entrevistas del diagnóstico.</li>
+<li>Logo, manual de marca y los primeros documentos para la biblioteca.</li>
+</ul>
+
+<h2><small>07</small>Mantenimiento y soporte</h2>
+<ul>
+<li><b>5 intervenciones programadas</b> (cada 2 a 3 meses): actualizaciones de WordPress, BuddyBoss y plugins probadas primero en el entorno de prueba, verificación de copias de seguridad, revisión de seguridad y rendimiento, e informe.</li>
+<li><b>Incidencias:</b> si la plataforma no funciona, respondemos en menos de 4 horas hábiles. Otros problemas, en 1 día hábil.</li>
+<li><b>Horario:</b> de lunes a viernes, de 9:00 a 18:00 (hora de Argentina), compatible con la mayor parte de América Latina.</li>
+<li><b>Trabajo fuera del alcance:</b> USD 45 por hora, siempre cotizado y aprobado por escrito antes de empezar.</li>
+</ul>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>4 / 7</span></div>
+</section>
+
+<!-- PÁGINA 5 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>PROPUESTA · PLATAFORMA DIGITAL DE COLABORACIÓN — COMUNIDAD AVINA</span></div>
+
+<h2><small>08</small>Propuesta económica</h2>
+<table>
+<tr><th>Concepto</th><th class="n">USD</th><th style="width:40%">Se factura</th></tr>
+<tr><td class="k">Fase 1 · Diagnóstico y benchmark</td><td class="n">1.800</td><td>Al aprobar el informe de diagnóstico</td></tr>
+<tr><td class="k">Fase 2 · Implementación, tablero, guías y capacitación</td><td class="n">5.200</td><td>50 % al aprobar la arquitectura y 50 % al aprobar la plataforma</td></tr>
+<tr><td class="k">Fase 3 · Piloto con community manager (6 meses × 800)</td><td class="n">4.800</td><td>Mensual, contra el informe del mes</td></tr>
+<tr><td class="k">Fase 4 · Consolidación y traspaso</td><td class="n">1.800</td><td>Al aprobar el informe final</td></tr>
+<tr><td class="k">Mantenimiento técnico (5 intervenciones × 240)</td><td class="n">1.200</td><td>Al cerrar cada intervención</td></tr>
+<tr class="tot"><td>Total</td><td class="n">14.800</td><td>Dentro del tope de USD 17.400</td></tr>
+</table>
+<div class="box"><b>Sin riesgo para Avina:</b> ningún pago se factura antes de que Avina apruebe el producto. Si un producto no cumple los criterios de aprobación acordados, lo corregimos sin costo antes de facturarlo.</div>
+<ul>
+<li><b>Moneda:</b> se factura en la moneda local que indique Avina, al tipo de cambio oficial del día de facturación.</li>
+<li><b>Costos de terceros, sin recargo nuestro:</b> la licencia de BuddyBoss y el servidor SiteGround los paga Avina directamente. No proponemos otras licencias pagas.</li>
+<li><b>Incluido sin costo adicional:</b> la capacitación grabada, las guías de uso y moderación, y el manual de operación.</li>
+<li><b>Validez de la oferta:</b> 90 días.</li>
+</ul>
+
+<h2><small>09</small>Propiedad y traspaso</h2>
+<table>
+<tr><th style="width:44%">Tema</th><th>Nuestro compromiso</th></tr>
+<tr><td class="k">Plataforma, servidor y cuentas</td><td><span class="ok">Sí.</span> Todo queda a nombre de Avina. Trabajamos como usuarios invitados y Avina puede quitarnos el acceso en cualquier momento.</td></tr>
+<tr><td class="k">Contenidos, datos de miembros y diseños</td><td><span class="ok">Sí.</span> Pertenecen a Avina. Tratamos los datos personales solo para operar la plataforma.</td></tr>
+<tr><td class="k">Exportación y cambio de proveedor</td><td><span class="ok">Sí.</span> Al cierre entregamos una copia completa de archivos y base de datos, el manual de operación y todos los accesos.</td></tr>
+<tr><td class="k">Dependencia de nosotros</td><td><span class="ok">Ninguna.</span> WordPress y BuddyBoss son estándar: cualquier proveedor calificado puede continuar.</td></tr>
+</table>
+
+<h2><small>10</small>Comunicación</h2>
+<ul>
+<li><b>Un solo contacto:</b> Julio Briones, por correo, videollamada o WhatsApp. Mariam Neme se ocupa de los temas técnicos.</li>
+<li><b>Cada dos semanas:</b> una demostración de 30 minutos con lo avanzado. Durante el piloto, un informe mensual.</li>
+<li><b>Idioma:</b> español, y también inglés o portugués para las reuniones que lo necesiten.</li>
+</ul>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>5 / 7</span></div>
+</section>
+
+<!-- PÁGINA 6 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>PROPUESTA · PLATAFORMA DIGITAL DE COLABORACIÓN — COMUNIDAD AVINA</span></div>
+
+<h2><small>11</small>Equipo, referencias y por qué nosotros</h2>
+<table>
+<tr><th style="width:30%">Persona</th><th>Responsabilidad en el proyecto</th></tr>
+<tr><td class="k">Julio Briones<br><span class="small">Cofundador</span></td><td>Dirección del proyecto, diagnóstico, estrategia de comunidad, contenidos, newsletter y community manager durante el piloto. Único punto de contacto con Avina.</td></tr>
+<tr><td class="k">Mariam Neme<br><span class="small">Cofundadora, ingeniera de software</span></td><td>Implementación de WordPress + BuddyBoss, integraciones, tablero de indicadores, accesibilidad, seguridad y las intervenciones de mantenimiento.</td></tr>
+</table>
+<p class="small">Se adjuntan los CV de ambos, de hasta 2 páginas cada uno.</p>
+
+<h3>Referencias</h3>
+<p>Somos una firma nueva y todavía no tenemos referencias públicas de clientes. En su lugar, preparamos el concepto de la plataforma de la sección 04 específicamente para Fundación Avina, y con gusto lo presentamos en una entrevista. Fundación Avina sería uno de nuestros primeros clientes y lo trataríamos como un proyecto insignia.</p>
+
+<h3>Por qué TWO&amp;HUMAN</h3>
+<ul>
+<li><b>Los fundadores hacen el trabajo:</b> quien diseña la comunidad es quien la anima durante el piloto. Sin personal junior ni intermediarios.</li>
+<li><b>Comunidad y tecnología en un solo equipo:</b> la plataforma y el trabajo de comunidad se piensan juntos, no por separado.</li>
+<li><b>Precio fijo y por producto:</b> USD 14.800, por debajo del tope, pagando solo lo que Avina aprueba.</li>
+<li><b>Todo a nombre de Avina,</b> sin licencias nuevas ni dependencia de nosotros.</li>
+<li><b>Desde América Latina:</b> mismo idioma y mismo horario que la mayor parte de la comunidad.</li>
+</ul>
+
+<div class="box">Gracias por la oportunidad de presentar esta propuesta. Con gusto la explicamos en una videollamada y mostramos el concepto de la sección 04.<br><br><b>Julio Briones</b>, cofundador, TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</div>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>6 / 7</span></div>
+</section>
+
+<!-- PÁGINA 7 -->
+<section class="page">
+<div class="bar"></div>
+<div class="head"><b>TWO&amp;HUMAN</b><span>PROPUESTA · PLATAFORMA DIGITAL DE COLABORACIÓN — COMUNIDAD AVINA</span></div>
+
+<h2><small>Anexo</small>Matriz de cumplimiento</h2>
+<table>
+<tr><th>Requisito de los Términos de Referencia</th><th style="width:17%">Sección</th><th style="width:15%">Cumple</th></tr>
+<tr><td>Plataforma en WordPress + BuddyBoss sobre SiteGround</td><td>03 · 05</td><td class="st ok2">Sí</td></tr>
+<tr><td>Grupos temáticos</td><td>03 · 04</td><td class="st ok2">Sí</td></tr>
+<tr><td>Convocatorias colaborativas</td><td>03 · 04</td><td class="st ok2">Sí</td></tr>
+<tr><td>Repositorio de contenidos</td><td>03 · 04</td><td class="st ok2">Sí</td></tr>
+<tr><td>Espacios de inteligencia colectiva</td><td>03</td><td class="st ok2">Sí</td></tr>
+<tr><td>Newsletters</td><td>03</td><td class="st ok2">Sí</td></tr>
+<tr><td>Analítica y tableros de uso</td><td>03 · 04 · 06</td><td class="st ok2">Sí</td></tr>
+<tr><td>Community manager dedicado</td><td>03 · 11</td><td class="st ok2">Sí</td></tr>
+<tr><td>Cuatro fases: diagnóstico, implementación, piloto y consolidación</td><td>05</td><td class="st ok2">Sí</td></tr>
+<tr><td>Siete productos, incluido el mantenimiento técnico</td><td>06 · 07</td><td class="st ok2">Sí</td></tr>
+<tr><td>Piloto con la comunidad de práctica Impulsouth</td><td>05 · 06</td><td class="st ok2">Sí</td></tr>
+<tr><td>Contrato del 1/12/2026 al 30/12/2027</td><td>05 · 06</td><td class="st ok2">Sí</td></tr>
+<tr><td>Honorarios hasta USD 17.400, en moneda local</td><td>08</td><td class="st ok2">Sí</td></tr>
+<tr><td>Metodologías ágiles</td><td>03 · 10</td><td class="st ok2">Sí</td></tr>
+<tr><td>Soluciones escalables</td><td>03 · 05</td><td class="st ok2">Sí</td></tr>
+<tr><td>Equipo multidisciplinario</td><td>11</td><td class="st ok2">Sí</td></tr>
+<tr><td>Experiencia previa en plataformas de colaboración digital</td><td>11</td><td class="st pa">Parcial</td></tr>
+<tr><td>Trabajo previo con comunidades digitales latinoamericanas</td><td>01 · 11</td><td class="st pa">Parcial</td></tr>
+<tr><td>CV del equipo, hasta 2 páginas cada uno</td><td>Adjuntos</td><td class="st ok2">Sí</td></tr>
+</table>
+<p class="small">"Parcial": somos una firma nueva. Lo compensamos con el concepto de la sección 04, el pago contra productos aprobados y la entrevista que ofrecemos.</p>
+
+<div class="foot"><span>TWO&amp;HUMAN · julio@twoandhuman.com · +54 381 509 8972</span><span>7 / 7</span></div>
+</section>
+
+</body>
+</html>

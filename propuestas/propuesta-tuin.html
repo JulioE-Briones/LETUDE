@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Propuesta Jugos Tuin · Two&amp;Human</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --verde: #1d3d33; --oro: #b5874a; --gris: #555; --claro: #e9efec; --beige: #f5efe6; --borde: #d9d3c7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "DejaVu Sans", Arial, sans-serif; color: #222; font-size: 9pt; line-height: 1.38; }
+  .pagina { width: 210mm; height: 297mm; overflow: hidden; position: relative; padding: 14mm 16mm 16mm; page-break-after: always; }
+  .pagina:last-child { page-break-after: auto; }
+  .barra { position: absolute; top: 0; left: 0; right: 0; height: 7mm; background: var(--oro); }
+  .cabecera { display: flex; justify-content: space-between; font-size: 8pt; margin-top: 2mm; margin-bottom: 6mm; }
+  .cabecera b { color: var(--verde); letter-spacing: .5px; }
+  .cabecera span { color: var(--gris); letter-spacing: .4px; }
+  .ceja { color: var(--oro); font-weight: bold; font-size: 8.5pt; letter-spacing: .6px; text-transform: uppercase; margin: 0 0 2mm; }
+  h1 { color: var(--verde); font-size: 21pt; line-height: 1.12; margin: 0 0 2mm; }
+  .sub { color: var(--gris); font-size: 9.4pt; margin: 0 0 3mm; padding-bottom: 3mm; border-bottom: 1.5px solid var(--oro); }
+  h2 { color: var(--verde); font-size: 11.5pt; margin: 4mm 0 1.5mm; }
+  p { margin: 0 0 2mm; }
+  .compromiso { display: flex; background: var(--claro); border: 1px solid var(--verde); border-left: 5px solid var(--oro); margin: 3mm 0; }
+  .compromiso .et { width: 34mm; padding: 4mm; color: var(--oro); font-weight: bold; font-size: 8.5pt; text-transform: uppercase; display: flex; align-items: center; }
+  .compromiso .tx { padding: 3mm 4mm; color: var(--verde); font-weight: bold; font-size: 10.5pt; line-height: 1.35; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; }
+  th { background: var(--verde); color: #fff; text-align: left; font-size: 8.2pt; padding: 2.2mm 2.5mm; letter-spacing: .3px; }
+  td { border: 1px solid var(--borde); padding: 1.8mm 2.2mm; vertical-align: top; font-size: 8pt; line-height: 1.32; }
+  tr:nth-child(even) td { background: #faf8f4; }
+  td b { color: var(--verde); }
+  .bloque { display: flex; background: var(--beige); border: 1px solid var(--borde); margin-bottom: 2mm; }
+  .bloque .n { width: 40mm; padding: 2.6mm 3mm; font-weight: bold; color: var(--verde); font-size: 8.8pt; text-transform: uppercase; }
+  .bloque .d { padding: 2.6mm 3mm; flex: 1; font-size: 8.5pt; }
+  .bloque .d em { color: var(--oro); font-style: normal; font-weight: bold; }
+  .nota { background: var(--beige); border: 1px solid var(--oro); padding: 2.5mm 3.5mm; margin: 2.5mm 0; font-size: 8.5pt; }
+  .fuente { color: #777; font-size: 7.4pt; margin-top: 1mm; }
+  ul { margin: 0 0 2mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  .pie { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; border-top: 1px solid var(--borde); padding-top: 2mm; display: flex; justify-content: space-between; color: #777; font-size: 7.6pt; }
+  .inv td { font-size: 8.8pt; }
+  .inv .total td { background: var(--claro); font-weight: bold; color: var(--verde); }
+  .pasos { margin: 1mm 0 2mm; padding-left: 5mm; }
+  .pasos li { margin-bottom: .8mm; font-size: 8.6pt; }
+  .detalle p { font-size: 8.6pt; margin-bottom: 1.6mm; }
+  .aliados td { font-size: 7.9pt; }
+  .contacto { color: #666; font-size: 8pt; margin-top: 3mm; }
+</style><style>
+  .cifras { display: flex; gap: 3mm; margin: 2mm 0 2mm; }
+  .cifra { flex: 1; min-width: 0; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.5mm 3.5mm; }
+  .cifra b { display: block; font-size: 13pt; white-space: nowrap; color: var(--verde); margin-bottom: .8mm; }
+  .cifra span { font-size: 7.8pt; color: var(--gris); line-height: 1.3; display: block; }
+  .dos { display: flex; gap: 5mm; align-items: flex-start; }
+  .dos .txt { flex: 1.15; }
+  .dos .txt p, .dos .txt li { font-size: 8.8pt; }
+  .dos .boceto { flex: 1; position: relative; border: 1px solid var(--borde); padding: 6mm 3mm 3mm; background: #fff; }
+  .etq { position: absolute; top: 1.5mm; left: 3mm; font-size: 7.5pt; font-weight: bold; letter-spacing: .6px; text-transform: uppercase; color: var(--oro); }
+  .pieza { border-radius: 3mm; overflow: hidden; border: 1px solid var(--borde); }
+  .pieza .foto { height: 14mm; background: linear-gradient(135deg, #2f5d50, #8fb3a3); color: #fff; font-size: 7.5pt; font-style: italic; display: flex; align-items: flex-end; padding: 2mm 3mm; }
+  .pieza .cuerpo { padding: 2.5mm 3.5mm 3mm; background: #fbf9f5; }
+  .pieza .lema { font-size: 12.5pt; font-weight: bold; color: var(--verde); margin: 0 0 .6mm; line-height: 1.15; }
+  .pieza .aval { font-size: 7.4pt; color: var(--oro); font-weight: bold; margin: 0 0 1.8mm; }
+  .pieza .fila { display: flex; justify-content: space-between; font-size: 7.9pt; padding: 1mm 0; border-bottom: 1px solid var(--borde); }
+  .pieza .fila b { color: var(--verde); }
+  .pieza .incluye { font-size: 7.2pt; color: var(--gris); margin: 1.8mm 0 2mm; }
+  .pieza .boton { background: var(--verde); color: #fff; text-align: center; font-size: 7.8pt; font-weight: bold; padding: 1.8mm; border-radius: 2mm; }
+  .embudo { display: flex; gap: 2.5mm; margin: 1.5mm 0 2mm; }
+  .paso { flex: 1; background: var(--claro); border-top: 3px solid var(--oro); padding: 2.2mm 2.5mm; }
+  .paso i { display: block; font-style: normal; font-size: 7pt; color: var(--oro); font-weight: bold; letter-spacing: .5px; text-transform: uppercase; }
+  .paso b { display: block; color: var(--verde); font-size: 9.2pt; margin: .5mm 0 .8mm; }
+  .paso span { display: block; font-size: 7.5pt; color: var(--gris); line-height: 1.3; }
+  .opciones { display: flex; gap: 4mm; margin: 2mm 0 2.5mm; }
+  .opcion { flex: 1; border: 1px solid var(--borde); background: #fbf9f5; display: flex; flex-direction: column; }
+  .opcion .tit { background: var(--verde); color: #fff; padding: 2.4mm 3mm; font-weight: bold; font-size: 9.6pt; }
+  .opcion .tit small { display: block; color: #e3cfa9; font-weight: normal; font-size: 7.6pt; margin-top: .4mm; }
+  .opcion ul { padding: 2.4mm 3mm 0 7mm; margin: 0; flex: 1; }
+  .opcion li { font-size: 8.1pt; margin-bottom: 1.1mm; }
+  .opcion .precio { border-top: 1px solid var(--borde); padding: 2.2mm 3mm; background: var(--beige); }
+  .opcion .precio b { font-size: 14pt; color: var(--verde); }
+  .opcion .precio span { display: block; font-size: 7.6pt; color: var(--gris); }
+  .crono td { font-size: 8pt; }
+</style>
+<style>
+  .canales .bloque .n { width: 38mm; }
+  .canales .bloque .d b { color: var(--verde); }
+  .mocks { display: flex; gap: 4mm; margin: 2mm 0 2mm; }
+  .mock { flex: 1; position: relative; border: 1px solid var(--borde); padding: 6mm 2.5mm 2.5mm; background: #fff; }
+  .mock .pie-mock { font-size: 7.3pt; color: var(--gris); margin: 2mm 0 0; line-height: 1.3; }
+  .pieza .fila span { padding-right: 2mm; }
+  .chat { background: #ece5dd; border-radius: 3mm; padding: 3mm 2.5mm; }
+  .burbuja { background: #fff; border-radius: 2mm; padding: 2mm 2.5mm; font-size: 7.8pt; line-height: 1.35; margin-bottom: 2mm; max-width: 92%; }
+  .burbuja.yo { background: #dcf8c6; margin-left: auto; max-width: 60%; }
+  .burbuja small { display: block; text-align: right; color: #999; font-size: 6.5pt; margin-top: .6mm; }
+  .opciones .opcion li { font-size: 7.9pt; }
+  .opcion.web .tit { background: var(--oro); }
+  .prior td { font-size: 8.2pt; padding: 1.6mm 2.2mm; }
+  .prior td.caja { width: 12mm; text-align: center; color: #bbb; }
+  .crono td { font-size: 7.9pt; }
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · JUGOS TUIN</span></div>
+
+  <p class="ceja">Propuesta para Quique Martín · Jugos Tuin</p>
+  <h1>Más góndolas y más comercios para Tuin, sin pelear por precio</h1>
+  <p class="sub">Marketing, ventas a comercios y distribuidores, y pedidos ordenados. Una propuesta por partes, para que elijas qué encaja con tu visión.</p>
+
+  <p>Tuin tiene lo que una marca nueva tarda décadas en construir: 53 años en el mercado tucumano, 11 sabores en bidones de 5 litros y botella, pulpa para licuados y jugo escolar, presencia en supermercados y reparto propio por rutas. Producen sin ultrapasteurizar, con 60 días de duración en botella, y tienen capacidad para vender más. Ahora suman dos novedades: el licuado instantáneo en sobres y el envase de 1 litro. <b>Lo que falta no es producto: es que la marca se vea y que más comercios la prueben.</b></p>
+
+  <div class="cifras">
+    <div class="cifra"><b>53 años</b><span>en el mercado tucumano, sin créditos ni inversores</span></div>
+    <div class="cifra"><b>11 sabores</b><span>en bidones de 5 litros y botella, más pulpa y jugo escolar</span></div>
+    <div class="cifra"><b>60 días</b><span>de duración en botella, sin ultrapasteurizar</span></div>
+    <div class="cifra" style="flex:1.2"><b>$5.000 a 6.000</b><span>menos que Citric en góndola</span></div>
+  </div>
+
+  <h2>Dónde vemos la oportunidad</h2>
+  <div class="canales">
+    <div class="bloque"><div class="n">1 · Góndola</div><div class="d">En el súper ya ganás en precio y en lo natural; Citric gana en presencia de marca. Y hoy los supermercados se cuidan de sumar productos nuevos. <b>El camino es que la gente busque Tuin:</b> marca y redes que lleven al consumidor a pedirlo, y entrar por autoservicios, almacenes y cadenas chicas mientras los grandes se abren. El envase de 1 litro es una buena excusa para volver a hablar con cada comprador.</div></div>
+    <div class="bloque"><div class="n">2 · Gastronomía</div><div class="d">Contra el producto informal, sin registro, etiqueta ni factura, no conviene competir por precio: siempre va a haber alguien más barato. <b>Conviene ir a los que necesitan factura, registro y entrega segura:</b> hoteles, cafeterías, gimnasios, clubes, colegios y comedores de empresas. A ellos se les vende lo que el informal no da: con 60 días de duración tienen stock y reciben tres veces por semana, sin depender de alguien que pasa todos los días con el bidón. Y con la pulpa arman licuados para su carta.</div></div>
+    <div class="bloque"><div class="n">3 · Lanzamientos</div><div class="d">El licuado en sobres y el litro son dos razones para que se hable de Tuin en los próximos meses. El sobre, con fruta deshidratada y leche, se prepara con agua y hielo, y abre puertas nuevas: <b>kioscos, gimnasios, oficinas y colegios.</b></div></div>
+    <div class="bloque"><div class="n">4 · Fuera de Tucumán</div><div class="d">Los distribuidores son el camino más rápido para llegar a más comercios sin sumar repartos propios. Y Santiago del Estero, Catamarca, Salta y Córdoba están cerca: <b>antes de llevar Tuin, probamos con anuncios si los comercios de ahí lo piden.</b> El detalle está en la página 2.</div></div>
+  </div>
+
+  <div class="nota"><b>Lo que no vamos a hacer:</b> bajarte el precio para competir con el informal ni prometerte ventas. Vamos a medir lo que importa: comercios contactados, cuántos prueban y cuántos compran.</div>
+
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>1 / 4</span></div>
+</section>
+
+<!-- PÁGINA 2 · DISTRIBUCIÓN -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · JUGOS TUIN</span></div>
+
+  <p class="ceja">Crecer fuera de Tucumán</p>
+  <h1>Distribuidores y provincias vecinas</h1>
+  <p class="sub">Antes de invertir en llevar Tuin a otra provincia, probamos si los comercios lo piden.</p>
+
+  <div class="embudo">
+    <div class="paso"><i>Paso 1</i><b>Distribuidores primero</b><span>Lista de distribuidoras de bebidas y alimentos de Tucumán y la región, y contacto uno a uno con una ficha para ellos: precio con margen, condiciones, zona y muestras.</span></div>
+    <div class="paso"><i>Paso 2</i><b>Probar la demanda</b><span>Anuncios de prueba en Santiago del Estero, Catamarca, Salta y Córdoba para almacenes, autoservicios y gastronómicos, con un formulario "Quiero vender Tuin".</span></div>
+    <div class="paso"><i>Paso 3</i><b>De cerca a lejos</b><span>Primero Santiago del Estero y Catamarca, después Salta y por último Córdoba, que tiene más competencia.</span></div>
+    <div class="paso"><i>Paso 4</i><b>Llevar donde hay pedidos</b><span>Si una zona junta pedidos, se suma a una ruta propia o se cierra con un distribuidor de ahí.</span></div>
+  </div>
+
+  <p>Los anuncios de prueba van a comercios y distribuidores, no al consumidor: de nada sirve que alguien de Salta quiera Tuin si todavía no lo encuentra cerca. El licuado en sobres, liviano y fácil de llevar, puede ser el producto que abra cada provincia.</p>
+
+  <h2>Cómo vamos a conseguir más puntos de venta</h2>
+  <div class="canales">
+    <div class="bloque"><div class="n">1 · Probar primero</div><div class="d">Empezamos por hoteles, restaurantes y bares que valoran un jugo natural, y recién después sumamos zonas y formatos.</div></div>
+    <div class="bloque"><div class="n">2 · Que la pidan</div><div class="d">Rutas de visita a kioscos, almacenes y autoservicios, con material y muestras, para que conozcan Tuin y la pidan, aunque no haya publicidad.</div></div>
+    <div class="bloque"><div class="n">3 · Elegir con datos</div><div class="d">Zonas y comercios elegidos según dónde ya se vende y dónde hay más movimiento, no al azar.</div></div>
+    <div class="bloque"><div class="n">4 · Degustaciones</div><div class="d">Muestras en el súper, en kioscos y en gastronómicos: el que prueba un jugo natural nota la diferencia.</div></div>
+    <div class="bloque"><div class="n">5 · Con los distribuidores</div><div class="d">Con cada distribuidor y cada cadena, que el producto no falte, que esté bien ubicado en la góndola y que se vea.</div></div>
+  </div>
+
+  <div class="nota"><b>La publicidad acompaña,</b> pero lo que vende es estar en más lugares y que la gente pruebe Tuin.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>2 / 4</span></div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · JUGOS TUIN</span></div>
+
+  <p class="ceja">Ejemplos</p>
+  <h1>Así se vería el trabajo</h1>
+  <p class="sub">Tres bocetos hechos para Tuin. Las piezas finales se hacen con fotos reales de la fábrica y de los productos.</p>
+
+  <div class="mocks">
+    <div class="mock">
+      <span class="etq">Redes · lanzamiento</span>
+      <div class="pieza">
+        <div class="foto">Foto real: el sobre y el licuado servido</div>
+        <div class="cuerpo">
+          <p class="lema">Licuado Tuin en un sobre</p>
+          <p class="aval">Tucumano desde 1973</p>
+          <div class="fila"><span>Fruta y leche en un sobre</span><b>nuevo</b></div>
+          <div class="fila"><span>Agua, hielo y listo</span><b>1,5 min</b></div>
+          <p class="incluye">En kioscos, súper y por WhatsApp</p>
+          <div class="boton">Pedilo por WhatsApp</div>
+        </div>
+      </div>
+      <p class="pie-mock">Publicación para Instagram y Facebook, más un video corto de la preparación.</p>
+    </div>
+    <div class="mock">
+      <span class="etq">Ficha para comercios</span>
+      <div class="pieza">
+        <div class="foto">Foto real: la línea de botellas</div>
+        <div class="cuerpo">
+          <p class="lema">Tuin para tu carta</p>
+          <p class="aval">Jugos naturales · 53 años en Tucumán</p>
+          <div class="fila"><span>Bidón de 5 L y botella</span><b>60 días</b></div>
+          <div class="fila"><span>Pulpa para licuados</span><b>sí</b></div>
+          <div class="fila"><span>Entrega</span><b>3 por semana</b></div>
+          <div class="fila"><span>Factura y etiqueta</span><b>siempre</b></div>
+          <div class="boton" style="margin-top:2mm">Pedí una degustación</div>
+        </div>
+      </div>
+      <p class="pie-mock">Se manda por WhatsApp o se deja impresa en cada visita a hoteles, cafeterías y gimnasios.</p>
+    </div>
+    <div class="mock">
+      <span class="etq">Pedidos por WhatsApp</span>
+      <div class="chat">
+        <div class="burbuja">Hola, Café del Centro 👋 Mañana pasamos por tu zona con el reparto de Tuin. ¿Qué te dejamos?<br>1 · Lo mismo de siempre<br>2 · Quiero cambiar el pedido<small>18:02</small></div>
+        <div class="burbuja yo">1<small>18:10</small></div>
+        <div class="burbuja">¡Listo! Mañana te dejamos tu pedido de siempre. Gracias 🍊<small>18:10</small></div>
+      </div>
+      <p class="pie-mock">Mensaje automático el día antes de cada reparto, por zona: más pedidos sin tener que llamar a cada cliente.</p>
+    </div>
+  </div>
+
+  <h2>Cómo trabajamos</h2>
+  <table class="crono">
+    <tr><th style="width:20%">1 · Arranque</th><th style="width:20%">2 · Plan del mes</th><th style="width:20%">3 · Trabajo semanal</th><th style="width:20%">4 · Revisión</th><th>5 · Decisión</th></tr>
+    <tr><td>Una reunión de una hora: elegimos prioridades y metas, y nos das los accesos.</td><td>Calendario de publicaciones y lista de comercios a contactar, que aprobás vos.</td><td>Publicamos, contactamos comercios y ordenamos los pedidos por WhatsApp.</td><td>Media hora por semana: qué funcionó, qué no y qué comercios respondieron.</td><td>Reporte mensual. Lo que trae comercios se sigue; lo que no, se corta.</td></tr>
+  </table>
+
+  <h2>Qué vas a ver en el reporte</h2>
+  <ul>
+    <li><b>Comercios:</b> cuántos contactamos, cuántos probaron Tuin y cuántos compran.</li>
+    <li><b>WhatsApp:</b> pedidos recibidos y cuántos llegaron por el recordatorio de reparto.</li>
+    <li><b>Redes y anuncios:</b> consultas y pedidos que generaron, no solo seguidores o likes.</li>
+    <li><b>Ventas por canal:</b> solo si querés compartirlas. Lo que nos cuentes de la empresa queda entre nosotros.</li>
+  </ul>
+
+  <h2>Quiénes somos</h2>
+  <p>Two&amp;Human es un equipo de Yerba Buena que combina marketing y software. <b>Julio Briones</b> se ocupa del marketing y las ventas: redes, anuncios y contacto con comercios. <b>Mariam Neme</b> se ocupa del desarrollo: páginas web y automatizaciones, como los pedidos por WhatsApp. Juntando las dos cosas, logramos que a Tuin la conozcan más y que cada pedido llegue ordenado.</p>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · Two&amp;Human · Octubre de 2026</span><span>3 / 4</span></div>
+</section>
+
+<!-- PÁGINA 3 -->
+<section class="pagina">
+  <div class="barra"></div>
+  <div class="cabecera"><b>TWO&amp;HUMAN</b><span>PROPUESTA COMERCIAL · JUGOS TUIN</span></div>
+
+  <p class="ceja">Opciones e inversión</p>
+  <h1>Elegí lo que encaja con Tuin</h1>
+  <p class="sub">Dos planes mensuales y una página web aparte. Se puede empezar por uno y sumar el resto después.</p>
+
+  <div class="opciones">
+    <div class="opcion">
+      <div class="tit">Plan Marca<small>3 meses</small></div>
+      <ul>
+        <li>Instagram, Facebook y TikTok al día, con calendario mensual.</li>
+        <li>Videos de la fábrica y del proceso: 53 años, sin ultrapasteurizar.</li>
+        <li>Lanzamiento del licuado en sobres y del envase de 1 litro.</li>
+        <li>Recetas con la pulpa y el licuado.</li>
+        <li>Anuncios en Tucumán (la publicidad se paga aparte).</li>
+        <li>Reporte mensual.</li>
+      </ul>
+      <div class="precio"><b>$690.000 por mes</b><span>Pago mes por adelantado</span></div>
+    </div>
+    <div class="opcion">
+      <div class="tit">Plan Marca + Ventas<small>3 meses · el que recomendamos</small></div>
+      <ul>
+        <li><b>Todo el Plan Marca.</b></li>
+        <li><b>Distribuidores:</b> búsqueda en Tucumán y la región, con ficha y condiciones.</li>
+        <li><b>Comercios nuevos:</b> súper, autoservicios y gastronómicos, uno a uno y con degustaciones.</li>
+        <li><b>Provincias:</b> anuncios de prueba para comercios de provincias vecinas.</li>
+        <li><b>WhatsApp ordenado,</b> con recordatorio automático antes de cada reparto.</li>
+        <li><b>Recomendación entre comercios</b> y revisión semanal.</li>
+      </ul>
+      <div class="precio"><b>$990.000 por mes</b><span>Pago mes por adelantado</span></div>
+    </div>
+    <div class="opcion web">
+      <div class="tit">Página web<small>Pago único · opcional</small></div>
+      <ul>
+        <li>tuinjugos.com funcionando de nuevo.</li>
+        <li>Productos, sabores y presentaciones.</li>
+        <li>Dónde comprar: la lista de supermercados y comercios.</li>
+        <li>Formulario para comercios que quieren vender Tuin.</li>
+        <li>Botón de WhatsApp para pedidos.</li>
+        <li>Primero el diseño, y se construye cuando lo aprobás.</li>
+      </ul>
+      <div class="precio"><b>$800.000</b><span>Mitad al empezar, mitad al entregar</span></div>
+    </div>
+  </div>
+
+  <p><b>Publicidad, aparte:</b> la pagás directo a Meta. Sugerimos empezar con hasta $300.000 por mes, incluidas las pruebas en otras provincias, y subir solo si trae consultas de comercios o pedidos.</p>
+  <p><b>Cuentas claras:</b> vos sabés cuánto te deja un comercio que compra todas las semanas. La meta que te proponemos medir es cuántos comercios nuevos cubren el plan.</p>
+
+  <h2>Tus prioridades: marcanos del 1 al 3 lo más importante para vos hoy</h2>
+  <table class="prior">
+    <tr><td class="caja">☐</td><td>Entrar a más supermercados y autoservicios</td><td class="caja">☐</td><td>Lanzar el licuado en sobres</td></tr>
+    <tr><td class="caja">☐</td><td>Más gastronómicos que paguen por calidad</td><td class="caja">☐</td><td>Lanzar el envase de 1 litro</td></tr>
+    <tr><td class="caja">☐</td><td>Marca y redes al día</td><td class="caja">☐</td><td>Pedidos por WhatsApp ordenados</td></tr>
+    <tr><td class="caja">☐</td><td>Colegios, gimnasios y oficinas</td><td class="caja">☐</td><td>Página web</td></tr>
+    <tr><td class="caja">☐</td><td>Sumar distribuidores</td><td class="caja">☐</td><td>Llegar a provincias vecinas</td></tr>
+  </table>
+
+  <h2>Condiciones</h2>
+  <ul>
+    <li><b>Plazo:</b> 3 meses, con pago mes por adelantado.</li>
+    <li><b>Garantía de cumplimiento:</b> si al terminar el primer mes lo acordado no está funcionando, el segundo mes no se cobra hasta completarlo.</li>
+    <li><b>Todo queda a nombre de Tuin:</b> cuentas, perfiles, página, fotos y videos.</li>
+    <li><b>No incluye:</b> la publicidad, la impresión de material, el producto para degustaciones, ni el dominio y el hosting.</li>
+  </ul>
+
+  <div class="nota"><b>Para seguir:</b> mandanos tus prioridades y qué opción te interesa, y ajustamos la propuesta.</div>
+
+  <div class="pie"><span>Mariam Neme y Julio Briones · +54 381 509 8972 · mariam@twoandhuman.com · julio@twoandhuman.com</span><span>4 / 4</span></div>
+</section>
+
+</body>
+</html>

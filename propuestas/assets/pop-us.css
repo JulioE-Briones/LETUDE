@@ -1,0 +1,49 @@
+/* Estilo pop en US Letter apaisado + mockups web. Se carga después de pop.css */
+@page { size: 11in 8.5in; margin: 0; }
+.pg { width: 11in; height: 8.5in; }
+.vf { display: inline-block; font: 700 6.6pt/1 IT; letter-spacing: .08em; text-transform: uppercase; background: #fff1c2; color: #7a5600; border-radius: 4px; padding: 3px 5px; vertical-align: 2px; margin-left: 4px; }
+.pg.grad .vf { background: rgba(255,255,255,.9); }
+.c6 { grid-template-columns: repeat(3,1fr); }
+.mini { background: #fff; border-radius: 18px; padding: 14px 16px; box-shadow: 0 8px 24px rgba(20,20,60,.07); }
+.mini h3 { font-size: 12.5pt; margin-bottom: 4px; }
+.mini p { font-size: 9.8pt; color: var(--mut); margin: 0; }
+.mini .chip { margin-top: 8px; font-size: 7.8pt; }
+.qa { background: #fff; border-radius: 18px; padding: 14px 16px; box-shadow: 0 8px 24px rgba(20,20,60,.07); }
+.qa .q { font: 800 11.5pt/1.2 ID; color: var(--p1); margin-bottom: 5px; letter-spacing: -.01em; }
+.qa p { font-size: 9.6pt; color: var(--mut); margin: 0; }
+.cl { display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,.22); font-size: 10pt; }
+.cl b { font-weight: 800; white-space: nowrap; }
+.who { display: grid; grid-template-columns: 0.8in 1fr; gap: 14px; align-items: center; padding: 14px 16px; }
+.who .face { width: 0.8in; height: 0.8in; border-width: 3px; }
+.zm { zoom: 1.1; }
+.draftn { position: absolute; top: 0.28in; right: 0.7in; font: 700 7pt IT; letter-spacing: .14em; text-transform: uppercase; color: var(--mut); background: rgba(255,255,255,.7); border-radius: 20px; padding: 4px 10px; z-index: 3; }
+.pg.grad .draftn { color: #fff; background: rgba(255,255,255,.18); }
+/* navegador */
+.browser { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 22px 44px rgba(20,20,60,.2); }
+.browser .bar { height: 26px; background: #eef0f4; display: flex; align-items: center; gap: 6px; padding: 0 12px; }
+.browser .bar i { width: 8px; height: 8px; border-radius: 50%; background: #c9ced6; display: inline-block; }
+.browser .bar span { margin-left: 10px; background: #fff; border-radius: 6px; font-size: 7pt; color: #6b7480; padding: 2px 12px; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 8px 14px; font-size: 7.2pt; border-bottom: 1px solid #eceef2; background: #fff; }
+.nav b { font: 800 8.4pt ID; letter-spacing: .06em; }
+.nav span { margin-left: 10px; color: #5b6670; }
+.nav .pill { border-radius: 10px; padding: 2px 8px; font-weight: 700; color: #fff; }
+.tasks { display: grid; grid-template-columns: repeat(6,1fr); gap: 7px; padding: 10px 14px 6px; }
+.tasks div { border: 1px solid #e6e8ee; border-radius: 9px; padding: 7px 4px; font-size: 7pt; font-weight: 700; text-align: center; }
+.tasks div i { display: block; width: 14px; height: 14px; margin: 0 auto 4px; border-radius: 5px; }
+.lst div { display: flex; justify-content: space-between; font-size: 7.2pt; border-bottom: 1px dashed #e6e8ee; padding: 5px 0; }
+.ed { display: grid; grid-template-columns: 1fr 1.55in; }
+.ed .cv { padding: 12px 16px; border-right: 1px solid #eceef2; }
+.ed .ln { height: 7px; background: #eceef2; border-radius: 4px; margin-bottom: 6px; }
+.ed .sb { background: #fafbfd; padding: 10px; }
+.ed .is { border-radius: 8px; padding: 6px 7px; font-size: 6.8pt; margin-bottom: 6px; line-height: 1.3; }
+.board { background: #fff; border-radius: 20px; padding: 18px; box-shadow: 0 14px 34px rgba(20,20,60,.12); }
+/* texturas, destellos y cinta washi */
+.pg > .tx { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; pointer-events: none; }
+.pg > .tx.l { opacity: .28; mix-blend-mode: multiply; }
+.pg > .tx.g { opacity: .32; mix-blend-mode: soft-light; }
+.pg > .spk { position: absolute; z-index: 2; }
+.bgrid .bb { overflow: visible; }
+.bgrid .bb img.ph { border-radius: 16px; }
+.bgrid .bb .tape { position: absolute; top: -12px; left: 50%; width: 1.05in; height: auto; transform: translateX(-50%) rotate(-4deg); z-index: 3; border-radius: 0; }
+.bgrid .bb:nth-child(even) .tape { transform: translateX(-50%) rotate(5deg); }
+.chip img { height: 14px; vertical-align: -3px; margin-right: 4px; }
